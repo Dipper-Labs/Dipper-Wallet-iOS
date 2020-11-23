@@ -49,6 +49,24 @@ class StepFeeViewController: BaseViewController {
             self.speedImg.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.imageTap (_:))))
             self.speedImg.isUserInteractionEnabled = true
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            self.minFeeCardView.isHidden = true
+            self.rateFeeCardView.isHidden = false
+            
+            self.feeSlider.isHidden = true
+            self.feesLabels.isHidden = true
+            
+            self.speedImg.image = UIImage.init(named: "feeImg")
+            self.speedMsg.text = NSLocalizedString("fee_speed_certik_title", comment: "")
+            
+            let gasAmount = WUtils.getEstimateGasAmount(pageHolderVC.chainType!, pageHolderVC.mType!, pageHolderVC.mRewardTargetValidators.count)
+            let gasRate = NSDecimalNumber.init(string: CERTIK_GAS_FEE_RATE_AVERAGE)
+            self.rateFeeGasAmountLabel.text = gasAmount.stringValue
+            self.rateFeeGasRateLabel.attributedText = WUtils.displayGasRate(gasRate, font: rateFeeGasRateLabel.font, 6)
+            feeAmount = gasAmount.multiplying(byPowerOf10: 12).multiplying(by: gasRate, withBehavior: WUtils.handler0)
+            self.rateFeeAmountLabel.attributedText = WUtils.displayAmount(feeAmount.stringValue, rateFeeAmountLabel.font, 3, pageHolderVC.chainType!)
+            self.rateFeePriceLabel.attributedText = WUtils.dpAtomValue(feeAmount, BaseData.instance.getLastPrice(), rateFeePriceLabel.font)
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             self.minFeeCardView.isHidden = true
             self.rateFeeCardView.isHidden = false
@@ -279,7 +297,17 @@ class StepFeeViewController: BaseViewController {
                 return false
             }
             
-        } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST) {
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            available = WUtils.getTokenAmount(pageHolderVC.mBalances, DIPPER_MAIN_DENOM);
+            toSpend = getSpendAmount()
+            if (toSpend.adding(feeAmount).compare(available).rawValue > 0) {
+                self.onShowToast(NSLocalizedString("error_not_enough_fee", comment: ""))
+                self.feeSlider.setValue(0, animated: true)
+                self.updateView(0)
+                return false
+            }
+            
+        }else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST) {
             available = WUtils.getTokenAmount(pageHolderVC.mBalances, KAVA_MAIN_DENOM);
             toSpend = getSpendAmount()
             if (pageHolderVC.mKavaSendDenom == KAVA_MAIN_DENOM || pageHolderVC.mHarvestDepositDenom == KAVA_MAIN_DENOM) {
@@ -333,6 +361,22 @@ class StepFeeViewController: BaseViewController {
                 self.nextBtn.isUserInteractionEnabled = false
                 pageHolderVC.onNextPage()
             }
+            
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            feeCoin = Coin.init(DIPPER_MAIN_DENOM, feeAmount.stringValue)
+            var fee = Fee.init()
+            let estGas = WUtils.getEstimateGasAmount(pageHolderVC.chainType!, pageHolderVC.mType!, pageHolderVC.mRewardTargetValidators.count).stringValue
+            fee.gas = estGas
+            
+            var estAmount: Array<Coin> = Array<Coin>()
+            estAmount.append(feeCoin)
+            fee.amount = estAmount
+            
+            pageHolderVC.mFee = fee
+            
+            self.beforeBtn.isUserInteractionEnabled = false
+            self.nextBtn.isUserInteractionEnabled = false
+            pageHolderVC.onNextPage()
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             if (NSDecimalNumber.init(string: "1000000000000000000").compare(feeAmount).rawValue < 0) {return}

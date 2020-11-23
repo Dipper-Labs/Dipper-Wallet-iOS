@@ -215,7 +215,7 @@ class WUtils {
     
     static func getBondingwithBondingInfo(_ account: Account, _ rawbondinginfos: Array<NSDictionary>, _ chain:ChainType) -> Array<Bonding> {
         var result = Array<Bonding>()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                 chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             for raw in rawbondinginfos{
@@ -234,7 +234,7 @@ class WUtils {
     
     static func getUnbondingwithUnbondingInfo(_ account: Account, _ rawunbondinginfos: Array<NSDictionary>, _ chain:ChainType) -> Array<Unbonding> {
         var result = Array<Unbonding>()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                 chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             for raw in rawunbondinginfos {
@@ -679,7 +679,7 @@ class WUtils {
         var formatted: String?
         if (amount == NSDecimalNumber.zero) {
             formatted = nf.string(from: NSDecimalNumber.zero)
-        } else if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        } else if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                     chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                     chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             formatted = nf.string(from: amount.dividing(by: 1000000).rounding(accordingToBehavior: handler))
@@ -1224,7 +1224,7 @@ class WUtils {
         nf.numberStyle = .decimal
         var formatted = ""
         var endIndex: String.Index?
-        if (baseChain == ChainType.COSMOS_MAIN || baseChain == ChainType.KAVA_MAIN || baseChain == ChainType.KAVA_TEST ||
+        if (baseChain == ChainType.COSMOS_MAIN || baseChain == ChainType.DIPPER_MAIN || baseChain == ChainType.DIPPER_TEST || baseChain == ChainType.KAVA_MAIN || baseChain == ChainType.KAVA_TEST ||
                 baseChain == ChainType.BAND_MAIN || baseChain == ChainType.SECRET_MAIN || baseChain == ChainType.CERTIK_MAIN ||
                 baseChain == ChainType.IOV_MAIN || baseChain == ChainType.IOV_TEST || baseChain == ChainType.CERTIK_TEST) {
             nf.minimumFractionDigits = 12
@@ -1258,7 +1258,7 @@ class WUtils {
         nf.numberStyle = .decimal
         var formatted = ""
         var endIndex: String.Index?
-        if (baseChain == ChainType.COSMOS_MAIN || baseChain == ChainType.KAVA_MAIN || baseChain == ChainType.KAVA_TEST ||
+        if (baseChain == ChainType.COSMOS_MAIN || baseChain == ChainType.DIPPER_MAIN || baseChain == ChainType.DIPPER_TEST || baseChain == ChainType.KAVA_MAIN || baseChain == ChainType.KAVA_TEST ||
                 baseChain == ChainType.BAND_MAIN || baseChain == ChainType.SECRET_MAIN || baseChain == ChainType.CERTIK_MAIN ||
                 baseChain == ChainType.IOV_MAIN || baseChain == ChainType.IOV_TEST || baseChain == ChainType.CERTIK_TEST) {
             nf.minimumFractionDigits = 12
@@ -1373,6 +1373,29 @@ class WUtils {
             for coin in reward.reward_amount {
                 if (coin.denom == COSMOS_MAIN_DENOM) {
                     amount = amount.adding(localeStringToDecimal(coin.amount).rounding(accordingToBehavior: handler0Down))
+                }
+            }
+        }
+        return amount
+    }
+    
+    static func getAllDIP(_ balances:Array<Balance>, _ bondings:Array<Bonding>, _ unbondings:Array<Unbonding>,_ rewards:Array<Reward>, _ validators:Array<Validator>) -> NSDecimalNumber {
+        var amount = NSDecimalNumber.zero
+        for balance in balances {
+            if (balance.balance_denom == DIPPER_MAIN_DENOM) {
+                amount = NSDecimalNumber.init(string: balance.balance_amount)
+            }
+        }
+        for bonding in bondings {
+            amount = amount.adding(bonding.getBondingAmount(validators))
+        }
+        for unbonding in unbondings {
+            amount = amount.adding(NSDecimalNumber.init(string: unbonding.unbonding_balance))
+        }
+        for reward in rewards {
+            for coin in reward.reward_amount {
+                if (coin.denom == DIPPER_MAIN_DENOM) {
+                    amount = amount.adding(NSDecimalNumber.init(string: coin.amount).rounding(accordingToBehavior: handler0Down))
                 }
             }
         }
@@ -1758,7 +1781,25 @@ class WUtils {
             }
             amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 6, 6)
             
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            if (coin.denom == DIPPER_MAIN_DENOM) {
+                WUtils.setDenomTitle(chainType, denomLabel)
+            } else {
+                denomLabel.textColor = .white
+                denomLabel.text = coin.denom.uppercased()
+            }
+            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 12)
+            
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            if (coin.denom == DIPPER_TEST_DENOM) {
+                WUtils.setDenomTitle(chainType, denomLabel)
+            } else {
+                denomLabel.textColor = .white
+                denomLabel.text = coin.denom.uppercased()
+            }
+            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 12)
+            
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             if (coin.denom == IRIS_MAIN_DENOM) {
                 WUtils.setDenomTitle(chainType, denomLabel)
             } else {
@@ -1862,6 +1903,24 @@ class WUtils {
                 denomLabel.text = denom.uppercased()
             }
             amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 6, 6)
+            
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            if (denom == DIPPER_MAIN_DENOM) {
+                WUtils.setDenomTitle(chainType, denomLabel)
+            } else {
+                denomLabel.textColor = .white
+                denomLabel.text = denom.uppercased()
+            }
+            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 12)
+            
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            if (denom == DIPPER_TEST_DENOM) {
+                WUtils.setDenomTitle(chainType, denomLabel)
+            } else {
+                denomLabel.textColor = .white
+                denomLabel.text = denom.uppercased()
+            }
+            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 12)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
             if (denom == IRIS_MAIN_DENOM) {
@@ -2012,6 +2071,8 @@ class WUtils {
     static func getChainColor(_ chain:ChainType?) -> UIColor {
         if (chain == ChainType.COSMOS_MAIN) {
             return COLOR_ATOM
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            return COLOR_DIP
         } else if (chain == ChainType.IRIS_MAIN) {
             return COLOR_IRIS
         } else if (chain == ChainType.BINANCE_MAIN || chain == ChainType.BINANCE_TEST) {
@@ -2035,6 +2096,8 @@ class WUtils {
     static func getChainDarkColor(_ chain:ChainType) -> UIColor {
         if (chain == ChainType.COSMOS_MAIN) {
             return COLOR_ATOM_DARK
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return COLOR_DIP_DARK
         } else if (chain == ChainType.IRIS_MAIN) {
             return COLOR_IRIS_DARK
         } else if (chain == ChainType.BINANCE_MAIN) {
@@ -2049,7 +2112,7 @@ class WUtils {
             return COLOR_SECRET_DARK
         } else if (chain == ChainType.CERTIK_MAIN) {
             return COLOR_CERTIK_DARK
-        } else if (chain == ChainType.KAVA_TEST || chain == ChainType.BINANCE_TEST || chain == ChainType.IOV_TEST || chain == ChainType.OKEX_TEST || chain == ChainType.CERTIK_TEST) {
+        } else if (chain == ChainType.KAVA_TEST || chain == ChainType.DIPPER_TEST || chain == ChainType.BINANCE_TEST || chain == ChainType.IOV_TEST || chain == ChainType.OKEX_TEST || chain == ChainType.CERTIK_TEST) {
             return COLOR_DARK_GRAY
         }
         return COLOR_ATOM_DARK
@@ -2058,6 +2121,8 @@ class WUtils {
     static func getChainBg(_ chain:ChainType) -> UIColor {
         if (chain == ChainType.COSMOS_MAIN) {
             return TRANS_BG_COLOR_COSMOS
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return TRANS_BG_COLOR_DIPPER
         } else if (chain == ChainType.IRIS_MAIN) {
             return TRANS_BG_COLOR_IRIS
         } else if (chain == ChainType.BINANCE_MAIN) {
@@ -2072,7 +2137,7 @@ class WUtils {
             return TRANS_BG_COLOR_SECRET
         } else if (chain == ChainType.CERTIK_MAIN) {
             return TRANS_BG_COLOR_CERTIK
-        } else if (chain == ChainType.KAVA_TEST || chain == ChainType.BINANCE_TEST || chain == ChainType.IOV_TEST || chain == ChainType.OKEX_TEST || chain == ChainType.CERTIK_TEST) {
+        } else if (chain == ChainType.KAVA_TEST || chain == ChainType.DIPPER_TEST || chain == ChainType.BINANCE_TEST || chain == ChainType.IOV_TEST || chain == ChainType.OKEX_TEST || chain == ChainType.CERTIK_TEST) {
             return COLOR_BG_GRAY
         }
         return TRANS_BG_COLOR_COSMOS
@@ -2081,6 +2146,8 @@ class WUtils {
     static func getMainDenom(_ chain:ChainType) -> String {
         if (chain == ChainType.COSMOS_MAIN) {
             return "ATOM"
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            return "DIP"
         } else if (chain == ChainType.IRIS_MAIN) {
             return "IRIS"
         } else if (chain == ChainType.BINANCE_MAIN || chain == ChainType.BINANCE_TEST) {
@@ -2105,6 +2172,9 @@ class WUtils {
         if (chain == ChainType.COSMOS_MAIN) {
             label.text = "ATOM"
             label.textColor = COLOR_ATOM
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            label.text = "DIP"
+            label.textColor = COLOR_DIP
         } else if (chain == ChainType.IRIS_MAIN) {
             label.text = "IRIS"
             label.textColor = COLOR_IRIS
@@ -2135,6 +2205,10 @@ class WUtils {
     static func getChainType(_ chainS:String) -> ChainType? {
         if (chainS == CHAIN_COSMOS_S ) {
             return ChainType.COSMOS_MAIN
+        } else if (chainS == CHAIN_DIPPER_S) {
+            return ChainType.DIPPER_MAIN
+        } else if (chainS == CHAIN_DIPPER_TEST_S) {
+            return ChainType.DIPPER_TEST
         } else if (chainS == CHAIN_IRIS_S) {
             return ChainType.IRIS_MAIN
         } else if (chainS == CHAIN_BINANCE_S) {
@@ -2166,6 +2240,10 @@ class WUtils {
     static func getChainDBName(_ chain:ChainType) -> String {
         if (chain == ChainType.COSMOS_MAIN) {
             return CHAIN_COSMOS_S
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return CHAIN_DIPPER_S
+        } else if (chain == ChainType.DIPPER_TEST) {
+            return CHAIN_DIPPER_TEST_S
         } else if (chain == ChainType.IRIS_MAIN) {
             return CHAIN_IRIS_S
         } else if (chain == ChainType.BINANCE_MAIN) {
@@ -2240,6 +2318,10 @@ class WUtils {
     static func getChainId(_ chainS:String) -> String {
         if (chainS == CHAIN_COSMOS_S) {
             return "cosmoshub-3"
+        } else if (chainS == CHAIN_DIPPER_S) {
+            return "dipperhub"
+        } else if (chainS == CHAIN_DIPPER_TEST_S) {
+            return "dipper-testnet"
         } else if (chainS == CHAIN_IRIS_S) {
             return "irishub"
         } else if (chainS == CHAIN_BINANCE_S) {
@@ -2271,6 +2353,10 @@ class WUtils {
     static func getChainId(_ chain:ChainType) -> String {
         if (chain == ChainType.COSMOS_MAIN) {
             return "cosmoshub-3"
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return "dipperhub"
+        } else if (chain == ChainType.DIPPER_TEST) {
+            return "dip-testnet"
         } else if (chain == ChainType.IRIS_MAIN) {
             return "irishub"
         } else if (chain == ChainType.BINANCE_MAIN) {
@@ -2350,7 +2436,27 @@ class WUtils {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_LOW))
             }
             
-        } else if (chain == ChainType.IRIS_MAIN) {
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
+            if (type == COSMOS_MSG_TYPE_DELEGATE) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
+            } else if (type == COSMOS_MSG_TYPE_UNDELEGATE2) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
+            } else if (type == COSMOS_MSG_TYPE_REDELEGATE2) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REDELEGATE))
+            } else if (type == COSMOS_MSG_TYPE_TRANSFER2 || type == KAVA_MSG_TYPE_TRANSFER) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
+            } else if (type == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
+            } else if (type == COSMOS_MSG_TYPE_WITHDRAW_DEL) {
+                result = WUtils.getGasAmountForKavaRewards()[valCnt - 1]
+            } else if (type == COSMOS_MULTI_MSG_TYPE_REINVEST) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REINVEST))
+            } else if (type == TASK_TYPE_VOTE) {
+                result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
+            }
+            
+        }else if (chain == ChainType.IRIS_MAIN) {
             result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_IRIS_MID))
             if (type == IRIS_MSG_TYPE_DELEGATE) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_IRIS_MID))
@@ -2699,6 +2805,12 @@ class WUtils {
         if (chain == ChainType.COSMOS_MAIN) {
             label.text = NSLocalizedString("chain_title_cosmos", comment: "")
             img?.image = UIImage(named: "cosmosWhMain")
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            label.text = NSLocalizedString("chain_title_dipper", comment: "")
+            img?.image = UIImage(named: "dipperImg")
+        } else if (chain == ChainType.DIPPER_TEST) {
+            label.text = NSLocalizedString("chain_title_test_dipper", comment: "")
+            img?.image = UIImage(named: "dipperTestImg")
         } else if (chain == ChainType.IRIS_MAIN) {
             label.text = NSLocalizedString("chain_title_iris", comment: "")
             img?.image = UIImage(named: "irisWh")
@@ -2726,6 +2838,10 @@ class WUtils {
     static func dpChainName(_ chain: ChainType) -> String {
         if (chain == ChainType.COSMOS_MAIN) {
             return NSLocalizedString("chain_title_cosmos", comment: "")
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return NSLocalizedString("chain_title_dipper", comment: "")
+        } else if (chain == ChainType.DIPPER_TEST) {
+            return NSLocalizedString("chain_title_test_dipper", comment: "")
         } else if (chain == ChainType.IRIS_MAIN) {
             return NSLocalizedString("chain_title_iris", comment: "")
         } else if (chain == ChainType.BINANCE_MAIN) {
@@ -2892,6 +3008,8 @@ class WUtils {
     static func getChainTypeWithUri(_ uri: String?) -> ChainType? {
         if (uri == COSMOS) {
             return ChainType.COSMOS_MAIN
+        } else if (uri == DIPPER) {
+            return ChainType.DIPPER_MAIN
         } else if (uri == IRIS) {
             return ChainType.IRIS_MAIN
         } else if (uri == BINANCE) {
@@ -2909,6 +3027,9 @@ class WUtils {
     static func getCBlockTime(_ chain: ChainType?) -> NSDecimalNumber {
         if (chain == ChainType.COSMOS_MAIN) {
             return BLOCK_TIME_COSMOS
+            
+        } else if (chain == ChainType.DIPPER_MAIN) {
+            return BLOCK_TIME_DIPPER
             
         } else if (chain == ChainType.IRIS_MAIN) {
             return BLOCK_TIME_IRIS

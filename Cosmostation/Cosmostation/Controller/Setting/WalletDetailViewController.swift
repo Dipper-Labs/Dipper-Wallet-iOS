@@ -451,7 +451,11 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_ADDRESS + accountAddr + COSMOS_URL_REWARD_ADDRESS_TAIL
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_ADDRESS + accountAddr + DIPPER_URL_REWARD_ADDRESS_TAIL
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_ADDRESS + accountAddr + DIPPER_TEST_URL_REWARD_ADDRESS_TAIL
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_REWARD_ADDRESS + accountAddr + IRIS_LCD_URL_REWARD_ADDRESS_TAIL
         } else if (chainType == ChainType.BAND_MAIN) {
             url = BAND_REWARD_ADDRESS + accountAddr + BAND_REWARD_ADDRESS_TAIL

@@ -59,6 +59,12 @@ let IOV_TEST_FAUCET                     = "https://faucet.cluster-galaxynet.iov.
 let BAND_URL                            = "https://lcd-band.cosmostation.io/";
 let BAND_API                            = "https://api-band.cosmostation.io/";
 
+let DIPPER_URL = "http://47.242.210.165/";
+let DIPPER_API = "";
+let DIPPER_TEST_URL = "http://47.110.67.210/";
+let DIPPER_TEST_API = "";
+
+
 let OKEX_TEST_URL                       = "https://lcd-office.cosmostation.io/okexchain-testnet1/";
 let OKEX_TEST_API                       = "";
 
@@ -110,6 +116,62 @@ let COSMOS_URL_BORAD_TX                 = COSMOS_URL + "txs";
 
 let COSMOS_API_HISTORY                  = COSMOS_API + "v1/account/txs/";
 let COSMOS_API_TRANS_HISTORY            = COSMOS_API + "v1/account/transfer_txs/";
+
+//DIPPER_URL
+let DIPPER_URL_BLOCK                    = DIPPER_URL + "blocks/";
+let DIPPER_URL_TX                       = DIPPER_URL + "txs/";
+let DIPPER_URL_VALIDATORS               = DIPPER_URL + "staking/validators";
+let DIPPER_URL_ACCOUNT_INFO             = DIPPER_URL + "auth/accounts/";
+let DIPPER_URL_BONDING                  = DIPPER_URL + "staking/delegators/";
+let DIPPER_URL_BONDING_TAIL             = "/delegations";
+let DIPPER_URL_UNBONDING                = DIPPER_URL + "staking/delegators/";
+let DIPPER_URL_UNBONDING_TAIL           = "/unbonding_delegations";
+let DIPPER_URL_REWARD_ALL               = DIPPER_URL + "distribution/delegators/";
+let DIPPER_URL_REWARD_ALL_TAIL          = "/rewards";
+let DIPPER_URL_REWARD_FROM_VAL          = DIPPER_URL + "distribution/delegators/";
+let DIPPER_URL_REWARD_FROM_VAL_TAIL     = "/rewards/";
+let DIPPER_URL_REWARD_ADDRESS           = DIPPER_URL + "distribution/delegators/";
+let DIPPER_URL_REWARD_ADDRESS_TAIL      = "/withdraw_address";
+let DIPPER_URL_REDELEGATION             = DIPPER_URL + "staking/redelegations";
+let DIPPER_URL_MINT_PARAM               = DIPPER_URL + "minting/parameters";
+let DIPPER_URL_INFLATION                = DIPPER_URL + "minting/inflation";
+let DIPPER_URL_PROVISIONS               = DIPPER_URL + "minting/annual-provisions";
+let DIPPER_URL_MINT                     = DIPPER_URL + "minting/parameters";
+let DIPPER_URL_STAKING_POOL             = DIPPER_URL + "staking/pool";
+let DIPPER_URL_PROPOSALS                = DIPPER_URL + "gov/proposals";
+let DIPPER_URL_PROPOSALS_TALLY_TAIL     = "/tally";
+let DIPPER_URL_BORAD_TX                 = DIPPER_URL + "txs";
+
+let DIPPER_API_HISTORY                  = DIPPER_API + "v1/account/txs/";
+let DIPPER_API_TRANS_HISTORY            = DIPPER_API + "v1/account/transfer_txs/";
+
+//DIPPER_TEST_URL
+let DIPPER_TEST_URL_BLOCK                    = DIPPER_TEST_URL + "blocks/";
+let DIPPER_TEST_URL_TX                       = DIPPER_TEST_URL + "txs/";
+let DIPPER_TEST_URL_VALIDATORS               = DIPPER_TEST_URL + "staking/validators";
+let DIPPER_TEST_URL_ACCOUNT_INFO             = DIPPER_TEST_URL + "auth/accounts/";
+let DIPPER_TEST_URL_BONDING                  = DIPPER_TEST_URL + "staking/delegators/";
+let DIPPER_TEST_URL_BONDING_TAIL             = "/delegations";
+let DIPPER_TEST_URL_UNBONDING                = DIPPER_TEST_URL + "staking/delegators/";
+let DIPPER_TEST_URL_UNBONDING_TAIL           = "/unbonding_delegations";
+let DIPPER_TEST_URL_REWARD_ALL               = DIPPER_TEST_URL + "distribution/delegators/";
+let DIPPER_TEST_URL_REWARD_ALL_TAIL          = "/rewards";
+let DIPPER_TEST_URL_REWARD_FROM_VAL          = DIPPER_TEST_URL + "distribution/delegators/";
+let DIPPER_TEST_URL_REWARD_FROM_VAL_TAIL     = "/rewards/";
+let DIPPER_TEST_URL_REWARD_ADDRESS           = DIPPER_TEST_URL + "distribution/delegators/";
+let DIPPER_TEST_URL_REWARD_ADDRESS_TAIL      = "/withdraw_address";
+let DIPPER_TEST_URL_REDELEGATION             = DIPPER_TEST_URL + "staking/redelegations";
+let DIPPER_TEST_URL_MINT_PARAM               = DIPPER_TEST_URL + "minting/parameters";
+let DIPPER_TEST_URL_INFLATION                = DIPPER_TEST_URL + "minting/inflation";
+let DIPPER_TEST_URL_PROVISIONS               = DIPPER_TEST_URL + "minting/annual-provisions";
+let DIPPER_TEST_URL_MINT                     = DIPPER_TEST_URL + "minting/parameters";
+let DIPPER_TEST_URL_STAKING_POOL             = DIPPER_TEST_URL + "staking/pool";
+let DIPPER_TEST_URL_PROPOSALS                = DIPPER_TEST_URL + "gov/proposals";
+let DIPPER_TEST_URL_PROPOSALS_TALLY_TAIL     = "/tally";
+let DIPPER_TEST_URL_BORAD_TX                 = DIPPER_TEST_URL + "txs";
+
+let DIPPER_TEST_API_HISTORY                  = DIPPER_TEST_API + "v1/account/txs/";
+let DIPPER_TEST_API_TRANS_HISTORY            = DIPPER_TEST_API + "v1/account/transfer_txs/";
 
 
 //IRIS_URL
@@ -524,6 +586,36 @@ let COSMOS_MSG_TYPE_EDIT_VALIDATOR          = "cosmos-sdk/MsgEditValidator";
 let COSMOS_KEY_TYPE_PUBLIC                  = "tendermint/PubKeySecp256k1";
 let COSMOS_AUTH_TYPE_STDTX                  = "auth/StdTx";
 
+let DIPPER_AUTH_TYPE_DELAYEDACCOUNT         = "dip/DelayedVestingAccount";
+let DIPPER_AUTH_TYPE_ACCOUNT                = "dip/Account";
+let DIPPER_AUTH_TYPE_ACCOUNT_LEGACY         = "auth/Account";
+let DIPPER_AUTH_TYPE_VESTING_ACCOUNT        = "dip/ValidatorVestingAccount";
+let DIPPER_AUTH_TYPE_P_VESTING_ACCOUNT      = "dip/PeriodicVestingAccount";
+let DIPPER_AUTH_TYPE_CERTIK_MANUAL          = "auth/ManualVestingAccount";
+
+let DIPPER_MSG_TYPE_TRANSFER                = "dip/Send";
+let DIPPER_MSG_TYPE_TRANSFER2               = "dip/MsgSend";
+let DIPPER_MSG_TYPE_TRANSFER3               = "dip/MsgMultiSend";
+let DIPPER_MSG_TYPE_DELEGATE                = "dip/MsgDelegate";
+let DIPPER_MSG_TYPE_UNDELEGATE              = "dip/Undelegate";
+let DIPPER_MSG_TYPE_UNDELEGATE2             = "dip/MsgUndelegate";
+let DIPPER_MSG_TYPE_REDELEGATE              = "dip/BeginRedelegate";
+let DIPPER_MSG_TYPE_REDELEGATE2             = "dip/MsgBeginRedelegate";
+let DIPPER_MSG_TYPE_WITHDRAW_DEL            = "dip/MsgWithdrawDelegationReward";
+let DIPPER_MSG_TYPE_WITHDRAW_VAL            = "dip/MsgWithdrawValidatorCommission";
+let DIPPER_MSG_TYPE_WITHDRAW_MIDIFY         = "dip/MsgModifyWithdrawAddress";
+let DIPPER_MULTI_MSG_TYPE_REINVEST          = "dip-multi-ReInvest";
+
+let DIPPER_MSG_TYPE_VOTE                    = "dip/MsgVote";
+let DIPPER_MSG_TYPE_SUBMIT_PROPOSAL         = "dip/MsgSubmitProposal";
+let DIPPER_MSG_TYPE_DEPOSIT                 = "dip/MsgDeposit";
+let DIPPER_MSG_TYPE_CREATE_VALIDATOR        = "dip/MsgCreateValidator";
+let DIPPER_MSG_TYPE_EDIT_VALIDATOR          = "dip/MsgEditValidator";
+
+let DIPPER_KEY_TYPE_PUBLIC                  = "tendermint/PubKeySecp256k1";
+let DIPPER_AUTH_TYPE_STDTX                  = "auth/StdTx";
+
+
 
 let IRIS_BANK_TYPE_ACCOUNT                  = "irishub/bank/Account";
 let IRIS_MSG_TYPE_TRANSFER                  = "irishub/bank/Send";
@@ -665,8 +757,6 @@ let FEE_KAVA_REWARD_GAS_14                  = "990000";
 let FEE_KAVA_REWARD_GAS_15                  = "1020000";
 let FEE_KAVA_REWARD_GAS_16                  = "1120000";
 
-
-
 let GAS_FEE_RATE_IRIS_AVERAGE               = "0.000008"
 
 let GAS_FEE_AMOUNT_IRIS_LOW                 = "10000"
@@ -675,6 +765,17 @@ let GAS_FEE_AMOUNT_IRIS_MID                 = "50000"
 let GAS_FEE_AMOUNT_IRIS_REDELEGATE          = "65000"
 let GAS_FEE_AMOUNT_IRIS_REWARD_BASE         = "10000"
 let GAS_FEE_AMOUNT_IRIS_REWARD_MUX          = "5000"
+
+
+let GAS_FEE_RATE_DIP_AVERAGE               = "0.00008"
+
+let GAS_FEE_AMOUNT_DIP_LOW                 = "100000"
+let GAS_FEE_AMOUNT_DIP_SEND                = "200000"
+let GAS_FEE_AMOUNT_DIP_MID                 = "300000"
+let GAS_FEE_AMOUNT_DIP_REINVEST            = "220000"
+let GAS_FEE_AMOUNT_DIP_REDELEGATE          = "400000"
+let GAS_FEE_AMOUNT_DIP_REWARD_BASE         = "100000"
+let GAS_FEE_AMOUNT_DIP_REWARD_MUX          = "50000"
 
 
 let GAS_FEE_BNB_TRANSFER                    = "0.000375"
@@ -778,6 +879,13 @@ let COLOR_ATOM                              = UIColor.init(hexString: "9C6CFF")
 let COLOR_ATOM_DARK                         = UIColor.init(hexString: "372758")
 let COLOR_PHOTON                            = UIColor.init(hexString: "05D2DD")
 
+let TRANS_BG_COLOR_DIPPER                   = UIColor.init(hexString: "9C6CFF", alpha: 0.15)
+let TRANS_BG_COLOR_DIPPER2                  = UIColor.init(hexString: "9C6CFF", alpha: 0.4)
+let COLOR_DIP                              = UIColor.init(hexString: "9C6CFF")
+let COLOR_DIP_DARK                         = UIColor.init(hexString: "372758")
+let COLOR_pDIP                            = UIColor.init(hexString: "05D2DD")
+
+
 let TRANS_BG_COLOR_IRIS                     = UIColor.init(hexString: "0080ff", alpha: 0.15)
 let TRANS_BG_COLOR_IRIS2                    = UIColor.init(hexString: "0080ff", alpha: 0.4)
 let COLOR_IRIS                              = UIColor.init(hexString: "00A8FF")
@@ -831,6 +939,7 @@ let COLOR_STAKE_DROP_BG                     = UIColor.init(hexString: "E1AA4C", 
 
 enum ChainType: String {
     case COSMOS_MAIN
+    case DIPPER_MAIN
     case IRIS_MAIN
     case BINANCE_MAIN
     case KAVA_MAIN
@@ -839,6 +948,7 @@ enum ChainType: String {
     case SECRET_MAIN
     case CERTIK_MAIN
     
+    case DIPPER_TEST
     case BINANCE_TEST
     case KAVA_TEST
     case IOV_TEST
@@ -848,6 +958,7 @@ enum ChainType: String {
     static func SUPPRT_CHAIN() -> Array<ChainType> {
         var result = [ChainType]()
         result.append(COSMOS_MAIN)
+        result.append(DIPPER_MAIN)
         result.append(IRIS_MAIN)
         result.append(BINANCE_MAIN)
         result.append(IOV_MAIN)
@@ -858,6 +969,7 @@ enum ChainType: String {
 
 //        result.append(BINANCE_TEST)
 //        result.append(KAVA_TEST)
+        result.append(DIPPER_TEST)
         result.append(IOV_TEST)
         result.append(OKEX_TEST)
 //        result.append(CERTIK_TEST)
@@ -917,6 +1029,7 @@ enum ChainType: String {
 }
 
 let CHAIN_COSMOS_S = "SUPPORT_CHAIN_COSMOS_MAIN"
+let CHAIN_DIPPER_S = "SUPPORT_CHAIN_DIPPER_MAIN"
 let CHAIN_IRIS_S = "SUPPORT_CHAIN_IRIS_MAIN"
 let CHAIN_BINANCE_S = "SUPPORT_CHAIN_BINANCE_MAIN"
 let CHAIN_KAVA_S = "SUPPORT_CHAIN_KAVA_MAIN"
@@ -925,6 +1038,7 @@ let CHAIN_BAND_S = "SUPPORT_CHAIN_BAND_MAIN"
 let CHAIN_SECRET_S = "SUPPORT_CHAIN_SECRET_MAIN"
 let CHAIN_CERTIK_S = "SUPPORT_CHAIN_CERTIK_MAIN"
 
+let CHAIN_DIPPER_TEST_S = "SUPPORT_CHAIN_DIPPER_TEST"
 let CHAIN_BINANCE_TEST_S = "SUPPORT_CHAIN_BINANCE_TEST"
 let CHAIN_KAVA_TEST_S = "SUPPORT_CHAIN_KAVA_TEST"
 let CHAIN_IOV_TEST_S = "SUPPORT_CHAIN_IOV_TEST"
@@ -933,6 +1047,7 @@ let CHAIN_CERTIK_TEST_S = "SUPPORT_CHAIN_CERTIK_TEST"
 
 
 let COSMOS_MAIN_DENOM = "uatom"
+let DIPPER_MAIN_DENOM = "pdip"
 let IRIS_MAIN_DENOM = "iris-atto"
 let IRIS_DP_DENOM = "iris"
 let BNB_MAIN_DENOM = "BNB"
@@ -942,6 +1057,7 @@ let BAND_MAIN_DENOM = "uband"
 let SECRET_MAIN_DENOM = "uscrt"
 let CERTIK_MAIN_DENOM = "uctk"
 
+let DIPPER_TEST_DENOM = "pdip"
 let IOV_TEST_DENOM = "uvoi"
 let OKEX_TEST_DENOM = "tokt"
 let KAVA_HARD_DENOM = "hard"
@@ -953,6 +1069,7 @@ let LITECOIN       = "asset:ltc";
 let BINANCE        = "asset:bnb";
 let LUNA           = "asset:luna";
 let COSMOS         = "asset:atom";
+let DIPPER         = "asset:dip";
 let EMONEY         = "asset:ngm";
 let IRIS           = "asset:iris";
 let KAVA           = "asset:kava";
@@ -977,6 +1094,7 @@ let SELECT_POPUP_STARNAME_ACCOUNT = 3
 
 
 let EXPLORER_COSMOS_MAIN    = "https://www.mintscan.io/cosmos/";
+let EXPLORER_DIPPER_MAIN    = "https://explorer.dippernetwork.com/";
 let EXPLORER_IRIS_MAIN      = "https://www.mintscan.io/iris/";
 let EXPLORER_KAVA_MAIN      = "https://www.mintscan.io/kava/";
 let EXPLORER_IOV_MAIN       = "https://www.mintscan.io/starname/";
@@ -984,6 +1102,7 @@ let EXPLORER_BINANCE_MAIN   = "https://binance.mintscan.io/";
 let EXPLORER_BAND_MAIN      = "https://cosmoscan.io/";
 let EXPLORER_SECRET_MAIN    = "https://explorer.cashmaney.com/";
 
+let EXPLORER_DIPPER_TEST = "https://explorer.testnet.dippernetwork.com/";
 let EXPLORER_BINANCE_TEST   = "https://testnet-explorer.binance.org/";
 let EXPLORER_KAVA_TEST      = "https://kava-testnet-9000.mintscan.io/";
 let EXPLORER_OKEX_TEST      = "https://www.oklink.com/okexchain-test/";
@@ -1004,6 +1123,7 @@ let MONTH_SEC   = DAY_SEC.multiplying(by: NSDecimalNumber.init(string: "30"))
 let YEAR_SEC    = DAY_SEC.multiplying(by: NSDecimalNumber.init(string: "365"))
 
 let BLOCK_TIME_COSMOS   = NSDecimalNumber.init(string: "7.31")
+let BLOCK_TIME_DIPPER   = NSDecimalNumber.init(string: "5.61")
 let BLOCK_TIME_IRIS     = NSDecimalNumber.init(string: "6.93")
 let BLOCK_TIME_IOV      = NSDecimalNumber.init(string: "6.21")
 let BLOCK_TIME_KAVA     = NSDecimalNumber.init(string: "8.01")

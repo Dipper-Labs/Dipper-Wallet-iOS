@@ -35,6 +35,9 @@ class StepUndelegateAmountViewController: BaseViewController, UITextFieldDelegat
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mDpDecimal = 18
             availableAmountLabel.attributedText = WUtils.displayAmount2(userDelegated.stringValue, availableAmountLabel.font, 18, mDpDecimal)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            mDpDecimal = 12
+            availableAmountLabel.attributedText = WUtils.displayAmount2(userDelegated.stringValue, availableAmountLabel.font, 12, mDpDecimal)
         }
         toUndelegateAmountInput.delegate = self
         toUndelegateAmountInput.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
@@ -78,6 +81,18 @@ class StepUndelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 
                 if let index = text.range(of: ",")?.upperBound {
                     if(text.substring(from: index).count > 17 && range.length == 0) {
+                        return false
+                    }
+                }
+            } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                if let index = text.range(of: ".")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
+                
+                if let index = text.range(of: ",")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
                         return false
                     }
                 }

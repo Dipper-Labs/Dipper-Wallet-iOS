@@ -32,6 +32,11 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             userBalance = WUtils.getTokenAmount(pageHolderVC.mBalances, COSMOS_MAIN_DENOM)
             availableAmountLabel.attributedText = WUtils.displayAmount2(userBalance.stringValue, availableAmountLabel.font, 6, mDpDecimal)
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            mDpDecimal = 12
+            userBalance = WUtils.getDelegableAmount(pageHolderVC.mBalances, DIPPER_MAIN_DENOM)
+            availableAmountLabel.attributedText = WUtils.displayAmount2(userBalance.stringValue, availableAmountLabel.font, 12, mDpDecimal)
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mDpDecimal = 18
             userBalance = WUtils.getTokenAmount(pageHolderVC.mBalances, IRIS_MAIN_DENOM).subtracting(NSDecimalNumber(string: "400000000000000000"))
@@ -122,6 +127,18 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
                         return false
                     }
                 }
+            } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                if let index = text.range(of: ".")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
+                
+                if let index = text.range(of: ",")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
             }
         }
         return true
@@ -165,6 +182,12 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
                 return
             }
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            if (userInput.multiplying(by: 1000000000000).compare(userBalance).rawValue > 0) {
+                self.toDelegateAmountInput.layer.borderColor = UIColor.init(hexString: "f31963").cgColor
+                return
+            }
+            
         }
         self.toDelegateAmountInput.layer.borderColor = UIColor.white.cgColor
     }
@@ -184,6 +207,10 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             if (userInput.multiplying(by: 1000000000000000000).compare(userBalance).rawValue > 0) {
                 return false
             }
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            if (userInput.multiplying(by: 1000000000000).compare(userBalance).rawValue > 0) {
+                return false
+            }
         }
         return true
     }
@@ -199,6 +226,8 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             var coin:Coin?
             if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                 coin = Coin.init(COSMOS_MAIN_DENOM, userInput.multiplying(by: 1000000).stringValue)
+            } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                coin = Coin.init(COSMOS_MAIN_DENOM, userInput.multiplying(by: 1000000000000).stringValue)
             } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                 coin = Coin.init(IRIS_MAIN_DENOM, userInput.multiplying(by: 1000000000000000000).stringValue)
             } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST) {
@@ -280,6 +309,9 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             let halfValue = userBalance.dividing(by: NSDecimalNumber(string: "2000000000000000000", locale: Locale.current), withBehavior: WUtils.handler18)
             toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(halfValue, mDpDecimal)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let halfValue = userBalance.dividing(by: NSDecimalNumber(string: "2000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
+            toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(halfValue, mDpDecimal)
         }
         self.onUIupdate()
     }
@@ -297,6 +329,11 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000000000000000", locale: Locale.current), withBehavior: WUtils.handler18)
+            toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
+            self.onUIupdate()
+            self.showMaxWarnning()
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
             toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
             self.onUIupdate()
             self.showMaxWarnning()

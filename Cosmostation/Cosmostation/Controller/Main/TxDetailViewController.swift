@@ -1378,6 +1378,14 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             url = COSMOS_URL_TX + txHash
             request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
             
+        } else if (self.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_TX + txHash
+            request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
+            
+        } else if (self.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_TX + txHash
+            request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
+            
         } else if (self.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_TX + txHash
             request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])

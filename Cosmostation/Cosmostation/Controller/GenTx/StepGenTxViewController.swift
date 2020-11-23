@@ -405,6 +405,10 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_VALIDATORS
         } else if (chainType == ChainType.KAVA_TEST) {
@@ -426,7 +430,7 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,

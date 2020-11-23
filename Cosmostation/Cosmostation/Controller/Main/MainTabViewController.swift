@@ -198,6 +198,20 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
             onFetchProvision()
             onFetchStakingPool()
             
+        } else if (mChainType == ChainType.DIPPER_MAIN || mChainType == ChainType.DIPPER_TEST) {
+            self.mFetchCnt = 10 //TODO Captin what is this?
+            onFetchTopValidatorsInfo()
+            onFetchUnbondedValidatorsInfo()
+            onFetchUnbondingValidatorsInfo()
+            onFetchAccountInfo(mAccount)
+            onFetchBondingInfo(mAccount)
+            onFetchUnbondingInfo(mAccount)
+            
+            onFetchMintParam()
+            onFetchInflation()
+            onFetchProvision()
+            onFetchStakingPool()
+            
         } else if (mChainType == ChainType.IRIS_MAIN) {
             self.mFetchCnt = 7
             self.mAllValidator.removeAll()
@@ -331,7 +345,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
     func onFetchFinished() {
         self.mFetchCnt = self.mFetchCnt - 1
         if (mFetchCnt <= 0) {
-            if (mChainType == ChainType.COSMOS_MAIN || mChainType == ChainType.KAVA_MAIN || mChainType == ChainType.KAVA_TEST ||
+            if (mChainType == ChainType.COSMOS_MAIN || mChainType == ChainType.DIPPER_MAIN || mChainType == ChainType.DIPPER_TEST || mChainType == ChainType.KAVA_MAIN || mChainType == ChainType.KAVA_TEST ||
                     mChainType == ChainType.BAND_MAIN || mChainType == ChainType.SECRET_MAIN || mChainType == ChainType.CERTIK_MAIN ||
                     mChainType == ChainType.IOV_MAIN || mChainType == ChainType.IOV_TEST || mChainType == ChainType.CERTIK_TEST) {
                 mAccount    = BaseData.instance.selectAccountById(id: mAccount!.account_id)
@@ -392,7 +406,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
                 
             }
             
-            if (mChainType == ChainType.COSMOS_MAIN || mChainType == ChainType.IRIS_MAIN || mChainType == ChainType.KAVA_MAIN ||
+            if (mChainType == ChainType.COSMOS_MAIN || mChainType == ChainType.DIPPER_MAIN || mChainType == ChainType.DIPPER_TEST || mChainType == ChainType.IRIS_MAIN || mChainType == ChainType.KAVA_MAIN ||
                     mChainType == ChainType.KAVA_TEST || mChainType == ChainType.BAND_MAIN || mChainType == ChainType.SECRET_MAIN ||
                     mChainType == ChainType.IOV_MAIN || mChainType == ChainType.CERTIK_MAIN ||  mChainType == ChainType.IOV_TEST || mChainType == ChainType.CERTIK_TEST) {
                 self.mMyValidators.removeAll()
@@ -462,6 +476,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_VALIDATORS
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -502,6 +520,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_VALIDATORS
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -555,6 +577,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_VALIDATORS
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -661,6 +687,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (mChainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (mChainType == ChainType.BINANCE_MAIN ) {
@@ -691,7 +721,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN || self.mChainType == ChainType.SECRET_MAIN ||
+                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.DIPPER_MAIN || self.mChainType == ChainType.DIPPER_TEST || self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN || self.mChainType == ChainType.SECRET_MAIN ||
                         self.mChainType == ChainType.CERTIK_MAIN || self.mChainType == ChainType.IOV_TEST || self.mChainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
                         let info = responseData.object(forKey: "result") as? [String : Any] else {
@@ -755,6 +785,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_BONDING + account.account_address + COSMOS_URL_BONDING_TAIL
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_BONDING + account.account_address + DIPPER_URL_BONDING_TAIL
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_BONDING + account.account_address + DIPPER_TEST_URL_BONDING_TAIL
         } else if (mChainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_BONDING + account.account_address + IRIS_LCD_URL_BONDING_TAIL
         } else if (mChainType == ChainType.KAVA_MAIN) {
@@ -780,7 +814,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.KAVA_MAIN || self.mChainType == ChainType.KAVA_TEST ||
+                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.DIPPER_MAIN || self.mChainType == ChainType.DIPPER_TEST || self.mChainType == ChainType.KAVA_MAIN || self.mChainType == ChainType.KAVA_TEST ||
                         self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN || self.mChainType == ChainType.SECRET_MAIN ||
                         self.mChainType == ChainType.CERTIK_MAIN || self.mChainType == ChainType.IOV_TEST || self.mChainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -819,6 +853,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_UNBONDING + account.account_address + COSMOS_URL_UNBONDING_TAIL
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_UNBONDING + account.account_address + DIPPER_URL_UNBONDING_TAIL
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_UNBONDING + account.account_address + DIPPER_TEST_URL_UNBONDING_TAIL
         } else if (mChainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_UNBONDING + account.account_address + IRIS_LCD_URL_UNBONDING_TAIL
         } else if (mChainType == ChainType.KAVA_MAIN) {
@@ -843,7 +881,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.KAVA_MAIN || self.mChainType == ChainType.KAVA_TEST ||
+                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.DIPPER_MAIN || self.mChainType == ChainType.DIPPER_TEST || self.mChainType == ChainType.KAVA_MAIN || self.mChainType == ChainType.KAVA_TEST ||
                         self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN || self.mChainType == ChainType.SECRET_MAIN ||
                         self.mChainType == ChainType.CERTIK_MAIN || self.mChainType == ChainType.IOV_TEST || self.mChainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -895,6 +933,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_FROM_VAL + accountAddr + COSMOS_URL_REWARD_FROM_VAL_TAIL + validatorAddr
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_FROM_VAL + accountAddr + DIPPER_URL_REWARD_FROM_VAL_TAIL + validatorAddr
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_FROM_VAL + accountAddr + DIPPER_TEST_URL_REWARD_FROM_VAL_TAIL + validatorAddr
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_FROM_VAL + accountAddr + KAVA_REWARD_FROM_VAL_TAIL + validatorAddr
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -918,7 +960,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN ||
+                if (self.mChainType == ChainType.COSMOS_MAIN || self.mChainType == ChainType.DIPPER_MAIN || self.mChainType == ChainType.DIPPER_TEST || self.mChainType == ChainType.BAND_MAIN || self.mChainType == ChainType.IOV_MAIN ||
                         self.mChainType == ChainType.KAVA_MAIN || self.mChainType == ChainType.SECRET_MAIN || self.mChainType == ChainType.CERTIK_MAIN ||
                         self.mChainType == ChainType.IOV_TEST || self.mChainType == ChainType.CERTIK_TEST || self.mChainType == ChainType.KAVA_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -945,6 +987,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_MINT_PARAM
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_MINT_PARAM
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_MINT_PARAM
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_MINT_PARAM
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -986,6 +1032,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_INFLATION
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_INFLATION
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_INFLATION
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_INFLATION
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -1027,6 +1077,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROVISIONS
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROVISIONS
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROVISIONS
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROVISIONS
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -1068,6 +1122,10 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
         var url: String?
         if (mChainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_STAKING_POOL
+        } else if (mChainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_STAKING_POOL
+        } else if (mChainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_STAKING_POOL
         } else if (mChainType == ChainType.KAVA_MAIN) {
             url = KAVA_STAKING_POOL
         } else if (mChainType == ChainType.KAVA_TEST) {
@@ -1209,7 +1267,15 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
                 url = CMC_PRICE_TIC + "3794"
                 parameters = ["convert":BaseData.instance.getCurrencyString()]
             }
-        } else if (mChainType == ChainType.IRIS_MAIN) {
+        } else if (mChainType == ChainType.DIPPER_MAIN || mChainType == ChainType.DIPPER_TEST) {
+            if (BaseData.instance.getMarket() == 0) {
+                url = CGC_PRICE_TIC + "dipper-network"
+                parameters = [:]
+            } else {
+                url = CMC_PRICE_TIC + "2742" //TODO by captain
+                parameters = ["convert":BaseData.instance.getCurrencyString()]
+            }
+        }  else if (mChainType == ChainType.IRIS_MAIN) {
             if (BaseData.instance.getMarket() == 0) {
                 url = CGC_PRICE_TIC + "iris-network"
                 parameters = [:]

@@ -69,6 +69,9 @@ class StepDelegateCheckViewController: BaseViewController, PasswordViewDelegate,
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             toDelegateAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mToDelegateAmount?.amount)!, toDelegateAmountLabel.font, 18, pageHolderVC.chainType!)
             feeAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mFee?.amount[0].amount)!, feeAmountLabel.font, 18, pageHolderVC.chainType!)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            toDelegateAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mToDelegateAmount?.amount)!, toDelegateAmountLabel.font, 12, pageHolderVC.chainType!)
+            feeAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mFee?.amount[0].amount)!, feeAmountLabel.font, 12, pageHolderVC.chainType!)
         }
         targetValidatorLabel.text = pageHolderVC.mTargetValidator?.description.moniker
         memoLabel.text = pageHolderVC.mMemo
@@ -97,6 +100,10 @@ class StepDelegateCheckViewController: BaseViewController, PasswordViewDelegate,
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
              url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -127,6 +134,18 @@ class StepDelegateCheckViewController: BaseViewController, PasswordViewDelegate,
                             self.hideWaittingAlert()
                             self.onShowToast(NSLocalizedString("error_network", comment: ""))
                             return
+                    }
+                    let accountInfo = AccountInfo.init(info)
+                    _ = BaseData.instance.updateAccount(WUtils.getAccountWithAccountInfo(account, accountInfo))
+                    BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
+                    self.onGenDelegateTx()
+                    
+                } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                    guard let info = res as? [String : Any] else {
+                        _ = BaseData.instance.deleteBalance(account: account)
+                        self.hideWaittingAlert()
+                        self.onShowToast(NSLocalizedString("error_network", comment: ""))
+                        return
                     }
                     let accountInfo = AccountInfo.init(info)
                     _ = BaseData.instance.updateAccount(WUtils.getAccountWithAccountInfo(account, accountInfo))
@@ -241,6 +260,10 @@ class StepDelegateCheckViewController: BaseViewController, PasswordViewDelegate,
                     var url: String?
                     if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                         url = COSMOS_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+                        url = DIPPER_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                        url = DIPPER_TEST_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                         url = IRIS_LCD_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN) {

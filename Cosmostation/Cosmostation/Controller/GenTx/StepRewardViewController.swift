@@ -150,6 +150,10 @@ class StepRewardViewController: BaseViewController {
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_FROM_VAL + accountAddr + COSMOS_URL_REWARD_FROM_VAL_TAIL + validatorAddr
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_FROM_VAL + accountAddr + DIPPER_URL_REWARD_FROM_VAL_TAIL + validatorAddr
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_FROM_VAL + accountAddr + DIPPER_TEST_URL_REWARD_FROM_VAL_TAIL + validatorAddr
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_FROM_VAL + accountAddr + KAVA_REWARD_FROM_VAL_TAIL + validatorAddr
         } else if (pageHolderVC.chainType! == ChainType.KAVA_TEST) {
@@ -245,6 +249,10 @@ class StepRewardViewController: BaseViewController {
         var url = ""
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_ADDRESS + accountAddr + COSMOS_URL_REWARD_ADDRESS_TAIL
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_ADDRESS + accountAddr + DIPPER_URL_REWARD_ADDRESS_TAIL
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_ADDRESS + accountAddr + DIPPER_TEST_URL_REWARD_ADDRESS_TAIL
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_REWARD_ADDRESS + accountAddr + IRIS_LCD_URL_REWARD_ADDRESS_TAIL
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {

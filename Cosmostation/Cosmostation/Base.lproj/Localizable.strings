@@ -585,6 +585,8 @@
 "tx_known" = "Unknown";
 
 "chain_title_cosmos" = "Cosmos Mainnet";
+"chain_title_dipper" = "Dipper Hub";
+"chain_title_test_dipper" = "Dipper Testnet";
 "chain_title_iris" = "Iris Mainnet";
 "chain_title_bnb" = "Binance Mainnet";
 "chain_title_kava" = "Kava Mainnet";

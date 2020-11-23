@@ -291,6 +291,10 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROPOSALS + "/" + id
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROPOSALS + "/" + id
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROPOSALS + "/" + id
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROPOSALS + "/" + id
         } else if (chainType == ChainType.BAND_MAIN) {
@@ -324,6 +328,10 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROPOSALS + "/" + id + "/" + COSMOS_URL_PROPOSALS_TALLY_TAIL
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROPOSALS + "/" + id + "/" + DIPPER_URL_PROPOSALS_TALLY_TAIL
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROPOSALS + "/" + id + "/" + DIPPER_TEST_URL_PROPOSALS_TALLY_TAIL
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROPOSALS + "/" + id + "/" + KAVA_PROPOSALS_TALLY_TAIL
         } else if (chainType == ChainType.BAND_MAIN) {
@@ -357,6 +365,10 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROPOSALS + "/" + id +  "/votes/" + address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROPOSALS + "/" + id +  "/votes/" + address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROPOSALS + "/" + id +  "/votes/" + address
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROPOSALS + "/" + id +  "/votes/" + address
         } else if (chainType == ChainType.BAND_MAIN) {
@@ -390,6 +402,10 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROPOSALS + "/" + id +  "/proposer"
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROPOSALS + "/" + id +  "/proposer"
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROPOSALS + "/" + id +  "/proposer"
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROPOSALS + "/" + id +  "/proposer"
         } else if (chainType == ChainType.BAND_MAIN) {
@@ -423,6 +439,10 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_PROPOSALS + "/" + id +  "/votes"
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_PROPOSALS + "/" + id +  "/votes"
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_PROPOSALS + "/" + id +  "/votes"
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_PROPOSALS + "/" + id +  "/votes"
         } else if (chainType == ChainType.BAND_MAIN) {

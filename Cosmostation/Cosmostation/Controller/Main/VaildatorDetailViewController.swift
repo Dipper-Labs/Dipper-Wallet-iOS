@@ -776,6 +776,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_VALIDATORS + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -828,6 +832,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_BONDING + account.account_address + COSMOS_URL_BONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_BONDING + account.account_address + DIPPER_URL_BONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_BONDING + account.account_address + DIPPER_TEST_URL_BONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_BONDING + account.account_address + IRIS_LCD_URL_BONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -887,6 +895,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_UNBONDING + account.account_address + COSMOS_URL_UNBONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_UNBONDING + account.account_address + DIPPER_URL_UNBONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_UNBONDING + account.account_address + DIPPER_TEST_URL_UNBONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_UNBONDING + account.account_address + IRIS_LCD_URL_UNBONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -945,6 +957,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_FROM_VAL + account.account_address + COSMOS_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_FROM_VAL + account.account_address + DIPPER_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_FROM_VAL + account.account_address + DIPPER_TEST_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_FROM_VAL + account.account_address + KAVA_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_TEST) {
@@ -1054,6 +1070,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_BONDING + address + COSMOS_URL_BONDING_TAIL + "/" + vAddress
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_BONDING + address + DIPPER_URL_BONDING_TAIL + "/" + vAddress
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_BONDING + address + DIPPER_TEST_URL_BONDING_TAIL + "/" + vAddress
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_BONDING + address + IRIS_LCD_URL_BONDING_TAIL + "/" + vAddress
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -1106,6 +1126,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REDELEGATION;
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REDELEGATION;
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REDELEGATION;
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REDELEGATION;
         } else if (chainType == ChainType.KAVA_TEST) {
@@ -1175,7 +1199,11 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_ADDRESS + accountAddr + COSMOS_URL_REWARD_ADDRESS_TAIL
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_ADDRESS + accountAddr + DIPPER_URL_REWARD_ADDRESS_TAIL
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_ADDRESS + accountAddr + DIPPER_TEST_URL_REWARD_ADDRESS_TAIL
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_REWARD_ADDRESS + accountAddr + IRIS_LCD_URL_REWARD_ADDRESS_TAIL
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_ADDRESS + accountAddr + KAVA_REWARD_ADDRESS_TAIL

@@ -16,7 +16,7 @@ class MsgGenerator {
     static func genDelegateMsg(_ fromAddress: String, _ toValAddress: String, _ amount: Coin, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN ||
                 chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.delegator_address = fromAddress
@@ -45,7 +45,7 @@ class MsgGenerator {
     static func genUndelegateMsg(_ fromAddress: String, _ toValAddress: String, _ amount: Coin, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN ||
                 chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.delegator_address = fromAddress
@@ -75,7 +75,7 @@ class MsgGenerator {
     static func genGetRewardMsg(_ fromAddress: String, _ toValAddress: String, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN ||
                 chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.delegator_address = fromAddress
@@ -108,7 +108,7 @@ class MsgGenerator {
     static func genGetSendMsg(_ fromAddress: String, _ toAddress: String, _ amount: Array<Coin>, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
             chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST) {
             value.from_address = fromAddress
             value.to_address = toAddress
@@ -169,7 +169,7 @@ class MsgGenerator {
     static func genGetRedelegateMsg(_ address: String, _ fromValAddress: String, _ toValAddress: String, _ amount: Coin, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN ||
                 chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.delegator_address = address
@@ -212,7 +212,7 @@ class MsgGenerator {
     static func genGetModifyRewardAddressMsg(_ requestAddress: String, _ newRewardAddress: String, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.delegator_address = requestAddress
             value.withdraw_address = newRewardAddress
             
@@ -232,7 +232,7 @@ class MsgGenerator {
     static func genGetVoteMsg(_ fromAddress: String, _ proposalId: String, _ opinion: String, _ chain: ChainType) -> Msg {
         var msg = Msg.init()
         var value = Msg.Value.init()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST || chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST || chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
             value.proposal_id = proposalId
             value.voter = fromAddress
             value.option = opinion

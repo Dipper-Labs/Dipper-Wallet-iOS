@@ -123,6 +123,18 @@ class CreateViewController: BaseViewController, PasswordViewDelegate{
         })
         cosmosAction.setValue(UIImage(named: "cosmosWhMain")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
+        let dipperAction = UIAlertAction(title: NSLocalizedString("chain_title_dipper", comment: ""), style: .default, handler: { _ in
+            self.chainType = ChainType.DIPPER_MAIN
+            self.onGenNewKey()
+        })
+        dipperAction.setValue(UIImage(named: "dipperImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        
+        let dipperTestAction = UIAlertAction(title: NSLocalizedString("chain_title_test_dipper", comment: ""), style: .default, handler: {_ in
+            self.chainType = ChainType.DIPPER_TEST
+            self.onGenNewKey()
+        })
+        dipperTestAction.setValue(UIImage(named: "dipperTestImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        
         let irisAction = UIAlertAction(title: NSLocalizedString("chain_title_iris", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.IRIS_MAIN
             self.onGenNewKey()
@@ -196,29 +208,35 @@ class CreateViewController: BaseViewController, PasswordViewDelegate{
         certikTestAction.setValue(UIImage(named: "certikTestnetImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         showAlert.addAction(cosmosAction)
-        showAlert.addAction(irisAction)
-        showAlert.addAction(bnbAction)
-        showAlert.addAction(iovAction)
-        showAlert.addAction(kavaAction)
-        showAlert.addAction(bandAction)
-        showAlert.addAction(secretAction)
-        showAlert.addAction(certikAction)
+        showAlert.addAction(dipperAction)
+//        showAlert.addAction(irisAction)
+//        showAlert.addAction(bnbAction)
+//        showAlert.addAction(iovAction)
+//        showAlert.addAction(kavaAction)
+//        showAlert.addAction(bandAction)
+//        showAlert.addAction(secretAction)
+//        showAlert.addAction(certikAction)
         
-        if (ChainType.SUPPRT_CHAIN().contains(ChainType.BINANCE_TEST)) {
-            showAlert.addAction(bnbTestAction)
+        if (ChainType.SUPPRT_CHAIN().contains(ChainType.DIPPER_TEST)) {
+                showAlert.addAction(dipperTestAction)
         }
-        if (ChainType.SUPPRT_CHAIN().contains(ChainType.KAVA_TEST)) {
-            showAlert.addAction(kavaTestAction)
-        }
-        if (ChainType.SUPPRT_CHAIN().contains(ChainType.IOV_TEST)) {
-            showAlert.addAction(iovTestAction)
-        }
-        if (ChainType.SUPPRT_CHAIN().contains(ChainType.OKEX_TEST)) {
-            showAlert.addAction(okTestAction)
-        }
-        if (ChainType.SUPPRT_CHAIN().contains(ChainType.CERTIK_TEST)) {
-            showAlert.addAction(certikTestAction)
-        }
+//        if (ChainType.SUPPRT_CHAIN().contains(ChainType.BINANCE_TEST)) {
+//            showAlert.addAction(bnbTestAction)
+//        }
+//        if (ChainType.SUPPRT_CHAIN().contains(ChainType.KAVA_TEST)) {
+//            showAlert.addAction(kavaTestAction)
+//        }
+//        if (ChainType.SUPPRT_CHAIN().contains(ChainType.IOV_TEST)) {
+//            showAlert.addAction(iovTestAction)
+//        }
+//        if (ChainType.SUPPRT_CHAIN().contains(ChainType.OKEX_TEST)) {
+//            showAlert.addAction(okTestAction)
+//        }
+//        if (ChainType.SUPPRT_CHAIN().contains(ChainType.CERTIK_TEST)) {
+//            showAlert.addAction(certikTestAction)
+//        }
+        
+        
         self.present(showAlert, animated: true, completion: nil)
     }
     
