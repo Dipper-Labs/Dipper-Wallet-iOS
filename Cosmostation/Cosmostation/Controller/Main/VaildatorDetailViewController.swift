@@ -1356,6 +1356,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN  || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_DELEGATE
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_DELEGATE
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_DELEGATE
         }
@@ -1427,6 +1429,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_UNDELEGATE2
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_UNDELEGATE
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_UNDELEGATE
         }
@@ -1498,6 +1502,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_REDELEGATE2
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_REDELEGATE2
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mIrisRedelegate = mIrisRedelegate
             txVC.mType = IRIS_MSG_TYPE_REDELEGATE
@@ -1682,6 +1688,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_WITHDRAW_DEL
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_WITHDRAW_DEL
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_WITHDRAW
         }

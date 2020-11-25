@@ -767,7 +767,7 @@ let GAS_FEE_AMOUNT_IRIS_REWARD_BASE         = "10000"
 let GAS_FEE_AMOUNT_IRIS_REWARD_MUX          = "5000"
 
 
-let GAS_FEE_RATE_DIP_AVERAGE               = "0.00008"
+let GAS_FEE_RATE_DIP_AVERAGE               = "0.000008"
 
 let GAS_FEE_AMOUNT_DIP_LOW                 = "100000"
 let GAS_FEE_AMOUNT_DIP_SEND                = "200000"

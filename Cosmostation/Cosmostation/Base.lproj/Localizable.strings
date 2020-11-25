@@ -88,6 +88,7 @@
 "fee_speed_title_0" = "Only a handful of validators will process this Tx.";
 "fee_speed_title_1" = "A few validators include \"Cosmostation\" will process this Tx.";
 "fee_speed_title_2" = "Most validators will process this Tx.";
+"fee_speed_dip_title" = "Support fixed amount fee for Dipper Network.";
 "fee_speed_iris_title" = "Support fixed amount fee for Iris.\nIris Hub will refund the remaining gas fee after use.";
 "fee_speed_bnb_title" = "Support fixed fee for Binance Chain";
 "fee_speed_kava_title" = "Support fixed transfer fee for KAVA now";

@@ -73,6 +73,7 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
     var mProposer: String?
     var mVoteOpinion: String?
     
+    var mDIPSendDenom: String?
     var mKavaSendDenom: String?
     var mIovSendDenom: String?
     var mOkSendDenom: String?
@@ -117,39 +118,39 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
     var mStarnameResources: Array<StarNameResource> = Array<StarNameResource>()
     
     lazy var orderedViewControllers: [UIViewController] = {
-        if (mType == COSMOS_MSG_TYPE_DELEGATE || mType == IRIS_MSG_TYPE_DELEGATE) {
+        if (mType == COSMOS_MSG_TYPE_DELEGATE || mType == DIPPER_MSG_TYPE_DELEGATE || mType == IRIS_MSG_TYPE_DELEGATE) {
             return [self.newVc(viewController: "StepDelegateAmountViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
                     self.newVc(viewController: "StepDelegateCheckViewController")]
             
-        } else if (mType == COSMOS_MSG_TYPE_UNDELEGATE2 || mType == IRIS_MSG_TYPE_UNDELEGATE) {
+        } else if (mType == COSMOS_MSG_TYPE_UNDELEGATE2 || mType == DIPPER_MSG_TYPE_UNDELEGATE || mType == IRIS_MSG_TYPE_UNDELEGATE) {
             return [self.newVc(viewController: "StepUndelegateAmountViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
                     self.newVc(viewController: "StepUndelegateCheckViewController")]
             
-        } else if (mType == COSMOS_MSG_TYPE_TRANSFER2 || mType == IRIS_MSG_TYPE_TRANSFER || mType == BNB_MSG_TYPE_TRANSFER || mType == KAVA_MSG_TYPE_TRANSFER || mType == IOV_MSG_TYPE_TRANSFER || mType == BAND_MSG_TYPE_TRANSFER || mType == SECRET_MSG_TYPE_TRANSFER || mType == OK_MSG_TYPE_TRANSFER || mType == CERTIK_MSG_TYPE_TRANSFER) {
+        } else if (mType == COSMOS_MSG_TYPE_TRANSFER2 || mType == DIPPER_MSG_TYPE_TRANSFER2 || mType == IRIS_MSG_TYPE_TRANSFER || mType == BNB_MSG_TYPE_TRANSFER || mType == KAVA_MSG_TYPE_TRANSFER || mType == IOV_MSG_TYPE_TRANSFER || mType == BAND_MSG_TYPE_TRANSFER || mType == SECRET_MSG_TYPE_TRANSFER || mType == OK_MSG_TYPE_TRANSFER || mType == CERTIK_MSG_TYPE_TRANSFER) {
             return [self.newVc(viewController: "StepSendAddressViewController"),
                     self.newVc(viewController: "StepSendAmountViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
                     self.newVc(viewController: "StepSendCheckViewController")]
             
-        } else if (mType == COSMOS_MSG_TYPE_REDELEGATE2 || mType == IRIS_MSG_TYPE_REDELEGATE) {
+        } else if (mType == COSMOS_MSG_TYPE_REDELEGATE2 || mType == DIPPER_MSG_TYPE_REDELEGATE2 || mType == IRIS_MSG_TYPE_REDELEGATE) {
             return [self.newVc(viewController: "StepRedelegateAmountViewController"),
                     self.newVc(viewController: "StepRedelegateToViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
                     self.newVc(viewController: "StepRedelegateCheckViewController")]
             
-        } else if (mType == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY || mType == IRIS_MSG_TYPE_WITHDRAW_MIDIFY) {
+        } else if (mType == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY || mType == DIPPER_MSG_TYPE_WITHDRAW_MIDIFY || mType == IRIS_MSG_TYPE_WITHDRAW_MIDIFY) {
             return [self.newVc(viewController: "StepChangeAddressViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
                     self.newVc(viewController: "StepChangeCheckViewController")]
             
-        } else if (mType == COSMOS_MULTI_MSG_TYPE_REINVEST) {
+        } else if (mType == COSMOS_MULTI_MSG_TYPE_REINVEST || mType == DIPPER_MULTI_MSG_TYPE_REINVEST) {
             return [self.newVc(viewController: "ReInvestAmountViewController"),
                     self.newVc(viewController: "StepMemoViewController"),
                     self.newVc(viewController: "StepFeeViewController"),
@@ -302,6 +303,8 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
         
         if (mType == COSMOS_MSG_TYPE_REDELEGATE2) {
             onFetchTopValidatorsInfo()
+        } else if (mType == DIPPER_MSG_TYPE_REDELEGATE2) {
+            onFetchTopValidatorsInfo()
         } else if (mType == IRIS_MSG_TYPE_REDELEGATE) {
             self.irisValidatorPage = 1;
             self.onFetchIrisValidatorsInfo(irisValidatorPage)
@@ -355,7 +358,7 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
     func onNextPage() {
         disableBounce = false
         if((currentIndex <= 3 &&
-                (mType == COSMOS_MSG_TYPE_TRANSFER2 || mType == COSMOS_MSG_TYPE_REDELEGATE2 || mType == IRIS_MSG_TYPE_TRANSFER || mType == IRIS_MSG_TYPE_REDELEGATE || mType == BNB_MSG_TYPE_TRANSFER ||
+                (mType == COSMOS_MSG_TYPE_TRANSFER2 || mType == DIPPER_MSG_TYPE_TRANSFER2 || mType == COSMOS_MSG_TYPE_REDELEGATE2 || mType == DIPPER_MSG_TYPE_REDELEGATE2 || mType == IRIS_MSG_TYPE_TRANSFER || mType == IRIS_MSG_TYPE_REDELEGATE || mType == BNB_MSG_TYPE_TRANSFER ||
                     mType == KAVA_MSG_TYPE_TRANSFER || mType == IOV_MSG_TYPE_TRANSFER || mType == BAND_MSG_TYPE_TRANSFER || mType == SECRET_MSG_TYPE_TRANSFER || mType == OK_MSG_TYPE_TRANSFER || mType == CERTIK_MSG_TYPE_TRANSFER) || mType == IOV_MSG_TYPE_REGISTER_ACCOUNT) || currentIndex <= 2) {
             setViewControllers([orderedViewControllers[currentIndex + 1]], direction: .forward, animated: true, completion: { (finished) -> Void in
                 self.currentIndex = self.currentIndex + 1
@@ -486,10 +489,10 @@ class StepGenTxViewController: UIPageViewController, UIPageViewControllerDelegat
     
     func sortByPower() {
         mToReDelegateValidators.sort{
-            if ($0.description.moniker == "Cosmostation") {
+            if ($0.description.moniker == "DipperWallet") {
                 return true
             }
-            if ($1.description.moniker == "Cosmostation") {
+            if ($1.description.moniker == "DipperWallet") {
                 return false
             }
             if ($0.jailed && !$1.jailed) {

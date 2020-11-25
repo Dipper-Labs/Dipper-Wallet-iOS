@@ -769,6 +769,13 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
             }
             txVC.mType = COSMOS_MSG_TYPE_TRANSFER2
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000")).rawValue < 0) {
+                self.onShowToast(NSLocalizedString("error_not_enough_balance_to_send", comment: ""))
+                return
+            }
+            txVC.mType = DIPPER_MSG_TYPE_TRANSFER2
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             if (WUtils.getTokenAmount(balances, IRIS_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000000000")).rawValue < 0) {
                 self.onShowToast(NSLocalizedString("error_not_enough_balance_to_send", comment: ""))

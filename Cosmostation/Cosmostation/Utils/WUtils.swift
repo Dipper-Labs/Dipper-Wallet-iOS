@@ -42,7 +42,7 @@ class WUtils {
     
     static func getAccountWithAccountInfo(_ account: Account, _ accountInfo: AccountInfo) -> Account {
         let result = account
-        if (accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT || accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT_LEGACY || accountInfo.type == IRIS_BANK_TYPE_ACCOUNT || accountInfo.type == COSMOS_AUTH_TYPE_CERTIK_MANUAL) {
+        if (accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT || accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT_LEGACY || accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT || accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT_LEGACY || accountInfo.type == IRIS_BANK_TYPE_ACCOUNT || accountInfo.type == COSMOS_AUTH_TYPE_CERTIK_MANUAL || accountInfo.type == DIPPER_AUTH_TYPE_CERTIK_MANUAL) {
             result.account_address = accountInfo.value.address
             result.account_sequence_number = Int64(accountInfo.value.sequence) ?? 0
             result.account_account_numner = Int64(accountInfo.value.account_number) ?? 0
@@ -217,12 +217,18 @@ class WUtils {
     
     static func getBondingwithBondingInfo(_ account: Account, _ rawbondinginfos: Array<NSDictionary>, _ chain:ChainType) -> Array<Bonding> {
         var result = Array<Bonding>()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                 chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             for raw in rawbondinginfos{
                 let bondinginfo = BondingInfo(raw as! [String : Any])
                 result.append(Bonding(account.account_id, bondinginfo.validator_address, bondinginfo.shares, Date().millisecondsSince1970))
+            }
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            for raw in rawbondinginfos{
+                let bondinginfo = BondingInfo(raw as! [String : Any])
+                let shareAmount = plainStringToDecimal(bondinginfo.shares).multiplying(byPowerOf10: 12)
+                result.append(Bonding(account.account_id, bondinginfo.validator_addr, shareAmount.stringValue, Date().millisecondsSince1970))
             }
         } else if (chain == ChainType.IRIS_MAIN) {
             for raw in rawbondinginfos{
@@ -236,7 +242,7 @@ class WUtils {
     
     static func getUnbondingwithUnbondingInfo(_ account: Account, _ rawunbondinginfos: Array<NSDictionary>, _ chain:ChainType) -> Array<Unbonding> {
         var result = Array<Unbonding>()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                 chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             for raw in rawunbondinginfos {
@@ -244,6 +250,13 @@ class WUtils {
                 for entry in unbondinginfo.entries {
                     result.append(Unbonding(account.account_id, unbondinginfo.validator_address, entry.creation_height, nodeTimeToInt64(input: entry.completion_time).millisecondsSince1970, entry.initial_balance, entry.balance, Date().millisecondsSince1970))
                 }
+            }
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            for raw in rawunbondinginfos {
+                let unbondinginfo = UnbondingInfo(raw as! [String : Any])
+                let unbondingBalance = plainStringToDecimal(unbondinginfo.balance.replacingOccurrences(of: "dip", with: "")).multiplying(byPowerOf10: 12, withBehavior: handler0)
+                let initialBalance = plainStringToDecimal(unbondinginfo.initial_balance.replacingOccurrences(of: "dip", with: "")).multiplying(byPowerOf10: 12, withBehavior: handler0)
+                result.append(Unbonding(account.account_id, unbondinginfo.validator_addr, unbondinginfo.creation_height, nodeTimeToInt64(input: unbondinginfo.min_time).millisecondsSince1970, initialBalance.stringValue, unbondingBalance.stringValue, Date().millisecondsSince1970))
             }
         } else if (chain == ChainType.IRIS_MAIN) {
             for raw in rawunbondinginfos {
@@ -681,10 +694,12 @@ class WUtils {
         var formatted: String?
         if (amount == NSDecimalNumber.zero) {
             formatted = nf.string(from: NSDecimalNumber.zero)
-        } else if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        } else if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
                     chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                     chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             formatted = nf.string(from: amount.dividing(by: 1000000).rounding(accordingToBehavior: handler))
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            formatted = nf.string(from: amount.dividing(by: 1000000000000).rounding(accordingToBehavior: handler))
         } else if (chain == ChainType.IRIS_MAIN) {
             formatted = nf.string(from: amount.dividing(by: 1000000000000000000).rounding(accordingToBehavior: handler))
         } else if (chain == ChainType.BINANCE_MAIN || chain == ChainType.BINANCE_TEST) {
@@ -2337,7 +2352,7 @@ class WUtils {
         } else if (chainS == CHAIN_DIPPER_S) {
             return "dipperhub"
         } else if (chainS == CHAIN_DIPPER_TEST_S) {
-            return "dipper-testnet"
+            return "dip-testnet"
         } else if (chainS == CHAIN_IRIS_S) {
             return "irishub"
         } else if (chainS == CHAIN_BINANCE_S) {
@@ -2454,19 +2469,19 @@ class WUtils {
             
         } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
             result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
-            if (type == COSMOS_MSG_TYPE_DELEGATE) {
+            if (type == DIPPER_MSG_TYPE_DELEGATE) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
-            } else if (type == COSMOS_MSG_TYPE_UNDELEGATE2) {
+            } else if (type == DIPPER_MSG_TYPE_UNDELEGATE2) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
-            } else if (type == COSMOS_MSG_TYPE_REDELEGATE2) {
+            } else if (type == DIPPER_MSG_TYPE_REDELEGATE2) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REDELEGATE))
-            } else if (type == COSMOS_MSG_TYPE_TRANSFER2 || type == KAVA_MSG_TYPE_TRANSFER) {
+            } else if (type == DIPPER_MSG_TYPE_TRANSFER2 || type == KAVA_MSG_TYPE_TRANSFER) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
-            } else if (type == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY) {
+            } else if (type == DIPPER_MSG_TYPE_WITHDRAW_MIDIFY) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
-            } else if (type == COSMOS_MSG_TYPE_WITHDRAW_DEL) {
+            } else if (type == DIPPER_MSG_TYPE_WITHDRAW_DEL) {
                 result = WUtils.getGasAmountForKavaRewards()[valCnt - 1]
-            } else if (type == COSMOS_MULTI_MSG_TYPE_REINVEST) {
+            } else if (type == DIPPER_MULTI_MSG_TYPE_REINVEST) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REINVEST))
             } else if (type == TASK_TYPE_VOTE) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))

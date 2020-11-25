@@ -375,6 +375,8 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
             if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN ||
                     self.chainType == ChainType.IOV_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.CERTIK_TEST) {
                 txVC.mType = COSMOS_MSG_TYPE_WITHDRAW_MIDIFY
+            } else if (self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST) {
+                txVC.mType = DIPPER_MSG_TYPE_WITHDRAW_MIDIFY
             } else if (self.chainType == ChainType.IRIS_MAIN) {
                 txVC.mType = IRIS_MSG_TYPE_WITHDRAW_MIDIFY
             }

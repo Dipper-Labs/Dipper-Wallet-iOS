@@ -127,6 +127,19 @@ class StepUndelegateCheckViewController: BaseViewController, PasswordViewDelegat
                     BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
                     self.onGenUnDelegateTx()
                     
+                } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                    guard let responseData = res as? NSDictionary,
+                        let info = responseData.object(forKey: "result") as? [String : Any] else {
+                            _ = BaseData.instance.deleteBalance(account: account)
+                            self.hideWaittingAlert()
+                            self.onShowToast(NSLocalizedString("error_network", comment: ""))
+                            return
+                    }
+                    let accountInfo = AccountInfo.init(info)
+                    _ = BaseData.instance.updateAccount(WUtils.getAccountWithAccountInfo(account, accountInfo))
+                    BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
+                    self.onGenUnDelegateTx()
+                    
                 } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                     guard let info = res as? [String : Any] else {
                         _ = BaseData.instance.deleteBalance(account: account)

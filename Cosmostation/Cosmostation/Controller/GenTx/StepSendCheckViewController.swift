@@ -340,7 +340,8 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     self.onGenSendTx()
                     
                 }else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
-                    guard let info = res as? [String : Any] else {
+                    guard let responseData = res as? NSDictionary,
+                        let info = responseData.object(forKey: "result") as? [String : Any] else {
                         _ = BaseData.instance.deleteBalance(account: account)
                         self.hideWaittingAlert()
                         self.onShowToast(NSLocalizedString("error_network", comment: ""))
@@ -476,6 +477,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     signatures.append(genedSignature)
                     
                     stdTx = MsgGenerator.genSignedTx(msgList, self.pageHolderVC.mFee!, self.pageHolderVC.mMemo!, signatures)
+
                     
                 }
                 
@@ -523,6 +525,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     request.responseJSON { response in
                         var txResult = [String:Any]()
                         switch response.result {
+                        
                         case .success(let res):
                             if(SHOW_LOG) { print("Send ", res) }
                             if let result = res as? [String : Any]  {

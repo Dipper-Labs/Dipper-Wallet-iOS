@@ -57,10 +57,10 @@ class StepFeeViewController: BaseViewController {
             self.feesLabels.isHidden = true
             
             self.speedImg.image = UIImage.init(named: "feeImg")
-            self.speedMsg.text = NSLocalizedString("fee_speed_certik_title", comment: "")
+            self.speedMsg.text = NSLocalizedString("fee_speed_dip_title", comment: "")
             
             let gasAmount = WUtils.getEstimateGasAmount(pageHolderVC.chainType!, pageHolderVC.mType!, pageHolderVC.mRewardTargetValidators.count)
-            let gasRate = NSDecimalNumber.init(string: CERTIK_GAS_FEE_RATE_AVERAGE)
+            let gasRate = NSDecimalNumber.init(string: GAS_FEE_RATE_DIP_AVERAGE)
             self.rateFeeGasAmountLabel.text = gasAmount.stringValue
             self.rateFeeGasRateLabel.attributedText = WUtils.displayGasRate(gasRate, font: rateFeeGasRateLabel.font, 6)
             feeAmount = gasAmount.multiplying(byPowerOf10: 12).multiplying(by: gasRate, withBehavior: WUtils.handler0)
@@ -542,11 +542,11 @@ class StepFeeViewController: BaseViewController {
  
     func getSpendAmount() -> NSDecimalNumber {
         var result = NSDecimalNumber.zero
-        if (pageHolderVC.mType == COSMOS_MSG_TYPE_DELEGATE) {
+        if (pageHolderVC.mType == COSMOS_MSG_TYPE_DELEGATE || pageHolderVC.mType == DIPPER_MSG_TYPE_DELEGATE) {
             result = WUtils.localeStringToDecimal(pageHolderVC.mToDelegateAmount!.amount)
             
         } else if (pageHolderVC.mType == COSMOS_MSG_TYPE_UNDELEGATE2) {
-        } else if (pageHolderVC.mType == COSMOS_MSG_TYPE_TRANSFER2 || pageHolderVC.mType == KAVA_MSG_TYPE_TRANSFER || pageHolderVC.mType == BAND_MSG_TYPE_TRANSFER ||
+        } else if (pageHolderVC.mType == COSMOS_MSG_TYPE_TRANSFER2 || pageHolderVC.mType == DIPPER_MSG_TYPE_TRANSFER2 || pageHolderVC.mType == KAVA_MSG_TYPE_TRANSFER || pageHolderVC.mType == BAND_MSG_TYPE_TRANSFER ||
                     pageHolderVC.mType == IOV_MSG_TYPE_TRANSFER || pageHolderVC.mType == SECRET_MSG_TYPE_TRANSFER || pageHolderVC.mType == OK_MSG_TYPE_TRANSFER ||
                     pageHolderVC.mType == CERTIK_MSG_TYPE_TRANSFER) {
             result = WUtils.localeStringToDecimal(pageHolderVC.mToSendAmount[0].amount)

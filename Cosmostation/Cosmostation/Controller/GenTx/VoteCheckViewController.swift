@@ -122,7 +122,7 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
                     BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
                     self.onGenVoteTx()
                     
-                } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
+                } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
                     guard let info = res as? [String : Any] else {
                         _ = BaseData.instance.deleteBalance(account: account)
                         self.hideWaittingAlert()
