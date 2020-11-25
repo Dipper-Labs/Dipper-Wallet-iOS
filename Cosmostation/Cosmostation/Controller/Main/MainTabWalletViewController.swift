@@ -47,6 +47,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
         self.walletTableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         self.walletTableView.register(UINib(nibName: "WalletAddressCell", bundle: nil), forCellReuseIdentifier: "WalletAddressCell")
         self.walletTableView.register(UINib(nibName: "WalletCosmosCell", bundle: nil), forCellReuseIdentifier: "WalletCosmosCell")
+        self.walletTableView.register(UINib(nibName: "WalletDIPCell", bundle: nil), forCellReuseIdentifier: "WalletDIPCell")
         self.walletTableView.register(UINib(nibName: "WalletIrisCell", bundle: nil), forCellReuseIdentifier: "WalletIrisCell")
         self.walletTableView.register(UINib(nibName: "WalletBnbCell", bundle: nil), forCellReuseIdentifier: "WalletBnbCell")
         self.walletTableView.register(UINib(nibName: "WalletKavaCell", bundle: nil), forCellReuseIdentifier: "WalletKavaCell")
@@ -99,6 +100,10 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
         if (chainType! == ChainType.COSMOS_MAIN) {
             titleChainImg.image = UIImage(named: "cosmosWhMain")
             titleChainName.text = "(Cosmos Mainnet)"
+        } else if (chainType! == ChainType.DIPPER_MAIN) {
+            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainName.text = "(Dipper Hub)"
+            titleAlarmBtn.isHidden = true
         } else if (chainType! == ChainType.IRIS_MAIN) {
             titleChainImg.image = UIImage(named: "irisWh")
             titleChainName.text = "(Iris Mainnet)"
@@ -129,7 +134,11 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             titleAlarmBtn.isHidden = true
         }
         
-        else if (chainType! == ChainType.BINANCE_TEST) {
+        else if (chainType! == ChainType.DIPPER_TEST) {
+            titleChainImg.image = UIImage(named: "dipperTestImg")
+            titleChainName.text = "(Dipper Testnet)"
+            titleAlarmBtn.isHidden = true
+        }else if (chainType! == ChainType.BINANCE_TEST) {
             titleChainImg.image = UIImage(named: "binancetestnet")
             titleChainName.text = "(Binance Testnet)"
             titleAlarmBtn.isHidden = true
@@ -201,6 +210,8 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (chainType == ChainType.COSMOS_MAIN) {
             return 7;
+        } else if  (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            return 5
         } else if  (chainType == ChainType.IRIS_MAIN) {
             return 5;
         } else if  (chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST) {
@@ -225,6 +236,8 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (chainType == ChainType.COSMOS_MAIN) {
             return onSetCosmosItems(tableView, indexPath);
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            return onSetDIPItem(tableView, indexPath);
         } else if (chainType == ChainType.IRIS_MAIN) {
             return onSetIrisItem(tableView, indexPath);
         } else if (chainType == ChainType.BINANCE_MAIN || chainType == ChainType.BINANCE_TEST) {
@@ -405,6 +418,96 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             }
             return cell!
         }
+    }
+    
+    func onSetDIPItem(_ tableView: UITableView, _ indexPath: IndexPath)  -> UITableViewCell {
+        if (indexPath.row == 0) {
+            let cell:WalletAddressCell? = tableView.dequeueReusableCell(withIdentifier:"WalletAddressCell") as? WalletAddressCell
+            if (mainTabVC.mAccount.account_has_private) {
+                cell?.keyState.image = cell?.keyState.image?.withRenderingMode(.alwaysTemplate)
+                cell?.keyState.tintColor = COLOR_DIP
+            }
+            cell?.dpAddress.text = mainTabVC.mAccount.account_address
+            cell?.dpAddress.adjustsFontSizeToFitWidth = true
+            cell?.actionShare = {
+                self.onClickActionShare()
+            }
+            cell?.actionWebLink = {
+                self.onClickActionLink()
+            }
+            return cell!
+            
+        } else if (indexPath.row == 1) {
+            let cell:WalletIrisCell? = tableView.dequeueReusableCell(withIdentifier:"WalletDIPCell") as? WalletIrisCell
+            let totalDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.totalAmount.attributedText = WUtils.displayAmount2(totalDIP.stringValue, cell!.totalAmount.font!, 12, 6)
+            cell?.totalValue.attributedText = WUtils.dpTokenValue(totalDIP, BaseData.instance.getLastPrice(), 12, cell!.totalValue.font)
+            cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(mainTabVC.mBalances, cell!.availableAmount.font, 6, DIPPER_MAIN_DENOM, chainType!)
+            cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(mainTabVC.mBondingList, mainTabVC.mAllValidator, cell!.delegatedAmount.font, 6, chainType!)
+            cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(mainTabVC.mUnbondingList, cell!.unbondingAmount.font, 6, chainType!)
+            //TODO by captain
+            let amount = WUtils.rewardAmount(mainTabVC.mRewardList, DIPPER_MAIN_DENOM, chainType!)
+            cell?.rewardAmount.attributedText = NSAttributedString.init(string: amount.stringValue)
+            
+            cell?.actionDelegate = {
+                self.onClickValidatorList()
+            }
+            cell?.actionVote = {
+                self.onClickVoteList()
+            }
+            BaseData.instance.updateLastTotal(mainTabVC!.mAccount, totalDIP.multiplying(byPowerOf10: -12).stringValue)
+            return cell!
+            
+        } else if (indexPath.row == 2) {
+            let cell:WalletPriceCell? = tableView.dequeueReusableCell(withIdentifier:"WalletPriceCell") as? WalletPriceCell
+            cell?.sourceSite.text = "("+BaseData.instance.getMarketString()+")"
+            cell?.perPrice.attributedText = WUtils.dpPricePerUnit(BaseData.instance.getLastPrice(), cell!.perPrice.font)
+            let changeValue = WUtils.priceChanges(BaseData.instance.get24hPrice())
+            if (changeValue.compare(NSDecimalNumber.zero).rawValue > 0) {
+                cell?.updownImg.image = UIImage(named: "priceUp")
+                cell?.updownPercent.attributedText = WUtils.displayPriceUPdown(changeValue, font: cell!.updownPercent.font)
+            } else if (changeValue.compare(NSDecimalNumber.zero).rawValue < 0) {
+                cell?.updownImg.image = UIImage(named: "priceDown")
+                cell?.updownPercent.attributedText = WUtils.displayPriceUPdown(changeValue, font: cell!.updownPercent.font)
+            } else {
+                cell?.updownImg.image = nil
+                cell?.updownPercent.text = ""
+            }
+            cell?.buySeparator.isHidden = true
+            cell?.buyBtn.isHidden = true
+            cell?.buyConstraint.priority = .defaultLow
+            cell?.noBuyConstraint.priority = .defaultHigh
+            cell?.actionTapPricel = {
+                self.onClickMarketInfo()
+            }
+            return cell!
+            
+        } else if (indexPath.row == 3) {
+            let cell:WalletInflationCell? = tableView.dequeueReusableCell(withIdentifier:"WalletInflationCell") as? WalletInflationCell
+            cell?.infaltionLabel.attributedText = WUtils.displayInflation(NSDecimalNumber.init(string: "0.04"), font: cell!.infaltionLabel.font)
+            if (self.mIrisStakePool != nil) {
+                let provisions = NSDecimalNumber.init(string: self.mIrisStakePool?.object(forKey: "total_supply") as? String).multiplying(by: NSDecimalNumber.init(string: "0.04"))
+                let bonded_tokens = NSDecimalNumber.init(string: self.mIrisStakePool?.object(forKey: "bonded_tokens") as? String)
+                cell?.yieldLabel.attributedText = WUtils.displayYield(bonded_tokens, provisions, NSDecimalNumber.zero, font: cell!.yieldLabel.font)
+            }
+            return cell!
+            
+        } else {
+            let cell:WalletGuideCell? = tableView.dequeueReusableCell(withIdentifier:"WalletGuideCell") as? WalletGuideCell
+            cell?.guideImg.image = UIImage(named: "dipperImg")
+            cell?.guideTitle.text = NSLocalizedString("send_guide_title_dip", comment: "")
+            cell?.guideMsg.text = NSLocalizedString("send_guide_msg_dip", comment: "")
+            cell?.btn1Label.setTitle(NSLocalizedString("send_guide_btn1_dip", comment: ""), for: .normal)
+            cell?.btn2Label.setTitle(NSLocalizedString("send_guide_btn2_dip", comment: ""), for: .normal)
+            cell?.actionGuide1 = {
+                self.onClickGuide1()
+            }
+            cell?.actionGuide2 = {
+                self.onClickGuide2()
+            }
+            return cell!
+        }
+        
     }
     
     func onSetIrisItem(_ tableView: UITableView, _ indexPath: IndexPath)  -> UITableViewCell {
@@ -1433,6 +1536,14 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             guard let url = URL(string: EXPLORER_COSMOS_MAIN + "account/" + mainTabVC.mAccount.account_address) else { return }
             self.onShowSafariWeb(url)
             
+        } else if (chainType! == ChainType.DIPPER_MAIN) {
+            guard let url = URL(string: EXPLORER_DIPPER_MAIN + "account/" + mainTabVC.mAccount.account_address) else { return }
+            self.onShowSafariWeb(url)
+            
+        } else if (chainType! == ChainType.DIPPER_TEST) {
+            guard let url = URL(string: EXPLORER_DIPPER_TEST + "account/" + mainTabVC.mAccount.account_address) else { return }
+            self.onShowSafariWeb(url)
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             guard let url = URL(string: EXPLORER_IRIS_MAIN + "account/" + mainTabVC.mAccount.account_address) else { return }
             self.onShowSafariWeb(url)
@@ -1873,6 +1984,14 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
                 return
             }
             txVC.mType = COSMOS_MSG_TYPE_TRANSFER2
+            
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000")).rawValue < 0) {
+                self.onShowToast(NSLocalizedString("error_not_enough_balance_to_send", comment: ""))
+                return
+            }
+            txVC.mDIPSendDenom = DIPPER_MAIN_DENOM
+            txVC.mType = DIPPER_MSG_TYPE_TRANSFER2
             
         } else if (chainType! == ChainType.IRIS_MAIN) {
             if (WUtils.getTokenAmount(balances, IRIS_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000000000")).rawValue < 0) {

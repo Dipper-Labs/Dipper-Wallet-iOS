@@ -59,9 +59,9 @@ let IOV_TEST_FAUCET                     = "https://faucet.cluster-galaxynet.iov.
 let BAND_URL                            = "https://lcd-band.cosmostation.io/";
 let BAND_API                            = "https://api-band.cosmostation.io/";
 
-let DIPPER_URL = "http://47.242.210.165/";
+let DIPPER_URL = "https://rpc.dippernetwork.com/";
 let DIPPER_API = "";
-let DIPPER_TEST_URL = "http://47.110.67.210/";
+let DIPPER_TEST_URL = "https://rpc.testnet.dippernetwork.com/";
 let DIPPER_TEST_API = "";
 
 
@@ -959,19 +959,19 @@ enum ChainType: String {
         var result = [ChainType]()
         result.append(COSMOS_MAIN)
         result.append(DIPPER_MAIN)
-        result.append(IRIS_MAIN)
-        result.append(BINANCE_MAIN)
-        result.append(IOV_MAIN)
-        result.append(KAVA_MAIN)
-        result.append(BAND_MAIN)
-        result.append(SECRET_MAIN)
-        result.append(CERTIK_MAIN)
+//        result.append(IRIS_MAIN)
+//        result.append(BINANCE_MAIN)
+//        result.append(IOV_MAIN)
+//        result.append(KAVA_MAIN)
+//        result.append(BAND_MAIN)
+//        result.append(SECRET_MAIN)
+//        result.append(CERTIK_MAIN)
 
 //        result.append(BINANCE_TEST)
 //        result.append(KAVA_TEST)
         result.append(DIPPER_TEST)
-        result.append(IOV_TEST)
-        result.append(OKEX_TEST)
+//        result.append(IOV_TEST)
+//        result.append(OKEX_TEST)
 //        result.append(CERTIK_TEST)
         return result
     }

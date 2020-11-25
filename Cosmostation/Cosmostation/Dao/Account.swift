@@ -120,6 +120,16 @@ public class Account : NSObject, Codable, NSItemProviderReading, NSItemProviderW
         return result
     }
     
+    func getDIPBalance() -> NSDecimalNumber {
+        var result = NSDecimalNumber.zero
+        for balance in self.account_balances {
+            if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
+                result = WUtils.plainStringToDecimal(balance.balance_amount)
+            }
+        }
+        return result
+    }
+    
     func getIrisBalance() -> NSDecimalNumber {
         var result = NSDecimalNumber.zero
         for balance in self.account_balances {

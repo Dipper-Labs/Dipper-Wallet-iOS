@@ -34,8 +34,8 @@ class StepSendAmountViewController: BaseViewController, UITextFieldDelegate{
             
         } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
             mDpDecimal = 12
-            maxAvailable = pageHolderVC.mAccount!.getTokenBalance(CERTIK_MAIN_DENOM).subtracting(NSDecimalNumber.init(string: "100000000000"))
-            mAvailableAmountLabel.attributedText = WUtils.displayAmount2(maxAvailable.stringValue, mAvailableAmountLabel.font, 6, mDpDecimal)
+            maxAvailable = pageHolderVC.mAccount!.getTokenBalance(DIPPER_MAIN_DENOM).subtracting(NSDecimalNumber.init(string: "100000000000"))
+            mAvailableAmountLabel.attributedText = WUtils.displayAmount2(maxAvailable.stringValue, mAvailableAmountLabel.font, 12, mDpDecimal)
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mDpDecimal = 18
             if (pageHolderVC.mIrisToken?.base_token?.id == IRIS_DP_DENOM) {

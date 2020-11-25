@@ -199,7 +199,7 @@ class MainTabViewController: UITabBarController, UITabBarControllerDelegate, SBC
             onFetchStakingPool()
             
         } else if (mChainType == ChainType.DIPPER_MAIN || mChainType == ChainType.DIPPER_TEST) {
-            self.mFetchCnt = 10 //TODO Captin what is this?
+            self.mFetchCnt = 10
             onFetchTopValidatorsInfo()
             onFetchUnbondedValidatorsInfo()
             onFetchUnbondingValidatorsInfo()

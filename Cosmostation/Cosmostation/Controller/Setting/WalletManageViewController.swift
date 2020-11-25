@@ -120,6 +120,20 @@ class WalletManageViewController: BaseViewController, UITableViewDelegate, UITab
                     cell?.chainImg.image = UIImage(named: "cosmosWhMain")
                     cell?.chainName.text = "COSMOS"
                     
+                } else if (selectedChain == ChainType.DIPPER_MAIN) {
+                    cell?.chainImg.isHidden = false
+                    cell?.chainName.isHidden = false
+                    cell?.chainAll.isHidden = true
+                    cell?.chainImg.image = UIImage(named: "dipperImg")
+                    cell?.chainName.text = "Dipper"
+                    
+                } else if (selectedChain == ChainType.DIPPER_TEST) {
+                    cell?.chainImg.isHidden = false
+                    cell?.chainName.isHidden = false
+                    cell?.chainAll.isHidden = true
+                    cell?.chainImg.image = UIImage(named: "dipperTestImg")
+                    cell?.chainName.text = "Dipper Test"
+                    
                 } else if (selectedChain == ChainType.IRIS_MAIN) {
                     cell?.chainImg.isHidden = false
                     cell?.chainName.isHidden = false

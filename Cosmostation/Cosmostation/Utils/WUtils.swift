@@ -81,7 +81,9 @@ class WUtils {
         if (accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT ||
             accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT_LEGACY ||
             accountInfo.type == IRIS_BANK_TYPE_ACCOUNT ||
-            accountInfo.type == COSMOS_AUTH_TYPE_CERTIK_MANUAL) {
+            accountInfo.type == COSMOS_AUTH_TYPE_CERTIK_MANUAL || accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT ||
+                accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT_LEGACY ||
+                accountInfo.type == DIPPER_AUTH_TYPE_CERTIK_MANUAL) {
             for coin in accountInfo.value.coins {
                 result.append(Balance.init(account.account_id, coin.denom, coin.amount, Date().millisecondsSince1970))
             }
@@ -941,6 +943,20 @@ class WUtils {
         }
         return dpValue(result, font)
     }
+    
+    static func dpDIPValue(_ amount:NSDecimalNumber, _ price:Double?, _ font:UIFont) ->  NSMutableAttributedString {
+        if (price == nil) {
+            return dpValue(NSDecimalNumber.zero, font)
+        }
+        var result = NSDecimalNumber.zero
+        if (BaseData.instance.getCurrency() == 5) {
+            result = NSDecimalNumber(value: price!).dividing(by: NSDecimalNumber(string: "1000000000000")).multiplying(by: amount, withBehavior: WUtils.handler8)
+        } else {
+            result = NSDecimalNumber(value: price!).dividing(by: NSDecimalNumber(string: "1000000000000")).multiplying(by: amount, withBehavior: WUtils.handler2Down)
+        }
+        return dpValue(result, font)
+    }
+    
 
     static func dpBnbValue(_ amount:NSDecimalNumber, _ price:Double?, _ font:UIFont) ->  NSMutableAttributedString {
         if (price == nil) {
@@ -1382,7 +1398,7 @@ class WUtils {
     static func getAllDIP(_ balances:Array<Balance>, _ bondings:Array<Bonding>, _ unbondings:Array<Unbonding>,_ rewards:Array<Reward>, _ validators:Array<Validator>) -> NSDecimalNumber {
         var amount = NSDecimalNumber.zero
         for balance in balances {
-            if (balance.balance_denom == DIPPER_MAIN_DENOM) {
+            if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
                 amount = NSDecimalNumber.init(string: balance.balance_amount)
             }
         }
@@ -1394,8 +1410,8 @@ class WUtils {
         }
         for reward in rewards {
             for coin in reward.reward_amount {
-                if (coin.denom == DIPPER_MAIN_DENOM) {
-                    amount = amount.adding(NSDecimalNumber.init(string: coin.amount).rounding(accordingToBehavior: handler0Down))
+                if (coin.denom == DIPPER_MAIN_DENOM || coin.denom == DIPPER_TEST_DENOM) {
+                    amount = amount.adding(NSDecimalNumber.init(string: coin.amount).rounding(accordingToBehavior: handler12Down))
                 }
             }
         }

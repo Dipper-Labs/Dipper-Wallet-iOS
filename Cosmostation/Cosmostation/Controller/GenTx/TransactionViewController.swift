@@ -28,6 +28,7 @@ class TransactionViewController: UIViewController {
     var mBnbToken: BnbToken?
     var mBnbTics = [String : NSMutableDictionary]()
     
+    var mDIPSendDenom: String?
     var mKavaSendDenom: String?
     var mIovSendDenom: String?
     var mOkSendDenom: String?

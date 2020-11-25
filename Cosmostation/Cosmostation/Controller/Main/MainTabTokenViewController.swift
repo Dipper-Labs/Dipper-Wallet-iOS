@@ -393,6 +393,8 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (chainType! == ChainType.COSMOS_MAIN) {
             return onSetCosmosItems(tableView, indexPath)
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            return onSetDIPItems(tableView, indexPath)
         } else if (chainType! == ChainType.IRIS_MAIN) {
             return onSetIrisItems(tableView, indexPath)
         } else if (chainType! == ChainType.BINANCE_MAIN || chainType! == ChainType.BINANCE_TEST) {
@@ -475,6 +477,32 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             // TODO no this case yet!
             cell?.tokenImg.image = UIImage(named: "tokenIc")
             cell?.tokenSymbol.textColor = UIColor.white
+        }
+        return cell!
+    }
+    
+    func onSetDIPItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
+        let balance = mainTabVC.mBalances[indexPath.row]
+        if let irisToken = WUtils.getIrisToken(mainTabVC.mIrisTokenList, balance) {
+            cell?.tokenSymbol.text = irisToken.base_token?.symbol.uppercased()
+            cell?.tokenTitle.text = "(" + irisToken.base_token!.id + ")"
+            cell?.tokenDescription.text = irisToken.base_token?.name
+            if (balance.balance_denom == IRIS_MAIN_DENOM) {
+                cell?.tokenImg.image = UIImage(named: "irisTokenImg")
+                cell?.tokenSymbol.textColor = COLOR_IRIS
+                
+                let allIris = WUtils.getAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator)
+                cell?.tokenAmount.attributedText = WUtils.displayAmount2(allIris.stringValue, cell!.tokenAmount.font, 18, 6)
+                cell?.tokenValue.attributedText = WUtils.dpIrisValue(allIris, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
+                
+            } else {
+                cell?.tokenImg.image = UIImage(named: "tokenIc")
+                cell?.tokenSymbol.textColor = UIColor.white
+                
+                cell?.tokenAmount.attributedText = WUtils.displayIrisToken(balance.balance_amount, cell!.tokenAmount.font, 6, irisToken.base_token!.decimal)
+                cell?.tokenValue.attributedText = WUtils.dpValue(NSDecimalNumber.zero, cell!.tokenValue.font)
+            }
         }
         return cell!
     }

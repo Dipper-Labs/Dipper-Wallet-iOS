@@ -110,12 +110,19 @@ class AccountSelectViewController: BaseViewController, UITableViewDelegate, UITa
                     cell?.chainImg.image = UIImage(named: "cosmosWhMain")
                     cell?.chainName.text = "COSMOS"
                     
-                } else if (selectedChain == ChainType.IRIS_MAIN) {
+                } else if (selectedChain == ChainType.DIPPER_MAIN) {
                     cell?.chainImg.isHidden = false
                     cell?.chainName.isHidden = false
                     cell?.chainAll.isHidden = true
-                    cell?.chainImg.image = UIImage(named: "irisWh")
-                    cell?.chainName.text = "IRIS"
+                    cell?.chainImg.image = UIImage(named: "dipperImg")
+                    cell?.chainName.text = "DIPPER"
+                    
+                } else if (selectedChain == ChainType.DIPPER_TEST) {
+                    cell?.chainImg.isHidden = false
+                    cell?.chainName.isHidden = false
+                    cell?.chainAll.isHidden = true
+                    cell?.chainImg.image = UIImage(named: "dipperTestImg")
+                    cell?.chainName.text = "DIPPER TEST"
                     
                 } else if (selectedChain == ChainType.BINANCE_MAIN) {
                     cell?.chainImg.isHidden = false
