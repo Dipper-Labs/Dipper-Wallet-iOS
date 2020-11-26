@@ -2492,7 +2492,7 @@ class WUtils {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_MID))
             } else if (type == DIPPER_MSG_TYPE_REDELEGATE2) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REDELEGATE))
-            } else if (type == DIPPER_MSG_TYPE_TRANSFER2 || type == KAVA_MSG_TYPE_TRANSFER) {
+            } else if (type == DIPPER_MSG_TYPE_TRANSFER2) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
             } else if (type == DIPPER_MSG_TYPE_WITHDRAW_MIDIFY) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))

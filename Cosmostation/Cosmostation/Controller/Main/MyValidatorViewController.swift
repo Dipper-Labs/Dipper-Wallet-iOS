@@ -107,6 +107,8 @@ class MyValidatorViewController: BaseViewController, UITableViewDelegate, UITabl
             let cell:PromotionCell? = tableView.dequeueReusableCell(withIdentifier:"PromotionCell") as? PromotionCell
             if (chainType == ChainType.COSMOS_MAIN) {
                 cell?.cardView.backgroundColor = TRANS_BG_COLOR_COSMOS
+            } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_MAIN) {
+                cell?.cardView.backgroundColor = TRANS_BG_COLOR_COSMOS
             } else if (chainType == ChainType.IRIS_MAIN) {
                 cell?.cardView.backgroundColor = TRANS_BG_COLOR_IRIS
             } else if (chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST) {
@@ -246,6 +248,10 @@ class MyValidatorViewController: BaseViewController, UITableViewDelegate, UITabl
                 cell.totalRewardLabel.attributedText = WUtils.dpRewards(mainTabVC.mRewardList, cell.totalRewardLabel.font, 6, COSMOS_MAIN_DENOM, chainType!)
             }
             
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if(mainTabVC.mRewardList.count > 0) {
+                cell.totalRewardLabel.attributedText = WUtils.dpRewards(mainTabVC.mRewardList, cell.totalRewardLabel.font, 12, DIPPER_MAIN_DENOM, chainType!)
+            }
         } else if (chainType == ChainType.IRIS_MAIN) {
             if (mainTabVC.mIrisRewards != nil) {
                 cell.totalRewardLabel.attributedText = WUtils.displayAmount((mainTabVC.mIrisRewards?.getSimpleIrisReward().stringValue)!, cell.totalRewardLabel.font, 6, chainType!)
@@ -348,6 +354,32 @@ class MyValidatorViewController: BaseViewController, UITableViewDelegate, UITabl
                 return reward0.compare(reward1).rawValue > 0 ? true : false
             }
             
+            if (myBondedValidator.count > 16) {
+                toClaimValidator = Array(myBondedValidator[0..<16])
+            } else {
+                toClaimValidator = myBondedValidator
+            }
+            
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if (WUtils.getAllRewardByDenom(mainTabVC.mRewardList, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.zero).rawValue <= 0 ){
+                self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
+                return
+            }
+            var myBondedValidator = Array<Validator>()
+            for validator in self.mainTabVC.mAllValidator {
+                for bonding in self.mainTabVC.mBondingList {
+                    if(bonding.bonding_v_address == validator.operator_address &&
+                        WUtils.getValidatorReward(mainTabVC.mRewardList, bonding.bonding_v_address).compare(NSDecimalNumber.one).rawValue > 0) {
+                        myBondedValidator.append(validator)
+                        break;
+                    }
+                }
+            }
+            myBondedValidator.sort {
+                let reward0 = WUtils.getValidatorReward(mainTabVC.mRewardList, $0.operator_address)
+                let reward1 = WUtils.getValidatorReward(mainTabVC.mRewardList, $1.operator_address)
+                return reward0.compare(reward1).rawValue > 0 ? true : false
+            }
             if (myBondedValidator.count > 16) {
                 toClaimValidator = Array(myBondedValidator[0..<16])
             } else {

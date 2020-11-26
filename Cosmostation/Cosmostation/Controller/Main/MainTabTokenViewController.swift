@@ -976,6 +976,16 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
                 return $0.balance_denom < $1.balance_denom
             }
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            mainTabVC.mBalances.sort{
+                if ($0.balance_denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.balance_denom == DIPPER_MAIN_DENOM){
+                    return false
+                }
+                return $0.balance_denom < $1.balance_denom
+            }
         } else if (chainType! == ChainType.IRIS_MAIN) {
             mainTabVC.mBalances.sort{
                 if ($0.balance_denom == IRIS_MAIN_DENOM) {
@@ -1040,7 +1050,18 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
                 return WUtils.localeStringToDecimal($0.balance_amount).compare(WUtils.localeStringToDecimal($1.balance_amount)).rawValue > 0 ? true : false
             }
             
-        } else if (chainType! == ChainType.IRIS_MAIN) {
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            mainTabVC.mBalances.sort{
+                if ($0.balance_denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.balance_denom == DIPPER_MAIN_DENOM){
+                    return false
+                }
+                return WUtils.localeStringToDecimal($0.balance_amount).compare(WUtils.localeStringToDecimal($1.balance_amount)).rawValue > 0 ? true : false
+            }
+            
+        }else if (chainType! == ChainType.IRIS_MAIN) {
             mainTabVC.mBalances.sort{
                 if ($0.balance_denom == IRIS_MAIN_DENOM) {
                     return true

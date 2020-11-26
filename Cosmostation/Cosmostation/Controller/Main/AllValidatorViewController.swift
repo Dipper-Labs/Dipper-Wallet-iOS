@@ -142,6 +142,11 @@ class AllValidatorViewController: BaseViewController, UITableViewDelegate, UITab
             cell.commissionLabel.attributedText = WUtils.getDpEstAprCommission(cell.commissionLabel.font, validator.getCommission(), chainType!)
             cell.validatorImg.af_setImage(withURL: URL(string: COSMOS_VAL_URL + validator.operator_address + ".png")!)
 
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            cell.powerLabel.attributedText =  WUtils.displayAmount(validator.tokens, cell.powerLabel.font, 12, chainType!)
+            cell.commissionLabel.attributedText = WUtils.getDpEstAprCommission(cell.commissionLabel.font, validator.getCommission(), chainType!)
+            cell.validatorImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + validator.operator_address + ".png")!)
+            
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell.powerLabel.attributedText =  WUtils.displayAmount(NSDecimalNumber.init(string: validator.tokens).multiplying(byPowerOf10: 18, withBehavior: WUtils.handler0).stringValue, cell.powerLabel.font, 6, chainType!)
             if (self.mIrisStakePool != nil) {
@@ -200,6 +205,8 @@ class AllValidatorViewController: BaseViewController, UITableViewDelegate, UITab
 
         if mainTabVC.mMyValidators.first(where: {$0.operator_address == validator.operator_address}) != nil {
             if (chainType == ChainType.COSMOS_MAIN) {
+                cell.cardView.backgroundColor = TRANS_BG_COLOR_COSMOS
+            } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
                 cell.cardView.backgroundColor = TRANS_BG_COLOR_COSMOS
             } else if (chainType == ChainType.IRIS_MAIN) {
                 cell.cardView.backgroundColor = TRANS_BG_COLOR_IRIS

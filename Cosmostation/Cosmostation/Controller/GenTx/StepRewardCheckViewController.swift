@@ -84,6 +84,12 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
                 return true
             }
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let rewardSum = WUtils.getAllRewardByDenom(pageHolderVC.mRewardList, DIPPER_MAIN_DENOM)
+            if (NSDecimalNumber.init(string: pageHolderVC.mFee!.amount[0].amount).compare(rewardSum).rawValue > 0 ) {
+                return true
+            }
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             var rewardSum = NSDecimalNumber.zero
             for delegation in pageHolderVC.mIrisRewards!.delegations {
@@ -153,6 +159,21 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
             
             let expectedAmount = userBalance.adding(rewardSum).subtracting(WUtils.localeStringToDecimal((pageHolderVC.mFee?.amount[0].amount)!))
             expectedAmountLabel.attributedText = WUtils.displayAmount(expectedAmount.stringValue, rewardAmoutLaebl.font, 6, pageHolderVC.chainType!)
+            
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let rewardSum = WUtils.getAllRewardByDenom(pageHolderVC.mRewardList, DIPPER_MAIN_DENOM)
+            rewardAmoutLaebl.attributedText = WUtils.displayAmount(rewardSum.stringValue, rewardAmoutLaebl.font, 12, pageHolderVC.chainType!)
+            feeAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mFee?.amount[0].amount)!, feeAmountLabel.font, 12, pageHolderVC.chainType!)
+            
+            var userBalance = NSDecimalNumber.zero
+            for balance in pageHolderVC.mBalances {
+                if(balance.balance_denom == DIPPER_MAIN_DENOM) {
+                    userBalance = userBalance.adding(WUtils.localeStringToDecimal(balance.balance_amount))
+                }
+            }
+            
+            let expectedAmount = userBalance.adding(rewardSum).subtracting(WUtils.localeStringToDecimal((pageHolderVC.mFee?.amount[0].amount)!))
+            expectedAmountLabel.attributedText = WUtils.displayAmount(expectedAmount.stringValue, rewardAmoutLaebl.font, 12, pageHolderVC.chainType!)
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             var rewardSum = NSDecimalNumber.zero

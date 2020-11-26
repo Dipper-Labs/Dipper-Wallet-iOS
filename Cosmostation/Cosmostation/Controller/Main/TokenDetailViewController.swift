@@ -320,12 +320,12 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
         let bondingList = BaseData.instance.selectBondingById(accountId: account!.account_id)
         let unbondingList = BaseData.instance.selectUnbondingById(accountId: account!.account_id)
         
-        cell?.totalAmount.attributedText = WUtils.dpAllDIP(balances, bondingList, unbondingList, allRewards, allValidator, cell!.totalAmount.font, 6, chainType!)
+        cell?.totalAmount.attributedText = WUtils.dpAllDIP(balances, bondingList, unbondingList, allRewards, allValidator, cell!.totalAmount.font, 12, chainType!)
         cell?.totalValue.attributedText = WUtils.dpAllDIPValue(balances, bondingList, unbondingList, allRewards, allValidator, BaseData.instance.getLastPrice(), cell!.totalAmount.font)
-        cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(balances, cell!.availableAmount.font, 6, COSMOS_MAIN_DENOM, chainType!)
-        cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(bondingList, allValidator, cell!.delegatedAmount.font, 6, chainType!)
-        cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(unbondingList, cell!.unbondingAmount.font, 6, chainType!)
-        cell?.rewardAmount.attributedText = WUtils.dpRewards(allRewards, cell!.rewardAmount.font, 6, COSMOS_MAIN_DENOM, chainType!)
+        cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(balances, cell!.availableAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
+        cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(bondingList, allValidator, cell!.delegatedAmount.font, 12, chainType!)
+        cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(unbondingList, cell!.unbondingAmount.font, 12, chainType!)
+        cell?.rewardAmount.attributedText = WUtils.dpRewards(allRewards, cell!.rewardAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
         cell?.actionSend  = {
             self.onSendToken()
         }
@@ -799,7 +799,7 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
             txVC.mType = COSMOS_MSG_TYPE_TRANSFER2
             
         } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
-            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000")).rawValue < 0) {
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.zero).rawValue <= 0) {
                 self.onShowToast(NSLocalizedString("error_not_enough_balance_to_send", comment: ""))
                 return
             }

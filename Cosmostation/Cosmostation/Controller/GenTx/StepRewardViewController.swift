@@ -71,6 +71,9 @@ class StepRewardViewController: BaseViewController {
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
             rewardAmountLabel.attributedText = WUtils.dpRewards(pageHolderVC.mRewardList, rewardAmountLabel.font, 6, COSMOS_MAIN_DENOM, pageHolderVC.chainType!)
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            rewardAmountLabel.attributedText = WUtils.dpRewards(pageHolderVC.mRewardList, rewardAmountLabel.font, 12, DIPPER_MAIN_DENOM, pageHolderVC.chainType!)
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             var selectedRewardSum = NSDecimalNumber.zero
             for delegation in pageHolderVC.mIrisRewards!.delegations {

@@ -157,7 +157,21 @@ class ReInvestAmountViewController: BaseViewController {
                         }
                     }
                     
-                } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST) {
+                } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                    guard let responseData = res as? NSDictionary,
+                        let rawRewards = responseData.object(forKey: "result") as? Array<NSDictionary> else {
+                        self.updateView()
+                        return;
+                    }
+                    for rawReward in rawRewards {
+                        if let atomReward = rawReward.object(forKey: "denom") as? String, atomReward == DIPPER_MAIN_DENOM {
+                            var coin = Coin(rawReward as! [String : Any])
+                            coin.amount = NSDecimalNumber.init(string: coin.amount).rounding(accordingToBehavior: WUtils.handler0Down).stringValue
+                            self.pageHolderVC.mReinvestReward = coin
+                        }
+                    }
+                    
+                }else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST) {
                     guard let responseData = res as? NSDictionary,
                         let rawRewards = responseData.object(forKey: "result") as? Array<NSDictionary> else {
                         self.updateView()

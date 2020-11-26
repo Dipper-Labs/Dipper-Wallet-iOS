@@ -118,7 +118,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                                     return
                             }
                             let accountInfo = AccountInfo.init(info)
-                            if (accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
+                            if (accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
                                 cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 12)
                             }
                         case .failure(let error):
@@ -137,7 +137,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                                     return
                             }
                             let accountInfo = AccountInfo.init(info)
-                            if (accountInfo.type == COSMOS_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
+                            if (accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
                                 cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 12)
                             }
                         case .failure(let error):

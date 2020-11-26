@@ -324,7 +324,7 @@
 		E123FD3F233E0161004EC348 /* MainTabWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E123FD3E233E0161004EC348 /* MainTabWalletViewController.swift */; };
 		E126CF7D2387A3E1002A546F /* WalletCosmosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF7F2387A3E1002A546F /* WalletCosmosCell.xib */; };
 		E126CF822387A48F002A546F /* WalletAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF842387A48F002A546F /* WalletAddressCell.xib */; };
-		E126CF872387A4B4002A546F /* WalletDIPCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF892387A4B4002A546F /* WalletDIPCell.xib */; };
+		E126CF872387A4B4002A546F /* WalletIrisCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF892387A4B4002A546F /* WalletIrisCell.xib */; };
 		E126CF8C2387A50E002A546F /* WalletBnbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF8E2387A50E002A546F /* WalletBnbCell.xib */; };
 		E126CF912387A55A002A546F /* WalletKavaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF932387A55A002A546F /* WalletKavaCell.xib */; };
 		E126CF962387A5C9002A546F /* WalletIovCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126CF982387A5C9002A546F /* WalletIovCell.xib */; };
@@ -842,8 +842,8 @@
 		E126CF812387A3E8002A546F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/WalletCosmosCell.strings; sourceTree = "<group>"; };
 		E126CF832387A48F002A546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WalletAddressCell.xib; sourceTree = "<group>"; };
 		E126CF862387A491002A546F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/WalletAddressCell.strings; sourceTree = "<group>"; };
-		E126CF882387A4B4002A546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WalletDIPCell.xib; sourceTree = "<group>"; };
-		E126CF8B2387A4BD002A546F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/WalletDIPCell.strings; sourceTree = "<group>"; };
+		E126CF882387A4B4002A546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WalletIrisCell.xib; sourceTree = "<group>"; };
+		E126CF8B2387A4BD002A546F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/WalletIrisCell.strings; sourceTree = "<group>"; };
 		E126CF8D2387A50E002A546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WalletBnbCell.xib; sourceTree = "<group>"; };
 		E126CF902387A515002A546F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/WalletBnbCell.strings; sourceTree = "<group>"; };
 		E126CF922387A55A002A546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/WalletKavaCell.xib; sourceTree = "<group>"; };
@@ -1701,7 +1701,7 @@
 				E126CF7F2387A3E1002A546F /* WalletCosmosCell.xib */,
 				E1FD2326233E1BC4009327FE /* WalletIrisCell.swift */,
 				637A4040256CFA8700BED886 /* WalletDIPCell.swift */,
-				E126CF892387A4B4002A546F /* WalletDIPCell.xib */,
+				E126CF892387A4B4002A546F /* WalletIrisCell.xib */,
 				E1FD232E233E1BF4009327FE /* WalletBnbCell.swift */,
 				E126CF8E2387A50E002A546F /* WalletBnbCell.xib */,
 				E191A57B237902C5002577BC /* WalletKavaCell.swift */,
@@ -1981,7 +1981,7 @@
 				2812956F250F81C3007B217E /* SelectCoinCell.xib in Resources */,
 				28474ED6241E06AF00AF5A81 /* TxDepositCdpCell.xib in Resources */,
 				2868559024989A8F0099D18F /* Bep3SupplyPopup.xib in Resources */,
-				E126CF872387A4B4002A546F /* WalletDIPCell.xib in Resources */,
+				E126CF872387A4B4002A546F /* WalletIrisCell.xib in Resources */,
 				E103DADE22814802006C2146 /* Init.storyboard in Resources */,
 				E126CF962387A5C9002A546F /* WalletIovCell.xib in Resources */,
 				E103DAE322814DFC006C2146 /* GenTx.storyboard in Resources */,
@@ -2619,13 +2619,13 @@
 			name = WalletAddressCell.xib;
 			sourceTree = "<group>";
 		};
-		E126CF892387A4B4002A546F /* WalletDIPCell.xib */ = {
+		E126CF892387A4B4002A546F /* WalletIrisCell.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E126CF882387A4B4002A546F /* Base */,
 				E126CF8B2387A4BD002A546F /* ko */,
 			);
-			name = WalletDIPCell.xib;
+			name = WalletIrisCell.xib;
 			sourceTree = "<group>";
 		};
 		E126CF8E2387A50E002A546F /* WalletBnbCell.xib */ = {

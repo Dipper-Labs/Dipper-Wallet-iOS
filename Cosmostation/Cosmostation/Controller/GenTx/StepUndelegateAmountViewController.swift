@@ -175,6 +175,8 @@ class StepUndelegateAmountViewController: BaseViewController, UITextFieldDelegat
             var coin:Coin?
             if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                 coin = Coin.init(COSMOS_MAIN_DENOM, userInput.multiplying(by: 1000000).stringValue)
+            } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                coin = Coin.init(DIPPER_MAIN_DENOM, userInput.multiplying(by: 1000000000000).stringValue)
             } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                 coin = Coin.init(IRIS_MAIN_DENOM, userInput.multiplying(by: 1000000000000000000).stringValue)
             } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST) {

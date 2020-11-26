@@ -1597,6 +1597,17 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                 return false
             })
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            return coins.sorted(by: {
+                if ($0.denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.denom == DIPPER_MAIN_DENOM) {
+                    return false
+                }
+                return false
+            })
+            
         } else if (chainType! == ChainType.KAVA_MAIN || chainType! == ChainType.KAVA_TEST) {
             return coins.sorted(by: {
                 if ($0.denom == KAVA_MAIN_DENOM) {

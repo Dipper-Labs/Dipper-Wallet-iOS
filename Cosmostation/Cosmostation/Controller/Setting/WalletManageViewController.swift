@@ -132,7 +132,7 @@ class WalletManageViewController: BaseViewController, UITableViewDelegate, UITab
                     cell?.chainName.isHidden = false
                     cell?.chainAll.isHidden = true
                     cell?.chainImg.image = UIImage(named: "dipperTestImg")
-                    cell?.chainName.text = "Dipper Test"
+                    cell?.chainName.text = "Dipper TEST"
                     
                 } else if (selectedChain == ChainType.IRIS_MAIN) {
                     cell?.chainImg.isHidden = false

@@ -32,9 +32,14 @@ class MsgGenerator {
             msg.value = value
             
         } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
-            value.delegator_addr = fromAddress
-            value.validator_addr = toValAddress
-            value.delegation = amount
+            value.delegator_address = fromAddress
+            value.validator_address = toValAddress
+            let data = try? JSONEncoder().encode(amount)
+            do {
+                value.amount = try JSONDecoder().decode(AmountType.self, from:data!)
+            } catch {
+                print(error)
+            }
             
             msg.type = DIPPER_MSG_TYPE_DELEGATE
             msg.value = value
@@ -273,8 +278,8 @@ class MsgGenerator {
             msg.value = value
             
         } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
-            value.delegator_addr = requestAddress
-            value.withdraw_addr = newRewardAddress
+            value.delegator_address = requestAddress
+            value.withdraw_address = newRewardAddress
             
             msg.type = DIPPER_MSG_TYPE_WITHDRAW_MIDIFY
             msg.value = value
