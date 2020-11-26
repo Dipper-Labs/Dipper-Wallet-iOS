@@ -496,6 +496,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             let cell:WalletGuideCell? = tableView.dequeueReusableCell(withIdentifier:"WalletGuideCell") as? WalletGuideCell
             cell?.guideImg.image = UIImage(named: "dipperImg")
             cell?.guideTitle.text = NSLocalizedString("send_guide_title_dip", comment: "")
+            cell?.guideTitle.text = NSLocalizedString("send_guide_title_dip", comment: "")
             cell?.guideMsg.text = NSLocalizedString("send_guide_msg_dip", comment: "")
             cell?.btn1Label.setTitle(NSLocalizedString("send_guide_btn1_dip", comment: ""), for: .normal)
             cell?.btn2Label.setTitle(NSLocalizedString("send_guide_btn2_dip", comment: ""), for: .normal)
@@ -1733,6 +1734,10 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
                 self.onShowSafariWeb(url)
             }
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            guard let url = URL(string: "https://dippernetwork.com") else { return }
+            self.onShowSafariWeb(url)
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             guard let url = URL(string: "https://www.irisnet.org") else { return }
             self.onShowSafariWeb(url)
@@ -1778,6 +1783,10 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
                 self.onShowSafariWeb(url)
             }
 
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            guard let url = URL(string: "https://medium.com/@dipper-labs") else { return }
+            self.onShowSafariWeb(url)
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             guard let url = URL(string: "https://medium.com/irisnet-blog") else { return }
             self.onShowSafariWeb(url)

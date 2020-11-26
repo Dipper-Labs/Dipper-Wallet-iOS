@@ -92,6 +92,12 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             titleChainName.text = "(Cosmos Mainnet)"
             kavaOracle.isHidden = true
             totalCard.backgroundColor = TRANS_BG_COLOR_COSMOS
+        } else if (chainType! == ChainType.DIPPER_MAIN) {
+            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainName.text = "(Dipper Hub)"
+            titleAlarmBtn.isHidden = true
+            kavaOracle.isHidden = true
+            totalCard.backgroundColor = TRANS_BG_COLOR_DIPPER
         } else if (chainType! == ChainType.IRIS_MAIN) {
             titleChainImg.image = UIImage(named: "irisWh")
             titleChainName.text = "(Iris Mainnet)"
@@ -136,7 +142,13 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             totalCard.backgroundColor = TRANS_BG_COLOR_CERTIK
         }
         
-        else if (chainType! == ChainType.BINANCE_TEST) {
+        else if (chainType! == ChainType.DIPPER_TEST) {
+            titleChainImg.image = UIImage(named: "dipperTestnet")
+            titleChainName.text = "(Dipper Testnet)"
+            kavaOracle.isHidden = true
+            titleAlarmBtn.isHidden = true
+            totalCard.backgroundColor = COLOR_BG_GRAY
+        } else if (chainType! == ChainType.BINANCE_TEST) {
             titleChainImg.image = UIImage(named: "binancetestnet")
             titleChainName.text = "(Binance Testnet)"
             kavaOracle.isHidden = true
@@ -199,6 +211,9 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         self.tokenTableView.reloadData()
         if (chainType! == ChainType.COSMOS_MAIN) {
             onFetchCosmosTokenPrice()
+            
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            onFetchDIPTokenPrice()
             
         } else if (chainType! == ChainType.IRIS_MAIN) {
             onFetchIrisTokenPrice()
@@ -326,6 +341,11 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             totalAmount.attributedText = WUtils.displayAmount2(allAtom.stringValue, totalAmount.font, 6, 6)
             totalValue.attributedText = WUtils.dpAtomValue(allAtom, BaseData.instance.getLastPrice(), totalValue.font)
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            let allDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            totalAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, totalAmount.font, 12, 6)
+            totalValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), totalValue.font)
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             let allIris = WUtils.getAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator)
             totalAmount.attributedText = WUtils.dpAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator, totalAmount.font, 6, chainType!)
@@ -425,7 +445,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         let tokenDetailVC = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TokenDetailViewController") as! TokenDetailViewController
         tokenDetailVC.hidesBottomBarWhenPushed = true
         self.navigationItem.title = ""
-        if (chainType! == ChainType.COSMOS_MAIN || chainType! == ChainType.KAVA_MAIN || chainType! == ChainType.KAVA_TEST) {
+        if (chainType! == ChainType.COSMOS_MAIN || chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST || chainType! == ChainType.KAVA_MAIN || chainType! == ChainType.KAVA_TEST) {
             tokenDetailVC.balance = mainTabVC.mBalances[indexPath.row]
             tokenDetailVC.allValidator = mainTabVC.mAllValidator
             tokenDetailVC.allRewards = mainTabVC.mRewardList
@@ -484,26 +504,18 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     func onSetDIPItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
         let balance = mainTabVC.mBalances[indexPath.row]
-        if let irisToken = WUtils.getIrisToken(mainTabVC.mIrisTokenList, balance) {
-            cell?.tokenSymbol.text = irisToken.base_token?.symbol.uppercased()
-            cell?.tokenTitle.text = "(" + irisToken.base_token!.id + ")"
-            cell?.tokenDescription.text = irisToken.base_token?.name
-            if (balance.balance_denom == IRIS_MAIN_DENOM) {
-                cell?.tokenImg.image = UIImage(named: "irisTokenImg")
-                cell?.tokenSymbol.textColor = COLOR_IRIS
-                
-                let allIris = WUtils.getAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator)
-                cell?.tokenAmount.attributedText = WUtils.displayAmount2(allIris.stringValue, cell!.tokenAmount.font, 18, 6)
-                cell?.tokenValue.attributedText = WUtils.dpIrisValue(allIris, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
-                
-            } else {
-                cell?.tokenImg.image = UIImage(named: "tokenIc")
-                cell?.tokenSymbol.textColor = UIColor.white
-                
-                cell?.tokenAmount.attributedText = WUtils.displayIrisToken(balance.balance_amount, cell!.tokenAmount.font, 6, irisToken.base_token!.decimal)
-                cell?.tokenValue.attributedText = WUtils.dpValue(NSDecimalNumber.zero, cell!.tokenValue.font)
-            }
-        }
+        if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
+            cell?.tokenImg.image = UIImage(named: "DIPTokenImg")
+            cell?.tokenSymbol.text = "DIP"
+            cell?.tokenSymbol.textColor = COLOR_DIP
+            cell?.tokenTitle.text = "(" + balance.balance_denom + ")"
+            cell?.tokenDescription.text = "Dipper Network Native Token"
+                        
+            let allDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.tokenAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, cell!.tokenAmount.font!, 12, 6)
+            cell?.tokenValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
+            
+        } else { }
         return cell!
     }
     
@@ -747,6 +759,10 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     }
     
     func onFetchCosmosTokenPrice() {
+        self.onUpdateTotalCard()
+    }
+    
+    func onFetchDIPTokenPrice() {
         self.onUpdateTotalCard()
     }
     

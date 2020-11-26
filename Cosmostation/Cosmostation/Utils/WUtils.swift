@@ -903,6 +903,10 @@ class WUtils {
         return displayAmount(getAllAtom(balances, bondings, unbondings, rewards, validators).stringValue, font, deciaml, chain)
     }
     
+    static func dpAllDIP(_ balances:Array<Balance>, _ bondings:Array<Bonding>, _ unbondings:Array<Unbonding>,_ rewards:Array<Reward>, _ validators:Array<Validator>, _ font:UIFont, _ deciaml:Int, _ chain:ChainType) ->  NSMutableAttributedString {
+        return displayAmount(getAllDIP(balances, bondings, unbondings, rewards, validators).stringValue, font, deciaml, chain)
+    }
+    
     static func dpAllIris(_ balances:Array<Balance>, _ bondings:Array<Bonding>, _ unbondings:Array<Unbonding>,_ rewards:IrisRewards?, _ validators:Array<Validator>, _ font:UIFont, _ deciaml:Int, _ chain:ChainType) -> NSMutableAttributedString {
         return displayAmount(getAllIris(balances, bondings, unbondings, rewards, validators).stringValue, font, deciaml, chain)
     }
@@ -957,6 +961,19 @@ class WUtils {
             result = NSDecimalNumber(value: price!).dividing(by: NSDecimalNumber(string: "1000000000000000000")).multiplying(by: amount, withBehavior: WUtils.handler2Down)
         }
         return dpValue(result, font)
+    }
+    
+    static func dpAllDIPValue(_ balances:Array<Balance>, _ bondings:Array<Bonding>, _ unbondings:Array<Unbonding>,_ rewards:Array<Reward>, _ validators:Array<Validator>, _ price:Double?, _ font:UIFont) ->  NSMutableAttributedString {
+        if (price == nil) {
+            return dpValue(NSDecimalNumber.zero, font)
+        }
+        var amount = getAllDIP(balances, bondings, unbondings, rewards, validators)
+        if (BaseData.instance.getCurrency() == 5) {
+            amount = NSDecimalNumber(value: price!).dividing(by: NSDecimalNumber(string: "1000000000000")).multiplying(by: amount, withBehavior: WUtils.handler8)
+        } else {
+            amount = NSDecimalNumber(value: price!).dividing(by: NSDecimalNumber(string: "1000000000000")).multiplying(by: amount, withBehavior: WUtils.handler2Down)
+        }
+        return dpValue(amount, font)
     }
     
     static func dpDIPValue(_ amount:NSDecimalNumber, _ price:Double?, _ font:UIFont) ->  NSMutableAttributedString {

@@ -189,6 +189,9 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
                 if (chainType == ChainType.COSMOS_MAIN && balance?.balance_denom == COSMOS_MAIN_DENOM) {
                     return onSetCosmosItems(tableView, indexPath);
                     
+                } else if ((chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) && balance?.balance_denom == DIPPER_MAIN_DENOM) {
+                    return onSetDIPItem(tableView, indexPath);
+                    
                 } else if (chainType == ChainType.IRIS_MAIN && balance?.balance_denom == IRIS_MAIN_DENOM) {
                     return onSetIrisItem(tableView, indexPath);
                     
@@ -306,6 +309,32 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
         cell?.actionBuy = {
             self.onBuyCoin()
         }
+        return cell!
+    }
+    
+    func onSetDIPItem(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        //TODO by captain reuse the irisCell
+        let cell:TokenDetailHeaderIrisCell? = tableView.dequeueReusableCell(withIdentifier:"TokenDetailHeaderIrisCell") as? TokenDetailHeaderIrisCell
+
+        let balances = BaseData.instance.selectBalanceById(accountId: account!.account_id)
+        let bondingList = BaseData.instance.selectBondingById(accountId: account!.account_id)
+        let unbondingList = BaseData.instance.selectUnbondingById(accountId: account!.account_id)
+        
+        cell?.totalAmount.attributedText = WUtils.dpAllDIP(balances, bondingList, unbondingList, allRewards, allValidator, cell!.totalAmount.font, 6, chainType!)
+        cell?.totalValue.attributedText = WUtils.dpAllDIPValue(balances, bondingList, unbondingList, allRewards, allValidator, BaseData.instance.getLastPrice(), cell!.totalAmount.font)
+        cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(balances, cell!.availableAmount.font, 6, COSMOS_MAIN_DENOM, chainType!)
+        cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(bondingList, allValidator, cell!.delegatedAmount.font, 6, chainType!)
+        cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(unbondingList, cell!.unbondingAmount.font, 6, chainType!)
+        cell?.rewardAmount.attributedText = WUtils.dpRewards(allRewards, cell!.rewardAmount.font, 6, COSMOS_MAIN_DENOM, chainType!)
+        cell?.actionSend  = {
+            self.onSendToken()
+        }
+//        cell?.actionReceive = {
+//            self.onRecieveToken()
+//        }
+//        cell?.actionBuy = {
+//            self.onBuyCoin()
+//        }
         return cell!
     }
     

@@ -112,7 +112,7 @@
 "from_all_my_val" = "From all my validators";
 "send_guide_title_cosmos" = "COSMOS HUB";
 "send_guide_msg_cosmos" = "Decentralized network of blockchains \npowered by Tendermint BFT and ABCI";
-"send_guide_title_dip" = "DIPPER HUB";
+"send_guide_title_dip" = "DIPPER Network";
 "send_guide_msg_dip" = "Decentralized network of blockchains \npowered by Cross chain and DeFi";
 "send_guide_title_iris" = "IRIS HUB";
 "send_guide_msg_iris" = "Interchain service infrastructure \nfor a distributed business ecosystem";
