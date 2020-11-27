@@ -97,7 +97,7 @@ class SettingTableViewController: UITableViewController, PasswordViewDelegate {
                 }
                 
             } else if(indexPath.row == 1) {
-                let url = URL(string: "tg://resolve?domain=cosmostation")
+                let url = URL(string: "tg://resolve?domain=DipperNetworkOfficial")
                 if(UIApplication.shared.canOpenURL(url!)) {
                     UIApplication.shared.open(url!, options: [:], completionHandler: nil)
                 } else {
@@ -119,6 +119,14 @@ class SettingTableViewController: UITableViewController, PasswordViewDelegate {
             } else if(indexPath.row == 2) {
                 if (chainType == ChainType.COSMOS_MAIN) {
                     guard let url = URL(string: EXPLORER_COSMOS_MAIN) else { return }
+                    self.onShowSafariWeb(url)
+                    
+                } else if (chainType == ChainType.DIPPER_MAIN) {
+                    guard let url = URL(string: EXPLORER_DIPPER_MAIN) else { return }
+                    self.onShowSafariWeb(url)
+                    
+                } else if (chainType == ChainType.DIPPER_TEST) {
+                    guard let url = URL(string: EXPLORER_DIPPER_TEST) else { return }
                     self.onShowSafariWeb(url)
                     
                 } else if (chainType == ChainType.IRIS_MAIN) {
@@ -163,27 +171,30 @@ class SettingTableViewController: UITableViewController, PasswordViewDelegate {
                 }
                 
             } else if(indexPath.row == 3) {
-                guard let url = URL(string: "https://www.cosmostation.io") else { return }
+                guard let url = URL(string: "https://dippernetwork.com") else { return }
                 self.onShowSafariWeb(url)
             }
             
         } else if (indexPath.section == 3) {
             if(indexPath.row == 0) {
-                if(Locale.current.languageCode == "ko") {
-                    guard let url = URL(string: "https://www.cosmostation.io/service_ko.html") else { return }
+//                if(Locale.current.languageCode == "ko") {
+//                    guard let url = URL(string: "https://www.cosmostation.io/service_ko.html") else { return }
+//                    self.onShowSafariWeb(url)
+//                } else {
+                //TODO by captain
+                    guard let url = URL(string: "https://dippernetwork.com") else { return }
                     self.onShowSafariWeb(url)
-                } else {
-                    guard let url = URL(string: "https://www.cosmostation.io/service_en.html") else { return }
-                    self.onShowSafariWeb(url)
-                }
+//                }
                 
                 
             } else if(indexPath.row == 1) {
-                guard let url = URL(string: "https://github.com/cosmostation/cosmostation-mobile") else { return }
+                guard let url = URL(string: "https://github.com/Dipper-Labs/Dipper-Wallet-iOS") else { return }
                 self.onShowSafariWeb(url)
                 
             } else if(indexPath.row == 2) {
-                let urlAppStore = URL(string: "itms-apps://itunes.apple.com/app/id1459830339")
+                //TODO by captain
+//                let urlAppStore = URL(string: "itms-apps://itunes.apple.com/app/id1459830339")
+                let urlAppStore = URL(string: "")
                 if(UIApplication.shared.canOpenURL(urlAppStore!)) {
                     UIApplication.shared.open(urlAppStore!, options: [:], completionHandler: nil)
                 }
