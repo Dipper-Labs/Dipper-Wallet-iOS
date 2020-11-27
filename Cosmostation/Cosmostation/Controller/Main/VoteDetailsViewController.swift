@@ -71,6 +71,12 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
             guard let url = URL(string: EXPLORER_COSMOS_MAIN + "proposals/" + proposalId!) else { return }
             self.onShowSafariWeb(url)
             
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            guard let url = URL(string: EXPLORER_DIPPER_MAIN + "governance/proposals/" + proposalId! + "?net=" + WUtils.getChainId(chainType!)) else { return }
+            self.onShowSafariWeb(url)
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            guard let url = URL(string: EXPLORER_DIPPER_TEST + "governance/proposals/" + proposalId! + "?net=" + WUtils.getChainId(chainType!)) else { return }
+            self.onShowSafariWeb(url)
         } else if (chainType == ChainType.IRIS_MAIN) {
             guard let url = URL(string: EXPLORER_IRIS_MAIN + "proposals/" + proposalId!) else { return }
             self.onShowSafariWeb(url)
@@ -101,7 +107,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
         }
         
         let bondingList = BaseData.instance.selectBondingById(accountId: account!.account_id)
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN) {
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN) {
             if (mProposal?.proposal_status != Proposal.PROPOSAL_VOTING) {
                 self.onShowToast(NSLocalizedString("error_not_voting_period", comment: ""))
                 return
@@ -180,7 +186,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
     }
     
     func getTitle() -> String? {
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN ||
                 chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             return mProposal?.getTitle()
         } else if (chainType == ChainType.IRIS_MAIN) {
@@ -190,7 +196,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
     }
     
     func getProposer() -> String? {
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN ||
                 chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             return self.mProposer
         } else if (chainType == ChainType.IRIS_MAIN) {
@@ -213,7 +219,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
     
     func onBindVoteInfo(_ tableView: UITableView) -> UITableViewCell {
         let cell:VoteInfoTableViewCell? = tableView.dequeueReusableCell(withIdentifier:"VoteInfoTableViewCell") as? VoteInfoTableViewCell
-        if ((chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) && mProposal != nil) {
+        if ((chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) && mProposal != nil) {
             cell?.statusImg.image = mProposal?.getStatusImg()
             cell?.statusTitle.text = mProposal?.proposal_status
             cell?.proposalTitle.text = mProposal?.getTitle()
@@ -250,7 +256,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
     
     func onBindTally(_ tableView: UITableView) -> UITableViewCell {
         let cell:VoteTallyTableViewCell? = tableView.dequeueReusableCell(withIdentifier:"VoteTallyTableViewCell") as? VoteTallyTableViewCell
-        if ((chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) && mTally != nil) {
+        if ((chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) && mTally != nil) {
             cell?.onUpdateCards(mTally!, mVoters, mProposal?.proposal_status)
             cell?.onCheckMyVote(mMyVote)
             
@@ -262,7 +268,7 @@ class VoteDetailsViewController: BaseViewController, UITableViewDelegate, UITabl
     }
     
     @objc func onFech() {
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             mFetchCnt = 5
             onFetchProposalDetail(proposalId!)
             onFetchTally(proposalId!)
