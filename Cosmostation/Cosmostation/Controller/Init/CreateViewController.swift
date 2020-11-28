@@ -133,7 +133,7 @@ class CreateViewController: BaseViewController, PasswordViewDelegate{
             self.chainType = ChainType.DIPPER_TEST
             self.onGenNewKey()
         })
-        dipperTestAction.setValue(UIImage(named: "dipperTestImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperTestAction.setValue(UIImage(named: "dipperImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         let irisAction = UIAlertAction(title: NSLocalizedString("chain_title_iris", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.IRIS_MAIN

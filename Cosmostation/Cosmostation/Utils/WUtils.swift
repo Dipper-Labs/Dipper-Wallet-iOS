@@ -2858,7 +2858,7 @@ class WUtils {
             img?.image = UIImage(named: "dipperImg")
         } else if (chain == ChainType.DIPPER_TEST) {
             label.text = NSLocalizedString("chain_title_test_dipper", comment: "")
-            img?.image = UIImage(named: "dipperTestImg")
+            img?.image = UIImage(named: "dipperImg")
         } else if (chain == ChainType.IRIS_MAIN) {
             label.text = NSLocalizedString("chain_title_iris", comment: "")
             img?.image = UIImage(named: "irisWh")
