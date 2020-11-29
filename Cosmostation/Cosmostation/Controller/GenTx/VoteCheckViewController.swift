@@ -88,6 +88,10 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
              url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -105,7 +109,7 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
+                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
                     guard let responseData = res as? NSDictionary,
                         let info = responseData.object(forKey: "result") as? [String : Any] else {
                         _ = BaseData.instance.deleteBalance(account: account)
@@ -179,7 +183,7 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
                 var msgList = Array<Msg>()
                 msgList.append(msg)
                 
-                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.BAND_MAIN ||
+                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.BAND_MAIN ||
                         self.pageHolderVC.chainType! == ChainType.SECRET_MAIN || self.pageHolderVC.chainType! == ChainType.CERTIK_MAIN || self.pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
                     let stdMsg = MsgGenerator.getToSignMsg(WUtils.getChainId(self.pageHolderVC.mAccount!.account_base_chain), String(self.pageHolderVC.mAccount!.account_account_numner), String(self.pageHolderVC.mAccount!.account_sequence_number), msgList, self.pageHolderVC.mFee!, self.pageHolderVC.mMemo!)
                     let encoder = JSONEncoder()
@@ -244,6 +248,10 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
                     var url: String?
                     if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                         url = COSMOS_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+                        url = DIPPER_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                        url = DIPPER_TEST_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                         url = IRIS_LCD_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN) {

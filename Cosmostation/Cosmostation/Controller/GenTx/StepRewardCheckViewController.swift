@@ -84,6 +84,12 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
                 return true
             }
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let rewardSum = WUtils.getAllRewardByDenom(pageHolderVC.mRewardList, DIPPER_MAIN_DENOM)
+            if (NSDecimalNumber.init(string: pageHolderVC.mFee!.amount[0].amount).compare(rewardSum).rawValue > 0 ) {
+                return true
+            }
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             var rewardSum = NSDecimalNumber.zero
             for delegation in pageHolderVC.mIrisRewards!.delegations {
@@ -153,6 +159,21 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
             
             let expectedAmount = userBalance.adding(rewardSum).subtracting(WUtils.localeStringToDecimal((pageHolderVC.mFee?.amount[0].amount)!))
             expectedAmountLabel.attributedText = WUtils.displayAmount(expectedAmount.stringValue, rewardAmoutLaebl.font, 6, pageHolderVC.chainType!)
+            
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let rewardSum = WUtils.getAllRewardByDenom(pageHolderVC.mRewardList, DIPPER_MAIN_DENOM)
+            rewardAmoutLaebl.attributedText = WUtils.displayAmount(rewardSum.stringValue, rewardAmoutLaebl.font, 12, pageHolderVC.chainType!)
+            feeAmountLabel.attributedText = WUtils.displayAmount((pageHolderVC.mFee?.amount[0].amount)!, feeAmountLabel.font, 12, pageHolderVC.chainType!)
+            
+            var userBalance = NSDecimalNumber.zero
+            for balance in pageHolderVC.mBalances {
+                if(balance.balance_denom == DIPPER_MAIN_DENOM) {
+                    userBalance = userBalance.adding(WUtils.localeStringToDecimal(balance.balance_amount))
+                }
+            }
+            
+            let expectedAmount = userBalance.adding(rewardSum).subtracting(WUtils.localeStringToDecimal((pageHolderVC.mFee?.amount[0].amount)!))
+            expectedAmountLabel.attributedText = WUtils.displayAmount(expectedAmount.stringValue, rewardAmoutLaebl.font, 12, pageHolderVC.chainType!)
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             var rewardSum = NSDecimalNumber.zero
@@ -321,6 +342,10 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
              url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -479,6 +504,10 @@ class StepRewardCheckViewController: BaseViewController, PasswordViewDelegate{
                     var url: String?
                     if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                         url = COSMOS_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+                        url = DIPPER_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                        url = DIPPER_TEST_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                         url = IRIS_LCD_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN) {

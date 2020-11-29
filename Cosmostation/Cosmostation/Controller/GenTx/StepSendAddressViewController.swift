@@ -83,6 +83,12 @@ class StepSendAddressViewController: BaseViewController, QrScannerDelegate {
                 return;
             }
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            if (!userInput!.starts(with: "dip") || !WKey.isValidateBech32(userInput!)) {
+                self.onShowToast(NSLocalizedString("error_invalid_address", comment: ""))
+                return;
+            }
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             if (!userInput!.starts(with: "iaa") || !WKey.isValidateBech32(userInput!)) {
                 self.onShowToast(NSLocalizedString("error_invalid_address", comment: ""))

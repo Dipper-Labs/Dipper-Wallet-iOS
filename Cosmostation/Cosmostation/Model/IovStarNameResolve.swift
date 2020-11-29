@@ -27,6 +27,11 @@ public struct IovStarNameResolve: Codable {
                     return nameResource.resource
                 }
                 
+            } else if (chain == ChainType.DIPPER_MAIN) {
+                if (nameResource.uri == "asset:dip" && nameResource.resource.starts(with: "dip")) {
+                    return nameResource.resource
+                }
+                
             } else if (chain == ChainType.IRIS_MAIN) {
                 if (nameResource.uri == "asset:iris" && nameResource.resource.starts(with: "iaa")) {
                     return nameResource.resource

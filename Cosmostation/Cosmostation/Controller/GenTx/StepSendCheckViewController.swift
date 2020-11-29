@@ -88,6 +88,19 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
             mTotalSpendPrice.attributedText = WUtils.dpAtomValue(feeAmount.adding(toSendAmount), BaseData.instance.getLastPrice(), mTotalSpendPrice.font)
             mReminaingPrice.attributedText = WUtils.dpAtomValue(currentAva.subtracting(feeAmount).subtracting(toSendAmount), BaseData.instance.getLastPrice(), mTotalSpendPrice.font)
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            mDpDecimal = 12
+            currentAva = pageHolderVC.mAccount!.getDIPBalance()
+            mToSendAmountLabel.attributedText = WUtils.displayAmount2(toSendAmount.stringValue, mToSendAmountLabel.font, 12, 12)
+            mFeeAmountLabel.attributedText = WUtils.displayAmount2(feeAmount.stringValue, mFeeAmountLabel.font, 12, 12)
+            mTotalSpendLabel.attributedText = WUtils.displayAmount2(feeAmount.adding(toSendAmount).stringValue, mTotalSpendLabel.font, 12, 12)
+            
+            mCurrentAvailable.attributedText = WUtils.displayAmount2(currentAva.stringValue, mCurrentAvailable.font, 12, 12)
+            mReminaingAvailable.attributedText = WUtils.displayAmount2(currentAva.subtracting(feeAmount).subtracting(toSendAmount).stringValue, mReminaingAvailable.font, 12, 12)
+            
+            mTotalSpendPrice.attributedText = WUtils.dpDIPValue(feeAmount.adding(toSendAmount), BaseData.instance.getLastPrice(), mTotalSpendPrice.font)
+            mReminaingPrice.attributedText = WUtils.dpDIPValue(currentAva.subtracting(feeAmount).subtracting(toSendAmount), BaseData.instance.getLastPrice(), mTotalSpendPrice.font)
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mDpDecimal = 18
             currentAva = pageHolderVC.mAccount!.getIrisBalance()
@@ -267,7 +280,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
     
     func passwordResponse(result: Int) {
         if (result == PASSWORD_RESUKT_OK) {
-            if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN || pageHolderVC.chainType! == ChainType.IRIS_MAIN || pageHolderVC.chainType! == ChainType.KAVA_MAIN ||
+            if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST || pageHolderVC.chainType! == ChainType.IRIS_MAIN || pageHolderVC.chainType! == ChainType.KAVA_MAIN ||
                     pageHolderVC.chainType! == ChainType.KAVA_TEST || pageHolderVC.chainType! == ChainType.IOV_MAIN || pageHolderVC.chainType! == ChainType.BAND_MAIN ||
                     pageHolderVC.chainType! == ChainType.SECRET_MAIN || pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.OKEX_TEST ||
                     pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.IOV_TEST) {
@@ -284,6 +297,10 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
              url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -310,6 +327,19 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
             switch response.result {
             case .success(let res):
                 if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
+                    guard let responseData = res as? NSDictionary,
+                        let info = responseData.object(forKey: "result") as? [String : Any] else {
+                        _ = BaseData.instance.deleteBalance(account: account)
+                        self.hideWaittingAlert()
+                        self.onShowToast(NSLocalizedString("error_network", comment: ""))
+                        return
+                    }
+                    let accountInfo = AccountInfo.init(info)
+                    _ = BaseData.instance.updateAccount(WUtils.getAccountWithAccountInfo(account, accountInfo))
+                    BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
+                    self.onGenSendTx()
+                    
+                }else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
                     guard let responseData = res as? NSDictionary,
                         let info = responseData.object(forKey: "result") as? [String : Any] else {
                         _ = BaseData.instance.deleteBalance(account: account)
@@ -396,7 +426,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                 var msgList = Array<Msg>()
                 msgList.append(msg)
                 
-                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST ||
+                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST ||
                         self.pageHolderVC.chainType! == ChainType.BAND_MAIN || self.pageHolderVC.chainType! == ChainType.SECRET_MAIN  || self.pageHolderVC.chainType! == ChainType.IOV_MAIN ||
                         self.pageHolderVC.chainType! == ChainType.IOV_TEST || self.pageHolderVC.chainType! == ChainType.OKEX_TEST || self.pageHolderVC.chainType! == ChainType.CERTIK_MAIN ||
                         self.pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
@@ -447,6 +477,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     signatures.append(genedSignature)
                     
                     stdTx = MsgGenerator.genSignedTx(msgList, self.pageHolderVC.mFee!, self.pageHolderVC.mMemo!, signatures)
+
                     
                 }
                 
@@ -465,6 +496,10 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     var url: String?
                     if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                         url = COSMOS_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+                        url = DIPPER_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                        url = DIPPER_TEST_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                         url = IRIS_LCD_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -490,6 +525,7 @@ class StepSendCheckViewController: BaseViewController, PasswordViewDelegate{
                     request.responseJSON { response in
                         var txResult = [String:Any]()
                         switch response.result {
+                        
                         case .success(let res):
                             if(SHOW_LOG) { print("Send ", res) }
                             if let result = res as? [String : Any]  {

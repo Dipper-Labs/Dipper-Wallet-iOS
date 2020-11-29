@@ -92,6 +92,12 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             titleChainName.text = "(Cosmos Mainnet)"
             kavaOracle.isHidden = true
             totalCard.backgroundColor = TRANS_BG_COLOR_COSMOS
+        } else if (chainType! == ChainType.DIPPER_MAIN) {
+            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainName.text = "(Dipper Hub)"
+            titleAlarmBtn.isHidden = true
+            kavaOracle.isHidden = true
+            totalCard.backgroundColor = TRANS_BG_COLOR_DIPPER
         } else if (chainType! == ChainType.IRIS_MAIN) {
             titleChainImg.image = UIImage(named: "irisWh")
             titleChainName.text = "(Iris Mainnet)"
@@ -136,7 +142,13 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             totalCard.backgroundColor = TRANS_BG_COLOR_CERTIK
         }
         
-        else if (chainType! == ChainType.BINANCE_TEST) {
+        else if (chainType! == ChainType.DIPPER_TEST) {
+            titleChainImg.image = UIImage(named: "dipperTestnet")
+            titleChainName.text = "(Dipper Testnet)"
+            kavaOracle.isHidden = true
+            titleAlarmBtn.isHidden = true
+            totalCard.backgroundColor = COLOR_BG_GRAY
+        } else if (chainType! == ChainType.BINANCE_TEST) {
             titleChainImg.image = UIImage(named: "binancetestnet")
             titleChainName.text = "(Binance Testnet)"
             kavaOracle.isHidden = true
@@ -199,6 +211,9 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         self.tokenTableView.reloadData()
         if (chainType! == ChainType.COSMOS_MAIN) {
             onFetchCosmosTokenPrice()
+            
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            onFetchDIPTokenPrice()
             
         } else if (chainType! == ChainType.IRIS_MAIN) {
             onFetchIrisTokenPrice()
@@ -326,6 +341,11 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             totalAmount.attributedText = WUtils.displayAmount2(allAtom.stringValue, totalAmount.font, 6, 6)
             totalValue.attributedText = WUtils.dpAtomValue(allAtom, BaseData.instance.getLastPrice(), totalValue.font)
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            let allDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            totalAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, totalAmount.font, 12, 6)
+            totalValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), totalValue.font)
+            
         } else if (chainType! == ChainType.IRIS_MAIN) {
             let allIris = WUtils.getAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator)
             totalAmount.attributedText = WUtils.dpAllIris(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mIrisRewards, mainTabVC.mAllValidator, totalAmount.font, 6, chainType!)
@@ -393,6 +413,8 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (chainType! == ChainType.COSMOS_MAIN) {
             return onSetCosmosItems(tableView, indexPath)
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            return onSetDIPItems(tableView, indexPath)
         } else if (chainType! == ChainType.IRIS_MAIN) {
             return onSetIrisItems(tableView, indexPath)
         } else if (chainType! == ChainType.BINANCE_MAIN || chainType! == ChainType.BINANCE_TEST) {
@@ -423,7 +445,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         let tokenDetailVC = UIStoryboard(name: "MainStoryboard", bundle: nil).instantiateViewController(withIdentifier: "TokenDetailViewController") as! TokenDetailViewController
         tokenDetailVC.hidesBottomBarWhenPushed = true
         self.navigationItem.title = ""
-        if (chainType! == ChainType.COSMOS_MAIN || chainType! == ChainType.KAVA_MAIN || chainType! == ChainType.KAVA_TEST) {
+        if (chainType! == ChainType.COSMOS_MAIN || chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST || chainType! == ChainType.KAVA_MAIN || chainType! == ChainType.KAVA_TEST) {
             tokenDetailVC.balance = mainTabVC.mBalances[indexPath.row]
             tokenDetailVC.allValidator = mainTabVC.mAllValidator
             tokenDetailVC.allRewards = mainTabVC.mRewardList
@@ -476,6 +498,24 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             cell?.tokenImg.image = UIImage(named: "tokenIc")
             cell?.tokenSymbol.textColor = UIColor.white
         }
+        return cell!
+    }
+    
+    func onSetDIPItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
+        let balance = mainTabVC.mBalances[indexPath.row]
+        if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
+            cell?.tokenImg.image = UIImage(named: "DIPTokenImg")
+            cell?.tokenSymbol.text = "DIP"
+            cell?.tokenSymbol.textColor = COLOR_DIP
+            cell?.tokenTitle.text = "(" + balance.balance_denom + ")"
+            cell?.tokenDescription.text = "Dipper Network Native Token"
+                        
+            let allDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.tokenAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, cell!.tokenAmount.font!, 12, 6)
+            cell?.tokenValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
+            
+        } else { }
         return cell!
     }
     
@@ -722,6 +762,10 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         self.onUpdateTotalCard()
     }
     
+    func onFetchDIPTokenPrice() {
+        self.onUpdateTotalCard()
+    }
+    
     func onFetchIrisTokenPrice() {
         self.onUpdateTotalCard()
     }
@@ -932,6 +976,16 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
                 return $0.balance_denom < $1.balance_denom
             }
             
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            mainTabVC.mBalances.sort{
+                if ($0.balance_denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.balance_denom == DIPPER_MAIN_DENOM){
+                    return false
+                }
+                return $0.balance_denom < $1.balance_denom
+            }
         } else if (chainType! == ChainType.IRIS_MAIN) {
             mainTabVC.mBalances.sort{
                 if ($0.balance_denom == IRIS_MAIN_DENOM) {
@@ -996,7 +1050,18 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
                 return WUtils.localeStringToDecimal($0.balance_amount).compare(WUtils.localeStringToDecimal($1.balance_amount)).rawValue > 0 ? true : false
             }
             
-        } else if (chainType! == ChainType.IRIS_MAIN) {
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            mainTabVC.mBalances.sort{
+                if ($0.balance_denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.balance_denom == DIPPER_MAIN_DENOM){
+                    return false
+                }
+                return WUtils.localeStringToDecimal($0.balance_amount).compare(WUtils.localeStringToDecimal($1.balance_amount)).rawValue > 0 ? true : false
+            }
+            
+        }else if (chainType! == ChainType.IRIS_MAIN) {
             mainTabVC.mBalances.sort{
                 if ($0.balance_denom == IRIS_MAIN_DENOM) {
                     return true

@@ -31,6 +31,18 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_DELEGATE
             msg.value = value
             
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.delegator_address = fromAddress
+            value.validator_address = toValAddress
+            let data = try? JSONEncoder().encode(amount)
+            do {
+                value.amount = try JSONDecoder().decode(AmountType.self, from:data!)
+            } catch {
+                print(error)
+            }
+            
+            msg.type = DIPPER_MSG_TYPE_DELEGATE
+            msg.value = value
         } else if (chain == ChainType.IRIS_MAIN) {
             value.delegator_addr = fromAddress
             value.validator_addr = toValAddress
@@ -60,6 +72,19 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_UNDELEGATE2
             msg.value = value
             
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.delegator_address = fromAddress
+            value.validator_address = toValAddress
+            let data = try? JSONEncoder().encode(amount)
+            do {
+                value.amount = try JSONDecoder().decode(AmountType.self, from:data!)
+            } catch {
+                print(error)
+            }
+            
+            msg.type = DIPPER_MSG_TYPE_UNDELEGATE2
+            msg.value = value
+            
         } else if (chain == ChainType.IRIS_MAIN) {
             value.delegator_addr = fromAddress
             value.validator_addr = toValAddress
@@ -84,7 +109,14 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_WITHDRAW_DEL
             msg.value = value
             
-        } else if (chain == ChainType.IRIS_MAIN) {
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.delegator_address = fromAddress
+            value.validator_address = toValAddress
+                
+            msg.type = DIPPER_MSG_TYPE_WITHDRAW_DEL
+            msg.value = value
+                
+        }else if (chain == ChainType.IRIS_MAIN) {
             value.delegator_addr = fromAddress
             value.validator_addr = toValAddress
             
@@ -122,6 +154,18 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_TRANSFER2
             msg.value = value
             
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.from_address = fromAddress
+            value.to_address = toAddress
+            let data = try? JSONEncoder().encode(amount)
+            do {
+                value.amount = try JSONDecoder().decode(AmountType.self, from:data!)
+            } catch {
+                print(error)
+            }
+            
+            msg.type = DIPPER_MSG_TYPE_TRANSFER2
+            msg.value = value
         } else if (chain == ChainType.IRIS_MAIN) {
             let input = InOutPut.init(fromAddress, amount)
             var inputs: Array<InOutPut> = Array<InOutPut>()
@@ -185,7 +229,21 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_REDELEGATE2
             msg.value = value
             
-        } else if (chain == ChainType.IRIS_MAIN) {
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.delegator_address = address
+            value.validator_src_address = fromValAddress
+            value.validator_dst_address = toValAddress
+            let data = try? JSONEncoder().encode(amount)
+            do {
+                value.amount = try JSONDecoder().decode(AmountType.self, from:data!)
+            } catch {
+                print(error)
+            }
+            
+            msg.type = DIPPER_MSG_TYPE_REDELEGATE2
+            msg.value = value
+        }
+        else if (chain == ChainType.IRIS_MAIN) {
             value.delegator_addr = address
             value.validator_src_addr = fromValAddress
             value.validator_dst_addr = toValAddress
@@ -219,6 +277,12 @@ class MsgGenerator {
             msg.type = COSMOS_MSG_TYPE_WITHDRAW_MIDIFY
             msg.value = value
             
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.delegator_address = requestAddress
+            value.withdraw_address = newRewardAddress
+            
+            msg.type = DIPPER_MSG_TYPE_WITHDRAW_MIDIFY
+            msg.value = value
         } else if (chain == ChainType.IRIS_MAIN) {
             value.delegator_addr = requestAddress
             value.withdraw_addr = newRewardAddress
@@ -238,6 +302,14 @@ class MsgGenerator {
             value.option = opinion
             
             msg.type = COSMOS_MSG_TYPE_VOTE
+            msg.value = value
+            
+        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+            value.proposal_id = proposalId
+            value.voter = fromAddress
+            value.option = opinion
+            
+            msg.type = DIPPER_MSG_TYPE_VOTE
             msg.value = value
             
         } else if (chain == ChainType.IRIS_MAIN) {

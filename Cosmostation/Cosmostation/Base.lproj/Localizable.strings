@@ -88,6 +88,7 @@
 "fee_speed_title_0" = "Only a handful of validators will process this Tx.";
 "fee_speed_title_1" = "A few validators include \"Cosmostation\" will process this Tx.";
 "fee_speed_title_2" = "Most validators will process this Tx.";
+"fee_speed_dip_title" = "Support fixed amount fee for Dipper Network.";
 "fee_speed_iris_title" = "Support fixed amount fee for Iris.\nIris Hub will refund the remaining gas fee after use.";
 "fee_speed_bnb_title" = "Support fixed fee for Binance Chain";
 "fee_speed_kava_title" = "Support fixed transfer fee for KAVA now";
@@ -111,6 +112,8 @@
 "from_all_my_val" = "From all my validators";
 "send_guide_title_cosmos" = "COSMOS HUB";
 "send_guide_msg_cosmos" = "Decentralized network of blockchains \npowered by Tendermint BFT and ABCI";
+"send_guide_title_dip" = "Dipper Network";
+"send_guide_msg_dip" = "Decentralized network of blockchains \npowered by Cross chain and DeFi";
 "send_guide_title_iris" = "IRIS HUB";
 "send_guide_msg_iris" = "Interchain service infrastructure \nfor a distributed business ecosystem";
 "send_guide_title_bnb" = "BINANCE CHAIN";
@@ -128,6 +131,7 @@
 "send_guide_title_secret" = "SECRET CHAIN";
 "send_guide_msg_secret" = "First Proof-of-Stake network to enable privacy-preserving smart contracts. Secret allows private, secure computation.";
 "send_guide_btn1_cosmos" = "Guide";
+"send_guide_btn1_dip" = "Home";
 "send_guide_btn1_iris" = "Home";
 "send_guide_btn1_bnb" = "Market";
 "send_guide_btn1_kava" = "About USDX";
@@ -137,6 +141,7 @@
 "send_guide_btn1_certik" = "Home";
 "send_guide_btn1_secret" = "Home";
 "send_guide_btn2_cosmos" = "FAQ";
+"send_guide_btn2_dip" = "Medium";
 "send_guide_btn2_iris" = "Medium";
 "send_guide_btn2_bnb" = "Blog";
 "send_guide_btn2_kava" = "Blog";
@@ -585,6 +590,8 @@
 "tx_known" = "Unknown";
 
 "chain_title_cosmos" = "Cosmos Mainnet";
+"chain_title_dipper" = "Dipper Hub";
+"chain_title_test_dipper" = "Dipper Testnet";
 "chain_title_iris" = "Iris Mainnet";
 "chain_title_bnb" = "Binance Mainnet";
 "chain_title_kava" = "Kava Mainnet";

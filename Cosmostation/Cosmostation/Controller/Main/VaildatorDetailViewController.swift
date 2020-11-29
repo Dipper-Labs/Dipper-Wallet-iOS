@@ -89,6 +89,15 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             onFetchSelfBondRate(WKey.getAddressFromOpAddress(mValidator!.operator_address, chainType!), mValidator!.operator_address)
             onFetchApiHistory(account!, mValidator!)
             
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            mUnbondings.removeAll()
+            mRewards.removeAll()
+            mFetchCnt = 5
+            onFetchValidatorInfo(mValidator!)
+            onFetchSignleBondingInfo(account!, mValidator!)
+            onFetchSignleUnBondingInfo(account!, mValidator!)
+            onFetchSelfBondRate(WKey.getAddressFromOpAddress(mValidator!.operator_address, chainType!), mValidator!.operator_address)
+            onFetchApiHistory(account!, mValidator!)
         } else if (chainType == ChainType.IRIS_MAIN) {
             mUnbondings.removeAll()
             mFetchCnt = 6
@@ -268,6 +277,11 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 6, 6)
             cell?.validatorImg.af_setImage(withURL: URL(string: COSMOS_VAL_URL + mValidator!.operator_address + ".png")!)
             
+        }   else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.commission_rates.rate, font: cell!.commissionRate.font)
+            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 12)
+            cell?.validatorImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + mValidator!.operator_address + ".png")!)
+            
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.rate, font: cell!.commissionRate.font)
             cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 0, 18)
@@ -376,6 +390,11 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 6, 6)
             cell?.validatorImg.af_setImage(withURL: URL(string: COSMOS_VAL_URL + mValidator!.operator_address + ".png")!)
             
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.commission_rates.rate, font: cell!.commissionRate.font)
+            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 12)
+            cell?.validatorImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + mValidator!.operator_address + ".png")!)
+            
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.rate, font: cell!.commissionRate.font)
             cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 0, 18)
@@ -423,6 +442,9 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         }
         
         if (mIsTop100 && chainType == ChainType.COSMOS_MAIN) {
+            cell!.avergaeYield.attributedText = WUtils.getDpEstAprCommission(cell!.avergaeYield.font, mValidator!.getCommission(), chainType!)
+            
+        } else if (mIsTop100 && (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST)) {
             cell!.avergaeYield.attributedText = WUtils.getDpEstAprCommission(cell!.avergaeYield.font, mValidator!.getCommission(), chainType!)
             
         } else if (mIsTop100 && chainType == ChainType.IRIS_MAIN) {
@@ -492,7 +514,29 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 cell!.myRewardAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myRewardAmount.font, 6, chainType!)
             }
             
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if (mBonding != nil) {
+                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount((mBonding?.getBondingAmount(mValidator!).stringValue)!, cell!.myDelegateAmount.font, 12, chainType!)
+            } else {
+                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myDelegateAmount.font, 12, chainType!)
+            }
+            if (mUnbondings.count > 0) {
+                var unbondSum = NSDecimalNumber.zero
+                for unbonding in mUnbondings {
+                    unbondSum  = unbondSum.adding(WUtils.localeStringToDecimal(unbonding.unbonding_balance))
+                }
+                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(unbondSum.stringValue, cell!.myUndelegateAmount.font, 12, chainType!)
+            } else {
+                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myUndelegateAmount.font, 12, chainType!)
+            }
+            if (mRewards.count > 0) {
+                let rewardSum = WUtils.getAllRewardByDenom(mRewards, DIPPER_MAIN_DENOM)
+                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(rewardSum.stringValue, cell!.myRewardAmount.font, 12, chainType!)
+            } else {
+                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myRewardAmount.font, 12, chainType!)
+            }
+            
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             if (mBonding != nil) {
                 cell!.myDelegateAmount.attributedText =  WUtils.displayAmount2((mBonding?.getBondingAmount(mValidator!).stringValue)!, cell!.myDelegateAmount.font, 18, 18)
             } else {
@@ -650,6 +694,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             cell!.myDailyReturns.attributedText =  WUtils.getDailyReward(cell!.myDailyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
             cell!.myMonthlyReturns.attributedText =  WUtils.getMonthlyReward(cell!.myMonthlyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
             
+        } else  if (mIsTop100 && (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST)) {
+            cell!.myDailyReturns.attributedText =  WUtils.getDailyReward(cell!.myDailyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
+            cell!.myMonthlyReturns.attributedText =  WUtils.getMonthlyReward(cell!.myMonthlyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
+            
         } else if (mIsTop100 && chainType == ChainType.IRIS_MAIN) {
             if (mIrisStakePool != nil && mBonding != nil) {
                 let provisions = NSDecimalNumber.init(string: mIrisStakePool?.object(forKey: "total_supply") as? String).multiplying(by: NSDecimalNumber.init(string: "0.04"), withBehavior: WUtils.handler0Down)
@@ -776,6 +824,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_VALIDATORS + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_VALIDATORS + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_VALIDATORS + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_VALIDATORS + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -799,7 +851,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -828,6 +880,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_BONDING + account.account_address + COSMOS_URL_BONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_BONDING + account.account_address + DIPPER_URL_BONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_BONDING + account.account_address + DIPPER_TEST_URL_BONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_BONDING + account.account_address + IRIS_LCD_URL_BONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -851,7 +907,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.CERTIK_MAIN ||
                         self.chainType == ChainType.IOV_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -887,6 +943,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_UNBONDING + account.account_address + COSMOS_URL_UNBONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_UNBONDING + account.account_address + DIPPER_URL_UNBONDING_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_UNBONDING + account.account_address + DIPPER_TEST_URL_UNBONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_UNBONDING + account.account_address + IRIS_LCD_URL_UNBONDING_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -910,7 +970,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.CERTIK_MAIN  || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -945,6 +1005,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_FROM_VAL + account.account_address + COSMOS_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_FROM_VAL + account.account_address + DIPPER_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_FROM_VAL + account.account_address + DIPPER_TEST_URL_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_FROM_VAL + account.account_address + KAVA_REWARD_FROM_VAL_TAIL + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_TEST) {
@@ -966,7 +1030,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -1011,6 +1075,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_API_HISTORY + account.account_address + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_API_HISTORY + account.account_address + "/" + validator.operator_address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_API_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_API_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -1054,6 +1122,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_BONDING + address + COSMOS_URL_BONDING_TAIL + "/" + vAddress
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_BONDING + address + DIPPER_URL_BONDING_TAIL + "/" + vAddress
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_BONDING + address + DIPPER_TEST_URL_BONDING_TAIL + "/" + vAddress
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_BONDING + address + IRIS_LCD_URL_BONDING_TAIL + "/" + vAddress
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -1077,7 +1149,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     guard let responseData = res as? NSDictionary,
@@ -1106,6 +1178,10 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REDELEGATION;
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REDELEGATION;
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REDELEGATION;
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REDELEGATION;
         } else if (chainType == ChainType.KAVA_TEST) {
@@ -1127,7 +1203,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         request.responseJSON { (response) in
             switch response.result {
             case .success(let res):
-                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+                if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                         self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                         self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
                     if let responseData = res as? NSDictionary,
@@ -1175,7 +1251,11 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_ADDRESS + accountAddr + COSMOS_URL_REWARD_ADDRESS_TAIL
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_ADDRESS + accountAddr + DIPPER_URL_REWARD_ADDRESS_TAIL
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_ADDRESS + accountAddr + DIPPER_TEST_URL_REWARD_ADDRESS_TAIL
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_REWARD_ADDRESS + accountAddr + IRIS_LCD_URL_REWARD_ADDRESS_TAIL
         } else if (chainType == ChainType.KAVA_MAIN) {
             url = KAVA_REWARD_ADDRESS + accountAddr + KAVA_REWARD_ADDRESS_TAIL
@@ -1216,7 +1296,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                     if(SHOW_LOG) { print("onFetchRewardAddress ", error) }
                 }
             }
-        } else if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
+        } else if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST || self.chainType == ChainType.KAVA_MAIN || self.chainType == ChainType.KAVA_TEST ||
                     self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN || self.chainType == ChainType.IOV_MAIN ||
                     self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_TEST) {
             request.responseJSON { (response) in
@@ -1275,6 +1355,12 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 return
             }
             
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if (WUtils.getDelegableAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.zero).rawValue <= 0) {
+                self.onShowToast(NSLocalizedString("error_not_enough_delegable", comment: ""))
+                return
+            }
+            
         } else if (chainType == ChainType.IRIS_MAIN) {
             if (WUtils.getTokenAmount(balances, IRIS_MAIN_DENOM).compare(NSDecimalNumber.init(string: "400000000000000000")).rawValue < 0) {
                 self.onShowToast(NSLocalizedString("error_not_enough_fee", comment: ""))
@@ -1328,6 +1414,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN  || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_DELEGATE
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_DELEGATE
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_DELEGATE
         }
@@ -1365,6 +1453,12 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 return
             }
             
+        } else if (self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST) {
+            //TODO by captain
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "400000000000")).rawValue <= 0) {
+                self.onShowToast(NSLocalizedString("error_not_enough_fee", comment: ""))
+                return
+            }
         }
         
         if (chainType == ChainType.IOV_MAIN) {
@@ -1399,6 +1493,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_UNDELEGATE2
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_UNDELEGATE
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_UNDELEGATE
         }
@@ -1416,9 +1512,9 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             self.onShowToast(NSLocalizedString("error_not_redelegate", comment: ""))
             return
         }
-
+        //TODO by captain
         let balances = BaseData.instance.selectBalanceById(accountId: account!.account_id)
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
             chainType == ChainType.BAND_MAIN) {
             self.onFetchRedelegatedState(account!.account_address, mValidator!.operator_address)
             
@@ -1470,6 +1566,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_REDELEGATE2
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_REDELEGATE2
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mIrisRedelegate = mIrisRedelegate
             txVC.mType = IRIS_MSG_TYPE_REDELEGATE
@@ -1497,6 +1595,23 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                     return
                 }
                 
+            } else {
+                self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
+                return
+            }
+            
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if (mRewards.count > 0) {
+                let rewardSum = WUtils.getAllRewardByDenom(mRewards, DIPPER_MAIN_DENOM)
+                if (rewardSum == NSDecimalNumber.zero) {
+                    self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
+                    return
+                }
+                if (rewardSum.compare(NSDecimalNumber.one).rawValue < 0) {
+                    self.onShowToast(NSLocalizedString("error_wasting_fee", comment: ""))
+                    return
+                }
+
             } else {
                 self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
                 return
@@ -1654,6 +1769,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
                 chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             txVC.mType = COSMOS_MSG_TYPE_WITHDRAW_DEL
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            txVC.mType = DIPPER_MSG_TYPE_WITHDRAW_DEL
         } else if (chainType == ChainType.IRIS_MAIN) {
             txVC.mType = IRIS_MSG_TYPE_WITHDRAW
         }
@@ -1672,6 +1789,23 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         if (chainType == ChainType.COSMOS_MAIN) {
             if (mRewards.count > 0) {
                 let rewardSum = WUtils.getAllRewardByDenom(mRewards, COSMOS_MAIN_DENOM)
+                if (rewardSum == NSDecimalNumber.zero) {
+                    self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
+                    return
+                }
+                if (rewardSum.compare(NSDecimalNumber.one).rawValue < 0) {
+                    self.onShowToast(NSLocalizedString("error_wasting_fee", comment: ""))
+                    return
+                }
+                
+            } else {
+                self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
+                return
+            }
+            
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            if (mRewards.count > 0) {
+                let rewardSum = WUtils.getAllRewardByDenom(mRewards, DIPPER_MAIN_DENOM)
                 if (rewardSum == NSDecimalNumber.zero) {
                     self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
                     return

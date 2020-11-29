@@ -375,6 +375,8 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
             if (self.chainType == ChainType.COSMOS_MAIN || self.chainType == ChainType.BAND_MAIN || self.chainType == ChainType.SECRET_MAIN ||
                     self.chainType == ChainType.IOV_MAIN || self.chainType == ChainType.IOV_TEST || self.chainType == ChainType.CERTIK_MAIN || self.chainType == ChainType.CERTIK_TEST) {
                 txVC.mType = COSMOS_MSG_TYPE_WITHDRAW_MIDIFY
+            } else if (self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST) {
+                txVC.mType = DIPPER_MSG_TYPE_WITHDRAW_MIDIFY
             } else if (self.chainType == ChainType.IRIS_MAIN) {
                 txVC.mType = IRIS_MSG_TYPE_WITHDRAW_MIDIFY
             }
@@ -451,7 +453,11 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
         var url = ""
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REWARD_ADDRESS + accountAddr + COSMOS_URL_REWARD_ADDRESS_TAIL
-        } else if (chainType == ChainType.IRIS_MAIN) {
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REWARD_ADDRESS + accountAddr + DIPPER_URL_REWARD_ADDRESS_TAIL
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REWARD_ADDRESS + accountAddr + DIPPER_TEST_URL_REWARD_ADDRESS_TAIL
+        }  else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_REWARD_ADDRESS + accountAddr + IRIS_LCD_URL_REWARD_ADDRESS_TAIL
         } else if (chainType == ChainType.BAND_MAIN) {
             url = BAND_REWARD_ADDRESS + accountAddr + BAND_REWARD_ADDRESS_TAIL

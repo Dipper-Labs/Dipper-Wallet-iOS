@@ -84,7 +84,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
         if (mIsGen) {
             self.loadingMsg.isHidden = false
             self.loadingImg.onStartAnimation()
-            if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
+            if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
                     chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN || chainType == ChainType.IOV_MAIN ||
                     chainType == ChainType.CERTIK_MAIN || chainType == ChainType.IOV_TEST || chainType == ChainType.OKEX_TEST || chainType == ChainType.CERTIK_TEST) {
                 guard let txHash = mBroadCaseResult?["txhash"] as? String  else {
@@ -1378,6 +1378,14 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             url = COSMOS_URL_TX + txHash
             request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
             
+        } else if (self.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_TX + txHash
+            request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
+            
+        } else if (self.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_TX + txHash
+            request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
+            
         } else if (self.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_TX + txHash
             request = Alamofire.request(url, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
@@ -1584,6 +1592,17 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                     return true
                 }
                 if ($1.denom == COSMOS_MAIN_DENOM) {
+                    return false
+                }
+                return false
+            })
+            
+        } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
+            return coins.sorted(by: {
+                if ($0.denom == DIPPER_MAIN_DENOM) {
+                    return true
+                }
+                if ($1.denom == DIPPER_MAIN_DENOM) {
                     return false
                 }
                 return false

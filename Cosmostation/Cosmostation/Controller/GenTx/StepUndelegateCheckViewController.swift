@@ -87,6 +87,10 @@ class StepUndelegateCheckViewController: BaseViewController, PasswordViewDelegat
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
              url = COSMOS_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_ACCOUNT_INFO + account.account_address
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             url = IRIS_LCD_URL_ACCOUNT_INFO + account.account_address
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
@@ -111,6 +115,19 @@ class StepUndelegateCheckViewController: BaseViewController, PasswordViewDelegat
             switch response.result {
             case .success(let res):
                 if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
+                    guard let responseData = res as? NSDictionary,
+                        let info = responseData.object(forKey: "result") as? [String : Any] else {
+                            _ = BaseData.instance.deleteBalance(account: account)
+                            self.hideWaittingAlert()
+                            self.onShowToast(NSLocalizedString("error_network", comment: ""))
+                            return
+                    }
+                    let accountInfo = AccountInfo.init(info)
+                    _ = BaseData.instance.updateAccount(WUtils.getAccountWithAccountInfo(account, accountInfo))
+                    BaseData.instance.updateBalances(account.account_id, WUtils.getBalancesWithAccountInfo(account, accountInfo))
+                    self.onGenUnDelegateTx()
+                    
+                } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
                     guard let responseData = res as? NSDictionary,
                         let info = responseData.object(forKey: "result") as? [String : Any] else {
                             _ = BaseData.instance.deleteBalance(account: account)
@@ -265,7 +282,11 @@ class StepUndelegateCheckViewController: BaseViewController, PasswordViewDelegat
                     var url: String?
                     if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
                         url = COSMOS_URL_BORAD_TX
-                    } else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+                        url = DIPPER_URL_BORAD_TX
+                    } else if (self.pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                        url = DIPPER_TEST_URL_BORAD_TX
+                    }  else if (self.pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                         url = IRIS_LCD_URL_BORAD_TX
                     } else if (self.pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
                         url = KAVA_BORAD_TX

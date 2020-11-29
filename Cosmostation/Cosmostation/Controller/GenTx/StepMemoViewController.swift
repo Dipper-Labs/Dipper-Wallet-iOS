@@ -32,7 +32,7 @@ class StepMemoViewController: BaseViewController, UITextViewDelegate, QrScannerD
         (NSClassFromString("UICalloutBarButton")! as! UIButton.Type).appearance().setTitleColor(UIColor.black, for: .normal)
         
         chainType = pageHolderVC.chainType!
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.CERTIK_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_TEST) {
             memoCntLabel.text = "0/255 byte"
@@ -98,7 +98,7 @@ class StepMemoViewController: BaseViewController, UITextViewDelegate, QrScannerD
     
     func textViewDidChange(_ textView: UITextView) {
         let byteArray = [UInt8](textView.text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).utf8)
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN ||
                 chainType == ChainType.CERTIK_MAIN || chainType == ChainType.IOV_TEST || chainType == ChainType.OKEX_TEST || chainType == ChainType.CERTIK_TEST) {
             memoCntLabel.text = String(byteArray.count) + "/255 byte"
@@ -119,7 +119,7 @@ class StepMemoViewController: BaseViewController, UITextViewDelegate, QrScannerD
     
     func isValiadMemoSize() -> Bool {
         let byteArray = [UInt8](memoInputTextView.text.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).utf8)
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN ||
                 chainType == ChainType.CERTIK_MAIN || chainType == ChainType.IOV_TEST || chainType == ChainType.OKEX_TEST || chainType == ChainType.CERTIK_TEST) {
             if (byteArray.count > 255) {

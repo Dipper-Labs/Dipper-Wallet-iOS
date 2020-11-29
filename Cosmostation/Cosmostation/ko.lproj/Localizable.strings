@@ -110,6 +110,8 @@
 "from_all_my_val" = "내 모든 검증인으로 부터";
 "send_guide_title_cosmos" = "COSMOS HUB";
 "send_guide_msg_cosmos" = "Tendermint BFT와 ABCI \n기반의 분산형 블록체인 네트워크.";
+"send_guide_title_dip" = "DIPPER HUB";
+"send_guide_msg_dip" = "Cross chain와 DeFi \n기반의 분산형 블록체인 네트워크.";
 "send_guide_title_iris" = "IRIS HUB";
 "send_guide_msg_iris" = "분산형 비즈니스 생태계를 위한 \n인터체인 서비스 인프라 & 프로토콜.";
 "send_guide_title_bnb" = "BINANCE CHAIN";

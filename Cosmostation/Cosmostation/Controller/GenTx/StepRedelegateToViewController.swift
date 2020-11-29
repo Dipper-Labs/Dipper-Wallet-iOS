@@ -267,6 +267,10 @@ class StepRedelegateToViewController: BaseViewController, UITableViewDelegate, U
         var url: String?
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN) {
             url = COSMOS_URL_REDELEGATION;
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            url = DIPPER_URL_REDELEGATION;
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_URL_REDELEGATION;
         } else if (pageHolderVC.chainType! == ChainType.KAVA_MAIN) {
             url = KAVA_REDELEGATION;
         } else if (pageHolderVC.chainType! == ChainType.KAVA_TEST) {

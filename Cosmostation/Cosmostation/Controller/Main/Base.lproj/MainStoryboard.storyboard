@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <!--Main Tab Wallet View Controller-->
         <scene sceneID="tXJ-Az-en9">
             <objects>
-                <viewController id="G92-8m-qqM" customClass="MainTabWalletViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G92-8m-qqM" customClass="MainTabWalletViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3wT-my-HkK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -119,7 +119,7 @@
         <!--Validator List View Controller-->
         <scene sceneID="5ja-0e-ko8">
             <objects>
-                <viewController storyboardIdentifier="ValidatorListViewController" id="Qvj-GN-yc9" customClass="ValidatorListViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ValidatorListViewController" id="Qvj-GN-yc9" customClass="ValidatorListViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ilN-v5-iKh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--Main Tab History View Controller-->
         <scene sceneID="CBM-nz-DKQ">
             <objects>
-                <viewController id="t07-dn-E46" customClass="MainTabHistoryViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t07-dn-E46" customClass="MainTabHistoryViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zcq-nb-U4b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,7 +324,7 @@
         <!--Main Tab Token View Controller-->
         <scene sceneID="YLi-g5-EU9">
             <objects>
-                <viewController id="oOd-o8-Sem" customClass="MainTabTokenViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="oOd-o8-Sem" customClass="MainTabTokenViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pyz-AK-6Ed">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -395,7 +395,7 @@
                                     <constraint firstItem="Dfj-wA-gmt" firstAttribute="leading" secondItem="Al7-NK-Got" secondAttribute="leading" constant="8" id="xz5-Yf-NWe"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-gt-Y38" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gsx-gt-Y38" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="12" y="54" width="390" height="105"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yh-hW-PNd">
@@ -571,7 +571,7 @@ Kava oracle</string>
         <!--Vote List View Controller-->
         <scene sceneID="M82-6S-tgX">
             <objects>
-                <viewController storyboardIdentifier="VoteListViewController" id="jY2-JE-lP2" customClass="VoteListViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoteListViewController" id="jY2-JE-lP2" customClass="VoteListViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zCR-E0-N9f">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -619,7 +619,7 @@ Kava oracle</string>
         <!--Wallet Connect View Controller-->
         <scene sceneID="PN7-M1-zpY">
             <objects>
-                <viewController storyboardIdentifier="WalletConnectViewController" id="11M-i0-boC" customClass="WalletConnectViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WalletConnectViewController" id="11M-i0-boC" customClass="WalletConnectViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IH7-3K-o0F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,7 +627,7 @@ Kava oracle</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="qkp-8m-gqj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-0e-cRf" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RvF-0e-cRf" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="12" y="52" width="390" height="260"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bnbDex" translatesAutoresizingMaskIntoConstraints="NO" id="pKG-zI-mPS">
@@ -720,7 +720,7 @@ Kava oracle</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xtt-p2-2g7">
                                 <rect key="frame" x="0.0" y="324" width="414" height="460"/>
                                 <subviews>
-                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connectImg1" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-zF-3hB" customClass="WalletConnectImageView" customModule="Cosmostation" customModuleProvider="target">
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="connectImg1" translatesAutoresizingMaskIntoConstraints="NO" id="8rv-zF-3hB" customClass="WalletConnectImageView" customModule="DipperWallet" customModuleProvider="target">
                                         <rect key="frame" x="117" y="207" width="180" height="46"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="IIf-Sh-QdO"/>
@@ -734,7 +734,7 @@ Kava oracle</string>
                                     <constraint firstItem="8rv-zF-3hB" firstAttribute="centerX" secondItem="xtt-p2-2g7" secondAttribute="centerX" id="upn-OZ-qYT"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-zP-eig" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w1C-zP-eig" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="177" y="423" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="mnv-M6-RHp"/>
@@ -805,7 +805,7 @@ Kava oracle</string>
         <!--Token Detail View Controller-->
         <scene sceneID="ucM-U3-RRh">
             <objects>
-                <viewController storyboardIdentifier="TokenDetailViewController" id="8R0-R1-hPF" customClass="TokenDetailViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TokenDetailViewController" id="8R0-R1-hPF" customClass="TokenDetailViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zKC-u7-KJe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -813,7 +813,7 @@ Kava oracle</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_cosmos" translatesAutoresizingMaskIntoConstraints="NO" id="n71-aU-bJf">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKW-T7-s72" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKW-T7-s72" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="12" y="52" width="390" height="76"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key_off" translatesAutoresizingMaskIntoConstraints="NO" id="cLX-ee-8Jj">
@@ -931,7 +931,7 @@ Kava oracle</string>
         <!--Main Tab Setting View Controller-->
         <scene sceneID="WvL-Uy-fK2">
             <objects>
-                <viewController id="1zF-Vz-4uW" customClass="MainTabSettingViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1zF-Vz-4uW" customClass="MainTabSettingViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eZu-D4-qDA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1042,7 +1042,7 @@ Kava oracle</string>
         <!--Main Tab View Controller-->
         <scene sceneID="hEl-hw-B2u">
             <objects>
-                <tabBarController storyboardIdentifier="MainTabViewController" id="Zlf-k8-rdn" customClass="MainTabViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabViewController" id="Zlf-k8-rdn" customClass="MainTabViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="X2b-ss-L1h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1128,7 +1128,7 @@ Kava oracle</string>
         <!--My Validator View Controller-->
         <scene sceneID="Gw0-TT-sCx">
             <objects>
-                <viewController id="ktg-GO-6fF" customClass="MyValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ktg-GO-6fF" customClass="MyValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qnt-Rf-GI9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="805"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1218,7 +1218,7 @@ Kava oracle</string>
         <!--Vaildator Detail View Controller-->
         <scene sceneID="14y-Lh-7ZW">
             <objects>
-                <viewController storyboardIdentifier="VaildatorDetailViewController" id="ycC-Du-flc" customClass="VaildatorDetailViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VaildatorDetailViewController" id="ycC-Du-flc" customClass="VaildatorDetailViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e36-ti-ucg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1230,7 +1230,7 @@ Kava oracle</string>
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-Wr-uE6" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6U4-Wr-uE6" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="177" y="423" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="9jG-Yd-HUf"/>
@@ -1266,7 +1266,7 @@ Kava oracle</string>
         <!--Add View Controller-->
         <scene sceneID="0eE-A4-44w">
             <objects>
-                <viewController storyboardIdentifier="AddViewController" id="bxB-eF-26a" customClass="AddViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddViewController" id="bxB-eF-26a" customClass="AddViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ox7-Ue-GvY">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="260"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1406,7 +1406,7 @@ Kava oracle</string>
         <!--Account Select View Controller-->
         <scene sceneID="cA8-Pg-RB5">
             <objects>
-                <viewController storyboardIdentifier="AccountSelectViewController" id="DMD-Su-ChJ" customClass="AccountSelectViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AccountSelectViewController" id="DMD-Su-ChJ" customClass="AccountSelectViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1Y-g5-gV8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1484,7 +1484,7 @@ Kava oracle</string>
         <!--All Validator View Controller-->
         <scene sceneID="5Yc-5Z-PPB">
             <objects>
-                <viewController id="TPk-7b-ccf" customClass="AllValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="TPk-7b-ccf" customClass="AllValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JeS-cB-dvk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="805"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1574,7 +1574,7 @@ Kava oracle</string>
         <!--Setting Table View Controller-->
         <scene sceneID="7JN-ga-57r">
             <objects>
-                <tableViewController id="k2t-NI-3vK" customClass="SettingTableViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="k2t-NI-3vK" customClass="SettingTableViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="6WZ-p9-dW0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="675"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1593,7 +1593,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-l1-LYY" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-l1-LYY" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="1" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="hh0-Jr-BKS">
@@ -1657,7 +1657,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xY-BL-yig" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xY-BL-yig" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Lock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eE5-yJ-glc">
@@ -1720,7 +1720,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yw-zH-1di" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yw-zH-1di" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-Ht-n9U">
@@ -1780,7 +1780,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTa-jj-oJg" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTa-jj-oJg" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="tXi-oe-GPa">
@@ -1848,7 +1848,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-aq-gRo" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxP-aq-gRo" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="h0v-WD-4ua">
@@ -1920,7 +1920,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHW-JQ-DNC" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CHW-JQ-DNC" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="exP-B6-nAO">
@@ -1980,7 +1980,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBe-Sr-q1S" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FBe-Sr-q1S" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="eYn-K2-HSV">
@@ -2040,7 +2040,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5R-Kw-G1u" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5R-Kw-G1u" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="9Fo-29-D8N">
@@ -2100,7 +2100,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7H-lj-K34" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7H-lj-K34" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="trp-tw-eou">
@@ -2110,8 +2110,8 @@ Kava oracle</string>
                                                                 <constraint firstAttribute="width" constant="24" id="OlD-75-fu0"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cosmostation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-Df-UXk">
-                                                            <rect key="frame" x="12" y="14" width="84" height="16"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dipper Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vkk-Df-UXk">
+                                                            <rect key="frame" x="12" y="14" width="95" height="16"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -2164,7 +2164,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3I-Ah-x01" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3I-Ah-x01" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="oM8-9l-uFp">
@@ -2224,7 +2224,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDH-gK-oNp" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDH-gK-oNp" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="DeT-N7-kva">
@@ -2284,7 +2284,7 @@ Kava oracle</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6s-so-uCp" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W6s-so-uCp" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                                     <rect key="frame" x="12" y="3" width="390" height="44"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowNextGr" translatesAutoresizingMaskIntoConstraints="NO" id="fvN-8M-vfZ">
@@ -2370,7 +2370,7 @@ Kava oracle</string>
         <!--Other Validator View Controller-->
         <scene sceneID="qbA-Dc-LBH">
             <objects>
-                <viewController id="QXN-Be-TMt" customClass="OtherValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="QXN-Be-TMt" customClass="OtherValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tps-Ma-pY6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="805"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2487,7 +2487,7 @@ Kava oracle</string>
         <!--Vote Details View Controller-->
         <scene sceneID="dDo-Ui-yTo">
             <objects>
-                <viewController storyboardIdentifier="VoteDetailsViewController" id="Fla-s9-miw" customClass="VoteDetailsViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoteDetailsViewController" id="Fla-s9-miw" customClass="VoteDetailsViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rxw-2P-Han">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2499,7 +2499,7 @@ Kava oracle</string>
                                 <rect key="frame" x="0.0" y="52" width="414" height="736"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="84M-Bw-dw1" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="84M-Bw-dw1" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="177" y="423" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Mu3-bA-EwJ"/>
@@ -2563,7 +2563,7 @@ Kava oracle</string>
         <!--Ok My Validator View Controller-->
         <scene sceneID="zvY-q0-3aL">
             <objects>
-                <viewController storyboardIdentifier="OkMyValidatorViewController" id="XGO-ki-xrP" customClass="OkMyValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OkMyValidatorViewController" id="XGO-ki-xrP" customClass="OkMyValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wCT-xa-HJl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="805"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2649,7 +2649,7 @@ Kava oracle</string>
         <!--Ok Top Validator View Controller-->
         <scene sceneID="bZE-di-og6">
             <objects>
-                <viewController storyboardIdentifier="OkTopValidatorViewController" id="tIw-sS-HFb" customClass="OkTopValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OkTopValidatorViewController" id="tIw-sS-HFb" customClass="OkTopValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ei8-hz-1qb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="805"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2708,7 +2708,7 @@ Kava oracle</string>
         <!--Ok Other Validator View Controller-->
         <scene sceneID="0BF-oN-8fq">
             <objects>
-                <viewController storyboardIdentifier="OkOtherValidatorViewController" id="KJV-mn-rFc" customClass="OkOtherValidatorViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OkOtherValidatorViewController" id="KJV-mn-rFc" customClass="OkOtherValidatorViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0U-7X-KgQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="810"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2767,7 +2767,7 @@ Kava oracle</string>
         <!--Ok Validator List View Controller-->
         <scene sceneID="0UV-ui-aMZ">
             <objects>
-                <viewController storyboardIdentifier="OkValidatorListViewController" id="dzA-6P-e9f" customClass="OkValidatorListViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OkValidatorListViewController" id="dzA-6P-e9f" customClass="OkValidatorListViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0KB-1k-CbH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -296,6 +296,7 @@
 		28F4CF6F25429BBF0050985D /* EventStakeDropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F4CF6D25429BBF0050985D /* EventStakeDropViewController.swift */; };
 		28F4CF722542AD3A0050985D /* EventStakeDropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F4CF742542AD3A0050985D /* EventStakeDropViewController.xib */; };
 		35FBB96A5D813F2D9E114B04 /* Pods_Cosmostation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3E6894128E5729CD3DC4FEA /* Pods_Cosmostation.framework */; };
+		637A4041256CFA8700BED886 /* WalletDIPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A4040256CFA8700BED886 /* WalletDIPCell.swift */; };
 		91F07C68255EF66E00099E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F07C67255EF66E00099E12 /* GoogleService-Info.plist */; };
 		E103DAA32281266D006C2146 /* ValidatorDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E103DAA52281266D006C2146 /* ValidatorDetailCell.xib */; };
 		E103DAAA2281274A006C2146 /* ValidatorDetailHistoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E103DAAC2281274A006C2146 /* ValidatorDetailHistoryHeader.xib */; };
@@ -800,6 +801,7 @@
 		28F4CF6D25429BBF0050985D /* EventStakeDropViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStakeDropViewController.swift; sourceTree = "<group>"; };
 		28F4CF732542AD3A0050985D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/EventStakeDropViewController.xib; sourceTree = "<group>"; };
 		28F4CF772542AD3F0050985D /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/EventStakeDropViewController.strings; sourceTree = "<group>"; };
+		637A4040256CFA8700BED886 /* WalletDIPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDIPCell.swift; sourceTree = "<group>"; };
 		7153E3FFEB0749B07CCB1E0C /* Pods-Cosmostation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosmostation.release.xcconfig"; path = "Target Support Files/Pods-Cosmostation/Pods-Cosmostation.release.xcconfig"; sourceTree = "<group>"; };
 		91F07C67255EF66E00099E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3E6894128E5729CD3DC4FEA /* Pods_Cosmostation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cosmostation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1698,6 +1700,7 @@
 				E1FD232A233E1BDB009327FE /* WalletCosmosCell.swift */,
 				E126CF7F2387A3E1002A546F /* WalletCosmosCell.xib */,
 				E1FD2326233E1BC4009327FE /* WalletIrisCell.swift */,
+				637A4040256CFA8700BED886 /* WalletDIPCell.swift */,
 				E126CF892387A4B4002A546F /* WalletIrisCell.xib */,
 				E1FD232E233E1BF4009327FE /* WalletBnbCell.swift */,
 				E126CF8E2387A50E002A546F /* WalletBnbCell.xib */,
@@ -2283,6 +2286,7 @@
 				E1ECCA7A224CB4AA00BAB623 /* BottomLineTextField.swift in Sources */,
 				28E46BE424F8FCFF005CE985 /* StepOkVoteToViewController.swift in Sources */,
 				28BB2A872533DA0B00CFF097 /* AccountPromotionCell.swift in Sources */,
+				637A4041256CFA8700BED886 /* WalletDIPCell.swift in Sources */,
 				28BB2AA02534173200CFF097 /* StarNameAccount.swift in Sources */,
 				E16D9B1D2248E6A60019B7BB /* WKey.swift in Sources */,
 				285A33CF2446CD9C0052BD3D /* StepHtlcSend1ViewController.swift in Sources */,
