@@ -76,6 +76,8 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
             keyState.image = keyState.image?.withRenderingMode(.alwaysTemplate)
             if (chainType == ChainType.COSMOS_MAIN) {
                 keyState.tintColor = COLOR_ATOM
+            } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+                keyState.tintColor = COLOR_ATOM
             } else if (chainType == ChainType.IRIS_MAIN) {
                 keyState.tintColor = COLOR_IRIS
             } else if (chainType == ChainType.BINANCE_MAIN || chainType == ChainType.BINANCE_TEST) {
@@ -90,6 +92,9 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
     
     @objc func onRequestFetch() {
         if (chainType == ChainType.COSMOS_MAIN) {
+            onFetchApiHistory(account!.account_address, balance!.balance_denom)
+            
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             onFetchApiHistory(account!.account_address, balance!.balance_denom)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
@@ -110,6 +115,14 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
     @IBAction func onClickWebLink(_ sender: UIButton) {
         if (chainType! == ChainType.COSMOS_MAIN) {
             guard let url = URL(string: EXPLORER_COSMOS_MAIN + "account/" + account!.account_address) else { return }
+            self.onShowSafariWeb(url)
+            
+        } else if (chainType! == ChainType.DIPPER_MAIN) {
+            guard let url = URL(string: EXPLORER_DIPPER_MAIN + "account/" + account!.account_address) else { return }
+            self.onShowSafariWeb(url)
+            
+        } else if (chainType! == ChainType.DIPPER_TEST) {
+            guard let url = URL(string: EXPLORER_DIPPER_TEST + "account/" + account!.account_address) else { return }
             self.onShowSafariWeb(url)
             
         } else if (chainType! == ChainType.IRIS_MAIN) {
@@ -192,6 +205,9 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
                 } else if ((chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) && balance?.balance_denom == DIPPER_MAIN_DENOM) {
                     return onSetDIPItem(tableView, indexPath);
                     
+                } else if ((chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) && balance?.balance_denom == DIPPER_MAIN_DENOM) {
+                    return onSetDIPItem(tableView, indexPath);
+                    
                 } else if (chainType == ChainType.IRIS_MAIN && balance?.balance_denom == IRIS_MAIN_DENOM) {
                     return onSetIrisItem(tableView, indexPath);
                     
@@ -220,6 +236,12 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
             if (chainType == ChainType.COSMOS_MAIN) {
                 return onSetCosmosHistoryItems(tableView, indexPath);
                 
+            } else if (chainType == ChainType.DIPPER_MAIN) {
+                return onSetDIPHistoryItem(tableView, indexPath);
+                
+            } else if (chainType == ChainType.DIPPER_TEST) {
+                return onSetDIPHistoryItem(tableView, indexPath);
+                
             } else if (chainType == ChainType.IRIS_MAIN) {
                 return onSetIrisHistoryItem(tableView, indexPath);
                 
@@ -241,7 +263,7 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (indexPath.section == 1) {
-            if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.IRIS_MAIN) {
+            if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.IRIS_MAIN) {
                 let history = mApiHistories[indexPath.row]
                 let txDetailVC = TxDetailViewController(nibName: "TxDetailViewController", bundle: nil)
                 txDetailVC.mIsGen = false
@@ -640,6 +662,22 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
         return cell!
     }
     
+    func onSetDIPHistoryItem(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell:HistoryCell? = tableView.dequeueReusableCell(withIdentifier:"HistoryCell") as? HistoryCell
+        let history = mApiHistories[indexPath.row]
+        cell?.txTimeLabel.text = WUtils.txTimetoString(input: history.time)
+        cell?.txTimeGapLabel.text = WUtils.txTimeGap(input: history.time)
+        cell?.txBlockLabel.text = String(history.height) + " block"
+        cell?.txTypeLabel.text = WUtils.historyTitle(history.msg, account!.account_address)
+        if (history.isSuccess) {
+            cell?.txResultLabel.isHidden = true
+        } else {
+            cell?.txResultLabel.isHidden = false
+        }
+        return cell!
+    }
+    
+    
     func onSetIrisHistoryItem(_ tableView: UITableView, _ indexPath: IndexPath)  -> UITableViewCell {
         let cell:HistoryCell? = tableView.dequeueReusableCell(withIdentifier:"HistoryCell") as? HistoryCell
         let history = mApiHistories[indexPath.row]
@@ -753,6 +791,10 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_API_TRANS_HISTORY + address
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            url = DIPPER_API_TRANS_HISTORY + address
+        } else if (chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_TEST_API_TRANS_HISTORY + address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_API_TRANS_HISTORY + address
         } else if (chainType == ChainType.KAVA_MAIN) {

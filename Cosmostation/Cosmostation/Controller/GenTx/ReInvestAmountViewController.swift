@@ -29,7 +29,7 @@ class ReInvestAmountViewController: BaseViewController {
         WUtils.setDenomTitle(pageHolderVC.chainType!, rewardDenomLabel)
         
         self.loadingImg.onStartAnimation()
-        if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN || pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST ||
+        if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST || pageHolderVC.chainType! == ChainType.KAVA_MAIN || pageHolderVC.chainType! == ChainType.KAVA_TEST ||
                 pageHolderVC.chainType! == ChainType.BAND_MAIN || pageHolderVC.chainType! == ChainType.SECRET_MAIN || pageHolderVC.chainType! == ChainType.IOV_MAIN ||
                 pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             self.onFetchReward(pageHolderVC.mAccount!.account_address, pageHolderVC.mTargetValidator!.operator_address)
@@ -63,6 +63,13 @@ class ReInvestAmountViewController: BaseViewController {
             self.controlLayer.isHidden = false
             self.cardView.isHidden = false
             
+        } else if ((pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) && self.pageHolderVC.mReinvestReward != nil) {
+                    rewardAmountLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardAmountLabel.font, 12, 12)
+                    validatorLabel.text = pageHolderVC.mTargetValidator?.description.moniker
+                    self.loadingImg.isHidden = true
+                    self.controlLayer.isHidden = false
+                    self.cardView.isHidden = false
+                    
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             rewardAmountLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardAmountLabel.font, 18, 18)
             validatorLabel.text = pageHolderVC.mTargetValidator?.description.moniker

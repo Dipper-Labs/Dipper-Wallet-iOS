@@ -220,7 +220,6 @@ class TransactionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        TODO by Captain for test
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.stepChanged(_:)),

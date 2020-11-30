@@ -1455,7 +1455,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             
         } else if (self.chainType == ChainType.DIPPER_MAIN || self.chainType == ChainType.DIPPER_TEST) {
             //TODO by captain
-            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "400000000000")).rawValue <= 0) {
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "100000000000")).rawValue <= 0) {
                 self.onShowToast(NSLocalizedString("error_not_enough_fee", comment: ""))
                 return
             }

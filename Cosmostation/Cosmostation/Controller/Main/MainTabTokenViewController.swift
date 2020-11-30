@@ -143,7 +143,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         }
         
         else if (chainType! == ChainType.DIPPER_TEST) {
-            titleChainImg.image = UIImage(named: "dipperWhImg")
+            titleChainImg.image = UIImage(named: "dipperTestWhImg")
             titleChainName.text = "(Dipper Testnet)"
             kavaOracle.isHidden = true
             titleAlarmBtn.isHidden = true
@@ -504,8 +504,8 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     func onSetDIPItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
         let balance = mainTabVC.mBalances[indexPath.row]
-        if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
-            cell?.tokenImg.image = UIImage(named: "dipperWhImg") //TODO by captain
+        if (balance.balance_denom == DIPPER_MAIN_DENOM) {
+            cell?.tokenImg.image = UIImage(named: "dipperWhImg")
             cell?.tokenSymbol.text = "DIP"
             cell?.tokenSymbol.textColor = COLOR_DIP
             cell?.tokenTitle.text = "(" + balance.balance_denom + ")"
@@ -515,7 +515,17 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             cell?.tokenAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, cell!.tokenAmount.font!, 12, 6)
             cell?.tokenValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
             
-        } else { }
+        } else {
+            cell?.tokenImg.image = UIImage(named: "dipperTestWhImg")
+            cell?.tokenSymbol.text = "DIP"
+            cell?.tokenSymbol.textColor = COLOR_DIP
+            cell?.tokenTitle.text = "(" + balance.balance_denom + ")"
+            cell?.tokenDescription.text = "Dipper Network Native Token"
+                        
+            let allDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.tokenAmount.attributedText = WUtils.displayAmount2(allDIP.stringValue, cell!.tokenAmount.font!, 12, 6)
+            cell?.tokenValue.attributedText = WUtils.dpDIPValue(allDIP, BaseData.instance.getLastPrice(), cell!.tokenValue.font)
+        }
         return cell!
     }
     

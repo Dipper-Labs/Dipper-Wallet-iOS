@@ -58,7 +58,7 @@ class MainTabSettingViewController: BaseViewController {
             titleChainName.text = "(Dipper Hub)"
             titleAlarmBtn.isHidden = true
         } else if (chainType! == ChainType.DIPPER_TEST) {
-            titleChainImg.image = UIImage(named: "dipperWhImg")
+            titleChainImg.image = UIImage(named: "dipperTestWhImg")
             titleChainName.text = "(Dipper Testnet)"
             titleAlarmBtn.isHidden = true
         } else if (chainType! == ChainType.IRIS_MAIN) {

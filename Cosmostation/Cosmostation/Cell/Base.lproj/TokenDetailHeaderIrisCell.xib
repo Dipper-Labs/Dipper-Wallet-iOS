@@ -20,15 +20,15 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lwr-bj-jsM" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                         <rect key="frame" x="12" y="4" width="296" height="250"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="irisTokenImg" translatesAutoresizingMaskIntoConstraints="NO" id="XqR-IT-pFV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dipperWhImg" translatesAutoresizingMaskIntoConstraints="NO" id="XqR-IT-pFV" customClass="dipperWhImg">
                                 <rect key="frame" x="12" y="16" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="Qv8-JQ-bv9"/>
                                     <constraint firstAttribute="height" constant="20" id="pTv-Rc-b4y"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IRIS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeU-vm-h99">
-                                <rect key="frame" x="38" y="17" width="27" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeU-vm-h99">
+                                <rect key="frame" x="38" y="17" width="24" height="18"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" red="0.0" green="0.6588235294" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -206,7 +206,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="irisTokenImg" width="22" height="22"/>
+        <image name="dipperWhImg" width="42" height="42"/>
         <image name="sendIc" width="24" height="24"/>
     </resources>
 </document>

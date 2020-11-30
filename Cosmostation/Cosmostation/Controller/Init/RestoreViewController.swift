@@ -149,7 +149,7 @@ class RestoreViewController: BaseViewController , UICollectionViewDelegate, UICo
             self.chainType = ChainType.DIPPER_TEST
             self.initViewUpdate()
         })
-        dipperTestAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperTestAction.setValue(UIImage(named: "dipperTestWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         let irisAction = UIAlertAction(title: NSLocalizedString("chain_title_iris", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.IRIS_MAIN
@@ -225,7 +225,6 @@ class RestoreViewController: BaseViewController , UICollectionViewDelegate, UICo
         
 //        showAlert.addAction(cosmosAction)
         showAlert.addAction(dipperAction)
-        showAlert.addAction(dipperTestAction)
 //        showAlert.addAction(irisAction)
 //        showAlert.addAction(bnbAction)
 //        showAlert.addAction(iovAction)
@@ -233,7 +232,9 @@ class RestoreViewController: BaseViewController , UICollectionViewDelegate, UICo
 //        showAlert.addAction(bandAction)
 //        showAlert.addAction(secretAction)
 //        showAlert.addAction(certikAction)
-        
+        if (ChainType.SUPPRT_CHAIN().contains(ChainType.DIPPER_TEST)) {
+            showAlert.addAction(dipperTestAction)
+        }
         if (ChainType.SUPPRT_CHAIN().contains(ChainType.BINANCE_TEST)) {
             showAlert.addAction(bnbTestAction)
         }

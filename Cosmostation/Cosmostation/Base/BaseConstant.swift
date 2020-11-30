@@ -771,12 +771,12 @@ let GAS_FEE_AMOUNT_IRIS_REWARD_MUX          = "5000"
 let GAS_FEE_RATE_DIP_AVERAGE               = "0.000008"
 
 let GAS_FEE_AMOUNT_DIP_LOW                 = "100000"
-let GAS_FEE_AMOUNT_DIP_SEND                = "200000"
-let GAS_FEE_AMOUNT_DIP_MID                 = "300000"
-let GAS_FEE_AMOUNT_DIP_REINVEST            = "220000"
+let GAS_FEE_AMOUNT_DIP_SEND                = "400000"
+let GAS_FEE_AMOUNT_DIP_MID                 = "400000"
+let GAS_FEE_AMOUNT_DIP_REINVEST            = "400000"
 let GAS_FEE_AMOUNT_DIP_REDELEGATE          = "400000"
-let GAS_FEE_AMOUNT_DIP_REWARD_BASE         = "100000"
-let GAS_FEE_AMOUNT_DIP_REWARD_MUX          = "50000"
+let GAS_FEE_AMOUNT_DIP_REWARD_BASE         = "400000"
+let GAS_FEE_AMOUNT_DIP_REWARD_MUX          = "10000"
 
 
 let GAS_FEE_BNB_TRANSFER                    = "0.000375"

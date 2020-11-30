@@ -49,6 +49,15 @@ class ReInvestCheckViewController: BaseViewController, PasswordViewDelegate {
                 expectedDelegateAmount.attributedText = WUtils.displayAmount2(expected.stringValue, expectedDelegateAmount.font, 6, 6)
             }
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            rewardLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardLabel.font, 12, 12)
+            feeLabel.attributedText = WUtils.displayAmount2((pageHolderVC.mFee?.amount[0].amount)!, feeLabel.font, 12, 12)
+            if let bonding = BaseData.instance.selectBondingWithValAdd(pageHolderVC.mAccount!.account_id, pageHolderVC.mTargetValidator!.operator_address) {
+                currentDelegateAmount.attributedText = WUtils.displayAmount2(bonding.getBondingAmount(pageHolderVC.mTargetValidator!).stringValue, currentDelegateAmount.font, 12, 12)
+                let expected = (NSDecimalNumber.init(string: pageHolderVC.mReinvestReward!.amount)).adding(bonding.getBondingAmount(pageHolderVC.mTargetValidator!))
+                expectedDelegateAmount.attributedText = WUtils.displayAmount2(expected.stringValue, expectedDelegateAmount.font, 12, 12)
+            }
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             rewardLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardLabel.font, 18, 18)
             feeLabel.attributedText = WUtils.displayAmount2((pageHolderVC.mFee?.amount[0].amount)!, feeLabel.font, 18, 18)
@@ -211,7 +220,7 @@ class ReInvestCheckViewController: BaseViewController, PasswordViewDelegate {
             do {
                 let pKey = WKey.getHDKeyFromWords(words, self.pageHolderVC.mAccount!)
                 var msgList = Array<Msg>()
-                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST ||
+                if (self.pageHolderVC.chainType! == ChainType.COSMOS_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_MAIN || self.pageHolderVC.chainType! == ChainType.DIPPER_TEST || self.pageHolderVC.chainType! == ChainType.KAVA_MAIN || self.pageHolderVC.chainType! == ChainType.KAVA_TEST ||
                         self.pageHolderVC.chainType! == ChainType.BAND_MAIN || self.pageHolderVC.chainType! == ChainType.SECRET_MAIN || self.pageHolderVC.chainType! == ChainType.IOV_MAIN ||
                         self.pageHolderVC.chainType! == ChainType.IOV_TEST || self.pageHolderVC.chainType! == ChainType.CERTIK_MAIN || self.pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
                     let rewardMsg = MsgGenerator.genGetRewardMsg(self.pageHolderVC.mAccount!.account_address,
