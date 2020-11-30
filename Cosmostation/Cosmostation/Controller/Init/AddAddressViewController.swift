@@ -70,6 +70,25 @@ class AddAddressViewController: BaseViewController, QrScannerDelegate {
                 return;
             }
             
+        } else if (userInput.starts(with: "dip")) {
+            if (userInput.starts(with: "dipvaloper")) {
+                self.onShowToast(NSLocalizedString("error_invalid_address_or_pubkey", comment: ""))
+                self.addAddressInputText.text = ""
+                return;
+            } else if (WKey.isValidateBech32(userInput)) {
+                if (ChainType.SUPPRT_CHAIN().contains(ChainType.DIPPER_TEST)) {
+                    self.onShowDipperChainSelect(userInput)
+                    return;
+                } else {
+                    self.onGenWatchAccount(ChainType.DIPPER_MAIN, userInput)
+                    return;
+                }
+            } else {
+                self.onShowToast(NSLocalizedString("error_invalid_address_or_pubkey", comment: ""))
+                self.addAddressInputText.text = ""
+                return;
+            }
+            
         } else if (userInput.starts(with: "iaa")) {
             if (WKey.isValidateBech32(userInput)) {
                 self.onGenWatchAccount(ChainType.IRIS_MAIN, userInput)
@@ -222,6 +241,22 @@ class AddAddressViewController: BaseViewController, QrScannerDelegate {
                 }
             });
         }
+    }
+    
+    func onShowDipperChainSelect(_ input:String) {
+        let showAlert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
+        let dipperAction = UIAlertAction(title: NSLocalizedString("chain_title_dipper", comment: ""), style: .default, handler: {_ in
+            self.onGenWatchAccount(ChainType.DIPPER_MAIN, input)
+        })
+        dipperAction.setValue(UIImage(named: "dipperLogoImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        let dipperTestAction = UIAlertAction(title: NSLocalizedString("chain_title_test_dipper", comment: ""), style: .default, handler: {_ in
+            self.onGenWatchAccount(ChainType.DIPPER_TEST, input)
+        })
+        dipperTestAction.setValue(UIImage(named: "dipperLogoImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        
+        showAlert.addAction(dipperAction)
+        showAlert.addAction(dipperTestAction)
+        self.present(showAlert, animated: true, completion: nil)
     }
     
     func onShowKavaChainSelect(_ input:String) {

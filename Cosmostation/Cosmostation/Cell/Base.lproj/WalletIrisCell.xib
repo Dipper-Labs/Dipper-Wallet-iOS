@@ -20,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-Wk-Ht2" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                         <rect key="frame" x="12" y="4" width="351" height="250"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="irisTokenImg" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-la-fCG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dipperWhImg" translatesAutoresizingMaskIntoConstraints="NO" id="T7U-la-fCG">
                                 <rect key="frame" x="12" y="16" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="cJD-aw-xf0"/>
@@ -231,7 +231,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="irisTokenImg" width="22" height="22"/>
+        <image name="dipperWhImg" width="42" height="42"/>
         <image name="rewardIc" width="20" height="20"/>
         <image name="voteIc" width="20" height="20"/>
     </resources>

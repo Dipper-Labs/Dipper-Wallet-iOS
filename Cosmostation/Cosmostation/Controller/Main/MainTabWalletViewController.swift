@@ -101,7 +101,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             titleChainImg.image = UIImage(named: "cosmosWhMain")
             titleChainName.text = "(Cosmos Mainnet)"
         } else if (chainType! == ChainType.DIPPER_MAIN) {
-            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainImg.image = UIImage(named: "dipperWhImg")
             titleChainName.text = "(Dipper Hub)"
             titleAlarmBtn.isHidden = true
         } else if (chainType! == ChainType.IRIS_MAIN) {
@@ -135,7 +135,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
         }
         
         else if (chainType! == ChainType.DIPPER_TEST) {
-            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainImg.image = UIImage(named: "dipperWhImg")
             titleChainName.text = "(Dipper Testnet)"
             titleAlarmBtn.isHidden = true
         }else if (chainType! == ChainType.BINANCE_TEST) {
@@ -439,23 +439,20 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             
         } else if (indexPath.row == 1) {
             let cell:WalletIrisCell? = tableView.dequeueReusableCell(withIdentifier:"WalletIrisCell") as? WalletIrisCell
-            let totalDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
-            cell?.totalAmount.attributedText = WUtils.displayAmount2(totalDIP.stringValue, cell!.totalAmount.font!, 12, 12)
-            cell?.totalValue.attributedText = WUtils.dpTokenValue(totalDIP, BaseData.instance.getLastPrice(), 12, cell!.totalValue.font)
+            let totalAtom = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.totalAmount.attributedText = WUtils.displayAmount2(totalAtom.stringValue, cell!.totalAmount.font!, 12, 12)
+            cell?.totalValue.attributedText = WUtils.dpTokenValue(totalAtom, BaseData.instance.getLastPrice(), 12, cell!.totalValue.font)
             cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(mainTabVC.mBalances, cell!.availableAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
             cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(mainTabVC.mBondingList, mainTabVC.mAllValidator, cell!.delegatedAmount.font, 12, chainType!)
             cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(mainTabVC.mUnbondingList, cell!.unbondingAmount.font, 12, chainType!)
-            //TODO by captain
-            let amount = WUtils.rewardAmount(mainTabVC.mRewardList, DIPPER_MAIN_DENOM, chainType!)
-            cell?.rewardAmount.attributedText = NSAttributedString.init(string: amount.stringValue)
-            
+            cell?.rewardAmount.attributedText = WUtils.dpRewards(mainTabVC.mRewardList, cell!.rewardAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
             cell?.actionDelegate = {
                 self.onClickValidatorList()
             }
             cell?.actionVote = {
                 self.onClickVoteList()
             }
-            BaseData.instance.updateLastTotal(mainTabVC!.mAccount, totalDIP.multiplying(byPowerOf10: -12).stringValue)
+            BaseData.instance.updateLastTotal(mainTabVC!.mAccount, totalAtom.multiplying(byPowerOf10: -12).stringValue)
             return cell!
             
         } else if (indexPath.row == 2) {
@@ -493,7 +490,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             
         } else {
             let cell:WalletGuideCell? = tableView.dequeueReusableCell(withIdentifier:"WalletGuideCell") as? WalletGuideCell
-            cell?.guideImg.image = UIImage(named: "dipperImg")
+            cell?.guideImg.image = UIImage(named: "dipperTokenImg")
             cell?.guideTitle.text = NSLocalizedString("send_guide_title_dip", comment: "")
             cell?.guideTitle.text = NSLocalizedString("send_guide_title_dip", comment: "")
             cell?.guideMsg.text = NSLocalizedString("send_guide_msg_dip", comment: "")
@@ -1994,7 +1991,7 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             txVC.mType = COSMOS_MSG_TYPE_TRANSFER2
             
         } else if (chainType! == ChainType.DIPPER_MAIN || chainType! == ChainType.DIPPER_TEST) {
-            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "200000000000")).rawValue < 0) {
+            if (WUtils.getTokenAmount(balances, DIPPER_MAIN_DENOM).compare(NSDecimalNumber.init(string: "100000000000")).rawValue < 0) {
                 self.onShowToast(NSLocalizedString("error_not_enough_balance_to_send", comment: ""))
                 return
             }

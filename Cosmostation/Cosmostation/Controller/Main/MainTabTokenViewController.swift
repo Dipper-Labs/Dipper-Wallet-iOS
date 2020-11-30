@@ -93,7 +93,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
             kavaOracle.isHidden = true
             totalCard.backgroundColor = TRANS_BG_COLOR_COSMOS
         } else if (chainType! == ChainType.DIPPER_MAIN) {
-            titleChainImg.image = UIImage(named: "dipperImg")
+            titleChainImg.image = UIImage(named: "dipperWhImg")
             titleChainName.text = "(Dipper Hub)"
             titleAlarmBtn.isHidden = true
             kavaOracle.isHidden = true
@@ -143,7 +143,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         }
         
         else if (chainType! == ChainType.DIPPER_TEST) {
-            titleChainImg.image = UIImage(named: "dipperTestnet")
+            titleChainImg.image = UIImage(named: "dipperWhImg")
             titleChainName.text = "(Dipper Testnet)"
             kavaOracle.isHidden = true
             titleAlarmBtn.isHidden = true
@@ -505,7 +505,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
         let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
         let balance = mainTabVC.mBalances[indexPath.row]
         if (balance.balance_denom == DIPPER_MAIN_DENOM || balance.balance_denom == DIPPER_TEST_DENOM) {
-            cell?.tokenImg.image = UIImage(named: "DIPTokenImg")
+            cell?.tokenImg.image = UIImage(named: "dipperWhImg") //TODO by captain
             cell?.tokenSymbol.text = "DIP"
             cell?.tokenSymbol.textColor = COLOR_DIP
             cell?.tokenTitle.text = "(" + balance.balance_denom + ")"

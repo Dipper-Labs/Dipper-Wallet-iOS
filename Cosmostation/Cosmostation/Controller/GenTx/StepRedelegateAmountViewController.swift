@@ -235,6 +235,9 @@ class StepRedelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             let halfValue = userDelegated.dividing(by: NSDecimalNumber(string: "2000000", locale: Locale.current), withBehavior: WUtils.handler6)
             redelegateInputTextField.text = WUtils.decimalNumberToLocaleString(halfValue, mDpDecimal)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let halfValue = userDelegated.dividing(by: NSDecimalNumber(string: "2000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
+            redelegateInputTextField.text = WUtils.decimalNumberToLocaleString(halfValue, mDpDecimal)
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             let halfValue = userDelegated.dividing(by: NSDecimalNumber(string: "2000000000000000000", locale: Locale.current), withBehavior: WUtils.handler18)
             redelegateInputTextField.text = WUtils.decimalNumberToLocaleString(halfValue, mDpDecimal)
@@ -247,6 +250,9 @@ class StepRedelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 pageHolderVC.chainType! == ChainType.BAND_MAIN || pageHolderVC.chainType! == ChainType.SECRET_MAIN || pageHolderVC.chainType! == ChainType.IOV_MAIN ||
                 pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             let maxValue = userDelegated.dividing(by: NSDecimalNumber(string: "1000000", locale: Locale.current), withBehavior: WUtils.handler6)
+            redelegateInputTextField.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let maxValue = userDelegated.dividing(by: NSDecimalNumber(string: "1000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
             redelegateInputTextField.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             let maxValue = userDelegated.dividing(by: NSDecimalNumber(string: "1000000000000000000", locale: Locale.current), withBehavior: WUtils.handler18)

@@ -48,6 +48,8 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
         
         if (chainType == ChainType.COSMOS_MAIN) {
             onFetchApiHistory(mainTabVC.mAccount.account_address);
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            onFetchApiHistory(mainTabVC.mAccount.account_address);
         } else if (chainType == ChainType.IRIS_MAIN) {
             onFetchApiHistory(mainTabVC.mAccount.account_address);
         } else if (chainType == ChainType.BINANCE_MAIN || chainType == ChainType.BINANCE_TEST) {
@@ -99,6 +101,10 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
         if (chainType == ChainType.COSMOS_MAIN) {
             titleChainImg.image = UIImage(named: "cosmosWhMain")
             titleChainName.text = "(Cosmos Mainnet)"
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            titleChainImg.image = UIImage(named: "dipperWhImg")
+            titleChainName.text = "(Dipper Hub)"
+            titleAlarmBtn.isHidden = true
         } else if (chainType == ChainType.IRIS_MAIN) {
             titleChainImg.image = UIImage(named: "irisWh")
             titleChainName.text = "(Iris Mainnet)"
@@ -129,7 +135,11 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
             titleAlarmBtn.isHidden = true
         }
         
-        else if (chainType! == ChainType.BINANCE_TEST) {
+        else if (chainType == ChainType.DIPPER_TEST) {
+           titleChainImg.image = UIImage(named: "dipperWhImg")
+           titleChainName.text = "(Dipper Testnet)"
+           titleAlarmBtn.isHidden = true
+       } else if (chainType! == ChainType.BINANCE_TEST) {
             titleChainImg.image = UIImage(named: "binancetestnet")
             titleChainName.text = "(Binance Testnet)"
             titleAlarmBtn.isHidden = true
@@ -170,6 +180,8 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
     @objc func onRequestFetch() {
         if (chainType == ChainType.COSMOS_MAIN) {
             onFetchApiHistory(mainTabVC.mAccount.account_address);
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            onFetchApiHistory(mainTabVC.mAccount.account_address);
         } else if (chainType == ChainType.IRIS_MAIN) {
             onFetchApiHistory(mainTabVC.mAccount.account_address);
         } else if (chainType == ChainType.BINANCE_MAIN || chainType == ChainType.BINANCE_TEST) {
@@ -190,7 +202,7 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.IRIS_MAIN) {
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.IRIS_MAIN) {
             return self.mApiHistories.count
         } else if (chainType == ChainType.BINANCE_MAIN || chainType == ChainType.BINANCE_TEST) {
             return self.mBnbHistories.count
@@ -204,6 +216,8 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if (chainType == ChainType.COSMOS_MAIN) {
             return onSetCosmosItems(tableView, indexPath);
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            return onSetDipperItems(tableView, indexPath);
         } else if (chainType == ChainType.IRIS_MAIN) {
             return onSetIrisItem(tableView, indexPath);
         } else if (chainType == ChainType.KAVA_MAIN) {
@@ -244,6 +258,21 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
                     cell?.txTypeLabel.text = "Persistence\nStake Drop"
                 }
             }
+        }
+        return cell!
+    }
+    
+    func onSetDipperItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
+        let cell:HistoryCell? = tableView.dequeueReusableCell(withIdentifier:"HistoryCell") as? HistoryCell
+        let history = mApiHistories[indexPath.row]
+        cell?.txTimeLabel.text = WUtils.txTimetoString(input: history.time)
+        cell?.txTimeGapLabel.text = WUtils.txTimeGap(input: history.time)
+        cell?.txBlockLabel.text = String(history.height) + " block"
+        cell?.txTypeLabel.text = WUtils.historyTitle(history.msg, mainTabVC.mAccount.account_address)
+        if (history.result.code > 0) {
+            cell?.txResultLabel.isHidden = false
+        } else {
+            cell?.txResultLabel.isHidden = true
         }
         return cell!
     }
@@ -359,7 +388,7 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.IRIS_MAIN || chainType == ChainType.KAVA_MAIN ||
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.IRIS_MAIN || chainType == ChainType.KAVA_MAIN ||
                 chainType == ChainType.KAVA_TEST || chainType == ChainType.BAND_MAIN || chainType == ChainType.SECRET_MAIN ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             let history = mApiHistories[indexPath.row]
@@ -445,6 +474,8 @@ class MainTabHistoryViewController: BaseViewController, UITableViewDelegate, UIT
         var url: String?
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_API_HISTORY + address
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            url = DIPPER_API_HISTORY + address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_API_HISTORY + address
         } else if (chainType == ChainType.KAVA_MAIN) {

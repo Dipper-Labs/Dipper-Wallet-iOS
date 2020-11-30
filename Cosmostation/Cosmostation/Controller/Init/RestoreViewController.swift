@@ -139,6 +139,18 @@ class RestoreViewController: BaseViewController , UICollectionViewDelegate, UICo
         })
         cosmosAction.setValue(UIImage(named: "cosmosWhMain")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
+        let dipperAction = UIAlertAction(title: NSLocalizedString("chain_title_dipper", comment: ""), style: .default, handler: { _ in
+            self.chainType = ChainType.DIPPER_MAIN
+            self.initViewUpdate()
+        })
+        dipperAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        
+        let dipperTestAction = UIAlertAction(title: NSLocalizedString("chain_title_test_dipper", comment: ""), style: .default, handler: {_ in
+            self.chainType = ChainType.DIPPER_TEST
+            self.initViewUpdate()
+        })
+        dipperTestAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        
         let irisAction = UIAlertAction(title: NSLocalizedString("chain_title_iris", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.IRIS_MAIN
             self.initViewUpdate()
@@ -211,14 +223,16 @@ class RestoreViewController: BaseViewController , UICollectionViewDelegate, UICo
         })
         certikTestAction.setValue(UIImage(named: "certikTestnetImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
-        showAlert.addAction(cosmosAction)
-        showAlert.addAction(irisAction)
-        showAlert.addAction(bnbAction)
-        showAlert.addAction(iovAction)
-        showAlert.addAction(kavaAction)
-        showAlert.addAction(bandAction)
-        showAlert.addAction(secretAction)
-        showAlert.addAction(certikAction)
+//        showAlert.addAction(cosmosAction)
+        showAlert.addAction(dipperAction)
+        showAlert.addAction(dipperTestAction)
+//        showAlert.addAction(irisAction)
+//        showAlert.addAction(bnbAction)
+//        showAlert.addAction(iovAction)
+//        showAlert.addAction(kavaAction)
+//        showAlert.addAction(bandAction)
+//        showAlert.addAction(secretAction)
+//        showAlert.addAction(certikAction)
         
         if (ChainType.SUPPRT_CHAIN().contains(ChainType.BINANCE_TEST)) {
             showAlert.addAction(bnbTestAction)

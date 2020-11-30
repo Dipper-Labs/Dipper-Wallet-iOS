@@ -958,7 +958,7 @@ enum ChainType: String {
     
     static func SUPPRT_CHAIN() -> Array<ChainType> {
         var result = [ChainType]()
-        result.append(COSMOS_MAIN)
+//        result.append(COSMOS_MAIN)
         result.append(DIPPER_MAIN)
 //        result.append(IRIS_MAIN)
 //        result.append(BINANCE_MAIN)

@@ -114,14 +114,14 @@ class AccountSelectViewController: BaseViewController, UITableViewDelegate, UITa
                     cell?.chainImg.isHidden = false
                     cell?.chainName.isHidden = false
                     cell?.chainAll.isHidden = true
-                    cell?.chainImg.image = UIImage(named: "dipperImg")
+                    cell?.chainImg.image = UIImage(named: "dipperWhImg")
                     cell?.chainName.text = "DIPPER"
                     
                 } else if (selectedChain == ChainType.DIPPER_TEST) {
                     cell?.chainImg.isHidden = false
                     cell?.chainName.isHidden = false
                     cell?.chainAll.isHidden = true
-                    cell?.chainImg.image = UIImage(named: "dipperImg")
+                    cell?.chainImg.image = UIImage(named: "dipperWhImg")
                     cell?.chainName.text = "DIPPER TEST"
                     
                 } else if (selectedChain == ChainType.BINANCE_MAIN) {

@@ -127,13 +127,13 @@ class CreateViewController: BaseViewController, PasswordViewDelegate{
             self.chainType = ChainType.DIPPER_MAIN
             self.onGenNewKey()
         })
-        dipperAction.setValue(UIImage(named: "dipperImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         let dipperTestAction = UIAlertAction(title: NSLocalizedString("chain_title_test_dipper", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.DIPPER_TEST
             self.onGenNewKey()
         })
-        dipperTestAction.setValue(UIImage(named: "dipperImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperTestAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         let irisAction = UIAlertAction(title: NSLocalizedString("chain_title_iris", comment: ""), style: .default, handler: {_ in
             self.chainType = ChainType.IRIS_MAIN
@@ -207,8 +207,9 @@ class CreateViewController: BaseViewController, PasswordViewDelegate{
         })
         certikTestAction.setValue(UIImage(named: "certikTestnetImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
-        showAlert.addAction(cosmosAction)
+//        showAlert.addAction(cosmosAction)
         showAlert.addAction(dipperAction)
+        showAlert.addAction(dipperTestAction)
 //        showAlert.addAction(irisAction)
 //        showAlert.addAction(bnbAction)
 //        showAlert.addAction(iovAction)

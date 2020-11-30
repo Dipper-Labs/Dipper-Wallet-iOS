@@ -227,8 +227,7 @@ class WUtils {
         } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
             for raw in rawbondinginfos{
                 let bondinginfo = BondingInfo(raw as! [String : Any])
-                let shareAmount = plainStringToDecimal(bondinginfo.shares).multiplying(byPowerOf10: 12)
-                result.append(Bonding(account.account_id, bondinginfo.validator_addr, shareAmount.stringValue, Date().millisecondsSince1970))
+                result.append(Bonding(account.account_id, bondinginfo.validator_address, bondinginfo.shares, Date().millisecondsSince1970))
             }
         } else if (chain == ChainType.IRIS_MAIN) {
             for raw in rawbondinginfos{
@@ -2855,10 +2854,10 @@ class WUtils {
             img?.image = UIImage(named: "cosmosWhMain")
         } else if (chain == ChainType.DIPPER_MAIN) {
             label.text = NSLocalizedString("chain_title_dipper", comment: "")
-            img?.image = UIImage(named: "dipperImg")
+            img?.image = UIImage(named: "dipperWhImg")
         } else if (chain == ChainType.DIPPER_TEST) {
             label.text = NSLocalizedString("chain_title_test_dipper", comment: "")
-            img?.image = UIImage(named: "dipperImg")
+            img?.image = UIImage(named: "dipperWhImg")
         } else if (chain == ChainType.IRIS_MAIN) {
             label.text = NSLocalizedString("chain_title_iris", comment: "")
             img?.image = UIImage(named: "irisWh")
