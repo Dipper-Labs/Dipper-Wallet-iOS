@@ -1,12 +1,23 @@
 {
   "images" : [
     {
+      "filename" : "Bottom copy.png",
       "idiom" : "universal",
-      "filename" : "cosmostationLogo.pdf"
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Bottom copy-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Bottom copy-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
