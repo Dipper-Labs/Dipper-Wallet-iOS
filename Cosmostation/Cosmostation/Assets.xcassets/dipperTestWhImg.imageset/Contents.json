@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "sky.png",
+      "filename" : "icon_42pt@1x_副本.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "sky-1.png",
+      "filename" : "icon_84pt@2x_副本.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "sky-2.png",
+      "filename" : "icon_126pt@3x_副本.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
