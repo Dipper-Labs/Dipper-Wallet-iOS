@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Ddf-yz-9rA"; */
+"Ddf-yz-9rA.text" = "--";
+
+/* Class = "UILabel"; text = "Min. Collateral Rate"; ObjectID = "M2B-cs-ueq"; */
+"M2B-cs-ueq.text" = "Min. Collateral Rate";
+
+/* Class = "UILabel"; text = "BUSD-A"; ObjectID = "MbK-c4-MW5"; */
+"MbK-c4-MW5.text" = "BUSD-A";
+
+/* Class = "UILabel"; text = "Liquidation Penalty"; ObjectID = "W6r-m0-i4Q"; */
+"W6r-m0-i4Q.text" = "Liquidation Penalty";
+
+/* Class = "UILabel"; text = "Stability Fee (APR)"; ObjectID = "WXq-wa-ppX"; */
+"WXq-wa-ppX.text" = "Stability Fee (APR)";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "dlg-te-2EO"; */
+"dlg-te-2EO.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "qu0-Tg-IbP"; */
+"qu0-Tg-IbP.text" = "--";
+
+/* Class = "UILabel"; text = "BTC : USDX"; ObjectID = "t3K-lF-bUE"; */
+"t3K-lF-bUE.text" = "BTC : USDX";

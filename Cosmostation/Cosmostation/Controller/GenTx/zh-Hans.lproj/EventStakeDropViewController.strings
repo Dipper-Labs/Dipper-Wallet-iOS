@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "-"; ObjectID = "6JQ-wL-Rbd"; */
+"6JQ-wL-Rbd.text" = "-";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "Cr7-R0-OHP"; */
+"Cr7-R0-OHP.text" = "Fee";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Dj8-xK-baN"; */
+"Dj8-xK-baN.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "EiU-wy-X1h"; */
+"EiU-wy-X1h.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Please enter your personal ETH address.\nYou may be excluded from the StakeDrop campaign if you enter an exchange address or an invalid address."; ObjectID = "RTz-bo-9hZ"; */
+"RTz-bo-9hZ.text" = "Please enter your personal ETH address.\nYou may be excluded from the StakeDrop campaign if you enter an exchange address or an invalid address.";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "TrP-7l-BSp"; */
+"TrP-7l-BSp.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "UtR-eM-SaN"; */
+"UtR-eM-SaN.text" = "-";
+
+/* Class = "UILabel"; text = "Send Amount(Event)"; ObjectID = "Ysb-Tn-Bvs"; */
+"Ysb-Tn-Bvs.text" = "Send Amount(Event)";
+
+/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "eR2-kY-gPR"; */
+"eR2-kY-gPR.text" = "Recipient Address";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "gTN-5h-sjW"; */
+"gTN-5h-sjW.text" = "-";
+
+/* Class = "UITextField"; placeholder = "ETH address for airdrop"; ObjectID = "kb7-9H-CSa"; */
+"kb7-9H-CSa.placeholder" = "ETH address for airdrop";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "kpK-5I-v9b"; */
+"kpK-5I-v9b.text" = "ATOM";
+
+/* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "lNf-pA-BQs"; */
+"lNf-pA-BQs.normalTitle" = " QR Scan";
+
+/* Class = "UIButton"; normalTitle = " Paste"; ObjectID = "sCP-iN-mc7"; */
+"sCP-iN-mc7.normalTitle" = " Paste";
+
+/* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "ziy-fg-zhz"; */
+"ziy-fg-zhz.normalTitle" = " Recent";

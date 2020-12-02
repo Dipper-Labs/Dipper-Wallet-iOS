@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "CoD-Q7-H9G"; */
+"CoD-Q7-H9G.text" = "Available";
+
+/* Class = "UILabel"; text = "BNB"; ObjectID = "KmH-Wp-0hO"; */
+"KmH-Wp-0hO.text" = "BNB";
+
+/* Class = "UIButton"; normalTitle = " Interchain Transfer"; ObjectID = "YCU-OQ-skY"; */
+"YCU-OQ-skY.normalTitle" = " Interchain Transfer";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "df1-c1-OCz"; */
+"df1-c1-OCz.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "ejJ-K8-riI"; */
+"ejJ-K8-riI.text" = "--";
+
+/* Class = "UILabel"; text = "Locked"; ObjectID = "f13-iu-ZgX"; */
+"f13-iu-ZgX.text" = "Locked";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "fRg-DA-VLt"; */
+"fRg-DA-VLt.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "tcf-Me-1A3"; */
+"tcf-Me-1A3.text" = "--";
+
+/* Class = "UIButton"; normalTitle = " Wallet Connect"; ObjectID = "viC-zz-37S"; */
+"viC-zz-37S.normalTitle" = " Wallet Connect";

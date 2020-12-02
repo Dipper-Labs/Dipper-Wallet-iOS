@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "0Qm-3W-aRx"; */
+"0Qm-3W-aRx.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "1jZ-c5-vOt"; */
+"1jZ-c5-vOt.text" = "--";
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "3AT-QE-NIZ"; */
+"3AT-QE-NIZ.text" = "Reward";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "5Qz-Ur-RgH"; */
+"5Qz-Ur-RgH.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "9Vc-mI-FQ0"; */
+"9Vc-mI-FQ0.text" = "--";
+
+/* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "AC0-bI-9KO"; */
+"AC0-bI-9KO.text" = "Harvest Deposited";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Asa-LF-gCH"; */
+"Asa-LF-gCH.text" = "--";
+
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "LUH-bd-Cqb"; */
+"LUH-bd-Cqb.text" = "Unbonding";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "N0e-zp-yR4"; */
+"N0e-zp-yR4.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Nvy-HQ-oFM"; */
+"Nvy-HQ-oFM.text" = "--";
+
+/* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "aKW-Uu-NnW"; */
+"aKW-Uu-NnW.normalTitle" = "  Send";
+
+/* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "bWg-Sg-Eir"; */
+"bWg-Sg-Eir.normalTitle" = "  Receive";
+
+/* Class = "UILabel"; text = "Vesting (Delegable)"; ObjectID = "gBR-Wg-Rf7"; */
+"gBR-Wg-Rf7.text" = "Vesting (Delegable)";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "hn2-dI-ttp"; */
+"hn2-dI-ttp.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "nNa-gR-dJt"; */
+"nNa-gR-dJt.text" = "--";
+
+/* Class = "UILabel"; text = "KAVA"; ObjectID = "rg7-wY-dId"; */
+"rg7-wY-dId.text" = "KAVA";
+
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "sZ4-4Z-cU8"; */
+"sZ4-4Z-cU8.text" = "Delegated";
+
+/* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "utd-e8-ugh"; */
+"utd-e8-ugh.text" = "Unclaimed Incentive";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "v85-zF-AJg"; */
+"v85-zF-AJg.text" = "Available";

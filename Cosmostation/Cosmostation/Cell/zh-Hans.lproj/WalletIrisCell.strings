@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "3bT-8v-XxM"; */
+"3bT-8v-XxM.text" = "--";
+
+/* Class = "UILabel"; text = "DIP"; ObjectID = "8cm-n9-M21"; */
+"8cm-n9-M21.text" = "DIP";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "GIb-Lu-7FJ"; */
+"GIb-Lu-7FJ.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Q9k-3f-Yt1"; */
+"Q9k-3f-Yt1.text" = "--";
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "Zox-lr-39t"; */
+"Zox-lr-39t.text" = "Reward";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "cm8-V5-e9q"; */
+"cm8-V5-e9q.text" = "Available";
+
+/* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "gCa-Va-kc7"; */
+"gCa-Va-kc7.normalTitle" = "  Delegate";
+
+/* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "gPy-C0-3Qt"; */
+"gPy-C0-3Qt.normalTitle" = "  Vote";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "iID-wo-FgO"; */
+"iID-wo-FgO.text" = "--";
+
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "ngR-Lz-EgW"; */
+"ngR-Lz-EgW.text" = "Delegated";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "qyA-qU-tKk"; */
+"qyA-qU-tKk.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "s6Z-OE-nx4"; */
+"s6Z-OE-nx4.text" = "--";
+
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "sY6-tQ-Kyx"; */
+"sY6-tQ-Kyx.text" = "Unbonding";

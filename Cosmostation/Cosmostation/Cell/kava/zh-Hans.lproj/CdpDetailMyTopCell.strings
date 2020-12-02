@@ -1,0 +1,51 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "09Y-yJ-kgu"; */
+"09Y-yJ-kgu.text" = "--";
+
+/* Class = "UILabel"; text = "Reamin Mintable USDX"; ObjectID = "3Qq-4S-9G0"; */
+"3Qq-4S-9G0.text" = "Reamin Mintable USDX";
+
+/* Class = "UILabel"; text = "Min. Collateral Rate"; ObjectID = "8EC-WO-v5I"; */
+"8EC-WO-v5I.text" = "Min. Collateral Rate";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "C5P-U8-WuF"; */
+"C5P-U8-WuF.text" = "--";
+
+/* Class = "UILabel"; text = "Current BTC Price"; ObjectID = "FM0-LD-r3k"; */
+"FM0-LD-r3k.text" = "Current BTC Price";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "HMD-mf-elP"; */
+"HMD-mf-elP.text" = "--";
+
+/* Class = "UILabel"; text = "System Max Mintable USDX"; ObjectID = "IxQ-oF-yOb"; */
+"IxQ-oF-yOb.text" = "System Max Mintable USDX";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "MBD-hQ-w3A"; */
+"MBD-hQ-w3A.text" = "-";
+
+/* Class = "UILabel"; text = "BUSD-A"; ObjectID = "Rls-dc-wVn"; */
+"Rls-dc-wVn.text" = "BUSD-A";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "TjY-ld-aJw"; */
+"TjY-ld-aJw.text" = "--";
+
+/* Class = "UILabel"; text = "BTC : USDX"; ObjectID = "U0s-rX-4Za"; */
+"U0s-rX-4Za.text" = "BTC : USDX";
+
+/* Class = "UILabel"; text = "Stability Fee (APR)"; ObjectID = "UOf-mu-fBW"; */
+"UOf-mu-fBW.text" = "Stability Fee (APR)";
+
+/* Class = "UILabel"; text = "Liquidation Penalty"; ObjectID = "bcQ-UB-uDB"; */
+"bcQ-UB-uDB.text" = "Liquidation Penalty";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "q8o-Z6-CRS"; */
+"q8o-Z6-CRS.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "qYT-4j-QiJ"; */
+"qYT-4j-QiJ.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "xkD-gd-2fa"; */
+"xkD-gd-2fa.text" = "--";
+
+/* Class = "UILabel"; text = "Liquidation BTC Price"; ObjectID = "zC4-T8-GBf"; */
+"zC4-T8-GBf.text" = "Liquidation BTC Price";

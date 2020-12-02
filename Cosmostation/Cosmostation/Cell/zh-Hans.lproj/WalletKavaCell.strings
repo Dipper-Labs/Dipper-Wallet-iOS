@@ -1,0 +1,60 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "5Ak-fk-XqG"; */
+"5Ak-fk-XqG.text" = "--";
+
+/* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "C3t-mz-BvV"; */
+"C3t-mz-BvV.normalTitle" = "  Vote";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "COZ-7T-K9H"; */
+"COZ-7T-K9H.text" = "--";
+
+/* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "Iol-ln-IqD"; */
+"Iol-ln-IqD.text" = "Unclaimed Incentive";
+
+/* Class = "UILabel"; text = "Vesting (Delegable)"; ObjectID = "JwO-XO-BlK"; */
+"JwO-XO-BlK.text" = "Vesting (Delegable)";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "KPK-HL-ANV"; */
+"KPK-HL-ANV.text" = "Available";
+
+/* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "Tjy-8z-4fF"; */
+"Tjy-8z-4fF.text" = "Harvest Deposited";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Tmz-HF-m7T"; */
+"Tmz-HF-m7T.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "UL9-O3-AK5"; */
+"UL9-O3-AK5.text" = "--";
+
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "WTa-WP-E2M"; */
+"WTa-WP-E2M.text" = "Unbonding";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "ZkW-VM-BOj"; */
+"ZkW-VM-BOj.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "dST-je-Agl"; */
+"dST-je-Agl.text" = "--";
+
+/* Class = "UILabel"; text = "Staking Reward"; ObjectID = "fLU-HZ-lWT"; */
+"fLU-HZ-lWT.text" = "Staking Reward";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "hCI-8s-Z2b"; */
+"hCI-8s-Z2b.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "lgL-XM-pQj"; */
+"lgL-XM-pQj.text" = "--";
+
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "oXU-Nn-W6J"; */
+"oXU-Nn-W6J.text" = "Delegated";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "onj-Va-AtW"; */
+"onj-Va-AtW.text" = "--";
+
+/* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "qDv-9B-JUU"; */
+"qDv-9B-JUU.normalTitle" = "  Delegate";
+
+/* Class = "UIButton"; normalTitle = "  CDP & Harvest"; ObjectID = "uI9-ii-54U"; */
+"uI9-ii-54U.normalTitle" = "  CDP & Harvest";
+
+/* Class = "UILabel"; text = "KAVA"; ObjectID = "uc1-qS-uDK"; */
+"uc1-qS-uDK.text" = "KAVA";

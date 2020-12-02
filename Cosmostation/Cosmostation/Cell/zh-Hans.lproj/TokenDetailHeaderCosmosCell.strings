@@ -1,0 +1,42 @@
+
+/* Class = "UILabel"; text = "--"; ObjectID = "0p4-hV-agv"; */
+"0p4-hV-agv.text" = "--";
+
+/* Class = "UILabel"; text = "Available"; ObjectID = "5wk-sT-QxK"; */
+"5wk-sT-QxK.text" = "Available";
+
+/* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "7lU-sT-l7g"; */
+"7lU-sT-l7g.normalTitle" = "  Send";
+
+/* Class = "UIButton"; normalTitle = "  Buy ATOM"; ObjectID = "9QL-dO-TbC"; */
+"9QL-dO-TbC.normalTitle" = "  Buy ATOM";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "EZP-nN-Uqh"; */
+"EZP-nN-Uqh.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Ge7-cf-S6K"; */
+"Ge7-cf-S6K.text" = "--";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "SmM-Hv-erl"; */
+"SmM-Hv-erl.text" = "ATOM";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "aTE-46-IDM"; */
+"aTE-46-IDM.text" = "--";
+
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "lLO-iH-Huh"; */
+"lLO-iH-Huh.text" = "Unbonding";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "p2U-c0-fS5"; */
+"p2U-c0-fS5.text" = "--";
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "s4i-U5-jde"; */
+"s4i-U5-jde.text" = "Reward";
+
+/* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "tGu-KQ-Dkz"; */
+"tGu-KQ-Dkz.normalTitle" = "  Receive";
+
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "tiN-TZ-KLn"; */
+"tiN-TZ-KLn.text" = "Delegated";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "ucP-uf-KhC"; */
+"ucP-uf-KhC.text" = "--";

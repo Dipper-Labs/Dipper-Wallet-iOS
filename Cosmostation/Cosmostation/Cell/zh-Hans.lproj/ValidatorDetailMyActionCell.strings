@@ -1,0 +1,45 @@
+
+/* Class = "UILabel"; text = "-"; ObjectID = "4nk-dt-CiQ"; */
+"4nk-dt-CiQ.text" = "-";
+
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "Bs6-H3-HZs"; */
+"Bs6-H3-HZs.text" = "Delegated";
+
+/* Class = "UILabel"; text = "Est. Monthly Reward"; ObjectID = "C3b-SX-Z56"; */
+"C3b-SX-Z56.text" = "Est. Monthly Reward";
+
+/* Class = "UIButton"; normalTitle = "RE-INVEST"; ObjectID = "Das-Dc-QgD"; */
+"Das-Dc-QgD.normalTitle" = "RE-INVEST";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "FTh-Xd-UEg"; */
+"FTh-Xd-UEg.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "UNDELEGATE"; ObjectID = "Ghn-OR-Lj6"; */
+"Ghn-OR-Lj6.normalTitle" = "UNDELEGATE";
+
+/* Class = "UIButton"; normalTitle = "DELEGATE"; ObjectID = "IWh-8K-Tdg"; */
+"IWh-8K-Tdg.normalTitle" = "DELEGATE";
+
+/* Class = "UILabel"; text = "Est. Daily Reward"; ObjectID = "IeA-BC-eAP"; */
+"IeA-BC-eAP.text" = "Est. Daily Reward";
+
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "L8L-5t-Ob2"; */
+"L8L-5t-Ob2.text" = "Unbonding";
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "QOT-VC-ZBU"; */
+"QOT-VC-ZBU.text" = "Reward";
+
+/* Class = "UIButton"; normalTitle = "CLAIM REWARD"; ObjectID = "Uax-LB-HdT"; */
+"Uax-LB-HdT.normalTitle" = "CLAIM REWARD";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "hib-JF-mPX"; */
+"hib-JF-mPX.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "sgs-C1-O6R"; */
+"sgs-C1-O6R.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "REDELEGATE"; ObjectID = "vxf-ut-Qfe"; */
+"vxf-ut-Qfe.normalTitle" = "REDELEGATE";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "wPR-SC-6DM"; */
+"wPR-SC-6DM.text" = "-";
