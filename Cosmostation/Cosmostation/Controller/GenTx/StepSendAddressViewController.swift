@@ -13,7 +13,7 @@ class StepSendAddressViewController: BaseViewController, QrScannerDelegate {
     
     @IBOutlet weak var mTargetAddressTextField: AddressInputTextField!
     @IBOutlet weak var controlLayer: UIStackView!
-    @IBOutlet weak var startNameLayer: UIView!
+//    @IBOutlet weak var startNameLayer: UIView!
     @IBOutlet weak var CancelBtn: UIButton!
     @IBOutlet weak var NextBtn: UIButton!
     
@@ -57,12 +57,12 @@ class StepSendAddressViewController: BaseViewController, QrScannerDelegate {
     
     override func keyboardWillHide(notification: NSNotification) {
         super.keyboardWillHide(notification: notification)
-        startNameLayer.isHidden = false
+//        startNameLayer.isHidden = false
     }
     
     override func keyboardWillShow(notification: NSNotification) {
         super.keyboardWillShow(notification: notification)
-        startNameLayer.isHidden = true
+//        startNameLayer.isHidden = true
     }
     
     @IBAction func onClickNext(_ sender: Any) {

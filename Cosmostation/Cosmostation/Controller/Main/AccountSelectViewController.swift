@@ -115,7 +115,7 @@ class AccountSelectViewController: BaseViewController, UITableViewDelegate, UITa
                     cell?.chainName.isHidden = false
                     cell?.chainAll.isHidden = true
                     cell?.chainImg.image = UIImage(named: "dipperWhImg")
-                    cell?.chainName.text = "DIPPER"
+                    cell?.chainName.text = "DIPPER HUB"
                     
                 } else if (selectedChain == ChainType.DIPPER_TEST) {
                     cell?.chainImg.isHidden = false

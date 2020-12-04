@@ -1,27 +1,26 @@
-
 /* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "0eI-uy-KLp"; */
 "0eI-uy-KLp.normalTitle" = "  Delegate";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "1Z2-rO-SPh"; */
 "1Z2-rO-SPh.text" = "--";
 
-/* Class = "UILabel"; text = "Unbonding"; ObjectID = "47H-Mt-pMB"; */
-"47H-Mt-pMB.text" = "Unbonding";
-
 /* Class = "UILabel"; text = "Available"; ObjectID = "6GT-jp-W1U"; */
 "6GT-jp-W1U.text" = "Available";
 
-/* Class = "UILabel"; text = "--"; ObjectID = "H83-xW-qX2"; */
-"H83-xW-qX2.text" = "--";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "b12-mU-85f"; */
-"b12-mU-85f.text" = "--";
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "47H-Mt-pMB"; */
+"47H-Mt-pMB.text" = "Unbonding";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "b3v-p6-TFf"; */
 "b3v-p6-TFf.text" = "--";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "b12-mU-85f"; */
+"b12-mU-85f.text" = "--";
+
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "dg6-Zn-Ow4"; */
 "dg6-Zn-Ow4.text" = "Delegated";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "H83-xW-qX2"; */
+"H83-xW-qX2.text" = "--";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "iXw-gQ-oKJ"; */
 "iXw-gQ-oKJ.text" = "--";
@@ -40,3 +39,4 @@
 
 /* Class = "UIButton"; normalTitle = "  Starname Service"; ObjectID = "w9q-oh-Aaw"; */
 "w9q-oh-Aaw.normalTitle" = "  Starname Service";
+

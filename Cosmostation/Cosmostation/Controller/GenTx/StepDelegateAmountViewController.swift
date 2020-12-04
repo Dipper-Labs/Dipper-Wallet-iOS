@@ -321,6 +321,11 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
             self.onUIupdate()
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
+            toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
+            self.onUIupdate()
+            self.showMaxWarnning()
         } else if (pageHolderVC.chainType! == ChainType.SECRET_MAIN || pageHolderVC.chainType! == ChainType.IOV_MAIN || pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000", locale: Locale.current), withBehavior: WUtils.handler6)
             toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
@@ -329,11 +334,6 @@ class StepDelegateAmountViewController: BaseViewController, UITextFieldDelegate{
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000000000000000", locale: Locale.current), withBehavior: WUtils.handler18)
-            toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
-            self.onUIupdate()
-            self.showMaxWarnning()
-        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
-            let maxValue = userBalance.dividing(by: NSDecimalNumber(string: "1000000000000", locale: Locale.current), withBehavior: WUtils.handler12)
             toDelegateAmountInput.text = WUtils.decimalNumberToLocaleString(maxValue, mDpDecimal)
             self.onUIupdate()
             self.showMaxWarnning()

@@ -11,7 +11,7 @@
         <!--Transaction View Controller-->
         <scene sceneID="2gH-u9-0Az">
             <objects>
-                <viewController storyboardIdentifier="TransactionViewController" id="r0O-hN-nI0" customClass="TransactionViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TransactionViewController" id="r0O-hN-nI0" customClass="TransactionViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CR2-WX-NcC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,12 +102,12 @@
         <!--Step Delegate Amount View Controller-->
         <scene sceneID="PQE-nD-o4W">
             <objects>
-                <viewController storyboardIdentifier="StepDelegateAmountViewController" id="wT9-TM-yab" customClass="StepDelegateAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDelegateAmountViewController" id="wT9-TM-yab" customClass="StepDelegateAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFh-0Y-hem">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W87-fN-DZa" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W87-fN-DZa" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -373,12 +373,12 @@
         <!--Step Undelegate Amount View Controller-->
         <scene sceneID="Pho-s2-b5t">
             <objects>
-                <viewController storyboardIdentifier="StepUndelegateAmountViewController" id="7rg-83-ZMB" customClass="StepUndelegateAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepUndelegateAmountViewController" id="7rg-83-ZMB" customClass="StepUndelegateAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACb-xv-uoS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86d-1d-w9t" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86d-1d-w9t" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -644,12 +644,12 @@
         <!--Step Send Address View Controller-->
         <scene sceneID="WdN-oV-0uj">
             <objects>
-                <viewController storyboardIdentifier="StepSendAddressViewController" id="EiA-GI-5Nt" customClass="StepSendAddressViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepSendAddressViewController" id="EiA-GI-5Nt" customClass="StepSendAddressViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XVP-Up-w4a">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="StarName or Recipient Address" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-6L-krq" customClass="AddressInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="StarName or Recipient Address" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bF3-6L-krq" customClass="AddressInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -737,45 +737,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOG-RD-uxa">
-                                <rect key="frame" x="24" y="341.5" width="272" height="136.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starnameImg" translatesAutoresizingMaskIntoConstraints="NO" id="atM-xs-Pay">
-                                        <rect key="frame" x="106" y="0.0" width="60" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="HT5-Xu-xav"/>
-                                            <constraint firstAttribute="height" constant="60" id="uOo-P1-z2X"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*starname service supported." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQD-Jk-TJF">
-                                        <rect key="frame" x="44" y="68" width="184" height="16.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                                        <color key="textColor" red="0.43137254901960786" green="0.48627450980392156" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-jO-44g">
-                                        <rect key="frame" x="12" y="94.5" width="248" height="42"/>
-                                        <string key="text">Your universal username for the blockchain world. Insert a *starname in the address field instead of a long complicated crypto address.</string>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="xQD-Jk-TJF" firstAttribute="top" secondItem="atM-xs-Pay" secondAttribute="bottom" constant="8" id="D0a-G7-ulg"/>
-                                    <constraint firstItem="xQD-Jk-TJF" firstAttribute="centerX" secondItem="TOG-RD-uxa" secondAttribute="centerX" id="PQn-AL-MHC"/>
-                                    <constraint firstItem="RDB-jO-44g" firstAttribute="leading" secondItem="TOG-RD-uxa" secondAttribute="leading" constant="12" id="Trc-LW-Qa1"/>
-                                    <constraint firstItem="RDB-jO-44g" firstAttribute="top" secondItem="xQD-Jk-TJF" secondAttribute="bottom" constant="10" id="X3e-h8-JI6"/>
-                                    <constraint firstItem="xQD-Jk-TJF" firstAttribute="leading" secondItem="TOG-RD-uxa" secondAttribute="leading" constant="44" id="X87-Px-9vz"/>
-                                    <constraint firstItem="atM-xs-Pay" firstAttribute="top" secondItem="TOG-RD-uxa" secondAttribute="top" id="ZfP-vl-NWW"/>
-                                    <constraint firstAttribute="trailing" secondItem="RDB-jO-44g" secondAttribute="trailing" constant="12" id="d8M-Pq-49C"/>
-                                    <constraint firstItem="RDB-jO-44g" firstAttribute="centerX" secondItem="TOG-RD-uxa" secondAttribute="centerX" id="lhz-XJ-aKJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="RDB-jO-44g" secondAttribute="bottom" id="rTg-9F-S6k"/>
-                                    <constraint firstAttribute="trailing" secondItem="xQD-Jk-TJF" secondAttribute="trailing" constant="44" id="umc-Fw-uVt"/>
-                                    <constraint firstItem="atM-xs-Pay" firstAttribute="centerX" secondItem="TOG-RD-uxa" secondAttribute="centerX" id="wsh-sF-SUO"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bty-U1-VmQ">
                                 <rect key="frame" x="16" y="502" width="288" height="50"/>
                                 <subviews>
@@ -837,13 +798,10 @@
                             <constraint firstItem="Bu6-C4-2Lx" firstAttribute="trailing" secondItem="bF3-6L-krq" secondAttribute="trailing" constant="16" id="8In-1x-24U"/>
                             <constraint firstItem="Bu6-C4-2Lx" firstAttribute="bottom" secondItem="Bty-U1-VmQ" secondAttribute="bottom" constant="16" id="IGc-KU-g9h"/>
                             <constraint firstItem="aAg-bK-IdZ" firstAttribute="leading" secondItem="Bu6-C4-2Lx" secondAttribute="leading" constant="120" id="RDd-vM-3OX"/>
-                            <constraint firstItem="Bu6-C4-2Lx" firstAttribute="trailing" secondItem="TOG-RD-uxa" secondAttribute="trailing" constant="24" id="RE9-WL-XXw"/>
                             <constraint firstItem="bF3-6L-krq" firstAttribute="top" secondItem="Bu6-C4-2Lx" secondAttribute="top" constant="16" id="YXv-zk-hP0"/>
-                            <constraint firstItem="TOG-RD-uxa" firstAttribute="leading" secondItem="Bu6-C4-2Lx" secondAttribute="leading" constant="24" id="jNz-UF-Hb6"/>
                             <constraint firstItem="aAg-bK-IdZ" firstAttribute="top" secondItem="bF3-6L-krq" secondAttribute="bottom" constant="16" id="onu-gi-Ybf"/>
                             <constraint firstItem="Bu6-C4-2Lx" firstAttribute="trailing" secondItem="Bty-U1-VmQ" secondAttribute="trailing" constant="16" id="q7a-6x-yIc"/>
                             <constraint firstItem="Bty-U1-VmQ" firstAttribute="leading" secondItem="Bu6-C4-2Lx" secondAttribute="leading" constant="16" id="twy-iG-X3A"/>
-                            <constraint firstItem="Bty-U1-VmQ" firstAttribute="top" secondItem="TOG-RD-uxa" secondAttribute="bottom" constant="24" id="u7z-To-fRD"/>
                             <constraint firstItem="Bu6-C4-2Lx" firstAttribute="trailing" secondItem="aAg-bK-IdZ" secondAttribute="trailing" constant="16" id="wJt-eR-dhu"/>
                         </constraints>
                     </view>
@@ -852,7 +810,6 @@
                         <outlet property="NextBtn" destination="vWJ-RQ-3f7" id="C7a-41-6eZ"/>
                         <outlet property="controlLayer" destination="Bty-U1-VmQ" id="uAv-Ql-xzV"/>
                         <outlet property="mTargetAddressTextField" destination="bF3-6L-krq" id="Q26-HZ-GNr"/>
-                        <outlet property="startNameLayer" destination="TOG-RD-uxa" id="9kH-FJ-kw7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5DD-Nm-7PK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -862,12 +819,12 @@
         <!--Step Redelegate Amount View Controller-->
         <scene sceneID="hsL-fN-2zU">
             <objects>
-                <viewController storyboardIdentifier="StepRedelegateAmountViewController" id="pNA-Ou-lAm" customClass="StepRedelegateAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRedelegateAmountViewController" id="pNA-Ou-lAm" customClass="StepRedelegateAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ncs-d2-vUS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogn-O8-3ic" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ogn-O8-3ic" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1133,7 +1090,7 @@
         <!--Step Redelegate To View Controller-->
         <scene sceneID="qpZ-29-Ty3">
             <objects>
-                <viewController storyboardIdentifier="StepRedelegateToViewController" id="x3K-cO-nNm" customClass="StepRedelegateToViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRedelegateToViewController" id="x3K-cO-nNm" customClass="StepRedelegateToViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="syX-fb-Zy4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1221,12 +1178,12 @@
         <!--Step Change Address View Controller-->
         <scene sceneID="VR9-gh-Tvd">
             <objects>
-                <viewController storyboardIdentifier="StepChangeAddressViewController" id="q13-Di-4d3" customClass="StepChangeAddressViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepChangeAddressViewController" id="q13-Di-4d3" customClass="StepChangeAddressViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y25-rc-S4t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To Change Reward Address" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-sp-8fD" customClass="AddressInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To Change Reward Address" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOz-sp-8fD" customClass="AddressInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1364,7 +1321,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-8x-Rzd" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVb-8x-Rzd" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="129" width="288" height="60"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="73E-G0-n1u">
@@ -1429,12 +1386,12 @@
         <!--Re Invest Amount View Controller-->
         <scene sceneID="I8v-jA-SLe">
             <objects>
-                <viewController storyboardIdentifier="ReInvestAmountViewController" id="n8v-h1-Xx8" customClass="ReInvestAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReInvestAmountViewController" id="n8v-h1-Xx8" customClass="ReInvestAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a3X-gy-xYl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-xV-BZ1" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-xV-BZ1" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="140"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNb-ul-DhB">
@@ -1557,7 +1514,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_1" translatesAutoresizingMaskIntoConstraints="NO" id="84b-D8-AgE" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_1" translatesAutoresizingMaskIntoConstraints="NO" id="84b-D8-AgE" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="6Tw-mB-fhJ"/>
@@ -1601,12 +1558,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Vote Select View Controller-->
         <scene sceneID="edX-xT-qG7">
             <objects>
-                <viewController storyboardIdentifier="VoteSelectViewController" id="LhS-uU-JDj" customClass="VoteSelectViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoteSelectViewController" id="LhS-uU-JDj" customClass="VoteSelectViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UDT-sC-sgR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xg-K7-pBP" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xg-K7-pBP" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiE-x9-l6W">
@@ -1885,7 +1842,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Create Cpd Amount View Controller-->
         <scene sceneID="6DM-zF-9Vg">
             <objects>
-                <viewController storyboardIdentifier="StepCreateCpdAmountViewController" id="x6c-il-CWJ" customClass="StepCreateCpdAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepCreateCpdAmountViewController" id="x6c-il-CWJ" customClass="StepCreateCpdAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pr1-WJ-J5v">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1903,7 +1860,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nz3-1c-1TE" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nz3-1c-1TE" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="18" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2090,7 +2047,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSf-Cf-j5X" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSf-Cf-j5X" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="100" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2305,7 +2262,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dz2-LA-Sks" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dz2-LA-Sks" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="OfA-j1-XeL"/>
@@ -2399,7 +2356,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Deposit Cdp Amount View Controller-->
         <scene sceneID="ZCQ-2i-Hrg">
             <objects>
-                <viewController storyboardIdentifier="StepDepositCdpAmountViewController" id="FU3-J2-ta0" customClass="StepDepositCdpAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDepositCdpAmountViewController" id="FU3-J2-ta0" customClass="StepDepositCdpAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XoZ-2x-bcV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2417,7 +2374,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyO-0l-NEm" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vyO-0l-NEm" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="18" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2567,7 +2524,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     <constraint firstAttribute="height" constant="35" id="3AQ-IL-MqX"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-Ze-EAw" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-Ze-EAw" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="143" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lC-wj-yin">
@@ -2683,7 +2640,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kol-GB-e5h" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kol-GB-e5h" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="N3B-WI-yM7"/>
@@ -2742,7 +2699,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Withdraw Cdp Amount View Controller-->
         <scene sceneID="cjn-MC-3qH">
             <objects>
-                <viewController storyboardIdentifier="StepWithdrawCdpAmountViewController" id="VIU-nW-ZMv" customClass="StepWithdrawCdpAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepWithdrawCdpAmountViewController" id="VIU-nW-ZMv" customClass="StepWithdrawCdpAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TDM-47-p8A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2760,7 +2717,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-Kb-Nrf" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-Kb-Nrf" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="16" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2910,7 +2867,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     <constraint firstAttribute="height" constant="35" id="kXt-oc-SxQ"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-jK-iuq" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q21-jK-iuq" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="141" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ApG-hh-4Yn">
@@ -3026,7 +2983,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-Az-Pez" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-Az-Pez" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="Mm7-nX-oDw"/>
@@ -3085,7 +3042,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Draw Debt Cdp Amount View Controller-->
         <scene sceneID="lfH-8g-9eh">
             <objects>
-                <viewController storyboardIdentifier="StepDrawDebtCdpAmountViewController" id="uvo-FS-uHJ" customClass="StepDrawDebtCdpAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDrawDebtCdpAmountViewController" id="uvo-FS-uHJ" customClass="StepDrawDebtCdpAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ccc-QY-ZPy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3103,7 +3060,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O38-UP-I0w" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O38-UP-I0w" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="18" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3259,7 +3216,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     <constraint firstAttribute="height" constant="35" id="8sc-6f-Xsy"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVv-Mn-ThV" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVv-Mn-ThV" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="143" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBt-wi-cq2">
@@ -3375,7 +3332,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T2I-iG-LHW" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T2I-iG-LHW" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="M1L-R9-aJ1"/>
@@ -3446,7 +3403,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Repay Cdp Amount View Controller-->
         <scene sceneID="wz7-oU-iuJ">
             <objects>
-                <viewController storyboardIdentifier="StepRepayCdpAmountViewController" id="f7r-ri-Zz6" customClass="StepRepayCdpAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRepayCdpAmountViewController" id="f7r-ri-Zz6" customClass="StepRepayCdpAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="viS-3m-i7N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3464,7 +3421,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-Nn-vMi" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-Nn-vMi" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="62" y="18" width="242" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3642,7 +3599,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     <constraint firstAttribute="height" constant="35" id="bwy-eH-g9o"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsO-Nl-fYo" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EsO-Nl-fYo" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="169" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2E-fF-hve">
@@ -3758,7 +3715,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-cB-YMf" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-cB-YMf" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="YaH-ip-zMC"/>
@@ -3842,7 +3799,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Htlc Send0 View Controller-->
         <scene sceneID="8bX-uZ-Kvj">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcSend0ViewController" id="F6c-qs-azv" customClass="StepHtlcSend0ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcSend0ViewController" id="F6c-qs-azv" customClass="StepHtlcSend0ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KaV-x2-DBG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3853,7 +3810,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" red="0.47843137250000001" green="0.49803921569999998" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-FP-kLo" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-FP-kLo" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="40.5" width="128" height="42"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmosWhMain" translatesAutoresizingMaskIntoConstraints="NO" id="o1Z-lv-85P">
@@ -3897,7 +3854,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" red="0.47843137250000001" green="0.49803921569999998" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lG5-Ue-qTU" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lG5-Ue-qTU" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="176" y="40.5" width="128" height="42"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cosmosWhMain" translatesAutoresizingMaskIntoConstraints="NO" id="wJm-5a-toj">
@@ -3949,7 +3906,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" red="0.47843137250000001" green="0.49803921569999998" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-iB-BVS" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-iB-BVS" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="131" width="288" height="42"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tokenIc" translatesAutoresizingMaskIntoConstraints="NO" id="zl1-8V-LvG">
@@ -4017,7 +3974,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" red="0.47843137250000001" green="0.49803921569999998" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcM-mz-uwh" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcM-mz-uwh" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="221.5" width="288" height="84"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-Fu-XHW">
@@ -4258,12 +4215,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Htlc Refund0 View Controller-->
         <scene sceneID="iJ9-Hi-T3L">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcRefund0ViewController" id="Qr1-1b-jmn" customClass="StepHtlcRefund0ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcRefund0ViewController" id="Qr1-1b-jmn" customClass="StepHtlcRefund0ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xgr-Z3-RGE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWX-6M-Kod" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YWX-6M-Kod" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="210"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swap Id" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoU-zK-sKu">
@@ -4388,7 +4345,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PuW-v9-RSN" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PuW-v9-RSN" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="ht7-bh-LIC"/>
@@ -4426,12 +4383,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Incentive0 View Controller-->
         <scene sceneID="254-Um-YBp">
             <objects>
-                <viewController storyboardIdentifier="StepIncentive0ViewController" id="EPq-hf-RP3" customClass="StepIncentive0ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepIncentive0ViewController" id="EPq-hf-RP3" customClass="StepIncentive0ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ymX-6e-sSs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAC-BU-mFT" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAC-BU-mFT" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UnClaimed Incentive" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8n-J3-ZRP">
@@ -4687,7 +4644,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Deposit Harvest Amount View Controller-->
         <scene sceneID="Vmv-FR-R1S">
             <objects>
-                <viewController storyboardIdentifier="StepDepositHarvestAmountViewController" id="luc-y7-gxA" customClass="StepDepositHarvestAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDepositHarvestAmountViewController" id="luc-y7-gxA" customClass="StepDepositHarvestAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RoD-v5-A2p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4705,7 +4662,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-1E-e7X" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BBb-1E-e7X" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="60" y="14" width="244" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4908,7 +4865,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M5c-qG-84e" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M5c-qG-84e" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="NNh-Ce-ysU"/>
@@ -4961,7 +4918,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Withdraw Harvest Amount View Controller-->
         <scene sceneID="DID-8Y-s2j">
             <objects>
-                <viewController storyboardIdentifier="StepWithdrawHarvestAmountViewController" id="iCb-yf-IuO" customClass="StepWithdrawHarvestAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepWithdrawHarvestAmountViewController" id="iCb-yf-IuO" customClass="StepWithdrawHarvestAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D3V-H8-Szt">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4973,7 +4930,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     <constraint firstAttribute="width" constant="32" id="LAK-KC-G7z"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W39-gS-wWw" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W39-gS-wWw" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="60" y="14" width="244" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5063,7 +5020,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtu-vY-NBQ" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rtu-vY-NBQ" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="UHB-Hi-Hq3"/>
@@ -5235,7 +5192,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Harvest Reward0 View Controller-->
         <scene sceneID="0UU-G0-zpY">
             <objects>
-                <viewController storyboardIdentifier="StepHarvestReward0ViewController" id="T2v-7F-ZWU" customClass="StepHarvestReward0ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHarvestReward0ViewController" id="T2v-7F-ZWU" customClass="StepHarvestReward0ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqO-qB-tv4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5320,7 +5277,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-BY-z4V" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fd4-BY-z4V" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harvest Reward" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOF-eA-db1">
@@ -5496,12 +5453,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Ok Deposit Amount View Controller-->
         <scene sceneID="KbW-hG-38D">
             <objects>
-                <viewController storyboardIdentifier="StepOkDepositAmountViewController" id="bC7-4D-WOS" customClass="StepOkDepositAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkDepositAmountViewController" id="bC7-4D-WOS" customClass="StepOkDepositAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nrn-tK-czO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-Dq-tmT" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-Dq-tmT" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5772,12 +5729,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Ok Withdraw Amount View Controller-->
         <scene sceneID="O0i-zm-ygy">
             <objects>
-                <viewController storyboardIdentifier="StepOkWithdrawAmountViewController" id="cbf-c4-4gx" customClass="StepOkWithdrawAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkWithdrawAmountViewController" id="cbf-c4-4gx" customClass="StepOkWithdrawAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v9e-Yh-x5X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-gu-bz6" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uKY-gu-bz6" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6048,7 +6005,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Ok Vote To View Controller-->
         <scene sceneID="DOy-az-Je9">
             <objects>
-                <viewController storyboardIdentifier="StepOkVoteToViewController" id="lSt-gj-RKS" customClass="StepOkVoteToViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkVoteToViewController" id="lSt-gj-RKS" customClass="StepOkVoteToViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u0l-oI-ntM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6165,7 +6122,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Htlc Send1 View Controller-->
         <scene sceneID="qu4-kB-FmK">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcSend1ViewController" id="dnd-5B-i3N" customClass="StepHtlcSend1ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcSend1ViewController" id="dnd-5B-i3N" customClass="StepHtlcSend1ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="767-Kr-fRz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -6176,7 +6133,7 @@ The actual amount of rewards you receive may be equal to or greater than what is
                                 <color key="textColor" red="0.47843137250000001" green="0.49803921569999998" blue="0.53333333329999999" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-ol-uVL" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IBl-ol-uVL" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="40.5" width="288" height="50"/>
                                 <subviews>
                                     <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="key_off" translatesAutoresizingMaskIntoConstraints="NO" id="UJ2-wI-9tU">
@@ -6326,12 +6283,12 @@ you must create a KAVA account and have history</string>
         <!--Step Htlc Send2 View Controller-->
         <scene sceneID="yoK-Ah-txq">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcSend2ViewController" id="pLC-rU-iRM" customClass="StepHtlcSend2ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcSend2ViewController" id="pLC-rU-iRM" customClass="StepHtlcSend2ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZgM-tS-SFO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-bX-SaA" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G5L-bX-SaA" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -6614,12 +6571,12 @@ you must create a KAVA account and have history</string>
         <!--Step Htlc Send3 View Controller-->
         <scene sceneID="IH4-UZ-zgK">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcSend3ViewController" id="oNs-tT-n3l" customClass="StepHtlcSend3ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcSend3ViewController" id="oNs-tT-n3l" customClass="StepHtlcSend3ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvo-oA-lrb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJy-EY-e0a" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJy-EY-e0a" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="210"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bepsendIc" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-Oe-1yk">
@@ -6741,7 +6698,7 @@ you must create a KAVA account and have history</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q0-6J-6GZ" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q0-6J-6GZ" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="238" width="288" height="195"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bepclaimIc" translatesAutoresizingMaskIntoConstraints="NO" id="sgs-eK-4ms">
@@ -6966,7 +6923,7 @@ you must create a KAVA account and have history</string>
         <!--Step Htlc Refund3 View Controller-->
         <scene sceneID="4c1-Ks-6H8">
             <objects>
-                <viewController storyboardIdentifier="StepHtlcRefund3ViewController" id="WDR-ef-ZUT" customClass="StepHtlcRefund3ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHtlcRefund3ViewController" id="WDR-ef-ZUT" customClass="StepHtlcRefund3ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fVP-Hk-Jvr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -7024,7 +6981,7 @@ you must create a KAVA account and have history</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3x-Gf-1hb" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X3x-Gf-1hb" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="255"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZy-tD-pIS">
@@ -7178,12 +7135,12 @@ you must create a KAVA account and have history</string>
         <!--Step Incentive3 View Controller-->
         <scene sceneID="m4T-st-vyx">
             <objects>
-                <viewController storyboardIdentifier="StepIncentive3ViewController" id="evG-xZ-OMc" customClass="StepIncentive3ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepIncentive3ViewController" id="evG-xZ-OMc" customClass="StepIncentive3ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CKK-OF-v6Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aN5-Gs-pkO" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aN5-Gs-pkO" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5N-bq-oVX">
@@ -7389,12 +7346,12 @@ you must create a KAVA account and have history</string>
         <!--Step Deposit Harvest Check View Controller-->
         <scene sceneID="q2B-1D-Pg3">
             <objects>
-                <viewController storyboardIdentifier="StepDepositHarvestCheckViewController" id="1gF-BG-A4s" customClass="StepDepositHarvestCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDepositHarvestCheckViewController" id="1gF-BG-A4s" customClass="StepDepositHarvestCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xSr-JS-ntO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-WA-q8m" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCI-WA-q8m" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="240"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhW-AL-4rh">
@@ -7581,12 +7538,12 @@ you must create a KAVA account and have history</string>
         <!--Step Withdraw Harvest Check View Controller-->
         <scene sceneID="Ur8-R1-jPS">
             <objects>
-                <viewController storyboardIdentifier="StepWithdrawHarvestCheckViewController" id="zc0-1P-I91" customClass="StepWithdrawHarvestCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepWithdrawHarvestCheckViewController" id="zc0-1P-I91" customClass="StepWithdrawHarvestCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NbD-vg-rss">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-Hb-Q6C" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ygT-Hb-Q6C" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="20" width="288" height="240"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wtihdraw Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EfD-Yd-Cmj">
@@ -7773,12 +7730,12 @@ you must create a KAVA account and have history</string>
         <!--Step Harvest Reward3 View Controller-->
         <scene sceneID="1e9-GS-YOn">
             <objects>
-                <viewController storyboardIdentifier="StepHarvestReward3ViewController" id="ITs-2m-PpX" customClass="StepHarvestReward3ViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepHarvestReward3ViewController" id="ITs-2m-PpX" customClass="StepHarvestReward3ViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WUG-Wl-e2N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-Gq-58a" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sYA-Gq-58a" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="270"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMP-FT-0Lb">
@@ -7984,12 +7941,12 @@ you must create a KAVA account and have history</string>
         <!--Step Ok Deposit Check View Controller-->
         <scene sceneID="JYR-g7-Ls2">
             <objects>
-                <viewController storyboardIdentifier="StepOkDepositCheckViewController" id="f1h-Df-AMX" customClass="StepOkDepositCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkDepositCheckViewController" id="f1h-Df-AMX" customClass="StepOkDepositCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MJX-6U-Qbm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-Ko-8cs" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnh-Ko-8cs" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-ln-RpC">
@@ -8160,12 +8117,12 @@ you must create a KAVA account and have history</string>
         <!--Step Ok Withdraw Check View Controller-->
         <scene sceneID="hzK-qe-D3Q">
             <objects>
-                <viewController storyboardIdentifier="StepOkWithdrawCheckViewController" id="q9K-Qt-uFc" customClass="StepOkWithdrawCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkWithdrawCheckViewController" id="q9K-Qt-uFc" customClass="StepOkWithdrawCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYF-1G-MnX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-0u-eOn" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykb-0u-eOn" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdraw Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25d-gZ-f9Q">
@@ -8336,12 +8293,12 @@ you must create a KAVA account and have history</string>
         <!--Step Ok Vote Check View Controller-->
         <scene sceneID="yuu-bm-TUd">
             <objects>
-                <viewController storyboardIdentifier="StepOkVoteCheckViewController" id="jIb-FZ-r77" customClass="StepOkVoteCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepOkVoteCheckViewController" id="jIb-FZ-r77" customClass="StepOkVoteCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CF1-5o-Qxv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfU-By-onE" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfU-By-onE" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="183"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXd-Xn-Bvo">
@@ -8505,12 +8462,12 @@ you must create a KAVA account and have history</string>
         <!--Step Send Amount View Controller-->
         <scene sceneID="tKS-tJ-I3N">
             <objects>
-                <viewController storyboardIdentifier="StepSendAmountViewController" id="Doe-QT-KiY" customClass="StepSendAmountViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepSendAmountViewController" id="Doe-QT-KiY" customClass="StepSendAmountViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YdH-X4-re3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-iN-uYF" customClass="AmountInputTextField" customModule="Cosmostation" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hT7-iN-uYF" customClass="AmountInputTextField" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -8776,12 +8733,12 @@ you must create a KAVA account and have history</string>
         <!--Step Reward View Controller-->
         <scene sceneID="n3o-T3-jly">
             <objects>
-                <viewController storyboardIdentifier="StepRewardViewController" id="BPK-Tf-xb5" customClass="StepRewardViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRewardViewController" id="BPK-Tf-xb5" customClass="StepRewardViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nyc-WB-r57">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpR-Aj-Iwn" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpR-Aj-Iwn" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="300"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBp-6N-Ir3">
@@ -8863,7 +8820,7 @@ you must create a KAVA account and have history</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_1" translatesAutoresizingMaskIntoConstraints="NO" id="mDC-qx-uiX" customClass="LoadingImageView" customModule="Cosmostation" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_1" translatesAutoresizingMaskIntoConstraints="NO" id="mDC-qx-uiX" customClass="LoadingImageView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="130" y="254" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="AOo-JJ-b1w"/>
@@ -8977,12 +8934,12 @@ The actual amount of rewards you receive may be equal to or greater than what is
         <!--Step Memo View Controller-->
         <scene sceneID="TWF-ke-te8">
             <objects>
-                <viewController storyboardIdentifier="StepMemoViewController" id="qMc-La-yOh" customClass="StepMemoViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepMemoViewController" id="qMc-La-yOh" customClass="StepMemoViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aAJ-eF-eZB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATl-gU-X6y" customClass="MemoTextView" customModule="Cosmostation" customModuleProvider="target">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATl-gU-X6y" customClass="MemoTextView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="128"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -9181,12 +9138,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Fee View Controller-->
         <scene sceneID="2wh-FL-gsd">
             <objects>
-                <viewController storyboardIdentifier="StepFeeViewController" id="2nE-Qg-9jh" customClass="StepFeeViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepFeeViewController" id="2nE-Qg-9jh" customClass="StepFeeViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCU-14-nlz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-SD-d2s" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J9U-SD-d2s" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATOM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfZ-dh-qrz">
@@ -9223,7 +9180,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-KH-SPF" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-KH-SPF" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="78" width="288" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="U7f-ny-y45">
@@ -9256,7 +9213,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3Z-sI-aDj" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S3Z-sI-aDj" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="78" width="288" height="62"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zqS-gG-XPf">
@@ -9496,12 +9453,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Delegate Check View Controller-->
         <scene sceneID="1KS-rm-ZAe">
             <objects>
-                <viewController storyboardIdentifier="StepDelegateCheckViewController" id="3c6-Kn-ada" customClass="StepDelegateCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDelegateCheckViewController" id="3c6-Kn-ada" customClass="StepDelegateCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yDY-nX-Znn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Q9-3t-9aD" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Q9-3t-9aD" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="230"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delegate Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXx-yV-zcs">
@@ -9709,12 +9666,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Undelegate Check View Controller-->
         <scene sceneID="Y0v-n2-ugg">
             <objects>
-                <viewController storyboardIdentifier="StepUndelegateCheckViewController" id="mxQ-Cx-Qcc" customClass="StepUndelegateCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepUndelegateCheckViewController" id="mxQ-Cx-Qcc" customClass="StepUndelegateCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Odn-B4-y5r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HN-j4-pmo" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7HN-j4-pmo" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="280"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Undelegate Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bny-aO-NqV">
@@ -9938,12 +9895,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Reward Check View Controller-->
         <scene sceneID="Bg1-Zy-C0K">
             <objects>
-                <viewController storyboardIdentifier="StepRewardCheckViewController" id="ecO-Nr-Ffw" customClass="StepRewardCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRewardCheckViewController" id="ecO-Nr-Ffw" customClass="StepRewardCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="79e-De-CZ9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-Cp-sIV" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hs2-Cp-sIV" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="380"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8SH-nc-hSl">
@@ -10190,12 +10147,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Send Check View Controller-->
         <scene sceneID="B5T-Gp-rJx">
             <objects>
-                <viewController storyboardIdentifier="StepSendCheckViewController" id="gMy-Un-hrk" customClass="StepSendCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepSendCheckViewController" id="gMy-Un-hrk" customClass="StepSendCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2zF-dK-jwk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-Jn-myK" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcN-Jn-myK" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="380"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPi-8l-Zjv">
@@ -10491,12 +10448,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Redelegate Check View Controller-->
         <scene sceneID="tIW-mL-wE8">
             <objects>
-                <viewController storyboardIdentifier="StepRedelegateCheckViewController" id="dls-aO-j5w" customClass="StepRedelegateCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRedelegateCheckViewController" id="dls-aO-j5w" customClass="StepRedelegateCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Trb-Ph-gW7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwZ-Yq-mv4" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwZ-Yq-mv4" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="280"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redelegate Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYv-Nb-PUH">
@@ -10721,7 +10678,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Change Check View Controller-->
         <scene sceneID="MBm-Pb-ajW">
             <objects>
-                <viewController storyboardIdentifier="StepChangeCheckViewController" id="YJk-cb-XyI" customClass="StepChangeCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepChangeCheckViewController" id="YJk-cb-XyI" customClass="StepChangeCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N2D-Of-yw8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -10779,7 +10736,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79T-qd-iSp" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79T-qd-iSp" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="250"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmU-oZ-xYx">
@@ -10926,12 +10883,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Re Invest Check View Controller-->
         <scene sceneID="Sau-kS-1Ta">
             <objects>
-                <viewController storyboardIdentifier="ReInvestCheckViewController" id="piW-ZN-FAG" customClass="ReInvestCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReInvestCheckViewController" id="piW-ZN-FAG" customClass="ReInvestCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S8c-E5-ZGX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-GW-Z7m" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3g-GW-Z7m" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reward Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oo2-7G-0I5">
@@ -11182,7 +11139,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Vote Check View Controller-->
         <scene sceneID="kHL-rI-4ma">
             <objects>
-                <viewController storyboardIdentifier="VoteCheckViewController" id="ZqX-jc-dms" customClass="VoteCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VoteCheckViewController" id="ZqX-jc-dms" customClass="VoteCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9uR-iQ-qoU">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -11240,7 +11197,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw6-fT-igp" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nw6-fT-igp" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cip-fZ-gKy">
@@ -11280,7 +11237,7 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-YY-17Q" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZG4-YY-17Q" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="92" width="288" height="180"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opinion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gbc-Fv-hg4">
@@ -11394,12 +11351,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Create Cpd Check View Controller-->
         <scene sceneID="RjL-jh-RHd">
             <objects>
-                <viewController storyboardIdentifier="StepCreateCpdCheckViewController" id="bDL-xX-80Y" customClass="StepCreateCpdCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepCreateCpdCheckViewController" id="bDL-xX-80Y" customClass="StepCreateCpdCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xwX-6Q-Pnj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIs-qH-IET" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIs-qH-IET" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collateral Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzj-NR-nfE">
@@ -11648,12 +11605,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Deposit Cdp Check View Controller-->
         <scene sceneID="PKO-8N-vYD">
             <objects>
-                <viewController storyboardIdentifier="StepDepositCdpCheckViewController" id="W8H-2n-eCA" customClass="StepDepositCdpCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDepositCdpCheckViewController" id="W8H-2n-eCA" customClass="StepDepositCdpCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2me-tS-LEm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-8j-igb" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxt-8j-igb" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collateral Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfD-XI-5f6">
@@ -11920,12 +11877,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Withdraw Cdp Check View Controller-->
         <scene sceneID="sVC-Kw-y7p">
             <objects>
-                <viewController storyboardIdentifier="StepWithdrawCdpCheckViewController" id="0wd-Z5-1Ue" customClass="StepWithdrawCdpCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepWithdrawCdpCheckViewController" id="0wd-Z5-1Ue" customClass="StepWithdrawCdpCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nMz-bE-5RY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-O7-VlY" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8zL-O7-VlY" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdrawal Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88l-Ha-o0r">
@@ -12192,12 +12149,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Draw Debt Cdp Check View Controller-->
         <scene sceneID="Mfp-uj-1r3">
             <objects>
-                <viewController storyboardIdentifier="StepDrawDebtCdpCheckViewController" id="wIJ-GE-6sN" customClass="StepDrawDebtCdpCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepDrawDebtCdpCheckViewController" id="wIJ-GE-6sN" customClass="StepDrawDebtCdpCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2T3-wf-zCP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-gf-XDO" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcf-gf-XDO" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Loan Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxV-Fe-QgR">
@@ -12464,12 +12421,12 @@ Some exchanges or wallets may require a specific memo for deposits.</string>
         <!--Step Repay Cdp Check View Controller-->
         <scene sceneID="9yX-qg-tBM">
             <objects>
-                <viewController storyboardIdentifier="StepRepayCdpCheckViewController" id="d53-7L-xEm" customClass="StepRepayCdpCheckViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StepRepayCdpCheckViewController" id="d53-7L-xEm" customClass="StepRepayCdpCheckViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7AU-g3-x4k">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-rT-3Kg" customClass="CardView" customModule="Cosmostation" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XYb-rT-3Kg" customClass="CardView" customModule="DipperWallet" customModuleProvider="target">
                                 <rect key="frame" x="16" y="16" width="288" height="320"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repayment Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMw-tG-gxL">
@@ -12758,7 +12715,7 @@ All deposits will be returned to each depositor.</string>
         <!--Step Gen Tx View Controller-->
         <scene sceneID="bvV-vS-n8P">
             <objects>
-                <viewController id="CA2-JA-IdK" customClass="StepGenTxViewController" customModule="Cosmostation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CA2-JA-IdK" customClass="StepGenTxViewController" customModule="DipperWallet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="thp-Av-1b2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="458"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -12788,7 +12745,6 @@ All deposits will be returned to each depositor.</string>
         <image name="loading_1" width="144" height="144"/>
         <image name="qrIc" width="18" height="18"/>
         <image name="riskArrow" width="20" height="20"/>
-        <image name="starnameImg" width="60" height="60"/>
         <image name="tokenIc" width="22" height="22"/>
         <image name="warning_ic" width="38" height="38"/>
     </resources>

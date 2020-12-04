@@ -1,9 +1,8 @@
+/* Class = "UILabel"; text = "--"; ObjectID = "7Pi-95-qVZ"; */
+"7Pi-95-qVZ.text" = "--";
 
 /* Class = "UILabel"; text = "System max mintable USDX"; ObjectID = "71V-t7-ab9"; */
 "71V-t7-ab9.text" = "System max mintable USDX";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "7Pi-95-qVZ"; */
-"7Pi-95-qVZ.text" = "--";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "Cxl-nd-nyH"; */
 "Cxl-nd-nyH.text" = "--";
@@ -14,8 +13,14 @@
 /* Class = "UILabel"; text = "--"; ObjectID = "E1b-do-nl3"; */
 "E1b-do-nl3.text" = "--";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "eAc-pM-SaX"; */
+"eAc-pM-SaX.text" = "--";
+
 /* Class = "UILabel"; text = "--"; ObjectID = "FLC-Jb-3rJ"; */
 "FLC-Jb-3rJ.text" = "--";
+
+/* Class = "UILabel"; text = "BTC : USDX"; ObjectID = "oEh-Mi-d8T"; */
+"oEh-Mi-d8T.text" = "BTC : USDX";
 
 /* Class = "UILabel"; text = "BUSD-A"; ObjectID = "P47-7M-JD5"; */
 "P47-7M-JD5.text" = "BUSD-A";
@@ -26,17 +31,12 @@
 /* Class = "UILabel"; text = "Reamin mintable USDX"; ObjectID = "QQD-PZ-VPS"; */
 "QQD-PZ-VPS.text" = "Reamin mintable USDX";
 
-/* Class = "UILabel"; text = "Min. Collateral Rate"; ObjectID = "X2i-wT-21g"; */
-"X2i-wT-21g.text" = "Min. Collateral Rate";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "eAc-pM-SaX"; */
-"eAc-pM-SaX.text" = "--";
-
-/* Class = "UILabel"; text = "BTC : USDX"; ObjectID = "oEh-Mi-d8T"; */
-"oEh-Mi-d8T.text" = "BTC : USDX";
-
 /* Class = "UILabel"; text = "Stability Fee (APR)"; ObjectID = "t5x-R4-TQI"; */
 "t5x-R4-TQI.text" = "Stability Fee (APR)";
 
 /* Class = "UILabel"; text = "Liquidation Penalty"; ObjectID = "uH3-RT-SAO"; */
 "uH3-RT-SAO.text" = "Liquidation Penalty";
+
+/* Class = "UILabel"; text = "Min. Collateral Rate"; ObjectID = "X2i-wT-21g"; */
+"X2i-wT-21g.text" = "Min. Collateral Rate";
+

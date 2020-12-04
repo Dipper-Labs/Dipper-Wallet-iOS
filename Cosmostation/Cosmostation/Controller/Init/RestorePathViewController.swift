@@ -36,7 +36,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,6 +45,8 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
         WUtils.setDenomTitle(userChain!, cell!.denomTitle)
         if (userChain == ChainType.COSMOS_MAIN || userChain == ChainType.IRIS_MAIN || userChain == ChainType.CERTIK_MAIN || userChain == ChainType.CERTIK_TEST) {
             cell?.pathLabel.text = BASE_PATH.appending(String(indexPath.row))
+        } else if (userChain == ChainType.DIPPER_MAIN || userChain == ChainType.DIPPER_TEST) {
+            cell?.pathLabel.text = DIP_BASE_PATH.appending(String(indexPath.row))
         } else if (userChain == ChainType.BINANCE_MAIN || userChain == ChainType.BINANCE_TEST) {
             cell?.pathLabel.text = BNB_BASE_PATH.appending(String(indexPath.row))
         } else if (userChain == ChainType.IOV_MAIN || userChain == ChainType.IOV_TEST) {

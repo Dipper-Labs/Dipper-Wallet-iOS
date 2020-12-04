@@ -504,7 +504,7 @@ class MainTabTokenViewController: BaseViewController, UITableViewDelegate, UITab
     func onSetDIPItems(_ tableView: UITableView, _ indexPath: IndexPath) -> UITableViewCell {
         let cell:TokenCell? = tableView.dequeueReusableCell(withIdentifier:"TokenCell") as? TokenCell
         let balance = mainTabVC.mBalances[indexPath.row]
-        if (balance.balance_denom == DIPPER_MAIN_DENOM) {
+        if (balance.balance_denom == DIPPER_MAIN_DENOM && chainType! == ChainType.DIPPER_MAIN) {
             cell?.tokenImg.image = UIImage(named: "dipperWhImg")
             cell?.tokenSymbol.text = "DIP"
             cell?.tokenSymbol.textColor = COLOR_DIP

@@ -1,57 +1,125 @@
-
 /* Class = "UILabel"; text = "Currency"; ObjectID = "0Oy-DB-g8G"; */
-"0Oy-DB-g8G.text" = "Currency";
+"0Oy-DB-g8G.text" = "货币";
 
 /* Class = "UITabBarItem"; title = "TOKENS"; ObjectID = "1JO-em-9vw"; */
-"1JO-em-9vw.title" = "TOKENS";
+"1JO-em-9vw.title" = "代币";
 
 /* Class = "UISegmentedControl"; 5W3-Re-KAk.segmentTitles[0] = "My"; ObjectID = "5W3-Re-KAk"; */
-"5W3-Re-KAk.segmentTitles[0]" = "My";
+"5W3-Re-KAk.segmentTitles[0]" = "我的";
 
 /* Class = "UISegmentedControl"; 5W3-Re-KAk.segmentTitles[1] = "Top"; ObjectID = "5W3-Re-KAk"; */
 "5W3-Re-KAk.segmentTitles[1]" = "Top";
 
 /* Class = "UISegmentedControl"; 5W3-Re-KAk.segmentTitles[2] = "Other"; ObjectID = "5W3-Re-KAk"; */
-"5W3-Re-KAk.segmentTitles[2]" = "Other";
+"5W3-Re-KAk.segmentTitles[2]" = "其他";
 
 /* Class = "UILabel"; text = "Connect to"; ObjectID = "6HU-nb-2v1"; */
-"6HU-nb-2v1.text" = "Connect to";
+"6HU-nb-2v1.text" = "连接到";
 
 /* Class = "UILabel"; text = "Total"; ObjectID = "6yh-hW-PNd"; */
-"6yh-hW-PNd.text" = "Total";
+"6yh-hW-PNd.text" = "合计";
 
 /* Class = "UILabel"; text = "Base Price"; ObjectID = "7PC-Yw-bid"; */
-"7PC-Yw-bid.text" = "Base Price";
+"7PC-Yw-bid.text" = "基本价格";
 
 /* Class = "UILabel"; text = "Mnemonic"; ObjectID = "7Wu-Zh-1eV"; */
-"7Wu-Zh-1eV.text" = "Mnemonic";
+"7Wu-Zh-1eV.text" = "助记词";
+
+/* Class = "UILabel"; text = "No Proposal"; ObjectID = "a3x-sr-rPq"; */
+"a3x-sr-rPq.text" = "没有提案";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "ah0-Od-e9s"; */
+"ah0-Od-e9s.text" = "0";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "c2R-09-qJD"; */
+"c2R-09-qJD.text" = "0";
+
+/* Class = "UILabel"; text = "Version"; ObjectID = "cFp-js-s7V"; */
+"cFp-js-s7V.text" = "版本";
 
 /* Class = "UITableViewSection"; headerTitle = "About App"; ObjectID = "Ckg-1F-Dy6"; */
-"Ckg-1F-Dy6.headerTitle" = "About App";
+"Ckg-1F-Dy6.headerTitle" = "关于App";
 
 /* Class = "UILabel"; text = "My Wallet"; ObjectID = "D4N-0h-U3Y"; */
-"D4N-0h-U3Y.text" = "My Wallet";
+"D4N-0h-U3Y.text" = "我的钱包";
+
+/* Class = "UITableViewSection"; headerTitle = "General"; ObjectID = "dDV-sI-rMG"; */
+"dDV-sI-rMG.headerTitle" = "普通";
+
+/* Class = "UILabel"; text = "App Lock"; ObjectID = "eE5-yJ-glc"; */
+"eE5-yJ-glc.text" = "App锁";
 
 /* Class = "UILabel"; text = "Type"; ObjectID = "EgU-yb-3mw"; */
-"EgU-yb-3mw.text" = "Type";
+"EgU-yb-3mw.text" = "类型";
 
 /* Class = "UILabel"; text = "Validators"; ObjectID = "Em1-MK-LIZ"; */
-"Em1-MK-LIZ.text" = "Validators";
+"Em1-MK-LIZ.text" = "验证者集";
+
+/* Class = "UILabel"; text = "Tokens"; ObjectID = "fHH-Ok-5A4"; */
+"fHH-Ok-5A4.text" = "代币集";
+
+/* Class = "UILabel"; text = "FAQ"; ObjectID = "fIr-lJ-P4Q"; */
+"fIr-lJ-P4Q.text" = "FAQ";
+
+/* Class = "UILabel"; text = "(Cosmos Hub)"; ObjectID = "fK9-Jn-bGz"; */
+"fK9-Jn-bGz.text" = "(Cosmos Hub)";
+
+/* Class = "UILabel"; text = "import"; ObjectID = "g3W-9r-PBP"; */
+"g3W-9r-PBP.text" = "导入";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "HUc-kA-8ta"; */
 "HUc-kA-8ta.text" = "-";
 
+/* Class = "UILabel"; text = "Validators"; ObjectID = "hVa-Wd-EkD"; */
+"hVa-Wd-EkD.text" = "验证者集";
+
+/* Class = "UITabBarItem"; title = "SETTING"; ObjectID = "hWX-Vb-kcg"; */
+"hWX-Vb-kcg.title" = "设置";
+
+/* Class = "UILabel"; text = "Validators"; ObjectID = "hyZ-Se-gEv"; */
+"hyZ-Se-gEv.text" = "验证者集";
+
 /* Class = "UILabel"; text = "v 1.0.1"; ObjectID = "IGV-pj-L9Y"; */
 "IGV-pj-L9Y.text" = "v 1.0.1";
 
+/* Class = "UILabel"; text = "My Wallet"; ObjectID = "imU-di-2sz"; */
+"imU-di-2sz.text" = "我的钱包";
+
+/* Class = "UILabel"; text = "My Wallet"; ObjectID = "isK-gg-3xf"; */
+"isK-gg-3xf.text" = "我的钱包";
+
 /* Class = "UIButton"; normalTitle = "Vote"; ObjectID = "IT3-yR-uMd"; */
-"IT3-yR-uMd.normalTitle" = "Vote";
+"IT3-yR-uMd.normalTitle" = "投票";
+
+/* Class = "UILabel"; text = "Explorer Mintscan"; ObjectID = "j4V-kv-pau"; */
+"j4V-kv-pau.text" = "浏览器 Mintscan";
 
 /* Class = "UILabel"; text = "Telegram"; ObjectID = "KCh-Gs-kbA"; */
 "KCh-Gs-kbA.text" = "Telegram";
 
+/* Class = "UILabel"; text = "import"; ObjectID = "kvK-GP-8jv"; */
+"kvK-GP-8jv.text" = "导入";
+
+/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[0] = "My"; ObjectID = "lAa-HU-H1G"; */
+"lAa-HU-H1G.segmentTitles[0]" = "我的";
+
+/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[1] = "Top"; ObjectID = "lAa-HU-H1G"; */
+"lAa-HU-H1G.segmentTitles[1]" = "Top";
+
+/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[2] = "Other"; ObjectID = "lAa-HU-H1G"; */
+"lAa-HU-H1G.segmentTitles[2]" = "其他";
+
 /* Class = "UITableViewSection"; headerTitle = "Support"; ObjectID = "Lha-J2-JjS"; */
-"Lha-J2-JjS.headerTitle" = "Support";
+"Lha-J2-JjS.headerTitle" = "支持";
+
+/* Class = "UILabel"; text = "0"; ObjectID = "mPX-AV-fTY"; */
+"mPX-AV-fTY.text" = "0";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "mXH-Gm-gea"; */
+"mXH-Gm-gea.text" = "类型";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "mYb-2o-g1P"; */
+"mYb-2o-g1P.text" = "-";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "N2E-EJ-rCm"; */
 "N2E-EJ-rCm.text" = "-";
@@ -66,7 +134,7 @@
 "NF4-y6-Zs2.text" = "-";
 
 /* Class = "UILabel"; text = "Validators"; ObjectID = "Noq-kv-SCF"; */
-"Noq-kv-SCF.text" = "Validators";
+"Noq-kv-SCF.text" = "验证者集";
 
 /* Class = "UILabel"; text = "CoinMarket Cap"; ObjectID = "Nuz-xq-Fds"; */
 "Nuz-xq-Fds.text" = "CoinMarket Cap";
@@ -74,155 +142,87 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "Oeb-GH-haY"; */
 "Oeb-GH-haY.text" = "-";
 
+/* Class = "UILabel"; text = "0"; ObjectID = "ohf-ir-FDB"; */
+"ohf-ir-FDB.text" = "0";
+
 /* Class = "UITabBarItem"; title = "HISTORY"; ObjectID = "Pah-Ab-5sf"; */
-"Pah-Ab-5sf.title" = "HISTORY";
+"Pah-Ab-5sf.title" = "历史";
+
+/* Class = "UIButton"; normalTitle = "Disconnect"; ObjectID = "pUY-pL-b4r"; */
+"pUY-pL-b4r.normalTitle" = "断开连接";
 
 /* Class = "UILabel"; text = "Validators"; ObjectID = "QKv-Xq-mSb"; */
-"QKv-Xq-mSb.text" = "Validators";
+"QKv-Xq-mSb.text" = "验证者集";
 
 /* Class = "UITabBarItem"; title = "WALLET"; ObjectID = "QTX-GR-gtF"; */
-"QTX-GR-gtF.title" = "WALLET";
+"QTX-GR-gtF.title" = "钱包";
+
+/* Class = "UILabel"; text = "My Wallet"; ObjectID = "qWl-YX-k4d"; */
+"qWl-YX-k4d.text" = "我的钱包";
+
+/* Class = "UITableViewSection"; headerTitle = "Wallet"; ObjectID = "rEO-fz-cbK"; */
+"rEO-fz-cbK.headerTitle" = "钱包";
 
 /* Class = "UILabel"; text = "(Cosmos Hub)"; ObjectID = "Roh-LO-TJo"; */
 "Roh-LO-TJo.text" = "(Cosmos Hub)";
 
+/* Class = "UILabel"; text = "Wallet Manage"; ObjectID = "s1Y-7N-iWS"; */
+"s1Y-7N-iWS.text" = "钱包管理";
+
 /* Class = "UILabel"; text = "Open source (Github)"; ObjectID = "Seb-qT-zPj"; */
-"Seb-qT-zPj.text" = "Open source (Github)";
+"Seb-qT-zPj.text" = "打开源头(Github)";
 
 /* Class = "UIButton"; normalTitle = "Vote"; ObjectID = "SuV-b3-34d"; */
-"SuV-b3-34d.normalTitle" = "Vote";
+"SuV-b3-34d.normalTitle" = "投票";
 
 /* Class = "UILabel"; text = "Token price from\nKava oracle"; ObjectID = "Suy-q6-a4G"; */
 "Suy-q6-a4G.text" = "Token price from\nKava oracle";
 
 /* Class = "UILabel"; text = "Validators"; ObjectID = "T6b-UA-wOH"; */
-"T6b-UA-wOH.text" = "Validators";
+"T6b-UA-wOH.text" = "验证者集";
 
 /* Class = "UILabel"; text = "(Cosmos Hub)"; ObjectID = "TB1-BC-2Oc"; */
 "TB1-BC-2Oc.text" = "(Cosmos Hub)";
 
 /* Class = "UILabel"; text = "No History"; ObjectID = "TLK-Ns-Awb"; */
-"TLK-Ns-Awb.text" = "No History";
+"TLK-Ns-Awb.text" = "没有历史";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "TtU-iN-vR0"; */
 "TtU-iN-vR0.text" = "0";
 
-/* Class = "UILabel"; text = "Address"; ObjectID = "Vc7-iX-gd9"; */
-"Vc7-iX-gd9.text" = "Address";
-
-/* Class = "UILabel"; text = "Term and Policy"; ObjectID = "Vmi-R5-2dt"; */
-"Vmi-R5-2dt.text" = "Term and Policy";
-
-/* Class = "UILabel"; text = "Coming Soon!!"; ObjectID = "XXP-AQ-reI"; */
-"XXP-AQ-reI.text" = "Coming Soon!!";
-
-/* Class = "UILabel"; text = "No Proposal"; ObjectID = "a3x-sr-rPq"; */
-"a3x-sr-rPq.text" = "No Proposal";
-
-/* Class = "UILabel"; text = "0"; ObjectID = "ah0-Od-e9s"; */
-"ah0-Od-e9s.text" = "0";
-
-/* Class = "UILabel"; text = "0"; ObjectID = "c2R-09-qJD"; */
-"c2R-09-qJD.text" = "0";
-
-/* Class = "UILabel"; text = "Version"; ObjectID = "cFp-js-s7V"; */
-"cFp-js-s7V.text" = "Version";
-
-/* Class = "UITableViewSection"; headerTitle = "General"; ObjectID = "dDV-sI-rMG"; */
-"dDV-sI-rMG.headerTitle" = "General";
-
-/* Class = "UILabel"; text = "App Lock"; ObjectID = "eE5-yJ-glc"; */
-"eE5-yJ-glc.text" = "App Lock";
-
-/* Class = "UILabel"; text = "Tokens"; ObjectID = "fHH-Ok-5A4"; */
-"fHH-Ok-5A4.text" = "Tokens";
-
-/* Class = "UILabel"; text = "FAQ"; ObjectID = "fIr-lJ-P4Q"; */
-"fIr-lJ-P4Q.text" = "FAQ";
-
-/* Class = "UILabel"; text = "(Cosmos Hub)"; ObjectID = "fK9-Jn-bGz"; */
-"fK9-Jn-bGz.text" = "(Cosmos Hub)";
-
-/* Class = "UILabel"; text = "import"; ObjectID = "g3W-9r-PBP"; */
-"g3W-9r-PBP.text" = "import";
-
-/* Class = "UILabel"; text = "Validators"; ObjectID = "hVa-Wd-EkD"; */
-"hVa-Wd-EkD.text" = "Validators";
-
-/* Class = "UITabBarItem"; title = "SETTING"; ObjectID = "hWX-Vb-kcg"; */
-"hWX-Vb-kcg.title" = "SETTING";
-
-/* Class = "UILabel"; text = "Validators"; ObjectID = "hyZ-Se-gEv"; */
-"hyZ-Se-gEv.text" = "Validators";
-
-/* Class = "UILabel"; text = "My Wallet"; ObjectID = "imU-di-2sz"; */
-"imU-di-2sz.text" = "My Wallet";
-
-/* Class = "UILabel"; text = "My Wallet"; ObjectID = "isK-gg-3xf"; */
-"isK-gg-3xf.text" = "My Wallet";
-
-/* Class = "UILabel"; text = "Explorer Mintscan"; ObjectID = "j4V-kv-pau"; */
-"j4V-kv-pau.text" = "Explorer Mintscan";
-
-/* Class = "UILabel"; text = "import"; ObjectID = "kvK-GP-8jv"; */
-"kvK-GP-8jv.text" = "import";
-
-/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[0] = "My"; ObjectID = "lAa-HU-H1G"; */
-"lAa-HU-H1G.segmentTitles[0]" = "My";
-
-/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[1] = "Top"; ObjectID = "lAa-HU-H1G"; */
-"lAa-HU-H1G.segmentTitles[1]" = "Top";
-
-/* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[2] = "Other"; ObjectID = "lAa-HU-H1G"; */
-"lAa-HU-H1G.segmentTitles[2]" = "Other";
-
-/* Class = "UILabel"; text = "0"; ObjectID = "mPX-AV-fTY"; */
-"mPX-AV-fTY.text" = "0";
-
-/* Class = "UILabel"; text = "Type"; ObjectID = "mXH-Gm-gea"; */
-"mXH-Gm-gea.text" = "Type";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "mYb-2o-g1P"; */
-"mYb-2o-g1P.text" = "-";
-
-/* Class = "UILabel"; text = "0"; ObjectID = "ohf-ir-FDB"; */
-"ohf-ir-FDB.text" = "0";
-
-/* Class = "UIButton"; normalTitle = "Disconnect"; ObjectID = "pUY-pL-b4r"; */
-"pUY-pL-b4r.normalTitle" = "Disconnect";
-
-/* Class = "UILabel"; text = "My Wallet"; ObjectID = "qWl-YX-k4d"; */
-"qWl-YX-k4d.text" = "My Wallet";
-
-/* Class = "UITableViewSection"; headerTitle = "Wallet"; ObjectID = "rEO-fz-cbK"; */
-"rEO-fz-cbK.headerTitle" = "Wallet";
-
-/* Class = "UILabel"; text = "Wallet Manage"; ObjectID = "s1Y-7N-iWS"; */
-"s1Y-7N-iWS.text" = "Wallet Manage";
-
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "v3s-Wg-QoY"; */
 "v3s-Wg-QoY.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "Vc7-iX-gd9"; */
+"Vc7-iX-gd9.text" = "地址";
 
 /* Class = "UILabel"; text = "Dipper Network"; ObjectID = "vkk-Df-UXk"; */
 "vkk-Df-UXk.text" = "Dipper Network";
 
+/* Class = "UILabel"; text = "Term and Policy"; ObjectID = "Vmi-R5-2dt"; */
+"Vmi-R5-2dt.text" = "条款和政策";
+
 /* Class = "UILabel"; text = "CREATE"; ObjectID = "x6G-6q-fXT"; */
-"x6G-6q-fXT.text" = "CREATE";
+"x6G-6q-fXT.text" = "创建";
 
 /* Class = "UILabel"; text = "Type"; ObjectID = "x7x-Kl-4dr"; */
-"x7x-Kl-4dr.text" = "Type";
+"x7x-Kl-4dr.text" = "类型";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "xci-WR-ws3"; */
 "xci-WR-ws3.text" = "0";
 
 /* Class = "UILabel"; text = "Address"; ObjectID = "xgt-eD-Lkj"; */
-"xgt-eD-Lkj.text" = "Address";
+"xgt-eD-Lkj.text" = "地址";
+
+/* Class = "UILabel"; text = "Coming Soon!!"; ObjectID = "XXP-AQ-reI"; */
+"XXP-AQ-reI.text" = "即将到来!!";
 
 /* Class = "UILabel"; text = "-\n-"; ObjectID = "y8e-z6-Swe"; */
 "y8e-z6-Swe.text" = "-\n-";
 
-/* Class = "UILabel"; text = "Address"; ObjectID = "zOW-dc-Jjt"; */
-"zOW-dc-Jjt.text" = "Address";
-
 /* Class = "UILabel"; text = "Switch Wallet"; ObjectID = "zae-JF-png"; */
-"zae-JF-png.text" = "Switch Wallet";
+"zae-JF-png.text" = "选择钱包";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "zOW-dc-Jjt"; */
+"zOW-dc-Jjt.text" = "地址";
+

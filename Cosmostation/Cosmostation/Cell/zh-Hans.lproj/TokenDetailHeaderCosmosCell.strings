@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "--"; ObjectID = "0p4-hV-agv"; */
 "0p4-hV-agv.text" = "--";
 
@@ -11,17 +10,14 @@
 /* Class = "UIButton"; normalTitle = "  Buy ATOM"; ObjectID = "9QL-dO-TbC"; */
 "9QL-dO-TbC.normalTitle" = "  Buy ATOM";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "aTE-46-IDM"; */
+"aTE-46-IDM.text" = "--";
+
 /* Class = "UILabel"; text = "--"; ObjectID = "EZP-nN-Uqh"; */
 "EZP-nN-Uqh.text" = "--";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "Ge7-cf-S6K"; */
 "Ge7-cf-S6K.text" = "--";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "SmM-Hv-erl"; */
-"SmM-Hv-erl.text" = "ATOM";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "aTE-46-IDM"; */
-"aTE-46-IDM.text" = "--";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "lLO-iH-Huh"; */
 "lLO-iH-Huh.text" = "Unbonding";
@@ -32,6 +28,9 @@
 /* Class = "UILabel"; text = "Reward"; ObjectID = "s4i-U5-jde"; */
 "s4i-U5-jde.text" = "Reward";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "SmM-Hv-erl"; */
+"SmM-Hv-erl.text" = "ATOM";
+
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "tGu-KQ-Dkz"; */
 "tGu-KQ-Dkz.normalTitle" = "  Receive";
 
@@ -40,3 +39,4 @@
 
 /* Class = "UILabel"; text = "--"; ObjectID = "ucP-uf-KhC"; */
 "ucP-uf-KhC.text" = "--";
+

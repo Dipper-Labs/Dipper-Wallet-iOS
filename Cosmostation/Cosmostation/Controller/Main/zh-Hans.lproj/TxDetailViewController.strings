@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "Transaction request failed. \nPlease check the error code and message."; ObjectID = "3VT-d5-KpZ"; */
 "3VT-d5-KpZ.text" = "Transaction request failed. \nPlease check the error code and message.";
 
@@ -14,11 +13,12 @@
 /* Class = "UILabel"; text = "Transaction Details"; ObjectID = "H6Q-0Y-3AI"; */
 "H6Q-0Y-3AI.text" = "Transaction Details";
 
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "m4a-6Y-f1I"; */
+"m4a-6Y-f1I.normalTitle" = "Done";
+
 /* Class = "UIButton"; normalTitle = "   Interchain Refund"; ObjectID = "QFR-lD-uH1"; */
 "QFR-lD-uH1.normalTitle" = "   Interchain Refund";
 
 /* Class = "UILabel"; text = "Transaction request submitted successfully. \nAfter a few moments, the full results will be displayed.\n(Pending times depends on Tx fee.)"; ObjectID = "Yke-lk-aaV"; */
 "Yke-lk-aaV.text" = "Transaction request submitted successfully. \nAfter a few moments, the full results will be displayed.\n(Pending times depends on Tx fee.)";
 
-/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "m4a-6Y-f1I"; */
-"m4a-6Y-f1I.normalTitle" = "Done";

@@ -1,33 +1,23 @@
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "02G-4v-z6m"; */
-"02G-4v-z6m.text" = "Fee";
-
 /* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "0AQ-Xd-tyd"; */
 "0AQ-Xd-tyd.normalTitle" = "+ 10";
 
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "0Bo-KN-8li"; */
 "0Bo-KN-8li.normalTitle" = "Max";
 
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "0LM-ou-2l6"; */
-"0LM-ou-2l6.normalTitle" = "+ 1";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "0Wc-Bz-kyT"; */
-"0Wc-Bz-kyT.normalTitle" = "Confirm";
-
 /* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "0fi-72-KPs"; */
 "0fi-72-KPs.normalTitle" = "+ 0.1";
+
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "0LM-ou-2l6"; */
+"0LM-ou-2l6.normalTitle" = "+ 1";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "0v6-IK-fgv"; */
 "0v6-IK-fgv.text" = "-";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "0Wc-Bz-kyT"; */
+"0Wc-Bz-kyT.normalTitle" = "Confirm";
+
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "0yT-mt-NM2"; */
 "0yT-mt-NM2.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "My Wallet"; ObjectID = "11r-5X-rUr"; */
-"11r-5X-rUr.text" = "My Wallet";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "165-Bz-bOt"; */
-"165-Bz-bOt.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "1A5-DR-Dm6"; */
 "1A5-DR-Dm6.normalTitle" = "Max";
@@ -35,20 +25,17 @@
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "1BW-DQ-9DU"; */
 "1BW-DQ-9DU.normalTitle" = "Back";
 
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "1DE-TL-abR"; */
-"1DE-TL-abR.normalTitle" = "Confirm";
-
-/* Class = "UIButton"; normalTitle = "NoWithVeto"; ObjectID = "1ND-jM-CTW"; */
-"1ND-jM-CTW.normalTitle" = "NoWithVeto";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "1Y8-UF-szo"; */
-"1Y8-UF-szo.text" = "-";
-
 /* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "1cD-fM-2f2"; */
 "1cD-fM-2f2.normalTitle" = "1/4";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "1DE-TL-abR"; */
+"1DE-TL-abR.normalTitle" = "Confirm";
+
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "1fB-hv-6aa"; */
 "1fB-hv-6aa.normalTitle" = "Max";
+
+/* Class = "UIButton"; normalTitle = "NoWithVeto"; ObjectID = "1ND-jM-CTW"; */
+"1ND-jM-CTW.normalTitle" = "NoWithVeto";
 
 /* Class = "UILabel"; text = "Memo"; ObjectID = "1rs-xK-krp"; */
 "1rs-xK-krp.text" = "Memo";
@@ -56,32 +43,20 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "1uh-hf-OSS"; */
 "1uh-hf-OSS.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "1Y8-UF-szo"; */
+"1Y8-UF-szo.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "1yL-4b-OGg"; */
 "1yL-4b-OGg.normalTitle" = "Back";
 
-/* Class = "UILabel"; text = "Fee"; ObjectID = "23r-Lh-cZY"; */
-"23r-Lh-cZY.text" = "Fee";
-
-/* Class = "UILabel"; text = "Memo"; ObjectID = "24J-7g-80f"; */
-"24J-7g-80f.text" = "Memo";
-
-/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "24f-tb-HFO"; */
-"24f-tb-HFO.normalTitle" = " + 1";
-
-/* Class = "UILabel"; text = "Withdraw Amount"; ObjectID = "25d-gZ-f9Q"; */
-"25d-gZ-f9Q.text" = "Withdraw Amount";
+/* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "2cW-D3-pXO"; */
+"2cW-D3-pXO.normalTitle" = " Recent";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "2D7-y0-aH3"; */
 "2D7-y0-aH3.text" = "-";
 
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "2Sk-Ov-5aX"; */
-"2Sk-Ov-5aX.normalTitle" = "Confirm";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "2XG-Zs-0o8"; */
-"2XG-Zs-0o8.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "2cW-D3-pXO"; */
-"2cW-D3-pXO.normalTitle" = " Recent";
+/* Class = "UILabel"; text = "Fee"; ObjectID = "02G-4v-z6m"; */
+"02G-4v-z6m.text" = "Fee";
 
 /* Class = "UILabel"; text = "Fee"; ObjectID = "2g6-Mi-rFi"; */
 "2g6-Mi-rFi.text" = "Fee";
@@ -89,8 +64,20 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "2if-mB-geo"; */
 "2if-mB-geo.normalTitle" = "Next";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "2Sk-Ov-5aX"; */
+"2Sk-Ov-5aX.normalTitle" = "Confirm";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "2XG-Zs-0o8"; */
+"2XG-Zs-0o8.normalTitle" = "Back";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "3BD-xz-gxc"; */
 "3BD-xz-gxc.text" = "-";
+
+/* Class = "UILabel"; text = "Lockup"; ObjectID = "3er-Bt-Aeb"; */
+"3er-Bt-Aeb.text" = "Lockup";
+
+/* Class = "UILabel"; text = "Deposit Type"; ObjectID = "3nn-8U-hJJ"; */
+"3nn-8U-hJJ.text" = "Deposit Type";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "3OF-TU-Kj4"; */
 "3OF-TU-Kj4.text" = "-";
@@ -107,17 +94,8 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "3Yg-Ao-Oy3"; */
 "3Yg-Ao-Oy3.normalTitle" = "Next";
 
-/* Class = "UILabel"; text = "Lockup"; ObjectID = "3er-Bt-Aeb"; */
-"3er-Bt-Aeb.text" = "Lockup";
-
-/* Class = "UILabel"; text = "Deposit Type"; ObjectID = "3nn-8U-hJJ"; */
-"3nn-8U-hJJ.text" = "Deposit Type";
-
-/* Class = "UILabel"; text = "Please check your memo.\nSome exchanges or wallets may require a specific memo for deposits."; ObjectID = "40t-Br-EId"; */
-"40t-Br-EId.text" = "Please check your memo.\nSome exchanges or wallets may require a specific memo for deposits.";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "44v-JZ-5GF"; */
-"44v-JZ-5GF.text" = "-";
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "4bd-6d-3iY"; */
+"4bd-6d-3iY.text" = "ATOM";
 
 /* Class = "UILabel"; text = "81.23"; ObjectID = "4FG-Ei-dnp"; */
 "4FG-Ei-dnp.text" = "81.23";
@@ -125,8 +103,14 @@
 /* Class = "UIButton"; normalTitle = "Half"; ObjectID = "4HC-Ve-dVy"; */
 "4HC-Ve-dVy.normalTitle" = "Half";
 
+/* Class = "UILabel"; text = "Create Interchain Send"; ObjectID = "4hK-N2-JHJ"; */
+"4hK-N2-JHJ.text" = "Create Interchain Send";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "4Ht-vx-C8c"; */
 "4Ht-vx-C8c.text" = "-";
+
+/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "4ji-wN-RUv"; */
+"4ji-wN-RUv.text" = "Initial Liquidation Price";
 
 /* Class = "UILabel"; text = "Proposer"; ObjectID = "4LZ-BO-R5v"; */
 "4LZ-BO-R5v.text" = "Proposer";
@@ -137,29 +121,17 @@
 /* Class = "UILabel"; text = "COIN"; ObjectID = "4OG-yV-XxC"; */
 "4OG-yV-XxC.text" = "COIN";
 
-/* Class = "UILabel"; text = "Fee"; ObjectID = "4QY-hM-fMy"; */
-"4QY-hM-fMy.text" = "Fee";
+/* Class = "UILabel"; text = "-"; ObjectID = "4oU-U0-Fn9"; */
+"4oU-U0-Fn9.text" = "-";
 
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "4Qu-dv-2Y4"; */
 "4Qu-dv-2Y4.text" = "KAVA";
 
+/* Class = "UILabel"; text = "Fee"; ObjectID = "4QY-hM-fMy"; */
+"4QY-hM-fMy.text" = "Fee";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "4Tx-3r-1eO"; */
 "4Tx-3r-1eO.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "Memo"; ObjectID = "4ZF-os-nZe"; */
-"4ZF-os-nZe.text" = "Memo";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "4bd-6d-3iY"; */
-"4bd-6d-3iY.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Create Interchain Send"; ObjectID = "4hK-N2-JHJ"; */
-"4hK-N2-JHJ.text" = "Create Interchain Send";
-
-/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "4ji-wN-RUv"; */
-"4ji-wN-RUv.text" = "Initial Liquidation Price";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "4oU-U0-Fn9"; */
-"4oU-U0-Fn9.text" = "-";
 
 /* Class = "UILabel"; text = "COIN"; ObjectID = "4vG-bU-P2m"; */
 "4vG-bU-P2m.text" = "COIN";
@@ -167,14 +139,11 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "4wR-mw-TBE"; */
 "4wR-mw-TBE.normalTitle" = "Next";
 
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "57b-0Q-RYH"; */
-"57b-0Q-RYH.text" = "ATOM";
+/* Class = "UILabel"; text = "Memo"; ObjectID = "4ZF-os-nZe"; */
+"4ZF-os-nZe.text" = "Memo";
 
 /* Class = "UILabel"; text = "Memo"; ObjectID = "5F2-p5-pFZ"; */
 "5F2-p5-pFZ.text" = "Memo";
-
-/* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "5OM-sA-lLw"; */
-"5OM-sA-lLw.normalTitle" = " QR Scan";
 
 /* Class = "UILabel"; text = "current reward address"; ObjectID = "5gP-Eo-2SY"; */
 "5gP-Eo-2SY.text" = "current reward address";
@@ -182,26 +151,20 @@
 /* Class = "UILabel"; text = "Memo"; ObjectID = "5h8-SB-3FU"; */
 "5h8-SB-3FU.text" = "Memo";
 
+/* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "5OM-sA-lLw"; */
+"5OM-sA-lLw.normalTitle" = " QR Scan";
+
 /* Class = "UILabel"; text = "Memo"; ObjectID = "5tb-uH-zaP"; */
 "5tb-uH-zaP.text" = "Memo";
 
 /* Class = "UILabel"; text = "Memo"; ObjectID = "5xp-JW-DxR"; */
 "5xp-JW-DxR.text" = "Memo";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "65h-Bd-mdE"; */
-"65h-Bd-mdE.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "664-vV-Y3R"; */
-"664-vV-Y3R.text" = "-";
+/* Class = "UILabel"; text = "-"; ObjectID = "6c2-ev-eh9"; */
+"6c2-ev-eh9.text" = "-";
 
 /* Class = "UILabel"; text = "(-)"; ObjectID = "6CX-IK-APJ"; */
 "6CX-IK-APJ.text" = "(-)";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "6YY-we-81X"; */
-"6YY-we-81X.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "6c2-ev-eh9"; */
-"6c2-ev-eh9.text" = "-";
 
 /* Class = "UILabel"; text = "Recipient Address"; ObjectID = "6eu-qT-mNK"; */
 "6eu-qT-mNK.text" = "Recipient Address";
@@ -218,8 +181,11 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "6qP-FZ-PaU"; */
 "6qP-FZ-PaU.text" = "-";
 
-/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "71Y-kG-rQH"; */
-"71Y-kG-rQH.text" = "Initial Liquidation Price";
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "6YY-we-81X"; */
+"6YY-we-81X.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "7dZ-qd-F83"; */
+"7dZ-qd-F83.normalTitle" = "Max";
 
 /* Class = "UILabel"; text = "Receive Amount"; ObjectID = "7EM-1l-OQX"; */
 "7EM-1l-OQX.text" = "Receive Amount";
@@ -230,9 +196,6 @@
 /* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "7LJ-zd-Lg4"; */
 "7LJ-zd-Lg4.normalTitle" = "1/4";
 
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "7dZ-qd-F83"; */
-"7dZ-qd-F83.normalTitle" = "Max";
-
 /* Class = "UILabel"; text = "Receivable"; ObjectID = "7p9-4r-eKt"; */
 "7p9-4r-eKt.text" = "Receivable";
 
@@ -242,29 +205,17 @@
 /* Class = "UILabel"; text = "Redelegate From"; ObjectID = "7vc-jB-B4e"; */
 "7vc-jB-B4e.text" = "Redelegate From";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "87u-HD-4mt"; */
-"87u-HD-4mt.text" = "-";
-
-/* Class = "UILabel"; text = "Withdrawal Amount"; ObjectID = "88l-Ha-o0r"; */
-"88l-Ha-o0r.text" = "Withdrawal Amount";
-
 /* Class = "UILabel"; text = "200000"; ObjectID = "8AC-EZ-6UX"; */
 "8AC-EZ-6UX.text" = "200000";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "8Dc-Kp-Vws"; */
 "8Dc-Kp-Vws.text" = "-";
 
-/* Class = "UIButton"; normalTitle = "Type2"; ObjectID = "8P2-Ct-KQj"; */
-"8P2-Ct-KQj.normalTitle" = "Type2";
-
-/* Class = "UILabel"; text = "Reward Amount"; ObjectID = "8SH-nc-hSl"; */
-"8SH-nc-hSl.text" = "Reward Amount";
-
-/* Class = "UIButton"; normalTitle = "Type2"; ObjectID = "8U1-Wb-uqe"; */
-"8U1-Wb-uqe.normalTitle" = "Type2";
-
 /* Class = "UILabel"; text = "-"; ObjectID = "8mD-Fz-fbx"; */
 "8mD-Fz-fbx.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Type2"; ObjectID = "8P2-Ct-KQj"; */
+"8P2-Ct-KQj.normalTitle" = "Type2";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "8qy-9k-Z1F"; */
 "8qy-9k-Z1F.text" = "-";
@@ -275,17 +226,29 @@
 /* Class = "UILabel"; text = "Iris"; ObjectID = "8rG-1e-DV8"; */
 "8rG-1e-DV8.text" = "Iris";
 
+/* Class = "UILabel"; text = "Reward Amount"; ObjectID = "8SH-nc-hSl"; */
+"8SH-nc-hSl.text" = "Reward Amount";
+
+/* Class = "UIButton"; normalTitle = "Type2"; ObjectID = "8U1-Wb-uqe"; */
+"8U1-Wb-uqe.normalTitle" = "Type2";
+
 /* Class = "UILabel"; text = "81.23"; ObjectID = "8yK-or-xh8"; */
 "8yK-or-xh8.text" = "81.23";
 
-/* Class = "UILabel"; text = "Type"; ObjectID = "93J-IX-eMZ"; */
-"93J-IX-eMZ.text" = "Type";
+/* Class = "UILabel"; text = "-"; ObjectID = "9eP-kW-TIq"; */
+"9eP-kW-TIq.text" = "-";
 
 /* Class = "UILabel"; text = "Claim Interchain Swap"; ObjectID = "9EV-8D-SnK"; */
 "9EV-8D-SnK.text" = "Claim Interchain Swap";
 
+/* Class = "UILabel"; text = "Memo"; ObjectID = "9f1-0g-eFj"; */
+"9f1-0g-eFj.text" = "Memo";
+
 /* Class = "UILabel"; text = "11.11"; ObjectID = "9H8-7U-MaR"; */
 "9H8-7U-MaR.text" = "11.11";
+
+/* Class = "UILabel"; text = "Risk Score"; ObjectID = "9lC-wj-yin"; */
+"9lC-wj-yin.text" = "Risk Score";
 
 /* Class = "UILabel"; text = "Memo"; ObjectID = "9Qr-kF-Ozw"; */
 "9Qr-kF-Ozw.text" = "Memo";
@@ -296,878 +259,62 @@
 /* Class = "UILabel"; text = "COIN"; ObjectID = "9YY-x3-bu7"; */
 "9YY-x3-bu7.text" = "COIN";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "9eP-kW-TIq"; */
-"9eP-kW-TIq.text" = "-";
-
-/* Class = "UILabel"; text = "Memo"; ObjectID = "9f1-0g-eFj"; */
-"9f1-0g-eFj.text" = "Memo";
-
-/* Class = "UILabel"; text = "Risk Score"; ObjectID = "9lC-wj-yin"; */
-"9lC-wj-yin.text" = "Risk Score";
-
 /* Class = "UILabel"; text = "Vote To"; ObjectID = "9zD-lx-Btg"; */
 "9zD-lx-Btg.text" = "Vote To";
+
+/* Class = "UILabel"; text = "My Wallet"; ObjectID = "11r-5X-rUr"; */
+"11r-5X-rUr.text" = "My Wallet";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "23r-Lh-cZY"; */
+"23r-Lh-cZY.text" = "Fee";
+
+/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "24f-tb-HFO"; */
+"24f-tb-HFO.normalTitle" = " + 1";
+
+/* Class = "UILabel"; text = "Memo"; ObjectID = "24J-7g-80f"; */
+"24J-7g-80f.text" = "Memo";
+
+/* Class = "UILabel"; text = "Withdraw Amount"; ObjectID = "25d-gZ-f9Q"; */
+"25d-gZ-f9Q.text" = "Withdraw Amount";
+
+/* Class = "UILabel"; text = "Please check your memo.\nSome exchanges or wallets may require a specific memo for deposits."; ObjectID = "40t-Br-EId"; */
+"40t-Br-EId.text" = "Please check your memo.\nSome exchanges or wallets may require a specific memo for deposits.";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "44v-JZ-5GF"; */
+"44v-JZ-5GF.text" = "-";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "57b-0Q-RYH"; */
+"57b-0Q-RYH.text" = "ATOM";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "65h-Bd-mdE"; */
+"65h-Bd-mdE.text" = "-";
+
+/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "71Y-kG-rQH"; */
+"71Y-kG-rQH.text" = "Initial Liquidation Price";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "87u-HD-4mt"; */
+"87u-HD-4mt.text" = "-";
+
+/* Class = "UILabel"; text = "Withdrawal Amount"; ObjectID = "88l-Ha-o0r"; */
+"88l-Ha-o0r.text" = "Withdrawal Amount";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "93J-IX-eMZ"; */
+"93J-IX-eMZ.text" = "Type";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "165-Bz-bOt"; */
+"165-Bz-bOt.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "664-vV-Y3R"; */
+"664-vV-Y3R.text" = "-";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "a0f-2k-OXU"; */
+"a0f-2k-OXU.text" = "COIN";
 
 /* Class = "UILabel"; text = "Fee"; ObjectID = "A0S-tF-sTX"; */
 "A0S-tF-sTX.text" = "Fee";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "A24-4u-UpE"; */
 "A24-4u-UpE.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "AH4-iV-fa6"; */
-"AH4-iV-fa6.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "APe-Jj-MBc"; */
-"APe-Jj-MBc.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "AVA-Vq-O2q"; */
-"AVA-Vq-O2q.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "AXX-9L-nc9"; */
-"AXX-9L-nc9.normalTitle" = "Confirm";
-
-/* Class = "UIButton"; normalTitle = "P 1/3"; ObjectID = "Ad2-ey-jRw"; */
-"Ad2-ey-jRw.normalTitle" = "P 1/3";
-
-/* Class = "UIButton"; normalTitle = "ALL"; ObjectID = "Af7-Yz-SXm"; */
-"Af7-Yz-SXm.normalTitle" = "ALL";
-
-/* Class = "UILabel"; text = "Risk Score"; ObjectID = "ApG-hh-4Yn"; */
-"ApG-hh-4Yn.text" = "Risk Score";
-
-/* Class = "UILabel"; text = "If you delegate to the validator you already delegated, the accumulated rewards will be automatically withdrawn and deposited into your available balance."; ObjectID = "B8f-6U-Ri8"; */
-"B8f-6U-Ri8.text" = "If you delegate to the validator you already delegated, the accumulated rewards will be automatically withdrawn and deposited into your available balance.";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "BBm-Dt-4pl"; */
-"BBm-Dt-4pl.text" = "-";
-
-/* Class = "UILabel"; text = "Risk Score"; ObjectID = "BBt-wi-cq2"; */
-"BBt-wi-cq2.text" = "Risk Score";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "BIe-aK-UhT"; */
-"BIe-aK-UhT.text" = "ATOM";
-
-/* Class = "UILabel"; text = "gas rate"; ObjectID = "BOK-9E-b0a"; */
-"BOK-9E-b0a.text" = "gas rate";
-
-/* Class = "UILabel"; text = "Undelegate takes 21days for delivery to your wallet, the accumulated rewards will be automatically withdrawn and deposited into your available balance, Immediately."; ObjectID = "BWk-A7-Iqg"; */
-"BWk-A7-Iqg.text" = "Undelegate takes 21days for delivery to your wallet, the accumulated rewards will be automatically withdrawn and deposited into your available balance, Immediately.";
-
-/* Class = "UILabel"; text = "New Reward Address"; ObjectID = "BaJ-Df-O5G"; */
-"BaJ-Df-O5G.text" = "New Reward Address";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "Bck-nY-l67"; */
-"Bck-nY-l67.text" = "COIN";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "BdP-SK-Ux8"; */
-"BdP-SK-Ux8.text" = "-";
-
-/* Class = "UILabel"; text = "Max Withdrawble : "; ObjectID = "Bip-oh-fXF"; */
-"Bip-oh-fXF.text" = "Max Withdrawble : ";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "BsO-ZK-1Je"; */
-"BsO-ZK-1Je.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "BxN-19-h60"; */
-"BxN-19-h60.text" = "Fee";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "ByS-6F-k3G"; */
-"ByS-6F-k3G.text" = "COIN";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "C4c-5F-Myr"; */
-"C4c-5F-Myr.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "CAg-6f-x9v"; */
-"CAg-6f-x9v.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "CDM-zh-tpU"; */
-"CDM-zh-tpU.text" = "-";
-
-/* Class = "UILabel"; text = "Current Price"; ObjectID = "CGl-Xw-xgI"; */
-"CGl-Xw-xgI.text" = "Current Price";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "CRl-z0-69b"; */
-"CRl-z0-69b.text" = "COIN";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "Cip-fZ-gKy"; */
-"Cip-fZ-gKy.text" = "Title";
-
-/* Class = "UILabel"; text = "Source Chain"; ObjectID = "CwP-gR-KIK"; */
-"CwP-gR-KIK.text" = "Source Chain";
-
-/* Class = "UILabel"; text = "Receivable"; ObjectID = "CwR-fq-VqZ"; */
-"CwR-fq-VqZ.text" = "Receivable";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "CxS-Lm-FZ1"; */
-"CxS-Lm-FZ1.text" = "COIN";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "D5x-8l-HEq"; */
-"D5x-8l-HEq.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "D70-pa-Qug"; */
-"D70-pa-Qug.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "D9A-jD-R4I"; */
-"D9A-jD-R4I.text" = "-";
-
-/* Class = "UILabel"; text = "11.22"; ObjectID = "D9V-vu-991"; */
-"D9V-vu-991.text" = "11.22";
-
-/* Class = "UILabel"; text = "KAVA"; ObjectID = "DA5-0Y-tOk"; */
-"DA5-0Y-tOk.text" = "KAVA";
-
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "DBy-HI-eRw"; */
-"DBy-HI-eRw.normalTitle" = "Max";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "DDb-tR-hbd"; */
-"DDb-tR-hbd.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "DE7-oS-Iuq"; */
-"DE7-oS-Iuq.normalTitle" = "3/4";
-
-/* Class = "UILabel"; text = "Lockup"; ObjectID = "DNE-cR-uw4"; */
-"DNE-cR-uw4.text" = "Lockup";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "DR1-zI-eMg"; */
-"DR1-zI-eMg.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "DSf-kh-3jv"; */
-"DSf-kh-3jv.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "DSo-cP-jlk"; */
-"DSo-cP-jlk.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "DUi-x5-b2z"; */
-"DUi-x5-b2z.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "DV7-V2-Oqh"; */
-"DV7-V2-Oqh.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "DdV-Mp-h34"; */
-"DdV-Mp-h34.normalTitle" = "Half";
-
-/* Class = "UILabel"; text = "Refund To"; ObjectID = "DeM-uR-EWW"; */
-"DeM-uR-EWW.text" = "Refund To";
-
-/* Class = "UILabel"; text = "~"; ObjectID = "Dvj-Kz-hqu"; */
-"Dvj-Kz-hqu.text" = "~";
-
-/* Class = "UILabel"; text = "Destination Chain"; ObjectID = "E16-Sd-Rxh"; */
-"E16-Sd-Rxh.text" = "Destination Chain";
-
-/* Class = "UIButton"; normalTitle = "Type3"; ObjectID = "E2f-eX-BH2"; */
-"E2f-eX-BH2.normalTitle" = "Type3";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "E4u-hV-yTa"; */
-"E4u-hV-yTa.text" = "ATOM";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "EDE-9a-njG"; */
-"EDE-9a-njG.text" = "ATOM";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ENc-oo-oxM"; */
-"ENc-oo-oxM.text" = "-";
-
-/* Class = "UILabel"; text = "Reward From"; ObjectID = "EQ9-3G-1Si"; */
-"EQ9-3G-1Si.text" = "Reward From";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "EQx-YQ-IwS"; */
-"EQx-YQ-IwS.text" = "-";
-
-/* Class = "UILabel"; text = "0.000500"; ObjectID = "ESo-yy-jkx"; */
-"ESo-yy-jkx.text" = "0.000500";
-
-/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "EYd-Lb-aQY"; */
-"EYd-Lb-aQY.normalTitle" = "+ 100";
-
-/* Class = "UILabel"; text = "Swap Id"; ObjectID = "Ecc-v2-kPG"; */
-"Ecc-v2-kPG.text" = "Swap Id";
-
-/* Class = "UILabel"; text = "Wtihdraw Amount"; ObjectID = "EfD-Yd-Cmj"; */
-"EfD-Yd-Cmj.text" = "Wtihdraw Amount";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "EzL-hl-CJz"; */
-"EzL-hl-CJz.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "FNK-rn-Q6z"; */
-"FNK-rn-Q6z.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "0/255"; ObjectID = "FP5-q9-8gZ"; */
-"FP5-q9-8gZ.text" = "0/255";
-
-/* Class = "UILabel"; text = "Lockup"; ObjectID = "FUo-d9-Y8Y"; */
-"FUo-d9-Y8Y.text" = "Lockup";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "FaM-ng-nuA"; */
-"FaM-ng-nuA.normalTitle" = "Confirm";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Fd0-EE-sUy"; */
-"Fd0-EE-sUy.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "FnX-cT-Hbf"; */
-"FnX-cT-Hbf.text" = "Fee";
-
-/* Class = "UILabel"; text = "Proposer"; ObjectID = "G9B-UW-Shr"; */
-"G9B-UW-Shr.text" = "Proposer";
-
-/* Class = "UILabel"; text = "KAVA"; ObjectID = "GDf-BL-N9l"; */
-"GDf-BL-N9l.text" = "KAVA";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "GJM-U1-LcF"; */
-"GJM-U1-LcF.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "Min"; ObjectID = "GR1-ub-wRj"; */
-"GR1-ub-wRj.text" = "Min";
-
-/* Class = "UILabel"; text = "Opinion"; ObjectID = "Gbc-Fv-hg4"; */
-"Gbc-Fv-hg4.text" = "Opinion";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Gkd-ec-mlq"; */
-"Gkd-ec-mlq.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Gma-UF-opL"; */
-"Gma-UF-opL.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Min"; ObjectID = "GoZ-sI-8i4"; */
-"GoZ-sI-8i4.normalTitle" = "Min";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "H3E-eL-eft"; */
-"H3E-eL-eft.text" = "COIN";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "H86-EF-dHn"; */
-"H86-EF-dHn.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "HMM-4z-8Mf"; */
-"HMM-4z-8Mf.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "HNX-yT-dyS"; */
-"HNX-yT-dyS.normalTitle" = "Half";
-
-/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "HPq-Hm-tLc"; */
-"HPq-Hm-tLc.normalTitle" = " + 1";
-
-/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "HUL-2b-nPn"; */
-"HUL-2b-nPn.normalTitle" = " + 1";
-
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "HUj-5C-LER"; */
-"HUj-5C-LER.normalTitle" = "+ 1";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "HWJ-65-tcA"; */
-"HWJ-65-tcA.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Relayer Status"; ObjectID = "HZX-pj-2e9"; */
-"HZX-pj-2e9.text" = "Relayer Status";
-
-/* Class = "UILabel"; text = "TOKT"; ObjectID = "Ha8-w6-dd6"; */
-"Ha8-w6-dd6.text" = "TOKT";
-
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "Hba-0j-1TG"; */
-"Hba-0j-1TG.normalTitle" = "+ 1";
-
-/* Class = "UILabel"; text = "Adjusted Total Principal"; ObjectID = "HhL-oC-ZQ9"; */
-"HhL-oC-ZQ9.text" = "Adjusted Total Principal";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Hud-Dh-utj"; */
-"Hud-Dh-utj.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "I3D-DX-Pnj"; */
-"I3D-DX-Pnj.text" = "-";
-
-/* Class = "UILabel"; text = "SAFE"; ObjectID = "I48-d7-d2k"; */
-"I48-d7-d2k.text" = "SAFE";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "I73-y3-k1r"; */
-"I73-y3-k1r.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "I9Z-dL-19l"; */
-"I9Z-dL-19l.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Total Spend"; ObjectID = "IA5-XZ-ucD"; */
-"IA5-XZ-ucD.text" = "Total Spend";
-
-/* Class = "UILabel"; text = "81.23"; ObjectID = "IAw-D5-tAp"; */
-"IAw-D5-tAp.text" = "81.23";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "IEH-6H-UvW"; */
-"IEH-6H-UvW.text" = "ATOM";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "IR8-bs-QLu"; */
-"IR8-bs-QLu.text" = "-";
-
-/* Class = "UILabel"; text = "($ 0.00)"; ObjectID = "ISt-Xs-x5j"; */
-"ISt-Xs-x5j.text" = "($ 0.00)";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ITI-T2-Cht"; */
-"ITI-T2-Cht.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "IWG-08-Laq"; */
-"IWG-08-Laq.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "IYI-54-2a7"; */
-"IYI-54-2a7.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Ie0-F7-lzz"; */
-"Ie0-F7-lzz.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Type1"; ObjectID = "IfJ-Su-xzC"; */
-"IfJ-Su-xzC.normalTitle" = "Type1";
-
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "IiB-Km-GeS"; */
-"IiB-Km-GeS.normalTitle" = "+ 1";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "InX-aN-k1Z"; */
-"InX-aN-k1Z.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "Type"; ObjectID = "J2r-QX-WBx"; */
-"J2r-QX-WBx.text" = "Type";
-
-/* Class = "UILabel"; text = "This CDP will be closed. \nAll deposits will be returned to each depositor."; ObjectID = "J34-R6-Cl1"; */
-"J34-R6-Cl1.text" = "This CDP will be closed. \nAll deposits will be returned to each depositor.";
-
-/* Class = "UILabel"; text = "TOKT"; ObjectID = "J3d-4o-Zet"; */
-"J3d-4o-Zet.text" = "TOKT";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "J3e-hj-uEb"; */
-"J3e-hj-uEb.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "JI1-zR-3NG"; */
-"JI1-zR-3NG.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "JLh-TN-8A5"; */
-"JLh-TN-8A5.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "JPb-Ni-ytg"; */
-"JPb-Ni-ytg.normalTitle" = "3/4";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "JWt-4v-b38"; */
-"JWt-4v-b38.text" = "-";
-
-/* Class = "UILabel"; text = "Send Coin"; ObjectID = "JWw-F5-Wph"; */
-"JWw-F5-Wph.text" = "Send Coin";
-
-/* Class = "UILabel"; text = "Max Depositable : "; ObjectID = "Jcc-dI-6gj"; */
-"Jcc-dI-6gj.text" = "Max Depositable : ";
-
-/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Jf0-eM-DXP"; */
-"Jf0-eM-DXP.text" = "Recipient Address";
-
-/* Class = "UILabel"; text = "81.23"; ObjectID = "Jgb-KZ-cus"; */
-"Jgb-KZ-cus.text" = "81.23";
-
-/* Class = "UILabel"; text = "Deposit Amount"; ObjectID = "JhW-AL-4rh"; */
-"JhW-AL-4rh.text" = "Deposit Amount";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Jyd-fF-8L3"; */
-"Jyd-fF-8L3.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "K5i-y7-7Fr"; */
-"K5i-y7-7Fr.normalTitle" = "1/4";
-
-/* Class = "UILabel"; text = "In order to user this feature,\nyou must create a KAVA account and have history"; ObjectID = "KDA-Db-yrY"; */
-"KDA-Db-yrY.text" = "In order to user this feature,\nyou must create a KAVA account and have history";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "KGT-W7-jPi"; */
-"KGT-W7-jPi.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "KIB-9Q-ntd"; */
-"KIB-9Q-ntd.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "KPj-iy-gIb"; */
-"KPj-iy-gIb.text" = "-";
-
-/* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "KQC-0I-cpP"; */
-"KQC-0I-cpP.text" = "Expected Liquidation Price";
-
-/* Class = "UILabel"; text = "0.025"; ObjectID = "Kc4-jc-cj2"; */
-"Kc4-jc-cj2.text" = "0.025";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "KcI-v9-dWn"; */
-"KcI-v9-dWn.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Kfr-zv-XFu"; */
-"Kfr-zv-XFu.text" = "-";
-
-/* Class = "UILabel"; text = "Available : "; ObjectID = "KgS-gr-nev"; */
-"KgS-gr-nev.text" = "Available : ";
-
-/* Class = "UILabel"; text = "Max Available : "; ObjectID = "KhK-uj-toP"; */
-"KhK-uj-toP.text" = "Max Available : ";
-
-/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "Kpl-og-KYJ"; */
-"Kpl-og-KYJ.normalTitle" = "Half";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "KuL-fV-Y4u"; */
-"KuL-fV-Y4u.text" = "COIN";
-
-/* Class = "UILabel"; text = "Deposit Value : "; ObjectID = "L6t-B9-ok4"; */
-"L6t-B9-ok4.text" = "Deposit Value : ";
-
-/* Class = "UILabel"; text = "Memo"; ObjectID = "LB7-wZ-gHc"; */
-"LB7-wZ-gHc.text" = "Memo";
-
-/* Class = "UILabel"; text = "11.22"; ObjectID = "LIa-GA-ekT"; */
-"LIa-GA-ekT.text" = "11.22";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "LQj-Fz-FEf"; */
-"LQj-Fz-FEf.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "Lockup"; ObjectID = "LXJ-Bz-qSt"; */
-"LXJ-Bz-qSt.text" = "Lockup";
-
-/* Class = "UILabel"; text = "Current Available"; ObjectID = "Lbt-gj-bR1"; */
-"Lbt-gj-bR1.text" = "Current Available";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "M3x-EA-AuW"; */
-"M3x-EA-AuW.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "M9m-C3-Kqd"; */
-"M9m-C3-Kqd.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "MIP-B7-Y5J"; */
-"MIP-B7-Y5J.normalTitle" = "Half";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "MLr-AV-Cs3"; */
-"MLr-AV-Cs3.text" = "-";
-
-/* Class = "UILabel"; text = "Redelegate Amount"; ObjectID = "MYv-Nb-PUH"; */
-"MYv-Nb-PUH.text" = "Redelegate Amount";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "MeJ-3A-PbW"; */
-"MeJ-3A-PbW.text" = "Fee";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Mez-iK-OG3"; */
-"Mez-iK-OG3.text" = "-";
-
-/* Class = "UILabel"; text = "($ 0.00)"; ObjectID = "Mj4-GV-Og7"; */
-"Mj4-GV-Og7.text" = "($ 0.00)";
-
-/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Mjn-tU-bDU"; */
-"Mjn-tU-bDU.text" = "Recipient Address";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Mou-Xl-P5B"; */
-"Mou-Xl-P5B.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "MpS-LF-eIh"; */
-"MpS-LF-eIh.normalTitle" = "Cancel";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "N0r-0y-KxQ"; */
-"N0r-0y-KxQ.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "SAFE"; ObjectID = "N7A-X4-N8p"; */
-"N7A-X4-N8p.text" = "SAFE";
-
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "NIX-7T-aSL"; */
-"NIX-7T-aSL.normalTitle" = "+ 1";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "NVO-pJ-piu"; */
-"NVO-pJ-piu.text" = "COIN";
-
-/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "Na8-44-YaO"; */
-"Na8-44-YaO.normalTitle" = "3/4";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Nt2-UT-coG"; */
-"Nt2-UT-coG.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "NtY-Ye-cGf"; */
-"NtY-Ye-cGf.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Loan Amount"; ObjectID = "NwB-Fd-LCV"; */
-"NwB-Fd-LCV.text" = "Loan Amount";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "Nwz-Ti-vsz"; */
-"Nwz-Ti-vsz.text" = "COIN";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "O2b-LA-Rj0"; */
-"O2b-LA-Rj0.text" = "Fee";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "O4S-Zw-4sX"; */
-"O4S-Zw-4sX.text" = "-";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "OTF-6S-H13"; */
-"OTF-6S-H13.text" = "Fee";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "OTd-WC-9Cm"; */
-"OTd-WC-9Cm.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "Oab-Gj-1Fx"; */
-"Oab-Gj-1Fx.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Collateral Amount"; ObjectID = "OfD-XI-5f6"; */
-"OfD-XI-5f6.text" = "Collateral Amount";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Ohv-Du-RLy"; */
-"Ohv-Du-RLy.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Okh-Xz-SvI"; */
-"Okh-Xz-SvI.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "Olh-rs-wcV"; */
-"Olh-rs-wcV.text" = "ATOM";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "Oyd-BS-3oD"; */
-"Oyd-BS-3oD.text" = "COIN";
-
-/* Class = "UILabel"; text = "~"; ObjectID = "P5X-s1-9xn"; */
-"P5X-s1-9xn.text" = "~";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "P5u-Vw-dfy"; */
-"P5u-Vw-dfy.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "P7R-yl-AMr"; */
-"P7R-yl-AMr.normalTitle" = "+ 10";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "PDA-NX-FOy"; */
-"PDA-NX-FOy.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "PDi-on-IFx"; */
-"PDi-on-IFx.normalTitle" = "Max";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "PGA-Ut-dSn"; */
-"PGA-Ut-dSn.text" = "COIN";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "PO4-tK-RFx"; */
-"PO4-tK-RFx.text" = "-";
-
-/* Class = "UILabel"; text = "81.23"; ObjectID = "PVf-5N-9v1"; */
-"PVf-5N-9v1.text" = "81.23";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "PXu-Z5-ayV"; */
-"PXu-Z5-ayV.normalTitle" = "Cancel";
-
-/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "PlX-Z6-dr0"; */
-"PlX-Z6-dr0.normalTitle" = "+ 10";
-
-/* Class = "UILabel"; text = "Proposer"; ObjectID = "Pmj-ji-meE"; */
-"Pmj-ji-meE.text" = "Proposer";
-
-/* Class = "UILabel"; text = "Remaining Principal"; ObjectID = "Pmt-UT-02b"; */
-"Pmt-UT-02b.text" = "Remaining Principal";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "PqX-Em-j0Z"; */
-"PqX-Em-j0Z.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "QEJ-qm-9j4"; */
-"QEJ-qm-9j4.normalTitle" = "+ 0.1";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "QFO-qw-ubb"; */
-"QFO-qw-ubb.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "QG8-gP-rP3"; */
-"QG8-gP-rP3.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "QKe-NG-eGM"; */
-"QKe-NG-eGM.text" = "-";
-
-/* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "QPo-J2-K4w"; */
-"QPo-J2-K4w.normalTitle" = " Recent";
-
-/* Class = "UILabel"; text = "81.23"; ObjectID = "QQf-DX-zFC"; */
-"QQf-DX-zFC.text" = "81.23";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Qhn-oA-75L"; */
-"Qhn-oA-75L.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Qhr-2R-zIS"; */
-"Qhr-2R-zIS.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "QsN-nh-2PJ"; */
-"QsN-nh-2PJ.text" = "Expected Liquidation Price";
-
-/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Qwe-1G-kEd"; */
-"Qwe-1G-kEd.text" = "Recipient Address";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "R8F-Fh-NZF"; */
-"R8F-Fh-NZF.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "Your universal username for the blockchain world. Insert a *starname in the address field instead of a long complicated crypto address."; ObjectID = "RDB-jO-44g"; */
-"RDB-jO-44g.text" = "Your universal username for the blockchain world. Insert a *starname in the address field instead of a long complicated crypto address.";
-
-/* Class = "UILabel"; text = "TOKT"; ObjectID = "REf-NM-nVk"; */
-"REf-NM-nVk.text" = "TOKT";
-
-/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "RY6-ia-yM6"; */
-"RY6-ia-yM6.normalTitle" = "+ 0.1";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Rhf-lF-k9m"; */
-"Rhf-lF-k9m.normalTitle" = "Cancel";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Rth-j2-3vL"; */
-"Rth-j2-3vL.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Rwn-Lb-6S4"; */
-"Rwn-Lb-6S4.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "S58-9N-XQB"; */
-"S58-9N-XQB.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "SN0-bA-wOw"; */
-"SN0-bA-wOw.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "SND-Hn-2SF"; */
-"SND-Hn-2SF.text" = "ATOM";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "STU-of-NQd"; */
-"STU-of-NQd.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "SYl-ef-M6e"; */
-"SYl-ef-M6e.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Sam-Qu-o4h"; */
-"Sam-Qu-o4h.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = "Abstain"; ObjectID = "SeN-WW-MwQ"; */
-"SeN-WW-MwQ.normalTitle" = "Abstain";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Sec-jB-Uax"; */
-"Sec-jB-Uax.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "SfU-7g-bfC"; */
-"SfU-7g-bfC.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "SgR-E3-eSb"; */
-"SgR-E3-eSb.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Sgn-c8-z4q"; */
-"Sgn-c8-z4q.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "SnL-Y2-x2q"; */
-"SnL-Y2-x2q.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "Risk Score"; ObjectID = "SnQ-jo-7b6"; */
-"SnQ-jo-7b6.text" = "Risk Score";
-
-/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "T7x-0J-45S"; */
-"T7x-0J-45S.text" = "Recipient Address";
-
-/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "T91-bW-XMa"; */
-"T91-bW-XMa.normalTitle" = "+ 0.1";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "TFG-Ky-2gc"; */
-"TFG-Ky-2gc.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "Memo"; ObjectID = "TJD-bQ-zRv"; */
-"TJD-bQ-zRv.text" = "Memo";
-
-/* Class = "UILabel"; text = "STABLE"; ObjectID = "TNP-Jo-gEg"; */
-"TNP-Jo-gEg.text" = "STABLE";
-
-/* Class = "UILabel"; text = "HARD"; ObjectID = "TVb-5K-rqU"; */
-"TVb-5K-rqU.text" = "HARD";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "TZa-Y3-lIX"; */
-"TZa-Y3-lIX.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "11.11"; ObjectID = "Te6-1r-r1J"; */
-"Te6-1r-r1J.text" = "11.11";
-
-/* Class = "UILabel"; text = "Title"; ObjectID = "TiE-x9-l6W"; */
-"TiE-x9-l6W.text" = "Title";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Tmr-hH-xoh"; */
-"Tmr-hH-xoh.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "TuW-Kk-4Oj"; */
-"TuW-Kk-4Oj.normalTitle" = "+ 0.1";
-
-/* Class = "UILabel"; text = "11.22"; ObjectID = "UHF-K5-g4u"; */
-"UHF-K5-g4u.text" = "11.22";
-
-/* Class = "UILabel"; text = "Claim Tx Fee"; ObjectID = "UKl-8F-pXZ"; */
-"UKl-8F-pXZ.text" = "Claim Tx Fee";
-
-/* Class = "UILabel"; text = "Refund Amount"; ObjectID = "UdH-uA-bxP"; */
-"UdH-uA-bxP.text" = "Refund Amount";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "UfZ-dh-qrz"; */
-"UfZ-dh-qrz.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "Utt-cY-Ygj"; */
-"Utt-cY-Ygj.normalTitle" = "Confirm";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "UvO-pz-ZIz"; */
-"UvO-pz-ZIz.text" = "COIN";
-
-/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "V5d-5b-I1c"; */
-"V5d-5b-I1c.normalTitle" = "+ 10";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "V77-qx-hi9"; */
-"V77-qx-hi9.text" = "ATOM";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "VD2-pw-peD"; */
-"VD2-pw-peD.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Type3"; ObjectID = "VDh-Fh-Nna"; */
-"VDh-Fh-Nna.normalTitle" = "Type3";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "VJ3-Z8-2Kv"; */
-"VJ3-Z8-2Kv.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "VOy-PY-fZz"; */
-"VOy-PY-fZz.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "Expected Delivery"; ObjectID = "VZj-O2-IEF"; */
-"VZj-O2-IEF.text" = "Expected Delivery";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "Vkf-Tr-7mE"; */
-"Vkf-Tr-7mE.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Vor-H1-fwv"; */
-"Vor-H1-fwv.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "Vvk-Sp-fKU"; */
-"Vvk-Sp-fKU.normalTitle" = "+ 100";
-
-/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "Vz3-2l-3xc"; */
-"Vz3-2l-3xc.normalTitle" = "Confirm";
-
-/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "W4Y-Vs-Jkd"; */
-"W4Y-Vs-Jkd.normalTitle" = "+ 1";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "W4f-FB-RuP"; */
-"W4f-FB-RuP.text" = "COIN";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "W6K-ly-5DQ"; */
-"W6K-ly-5DQ.text" = "ATOM";
-
-/* Class = "UILabel"; text = "21312"; ObjectID = "WAC-zm-EDp"; */
-"WAC-zm-EDp.text" = "21312";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "WCe-JE-8f3"; */
-"WCe-JE-8f3.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Repayment Amount"; ObjectID = "WMw-tG-gxL"; */
-"WMw-tG-gxL.text" = "Repayment Amount";
-
-/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "WSK-Eh-S5c"; */
-"WSK-Eh-S5c.normalTitle" = "+ 100";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "WYk-ag-3LV"; */
-"WYk-ag-3LV.text" = "ATOM";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "WlX-RV-1Xe"; */
-"WlX-RV-1Xe.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "WnD-h9-7eW"; */
-"WnD-h9-7eW.normalTitle" = "+ 10";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "WqF-2V-7jY"; */
-"WqF-2V-7jY.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Wrm-Ux-zPh"; */
-"Wrm-Ux-zPh.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "Proposer"; ObjectID = "Ws7-bT-FXg"; */
-"Ws7-bT-FXg.text" = "Proposer";
-
-/* Class = "UILabel"; text = "Remaining Available"; ObjectID = "WxI-rb-Fvi"; */
-"WxI-rb-Fvi.text" = "Remaining Available";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "X2Q-Nk-MT6"; */
-"X2Q-Nk-MT6.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "XWq-F1-hmd"; */
-"XWq-F1-hmd.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "XcY-eI-FSs"; */
-"XcY-eI-FSs.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Xgv-fi-3Gz"; */
-"Xgv-fi-3Gz.normalTitle" = "Cancel";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "Xjw-ph-Lfs"; */
-"Xjw-ph-Lfs.text" = "ATOM";
-
-/* Class = "UILabel"; text = "Deposit Type"; ObjectID = "Xkd-TK-q9m"; */
-"Xkd-TK-q9m.text" = "Deposit Type";
-
-/* Class = "UILabel"; text = "~"; ObjectID = "Xnk-DQ-e4v"; */
-"Xnk-DQ-e4v.text" = "~";
-
-/* Class = "UILabel"; text = "gas amount"; ObjectID = "Xnk-sp-TBa"; */
-"Xnk-sp-TBa.text" = "gas amount";
-
-/* Class = "UILabel"; text = "TOKT"; ObjectID = "YIo-wA-VEf"; */
-"YIo-wA-VEf.text" = "TOKT";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "YKs-xm-lkw"; */
-"YKs-xm-lkw.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "YES"; ObjectID = "YLr-M9-bAS"; */
-"YLr-M9-bAS.normalTitle" = "YES";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "YMP-FT-0Lb"; */
-"YMP-FT-0Lb.text" = "Fee";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "YNl-O4-6v7"; */
-"YNl-O4-6v7.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "YaR-G1-hyE"; */
-"YaR-G1-hyE.normalTitle" = "Half";
-
-/* Class = "UILabel"; text = "Delegate To"; ObjectID = "Yf6-To-DVw"; */
-"Yf6-To-DVw.text" = "Delegate To";
-
-/* Class = "UILabel"; text = "Expected Delegation"; ObjectID = "Yfe-CU-rml"; */
-"Yfe-CU-rml.text" = "Expected Delegation";
-
-/* Class = "UILabel"; text = "KAVA"; ObjectID = "Yfi-Xi-oSj"; */
-"Yfi-Xi-oSj.text" = "KAVA";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Ym4-5H-0AT"; */
-"Ym4-5H-0AT.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Yp7-cs-WTt"; */
-"Yp7-cs-WTt.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "Z4j-xq-UUN"; */
-"Z4j-xq-UUN.text" = "ATOM";
-
-/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "ZTC-aa-UPD"; */
-"ZTC-aa-UPD.normalTitle" = "3/4";
-
-/* Class = "UILabel"; text = "Redelegate To"; ObjectID = "ZVV-Zg-gzq"; */
-"ZVV-Zg-gzq.text" = "Redelegate To";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ZZ6-T3-5ld"; */
-"ZZ6-T3-5ld.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ZZc-Yf-zfG"; */
-"ZZc-Yf-zfG.text" = "-";
-
-/* Class = "UIButton"; normalTitle = " Paste"; ObjectID = "Zdf-Zt-L83"; */
-"Zdf-Zt-L83.normalTitle" = " Paste";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Zfi-Lp-ccV"; */
-"Zfi-Lp-ccV.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Zfw-20-wS9"; */
-"Zfw-20-wS9.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "Zh4-bO-xzi"; */
-"Zh4-bO-xzi.normalTitle" = "+ 100";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ZkI-F7-XrA"; */
-"ZkI-F7-XrA.text" = "-";
-
-/* Class = "UILabel"; text = "Adjusted Total Collateral"; ObjectID = "Zqq-uh-MZj"; */
-"Zqq-uh-MZj.text" = "Adjusted Total Collateral";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ZrS-kX-RJ2"; */
-"ZrS-kX-RJ2.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "Zsu-xk-uwx"; */
-"Zsu-xk-uwx.normalTitle" = "Max";
-
-/* Class = "UILabel"; text = "TOKT"; ObjectID = "ZzN-8Q-MA8"; */
-"ZzN-8Q-MA8.text" = "TOKT";
-
-/* Class = "UILabel"; text = "COIN"; ObjectID = "a0f-2k-OXU"; */
-"a0f-2k-OXU.text" = "COIN";
-
-/* Class = "UILabel"; text = "Relay Fee"; ObjectID = "aEC-Ua-TCR"; */
-"aEC-Ua-TCR.text" = "Relay Fee";
-
-/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "aJ7-bK-cS9"; */
-"aJ7-bK-cS9.normalTitle" = " + 1";
 
 /* Class = "UILabel"; text = "Claim Address"; ObjectID = "acC-2c-A80"; */
 "acC-2c-A80.text" = "Claim Address";
@@ -1178,8 +325,29 @@
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "acl-iM-CuU"; */
 "acl-iM-CuU.text" = "ATOM";
 
+/* Class = "UIButton"; normalTitle = "P 1/3"; ObjectID = "Ad2-ey-jRw"; */
+"Ad2-ey-jRw.normalTitle" = "P 1/3";
+
+/* Class = "UILabel"; text = "Relay Fee"; ObjectID = "aEC-Ua-TCR"; */
+"aEC-Ua-TCR.text" = "Relay Fee";
+
+/* Class = "UIButton"; normalTitle = "ALL"; ObjectID = "Af7-Yz-SXm"; */
+"Af7-Yz-SXm.normalTitle" = "ALL";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "AH4-iV-fa6"; */
+"AH4-iV-fa6.text" = "-";
+
 /* Class = "UILabel"; text = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now."; ObjectID = "aiL-Pg-9zU"; */
 "aiL-Pg-9zU.text" = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now.";
+
+/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "aJ7-bK-cS9"; */
+"aJ7-bK-cS9.normalTitle" = " + 1";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "APe-Jj-MBc"; */
+"APe-Jj-MBc.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Risk Score"; ObjectID = "ApG-hh-4Yn"; */
+"ApG-hh-4Yn.text" = "Risk Score";
 
 /* Class = "UILabel"; text = "You can change reward recipient address. After change this, every claimed rewards are going to changed address. Please confirm you have full authority with to change address."; ObjectID = "aqz-q8-hlq"; */
 "aqz-q8-hlq.text" = "You can change reward recipient address. After change this, every claimed rewards are going to changed address. Please confirm you have full authority with to change address.";
@@ -1187,14 +355,38 @@
 /* Class = "UILabel"; text = "Repay All : "; ObjectID = "as1-fd-Ylb"; */
 "as1-fd-Ylb.text" = "Repay All : ";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "AVA-Vq-O2q"; */
+"AVA-Vq-O2q.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "AXX-9L-nc9"; */
+"AXX-9L-nc9.normalTitle" = "Confirm";
+
 /* Class = "UILabel"; text = "0"; ObjectID = "b6b-41-Kf0"; */
 "b6b-41-Kf0.text" = "0";
+
+/* Class = "UILabel"; text = "If you delegate to the validator you already delegated, the accumulated rewards will be automatically withdrawn and deposited into your available balance."; ObjectID = "B8f-6U-Ri8"; */
+"B8f-6U-Ri8.text" = "If you delegate to the validator you already delegated, the accumulated rewards will be automatically withdrawn and deposited into your available balance.";
 
 /* Class = "UILabel"; text = "Recipient Chain"; ObjectID = "bAg-M7-vF2"; */
 "bAg-M7-vF2.text" = "Recipient Chain";
 
+/* Class = "UILabel"; text = "New Reward Address"; ObjectID = "BaJ-Df-O5G"; */
+"BaJ-Df-O5G.text" = "New Reward Address";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "BBm-Dt-4pl"; */
+"BBm-Dt-4pl.text" = "-";
+
+/* Class = "UILabel"; text = "Risk Score"; ObjectID = "BBt-wi-cq2"; */
+"BBt-wi-cq2.text" = "Risk Score";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "Bck-nY-l67"; */
+"Bck-nY-l67.text" = "COIN";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "bDP-a8-F01"; */
 "bDP-a8-F01.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "BdP-SK-Ux8"; */
+"BdP-SK-Ux8.text" = "-";
 
 /* Class = "UITextField"; placeholder = "StarName or Recipient Address"; ObjectID = "bF3-6L-krq"; */
 "bF3-6L-krq.placeholder" = "StarName or Recipient Address";
@@ -1202,8 +394,32 @@
 /* Class = "UIButton"; normalTitle = "Half"; ObjectID = "bGp-OO-B6v"; */
 "bGp-OO-B6v.normalTitle" = "Half";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "BIe-aK-UhT"; */
+"BIe-aK-UhT.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Max Withdrawble : "; ObjectID = "Bip-oh-fXF"; */
+"Bip-oh-fXF.text" = "Max Withdrawble : ";
+
+/* Class = "UILabel"; text = "System Max Cap"; ObjectID = "biY-ZT-Ebj"; */
+"biY-ZT-Ebj.text" = "System Max Cap";
+
+/* Class = "UILabel"; text = "Undelegate Amount"; ObjectID = "bny-aO-NqV"; */
+"bny-aO-NqV.text" = "Undelegate Amount";
+
+/* Class = "UILabel"; text = "gas rate"; ObjectID = "BOK-9E-b0a"; */
+"BOK-9E-b0a.text" = "gas rate";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "boz-Ni-y2T"; */
+"boz-Ni-y2T.text" = "-";
+
 /* Class = "UITextField"; placeholder = "To Change Reward Address"; ObjectID = "bOz-sp-8fD"; */
 "bOz-sp-8fD.placeholder" = "To Change Reward Address";
+
+/* Class = "UIButton"; normalTitle = "≈ 70"; ObjectID = "bsm-mf-eS3"; */
+"bsm-mf-eS3.normalTitle" = "≈ 70";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "BsO-ZK-1Je"; */
+"BsO-ZK-1Je.normalTitle" = "Confirm";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "bTQ-5m-tOV"; */
 "bTQ-5m-tOV.text" = "-";
@@ -1217,32 +433,41 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "bUi-Fg-ynx"; */
 "bUi-Fg-ynx.normalTitle" = "Next";
 
+/* Class = "UILabel"; text = "Undelegate takes 21days for delivery to your wallet, the accumulated rewards will be automatically withdrawn and deposited into your available balance, Immediately."; ObjectID = "BWk-A7-Iqg"; */
+"BWk-A7-Iqg.text" = "Undelegate takes 21days for delivery to your wallet, the accumulated rewards will be automatically withdrawn and deposited into your available balance, Immediately.";
+
 /* Class = "UILabel"; text = "Current Delegation"; ObjectID = "bWt-gf-J0u"; */
 "bWt-gf-J0u.text" = "Current Delegation";
 
-/* Class = "UILabel"; text = "System Max Cap"; ObjectID = "biY-ZT-Ebj"; */
-"biY-ZT-Ebj.text" = "System Max Cap";
+/* Class = "UILabel"; text = "Fee"; ObjectID = "BxN-19-h60"; */
+"BxN-19-h60.text" = "Fee";
 
-/* Class = "UILabel"; text = "Undelegate Amount"; ObjectID = "bny-aO-NqV"; */
-"bny-aO-NqV.text" = "Undelegate Amount";
+/* Class = "UILabel"; text = "COIN"; ObjectID = "ByS-6F-k3G"; */
+"ByS-6F-k3G.text" = "COIN";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "boz-Ni-y2T"; */
-"boz-Ni-y2T.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "≈ 70"; ObjectID = "bsm-mf-eS3"; */
-"bsm-mf-eS3.normalTitle" = "≈ 70";
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "C4c-5F-Myr"; */
+"C4c-5F-Myr.normalTitle" = "Next";
 
 /* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "c95-6M-nyg"; */
 "c95-6M-nyg.normalTitle" = "1/4";
 
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "CAg-6f-x9v"; */
+"CAg-6f-x9v.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "CDM-zh-tpU"; */
+"CDM-zh-tpU.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "cFD-kF-azx"; */
 "cFD-kF-azx.normalTitle" = "Confirm";
 
+/* Class = "UILabel"; text = "Current Price"; ObjectID = "CGl-Xw-xgI"; */
+"CGl-Xw-xgI.text" = "Current Price";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Cip-fZ-gKy"; */
+"Cip-fZ-gKy.text" = "Title";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "cIx-R8-wey"; */
 "cIx-R8-wey.text" = "-";
-
-/* Class = "UILabel"; text = "Max Available : "; ObjectID = "cMX-QV-1HO"; */
-"cMX-QV-1HO.text" = "Max Available : ";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "cjv-Rx-ceG"; */
 "cjv-Rx-ceG.text" = "-";
@@ -1250,11 +475,26 @@
 /* Class = "UILabel"; text = "Fee"; ObjectID = "cmU-oZ-xYx"; */
 "cmU-oZ-xYx.text" = "Fee";
 
+/* Class = "UILabel"; text = "Max Available : "; ObjectID = "cMX-QV-1HO"; */
+"cMX-QV-1HO.text" = "Max Available : ";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "CRl-z0-69b"; */
+"CRl-z0-69b.text" = "COIN";
+
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "cts-55-2WV"; */
 "cts-55-2WV.normalTitle" = "Confirm";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "cu4-FI-IE1"; */
 "cu4-FI-IE1.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Source Chain"; ObjectID = "CwP-gR-KIK"; */
+"CwP-gR-KIK.text" = "Source Chain";
+
+/* Class = "UILabel"; text = "Receivable"; ObjectID = "CwR-fq-VqZ"; */
+"CwR-fq-VqZ.text" = "Receivable";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "CxS-Lm-FZ1"; */
+"CxS-Lm-FZ1.text" = "COIN";
 
 /* Class = "UILabel"; text = "Memo"; ObjectID = "cy7-oX-Z1Y"; */
 "cy7-oX-Z1Y.text" = "Memo";
@@ -1265,14 +505,56 @@
 /* Class = "UILabel"; text = "Undelegate From"; ObjectID = "czb-T3-yJi"; */
 "czb-T3-yJi.text" = "Undelegate From";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "d39-1W-64d"; */
-"d39-1W-64d.text" = "-";
+/* Class = "UILabel"; text = "-"; ObjectID = "D5x-8l-HEq"; */
+"D5x-8l-HEq.text" = "-";
 
 /* Class = "UILabel"; text = "STABLE"; ObjectID = "d6S-Ut-ECa"; */
 "d6S-Ut-ECa.text" = "STABLE";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "D9A-jD-R4I"; */
+"D9A-jD-R4I.text" = "-";
+
+/* Class = "UILabel"; text = "11.22"; ObjectID = "D9V-vu-991"; */
+"D9V-vu-991.text" = "11.22";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "d39-1W-64d"; */
+"d39-1W-64d.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "D70-pa-Qug"; */
+"D70-pa-Qug.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "KAVA"; ObjectID = "DA5-0Y-tOk"; */
+"DA5-0Y-tOk.text" = "KAVA";
+
 /* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "dBE-oD-sEU"; */
 "dBE-oD-sEU.normalTitle" = "+ 10";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "dbs-bH-LvW"; */
+"dbs-bH-LvW.normalTitle" = "Max";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "DBy-HI-eRw"; */
+"DBy-HI-eRw.normalTitle" = "Max";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "dcu-0c-edI"; */
+"dcu-0c-edI.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "dcX-F9-4LB"; */
+"dcX-F9-4LB.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "DDb-tR-hbd"; */
+"DDb-tR-hbd.text" = "ATOM";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ddg-e9-z58"; */
+"ddg-e9-z58.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "DdV-Mp-h34"; */
+"DdV-Mp-h34.normalTitle" = "Half";
+
+/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "DE7-oS-Iuq"; */
+"DE7-oS-Iuq.normalTitle" = "3/4";
+
+/* Class = "UILabel"; text = "Refund To"; ObjectID = "DeM-uR-EWW"; */
+"DeM-uR-EWW.text" = "Refund To";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "dIE-Hd-tfs"; */
 "dIE-Hd-tfs.text" = "-";
@@ -1280,29 +562,38 @@
 /* Class = "UILabel"; text = "For the certain period set by the system, you will not be able to redelegate from the validator you are redelegating to."; ObjectID = "dLd-8A-sR0"; */
 "dLd-8A-sR0.text" = "For the certain period set by the system, you will not be able to redelegate from the validator you are redelegating to.";
 
-/* Class = "UILabel"; text = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now."; ObjectID = "dRg-i3-PJK"; */
-"dRg-i3-PJK.text" = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now.";
-
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "dbs-bH-LvW"; */
-"dbs-bH-LvW.normalTitle" = "Max";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "dcX-F9-4LB"; */
-"dcX-F9-4LB.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "dcu-0c-edI"; */
-"dcu-0c-edI.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ddg-e9-z58"; */
-"ddg-e9-z58.text" = "-";
-
 /* Class = "UILabel"; text = "81.23"; ObjectID = "dmG-5V-4AX"; */
 "dmG-5V-4AX.text" = "81.23";
+
+/* Class = "UILabel"; text = "Lockup"; ObjectID = "DNE-cR-uw4"; */
+"DNE-cR-uw4.text" = "Lockup";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "DR1-zI-eMg"; */
+"DR1-zI-eMg.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now."; ObjectID = "dRg-i3-PJK"; */
+"dRg-i3-PJK.text" = "Rewards are accumulated each block.\nThe actual amount of rewards you receive may be equal to or greater than what is displayed now.";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ds6-fd-lHT"; */
 "ds6-fd-lHT.normalTitle" = "Cancel";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "DSf-kh-3jv"; */
+"DSf-kh-3jv.normalTitle" = "Confirm";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "dsK-Nh-HsL"; */
 "dsK-Nh-HsL.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "DSo-cP-jlk"; */
+"DSo-cP-jlk.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "DUi-x5-b2z"; */
+"DUi-x5-b2z.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "DV7-V2-Oqh"; */
+"DV7-V2-Oqh.text" = "-";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "Dvj-Kz-hqu"; */
+"Dvj-Kz-hqu.text" = "~";
 
 /* Class = "UILabel"; text = "Additional Loan Amount"; ObjectID = "dxV-Fe-QgR"; */
 "dxV-Fe-QgR.text" = "Additional Loan Amount";
@@ -1313,14 +604,50 @@
 /* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "e1b-Kv-uy4"; */
 "e1b-Kv-uy4.normalTitle" = "+ 0.1";
 
+/* Class = "UIButton"; normalTitle = "Type3"; ObjectID = "E2f-eX-BH2"; */
+"E2f-eX-BH2.normalTitle" = "Type3";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "E4u-hV-yTa"; */
+"E4u-hV-yTa.text" = "ATOM";
+
 /* Class = "UILabel"; text = "Current Reward Address"; ObjectID = "e5E-L9-lvD"; */
 "e5E-L9-lvD.text" = "Current Reward Address";
 
 /* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "e6s-sl-5kI"; */
 "e6s-sl-5kI.normalTitle" = "+ 1";
 
+/* Class = "UILabel"; text = "Destination Chain"; ObjectID = "E16-Sd-Rxh"; */
+"E16-Sd-Rxh.text" = "Destination Chain";
+
+/* Class = "UILabel"; text = "Swap Id"; ObjectID = "Ecc-v2-kPG"; */
+"Ecc-v2-kPG.text" = "Swap Id";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "EDE-9a-njG"; */
+"EDE-9a-njG.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Wtihdraw Amount"; ObjectID = "EfD-Yd-Cmj"; */
+"EfD-Yd-Cmj.text" = "Wtihdraw Amount";
+
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "eGs-uE-YdN"; */
 "eGs-uE-YdN.text" = "KAVA";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ENc-oo-oxM"; */
+"ENc-oo-oxM.text" = "-";
+
+/* Class = "UILabel"; text = "Swap Id"; ObjectID = "eoU-zK-sKu"; */
+"eoU-zK-sKu.text" = "Swap Id";
+
+/* Class = "UILabel"; text = "Risk Score"; ObjectID = "epp-6j-x9h"; */
+"epp-6j-x9h.text" = "Risk Score";
+
+/* Class = "UILabel"; text = "Reward From"; ObjectID = "EQ9-3G-1Si"; */
+"EQ9-3G-1Si.text" = "Reward From";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "EQx-YQ-IwS"; */
+"EQx-YQ-IwS.text" = "-";
+
+/* Class = "UILabel"; text = "0.000500"; ObjectID = "ESo-yy-jkx"; */
+"ESo-yy-jkx.text" = "0.000500";
 
 /* Class = "UILabel"; text = "COIN"; ObjectID = "eUB-du-nSG"; */
 "eUB-du-nSG.text" = "COIN";
@@ -1328,14 +655,14 @@
 /* Class = "UILabel"; text = "Validator"; ObjectID = "eUK-dj-Ce1"; */
 "eUK-dj-Ce1.text" = "Validator";
 
+/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "EYd-Lb-aQY"; */
+"EYd-Lb-aQY.normalTitle" = "+ 100";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "eYG-f0-HLx"; */
 "eYG-f0-HLx.normalTitle" = "Back";
 
-/* Class = "UILabel"; text = "Swap Id"; ObjectID = "eoU-zK-sKu"; */
-"eoU-zK-sKu.text" = "Swap Id";
-
-/* Class = "UILabel"; text = "Risk Score"; ObjectID = "epp-6j-x9h"; */
-"epp-6j-x9h.text" = "Risk Score";
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "EzL-hl-CJz"; */
+"EzL-hl-CJz.normalTitle" = "Next";
 
 /* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "f3w-vy-Smw"; */
 "f3w-vy-Smw.normalTitle" = "1/4";
@@ -1346,41 +673,83 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "f9F-nI-5dQ"; */
 "f9F-nI-5dQ.text" = "-";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "fED-iu-eeY"; */
-"fED-iu-eeY.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "fGk-4a-WZP"; */
-"fGk-4a-WZP.normalTitle" = "Max";
-
-/* Class = "UILabel"; text = "Repay Partially : "; ObjectID = "fNC-5H-geC"; */
-"fNC-5H-geC.text" = "Repay Partially : ";
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "FaM-ng-nuA"; */
+"FaM-ng-nuA.normalTitle" = "Confirm";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "fbX-N4-rrP"; */
 "fbX-N4-rrP.text" = "-";
 
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Fd0-EE-sUy"; */
+"Fd0-EE-sUy.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "fED-iu-eeY"; */
+"fED-iu-eeY.text" = "-";
+
 /* Class = "UILabel"; text = "STABLE"; ObjectID = "fg4-4Y-dxt"; */
 "fg4-4Y-dxt.text" = "STABLE";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "fGk-4a-WZP"; */
+"fGk-4a-WZP.normalTitle" = "Max";
 
 /* Class = "UILabel"; text = "Reward From"; ObjectID = "fm0-as-TpH"; */
 "fm0-as-TpH.text" = "Reward From";
 
+/* Class = "UILabel"; text = "Repay Partially : "; ObjectID = "fNC-5H-geC"; */
+"fNC-5H-geC.text" = "Repay Partially : ";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "FNK-rn-Q6z"; */
+"FNK-rn-Q6z.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "FnX-cT-Hbf"; */
+"FnX-cT-Hbf.text" = "Fee";
+
+/* Class = "UILabel"; text = "0/255"; ObjectID = "FP5-q9-8gZ"; */
+"FP5-q9-8gZ.text" = "0/255";
+
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "ftb-kO-B70"; */
 "ftb-kO-B70.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Lockup"; ObjectID = "FUo-d9-Y8Y"; */
+"FUo-d9-Y8Y.text" = "Lockup";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "fwI-VF-TCO"; */
 "fwI-VF-TCO.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "g2a-xj-v4A"; */
+"g2a-xj-v4A.text" = "-";
+
 /* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "g06-ov-6H8"; */
 "g06-ov-6H8.text" = "Expected Liquidation Price";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "g2a-xj-v4A"; */
-"g2a-xj-v4A.text" = "-";
+/* Class = "UILabel"; text = "Proposer"; ObjectID = "G9B-UW-Shr"; */
+"G9B-UW-Shr.text" = "Proposer";
+
+/* Class = "UILabel"; text = "Opinion"; ObjectID = "Gbc-Fv-hg4"; */
+"Gbc-Fv-hg4.text" = "Opinion";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "gBl-GU-YsL"; */
 "gBl-GU-YsL.text" = "-";
 
 /* Class = "UILabel"; text = "Reward Amount"; ObjectID = "gBp-6N-Ir3"; */
 "gBp-6N-Ir3.text" = "Reward Amount";
+
+/* Class = "UILabel"; text = "KAVA"; ObjectID = "GDf-BL-N9l"; */
+"GDf-BL-N9l.text" = "KAVA";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "GJM-U1-LcF"; */
+"GJM-U1-LcF.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Gkd-ec-mlq"; */
+"Gkd-ec-mlq.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Gma-UF-opL"; */
+"Gma-UF-opL.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Min"; ObjectID = "GoZ-sI-8i4"; */
+"GoZ-sI-8i4.normalTitle" = "Min";
+
+/* Class = "UILabel"; text = "Min"; ObjectID = "GR1-ub-wRj"; */
+"GR1-ub-wRj.text" = "Min";
 
 /* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "gTc-Kf-em4"; */
 "gTc-Kf-em4.normalTitle" = "3/4";
@@ -1394,8 +763,26 @@
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "h2Y-kM-42P"; */
 "h2Y-kM-42P.normalTitle" = "Cancel";
 
+/* Class = "UILabel"; text = "COIN"; ObjectID = "H3E-eL-eft"; */
+"H3E-eL-eft.text" = "COIN";
+
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "h4M-zn-mVQ"; */
 "h4M-zn-mVQ.text" = "KAVA";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "H86-EF-dHn"; */
+"H86-EF-dHn.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "TOKT"; ObjectID = "Ha8-w6-dd6"; */
+"Ha8-w6-dd6.text" = "TOKT";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "haZ-90-Nn6"; */
+"haZ-90-Nn6.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "Hba-0j-1TG"; */
+"Hba-0j-1TG.normalTitle" = "+ 1";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "hbz-ZY-Iar"; */
+"hbz-ZY-Iar.text" = "Fee";
 
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "hD8-A2-xBz"; */
 "hD8-A2-xBz.text" = "ATOM";
@@ -1406,47 +793,92 @@
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "hFU-2U-s9F"; */
 "hFU-2U-s9F.normalTitle" = "Cancel";
 
+/* Class = "UILabel"; text = "Adjusted Total Principal"; ObjectID = "HhL-oC-ZQ9"; */
+"HhL-oC-ZQ9.text" = "Adjusted Total Principal";
+
 /* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "hIG-nS-UZT"; */
 "hIG-nS-UZT.normalTitle" = "+ 0.1";
 
 /* Class = "UILabel"; text = "TOKT"; ObjectID = "hK8-OG-fn8"; */
 "hK8-OG-fn8.text" = "TOKT";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "hNu-Zl-4j8"; */
-"hNu-Zl-4j8.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "hPP-a0-hxw"; */
-"hPP-a0-hxw.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "haZ-90-Nn6"; */
-"haZ-90-Nn6.text" = "-";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "hbz-ZY-Iar"; */
-"hbz-ZY-Iar.text" = "Fee";
+/* Class = "UILabel"; text = "-"; ObjectID = "HMM-4z-8Mf"; */
+"HMM-4z-8Mf.text" = "-";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "hmT-ev-RBn"; */
 "hmT-ev-RBn.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "hNu-Zl-4j8"; */
+"hNu-Zl-4j8.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "HNX-yT-dyS"; */
+"HNX-yT-dyS.normalTitle" = "Half";
+
 /* Class = "UILabel"; text = "Select Address"; ObjectID = "hoR-um-MgJ"; */
 "hoR-um-MgJ.text" = "Select Address";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "hPP-a0-hxw"; */
+"hPP-a0-hxw.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "HPq-Hm-tLc"; */
+"HPq-Hm-tLc.normalTitle" = " + 1";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "hrT-jx-lIm"; */
 "hrT-jx-lIm.normalTitle" = "Next";
 
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Hud-Dh-utj"; */
+"Hud-Dh-utj.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "HUj-5C-LER"; */
+"HUj-5C-LER.normalTitle" = "+ 1";
+
+/* Class = "UIButton"; normalTitle = " + 1"; ObjectID = "HUL-2b-nPn"; */
+"HUL-2b-nPn.normalTitle" = " + 1";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "HWJ-65-tcA"; */
+"HWJ-65-tcA.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Relayer Status"; ObjectID = "HZX-pj-2e9"; */
+"HZX-pj-2e9.text" = "Relayer Status";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "I3D-DX-Pnj"; */
+"I3D-DX-Pnj.text" = "-";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "i4b-yH-dL0"; */
 "i4b-yH-dL0.text" = "-";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "I9Z-dL-19l"; */
+"I9Z-dL-19l.text" = "ATOM";
+
+/* Class = "UILabel"; text = "SAFE"; ObjectID = "I48-d7-d2k"; */
+"I48-d7-d2k.text" = "SAFE";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "I73-y3-k1r"; */
+"I73-y3-k1r.text" = "-";
+
+/* Class = "UILabel"; text = "Total Spend"; ObjectID = "IA5-XZ-ucD"; */
+"IA5-XZ-ucD.text" = "Total Spend";
+
+/* Class = "UILabel"; text = "81.23"; ObjectID = "IAw-D5-tAp"; */
+"IAw-D5-tAp.text" = "81.23";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "iBU-q5-wZz"; */
 "iBU-q5-wZz.normalTitle" = "Cancel";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "iT5-ku-aJw"; */
-"iT5-ku-aJw.text" = "-";
+/* Class = "UILabel"; text = "-"; ObjectID = "Ie0-F7-lzz"; */
+"Ie0-F7-lzz.text" = "-";
 
-/* Class = "UILabel"; text = "Fee"; ObjectID = "iZy-tD-pIS"; */
-"iZy-tD-pIS.text" = "Fee";
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "IEH-6H-UvW"; */
+"IEH-6H-UvW.text" = "ATOM";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "ieI-g0-Mt9"; */
 "ieI-g0-Mt9.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Type1"; ObjectID = "IfJ-Su-xzC"; */
+"IfJ-Su-xzC.normalTitle" = "Type1";
+
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "IiB-Km-GeS"; */
+"IiB-Km-GeS.normalTitle" = "+ 1";
 
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "ije-13-70E"; */
 "ije-13-70E.normalTitle" = "Max";
@@ -1454,11 +886,44 @@
 /* Class = "UILabel"; text = "11.22"; ObjectID = "ilk-Bd-c3T"; */
 "ilk-Bd-c3T.text" = "11.22";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "InX-aN-k1Z"; */
+"InX-aN-k1Z.normalTitle" = "Confirm";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "IR8-bs-QLu"; */
+"IR8-bs-QLu.text" = "-";
+
+/* Class = "UILabel"; text = "($ 0.00)"; ObjectID = "ISt-Xs-x5j"; */
+"ISt-Xs-x5j.text" = "($ 0.00)";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "iT5-ku-aJw"; */
+"iT5-ku-aJw.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ITI-T2-Cht"; */
+"ITI-T2-Cht.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "ivy-mU-MJY"; */
 "ivy-mU-MJY.normalTitle" = "Cancel";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "IWG-08-Laq"; */
+"IWG-08-Laq.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "iwU-UR-fnU"; */
 "iwU-UR-fnU.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "IYI-54-2a7"; */
+"IYI-54-2a7.text" = "-";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "iZy-tD-pIS"; */
+"iZy-tD-pIS.text" = "Fee";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "J2r-QX-WBx"; */
+"J2r-QX-WBx.text" = "Type";
+
+/* Class = "UILabel"; text = "TOKT"; ObjectID = "J3d-4o-Zet"; */
+"J3d-4o-Zet.text" = "TOKT";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "J3e-hj-uEb"; */
+"J3e-hj-uEb.normalTitle" = "Back";
 
 /* Class = "UILabel"; text = "Validator"; ObjectID = "j5O-IL-Jfl"; */
 "j5O-IL-Jfl.text" = "Validator";
@@ -1466,11 +931,29 @@
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "j6a-Q0-Vyk"; */
 "j6a-Q0-Vyk.normalTitle" = "Next";
 
+/* Class = "UILabel"; text = "This CDP will be closed. \nAll deposits will be returned to each depositor."; ObjectID = "J34-R6-Cl1"; */
+"J34-R6-Cl1.text" = "This CDP will be closed. \nAll deposits will be returned to each depositor.";
+
 /* Class = "UILabel"; text = "Memo"; ObjectID = "jAf-dy-Edm"; */
 "jAf-dy-Edm.text" = "Memo";
 
+/* Class = "UILabel"; text = "Max Depositable : "; ObjectID = "Jcc-dI-6gj"; */
+"Jcc-dI-6gj.text" = "Max Depositable : ";
+
+/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Jf0-eM-DXP"; */
+"Jf0-eM-DXP.text" = "Recipient Address";
+
+/* Class = "UILabel"; text = "81.23"; ObjectID = "Jgb-KZ-cus"; */
+"Jgb-KZ-cus.text" = "81.23";
+
 /* Class = "UIButton"; normalTitle = "Type1"; ObjectID = "jH5-4t-9LS"; */
 "jH5-4t-9LS.normalTitle" = "Type1";
+
+/* Class = "UILabel"; text = "Deposit Amount"; ObjectID = "JhW-AL-4rh"; */
+"JhW-AL-4rh.text" = "Deposit Amount";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "JI1-zR-3NG"; */
+"JI1-zR-3NG.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "Half"; ObjectID = "jIC-wS-eZO"; */
 "jIC-wS-eZO.normalTitle" = "Half";
@@ -1478,11 +961,29 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "jJH-82-FMf"; */
 "jJH-82-FMf.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "JLh-TN-8A5"; */
+"JLh-TN-8A5.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "JPb-Ni-ytg"; */
+"JPb-Ni-ytg.normalTitle" = "3/4";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "JWt-4v-b38"; */
+"JWt-4v-b38.text" = "-";
+
+/* Class = "UILabel"; text = "Send Coin"; ObjectID = "JWw-F5-Wph"; */
+"JWw-F5-Wph.text" = "Send Coin";
+
 /* Class = "UILabel"; text = "Delegate Amount"; ObjectID = "jXx-yV-zcs"; */
 "jXx-yV-zcs.text" = "Delegate Amount";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "Jyd-fF-8L3"; */
+"Jyd-fF-8L3.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "jzT-Qn-Dpv"; */
 "jzT-Qn-Dpv.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "K5i-y7-7Fr"; */
+"K5i-y7-7Fr.normalTitle" = "1/4";
 
 /* Class = "UIButton"; normalTitle = "≈ 20"; ObjectID = "k5X-QP-Chh"; */
 "k5X-QP-Chh.normalTitle" = "≈ 20";
@@ -1496,11 +997,35 @@
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "kBN-Cx-ZW5"; */
 "kBN-Cx-ZW5.normalTitle" = "Max";
 
-/* Class = "UILabel"; text = "Max Delegable : "; ObjectID = "kKV-sT-2Dn"; */
-"kKV-sT-2Dn.text" = "Max Delegable : ";
-
 /* Class = "UIButton"; normalTitle = "P Max"; ObjectID = "kbv-qb-QTW"; */
 "kbv-qb-QTW.normalTitle" = "P Max";
+
+/* Class = "UILabel"; text = "0.025"; ObjectID = "Kc4-jc-cj2"; */
+"Kc4-jc-cj2.text" = "0.025";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "KcI-v9-dWn"; */
+"KcI-v9-dWn.text" = "-";
+
+/* Class = "UILabel"; text = "In order to user this feature,\nyou must create a KAVA account and have history"; ObjectID = "KDA-Db-yrY"; */
+"KDA-Db-yrY.text" = "In order to user this feature,\nyou must create a KAVA account and have history";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Kfr-zv-XFu"; */
+"Kfr-zv-XFu.text" = "-";
+
+/* Class = "UILabel"; text = "Available : "; ObjectID = "KgS-gr-nev"; */
+"KgS-gr-nev.text" = "Available : ";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "KGT-W7-jPi"; */
+"KGT-W7-jPi.text" = "-";
+
+/* Class = "UILabel"; text = "Max Available : "; ObjectID = "KhK-uj-toP"; */
+"KhK-uj-toP.text" = "Max Available : ";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "KIB-9Q-ntd"; */
+"KIB-9Q-ntd.text" = "-";
+
+/* Class = "UILabel"; text = "Max Delegable : "; ObjectID = "kKV-sT-2Dn"; */
+"kKV-sT-2Dn.text" = "Max Delegable : ";
 
 /* Class = "UILabel"; text = "COIN"; ObjectID = "kly-YG-VPi"; */
 "kly-YG-VPi.text" = "COIN";
@@ -1510,6 +1035,18 @@
 
 /* Class = "UILabel"; text = "~"; ObjectID = "koJ-Ng-WlQ"; */
 "koJ-Ng-WlQ.text" = "~";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "KPj-iy-gIb"; */
+"KPj-iy-gIb.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "Kpl-og-KYJ"; */
+"Kpl-og-KYJ.normalTitle" = "Half";
+
+/* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "KQC-0I-cpP"; */
+"KQC-0I-cpP.text" = "Expected Liquidation Price";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "KuL-fV-Y4u"; */
+"KuL-fV-Y4u.text" = "COIN";
 
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "kun-C4-glw"; */
 "kun-C4-glw.text" = "ATOM";
@@ -1523,6 +1060,9 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "l6o-dV-tyt"; */
 "l6o-dV-tyt.text" = "-";
 
+/* Class = "UILabel"; text = "Deposit Value : "; ObjectID = "L6t-B9-ok4"; */
+"L6t-B9-ok4.text" = "Deposit Value : ";
+
 /* Class = "UILabel"; text = "Fee"; ObjectID = "l7w-IN-052"; */
 "l7w-IN-052.text" = "Fee";
 
@@ -1532,11 +1072,17 @@
 /* Class = "UILabel"; text = "Memo"; ObjectID = "l8T-mQ-ZoR"; */
 "l8T-mQ-ZoR.text" = "Memo";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "lQh-Mg-QiO"; */
-"lQh-Mg-QiO.text" = "-";
+/* Class = "UILabel"; text = "Memo"; ObjectID = "LB7-wZ-gHc"; */
+"LB7-wZ-gHc.text" = "Memo";
+
+/* Class = "UILabel"; text = "Current Available"; ObjectID = "Lbt-gj-bR1"; */
+"Lbt-gj-bR1.text" = "Current Available";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "ldl-Yh-SZ4"; */
 "ldl-Yh-SZ4.text" = "-";
+
+/* Class = "UILabel"; text = "11.22"; ObjectID = "LIa-GA-ekT"; */
+"LIa-GA-ekT.text" = "11.22";
 
 /* Class = "UIButton"; normalTitle = "Half"; ObjectID = "ll1-II-KiI"; */
 "ll1-II-KiI.normalTitle" = "Half";
@@ -1550,17 +1096,26 @@
 /* Class = "UILabel"; text = "X"; ObjectID = "lqB-nT-Gg5"; */
 "lqB-nT-Gg5.text" = "X";
 
-/* Class = "UILabel"; text = "Harvest Reward"; ObjectID = "mOF-eA-db1"; */
-"mOF-eA-db1.text" = "Harvest Reward";
+/* Class = "UILabel"; text = "-"; ObjectID = "lQh-Mg-QiO"; */
+"lQh-Mg-QiO.text" = "-";
 
-/* Class = "UILabel"; text = "Memo"; ObjectID = "mQv-vj-oGV"; */
-"mQv-vj-oGV.text" = "Memo";
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "LQj-Fz-FEf"; */
+"LQj-Fz-FEf.normalTitle" = "Confirm";
 
-/* Class = "UILabel"; text = "Send Amount"; ObjectID = "mX4-Dd-r4g"; */
-"mX4-Dd-r4g.text" = "Send Amount";
+/* Class = "UILabel"; text = "Lockup"; ObjectID = "LXJ-Bz-qSt"; */
+"LXJ-Bz-qSt.text" = "Lockup";
 
-/* Class = "UILabel"; text = "Adjusted Total Collateral"; ObjectID = "mXz-T1-piS"; */
-"mXz-T1-piS.text" = "Adjusted Total Collateral";
+/* Class = "UILabel"; text = "-"; ObjectID = "M3x-EA-AuW"; */
+"M3x-EA-AuW.text" = "-";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "M9m-C3-Kqd"; */
+"M9m-C3-Kqd.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "MeJ-3A-PbW"; */
+"MeJ-3A-PbW.text" = "Fee";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Mez-iK-OG3"; */
+"Mez-iK-OG3.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "mg9-ex-Pi9"; */
 "mg9-ex-Pi9.normalTitle" = "Cancel";
@@ -1568,17 +1123,62 @@
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "mhd-XH-Kv4"; */
 "mhd-XH-Kv4.text" = "KAVA";
 
+/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "MIP-B7-Y5J"; */
+"MIP-B7-Y5J.normalTitle" = "Half";
+
+/* Class = "UILabel"; text = "($ 0.00)"; ObjectID = "Mj4-GV-Og7"; */
+"Mj4-GV-Og7.text" = "($ 0.00)";
+
+/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Mjn-tU-bDU"; */
+"Mjn-tU-bDU.text" = "Recipient Address";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "MLr-AV-Cs3"; */
+"MLr-AV-Cs3.text" = "-";
+
+/* Class = "UILabel"; text = "Harvest Reward"; ObjectID = "mOF-eA-db1"; */
+"mOF-eA-db1.text" = "Harvest Reward";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Mou-Xl-P5B"; */
+"Mou-Xl-P5B.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "MpS-LF-eIh"; */
+"MpS-LF-eIh.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Memo"; ObjectID = "mQv-vj-oGV"; */
+"mQv-vj-oGV.text" = "Memo";
+
+/* Class = "UILabel"; text = "Send Amount"; ObjectID = "mX4-Dd-r4g"; */
+"mX4-Dd-r4g.text" = "Send Amount";
+
 /* Class = "UILabel"; text = "Memo"; ObjectID = "mxN-bR-rjs"; */
 "mxN-bR-rjs.text" = "Memo";
+
+/* Class = "UILabel"; text = "Adjusted Total Collateral"; ObjectID = "mXz-T1-piS"; */
+"mXz-T1-piS.text" = "Adjusted Total Collateral";
 
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "myt-1d-ac3"; */
 "myt-1d-ac3.text" = "ATOM";
 
+/* Class = "UILabel"; text = "Redelegate Amount"; ObjectID = "MYv-Nb-PUH"; */
+"MYv-Nb-PUH.text" = "Redelegate Amount";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "N0r-0y-KxQ"; */
+"N0r-0y-KxQ.normalTitle" = "Back";
+
 /* Class = "UIButton"; normalTitle = "≈ 50"; ObjectID = "n1t-Ev-zPJ"; */
 "n1t-Ev-zPJ.normalTitle" = "≈ 50";
 
+/* Class = "UILabel"; text = "SAFE"; ObjectID = "N7A-X4-N8p"; */
+"N7A-X4-N8p.text" = "SAFE";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "n41-2P-Ns8"; */
 "n41-2P-Ns8.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "Na8-44-YaO"; */
+"Na8-44-YaO.normalTitle" = "3/4";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ncF-xS-9Vg"; */
+"ncF-xS-9Vg.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "SAFE"; ObjectID = "nDb-9E-hJ5"; */
 "nDb-9E-hJ5.text" = "SAFE";
@@ -1586,11 +1186,35 @@
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "nDm-R6-4fp"; */
 "nDm-R6-4fp.normalTitle" = "Confirm";
 
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "NIX-7T-aSL"; */
+"NIX-7T-aSL.normalTitle" = "+ 1";
+
+/* Class = "UILabel"; text = "Cannot repay all"; ObjectID = "nnO-p1-sE0"; */
+"nnO-p1-sE0.text" = "Cannot repay all";
+
 /* Class = "UILabel"; text = "Send Amount"; ObjectID = "nPi-8l-Zjv"; */
 "nPi-8l-Zjv.text" = "Send Amount";
 
+/* Class = "UILabel"; text = "Swap Limit Per Transaction"; ObjectID = "nsK-Pa-aCX"; */
+"nsK-Pa-aCX.text" = "Swap Limit Per Transaction";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Nt2-UT-coG"; */
+"Nt2-UT-coG.text" = "-";
+
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "nTF-bU-ech"; */
 "nTF-bU-ech.text" = "ATOM";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "NtY-Ye-cGf"; */
+"NtY-Ye-cGf.text" = "ATOM";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "NVO-pJ-piu"; */
+"NVO-pJ-piu.text" = "COIN";
+
+/* Class = "UILabel"; text = "Loan Amount"; ObjectID = "NwB-Fd-LCV"; */
+"NwB-Fd-LCV.text" = "Loan Amount";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "Nwz-Ti-vsz"; */
+"Nwz-Ti-vsz.text" = "COIN";
 
 /* Class = "UIButton"; normalTitle = "P 2/3"; ObjectID = "nYo-Zu-P5B"; */
 "nYo-Zu-P5B.normalTitle" = "P 2/3";
@@ -1598,20 +1222,14 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "nYz-3c-kG1"; */
 "nYz-3c-kG1.text" = "-";
 
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ncF-xS-9Vg"; */
-"ncF-xS-9Vg.normalTitle" = "Next";
-
-/* Class = "UILabel"; text = "Cannot repay all"; ObjectID = "nnO-p1-sE0"; */
-"nnO-p1-sE0.text" = "Cannot repay all";
-
-/* Class = "UILabel"; text = "Swap Limit Per Transaction"; ObjectID = "nsK-Pa-aCX"; */
-"nsK-Pa-aCX.text" = "Swap Limit Per Transaction";
-
 /* Class = "UILabel"; text = "Collateral Amount"; ObjectID = "nzj-NR-nfE"; */
 "nzj-NR-nfE.text" = "Collateral Amount";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "o0K-uG-YwI"; */
 "o0K-uG-YwI.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "O2b-LA-Rj0"; */
+"O2b-LA-Rj0.text" = "Fee";
 
 /* Class = "UILabel"; text = "Risk Score"; ObjectID = "o2E-fF-hve"; */
 "o2E-fF-hve.text" = "Risk Score";
@@ -1619,38 +1237,41 @@
 /* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "o2U-L1-5Y3"; */
 "o2U-L1-5Y3.text" = "Expected Liquidation Price";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "O4S-Zw-4sX"; */
+"O4S-Zw-4sX.text" = "-";
+
 /* Class = "UILabel"; text = "Memo"; ObjectID = "o5d-Hu-fNc"; */
 "o5d-Hu-fNc.text" = "Memo";
 
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "o8s-xj-b1r"; */
 "o8s-xj-b1r.normalTitle" = "Max";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "Oab-Gj-1Fx"; */
+"Oab-Gj-1Fx.text" = "ATOM";
+
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "oAC-e0-akk"; */
 "oAC-e0-akk.normalTitle" = "Max";
-
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "oKJ-4W-U6n"; */
-"oKJ-4W-U6n.normalTitle" = "Back";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "oTb-1a-mSw"; */
-"oTb-1a-mSw.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "oUF-9B-3Wj"; */
-"oUF-9B-3Wj.text" = "-";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "oUc-DV-Zxh"; */
-"oUc-DV-Zxh.text" = "ATOM";
-
-/* Class = "UILabel"; text = "SAFE"; ObjectID = "oXz-tw-vMF"; */
-"oXz-tw-vMF.text" = "SAFE";
-
-/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "oYJ-df-O7I"; */
-"oYJ-df-O7I.text" = "Initial Liquidation Price";
 
 /* Class = "UILabel"; text = "STABLE"; ObjectID = "och-dR-tbB"; */
 "och-dR-tbB.text" = "STABLE";
 
+/* Class = "UILabel"; text = "Collateral Amount"; ObjectID = "OfD-XI-5f6"; */
+"OfD-XI-5f6.text" = "Collateral Amount";
+
 /* Class = "UILabel"; text = "Memo"; ObjectID = "oh3-vV-DVi"; */
 "oh3-vV-DVi.text" = "Memo";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Ohv-Du-RLy"; */
+"Ohv-Du-RLy.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Okh-Xz-SvI"; */
+"Okh-Xz-SvI.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "oKJ-4W-U6n"; */
+"oKJ-4W-U6n.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "Olh-rs-wcV"; */
+"Olh-rs-wcV.text" = "ATOM";
 
 /* Class = "UILabel"; text = "Reward Amount"; ObjectID = "oo2-7G-0I5"; */
 "oo2-7G-0I5.text" = "Reward Amount";
@@ -1658,23 +1279,86 @@
 /* Class = "UILabel"; text = "COIN"; ObjectID = "opk-a1-WKc"; */
 "opk-a1-WKc.text" = "COIN";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "p06-k6-XBT"; */
-"p06-k6-XBT.text" = "-";
+/* Class = "UILabel"; text = "-"; ObjectID = "oTb-1a-mSw"; */
+"oTb-1a-mSw.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "OTd-WC-9Cm"; */
+"OTd-WC-9Cm.text" = "-";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "OTF-6S-H13"; */
+"OTF-6S-H13.text" = "Fee";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "oUc-DV-Zxh"; */
+"oUc-DV-Zxh.text" = "ATOM";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "oUF-9B-3Wj"; */
+"oUF-9B-3Wj.text" = "-";
+
+/* Class = "UILabel"; text = "SAFE"; ObjectID = "oXz-tw-vMF"; */
+"oXz-tw-vMF.text" = "SAFE";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "Oyd-BS-3oD"; */
+"Oyd-BS-3oD.text" = "COIN";
+
+/* Class = "UILabel"; text = "Initial Liquidation Price"; ObjectID = "oYJ-df-O7I"; */
+"oYJ-df-O7I.text" = "Initial Liquidation Price";
 
 /* Class = "UIButton"; normalTitle = " Paste"; ObjectID = "p3T-zM-WC2"; */
 "p3T-zM-WC2.normalTitle" = " Paste";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "P5u-Vw-dfy"; */
+"P5u-Vw-dfy.text" = "ATOM";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "P5X-s1-9xn"; */
+"P5X-s1-9xn.text" = "~";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "p06-k6-XBT"; */
+"p06-k6-XBT.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "P7R-yl-AMr"; */
+"P7R-yl-AMr.normalTitle" = "+ 10";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "PDA-NX-FOy"; */
+"PDA-NX-FOy.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "PDi-on-IFx"; */
+"PDi-on-IFx.normalTitle" = "Max";
+
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "pEL-s6-gwf"; */
 "pEL-s6-gwf.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "PGA-Ut-dSn"; */
+"PGA-Ut-dSn.text" = "COIN";
 
 /* Class = "UILabel"; text = "COIN"; ObjectID = "pIg-4r-9rR"; */
 "pIg-4r-9rR.text" = "COIN";
 
+/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "PlX-Z6-dr0"; */
+"PlX-Z6-dr0.normalTitle" = "+ 10";
+
+/* Class = "UILabel"; text = "Proposer"; ObjectID = "Pmj-ji-meE"; */
+"Pmj-ji-meE.text" = "Proposer";
+
+/* Class = "UILabel"; text = "Remaining Principal"; ObjectID = "Pmt-UT-02b"; */
+"Pmt-UT-02b.text" = "Remaining Principal";
+
 /* Class = "UILabel"; text = "Send Tx Fee"; ObjectID = "pnt-4M-Qc7"; */
 "pnt-4M-Qc7.text" = "Send Tx Fee";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "PO4-tK-RFx"; */
+"PO4-tK-RFx.text" = "-";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "ppq-aK-fJA"; */
 "ppq-aK-fJA.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "PqX-Em-j0Z"; */
+"PqX-Em-j0Z.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "81.23"; ObjectID = "PVf-5N-9v1"; */
+"PVf-5N-9v1.text" = "81.23";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "PXu-Z5-ayV"; */
+"PXu-Z5-ayV.normalTitle" = "Cancel";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "q4U-Jx-Gjp"; */
 "q4U-Jx-Gjp.normalTitle" = "Back";
@@ -1685,11 +1369,23 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "qDe-8L-jAH"; */
 "qDe-8L-jAH.text" = "-";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "qY8-Cf-zMg"; */
-"qY8-Cf-zMg.text" = "-";
+/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "QEJ-qm-9j4"; */
+"QEJ-qm-9j4.normalTitle" = "+ 0.1";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "QFO-qw-ubb"; */
+"QFO-qw-ubb.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "QG8-gP-rP3"; */
+"QG8-gP-rP3.normalTitle" = "Confirm";
 
 /* Class = "UILabel"; text = "TOKT"; ObjectID = "qgC-H0-yR7"; */
 "qgC-H0-yR7.text" = "TOKT";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Qhn-oA-75L"; */
+"Qhn-oA-75L.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Qhr-2R-zIS"; */
+"Qhr-2R-zIS.normalTitle" = "Back";
 
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "qi3-QU-VDx"; */
 "qi3-QU-VDx.text" = "KAVA";
@@ -1697,8 +1393,26 @@
 /* Class = "UIButton"; normalTitle = "1/4"; ObjectID = "qjU-AR-tCT"; */
 "qjU-AR-tCT.normalTitle" = "1/4";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "QKe-NG-eGM"; */
+"QKe-NG-eGM.text" = "-";
+
+/* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "QPo-J2-K4w"; */
+"QPo-J2-K4w.normalTitle" = " Recent";
+
+/* Class = "UILabel"; text = "81.23"; ObjectID = "QQf-DX-zFC"; */
+"QQf-DX-zFC.text" = "81.23";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "qrU-if-jGX"; */
 "qrU-if-jGX.text" = "-";
+
+/* Class = "UILabel"; text = "Expected Liquidation Price"; ObjectID = "QsN-nh-2PJ"; */
+"QsN-nh-2PJ.text" = "Expected Liquidation Price";
+
+/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "Qwe-1G-kEd"; */
+"Qwe-1G-kEd.text" = "Recipient Address";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "qY8-Cf-zMg"; */
+"qY8-Cf-zMg.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "qys-8Z-rrm"; */
 "qys-8Z-rrm.normalTitle" = "+ 100";
@@ -1706,11 +1420,26 @@
 /* Class = "UILabel"; text = "COIN"; ObjectID = "r4s-eR-Ps3"; */
 "r4s-eR-Ps3.text" = "COIN";
 
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "R8F-Fh-NZF"; */
+"R8F-Fh-NZF.normalTitle" = "Next";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "rCi-gy-HMe"; */
 "rCi-gy-HMe.text" = "-";
 
+/* Class = "UILabel"; text = "Your universal username for the blockchain world. Insert a *starname in the address field instead of a long complicated crypto address."; ObjectID = "RDB-jO-44g"; */
+"RDB-jO-44g.text" = "Your universal username for the blockchain world. Insert a *starname in the address field instead of a long complicated crypto address.";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "rDT-J4-fp8"; */
 "rDT-J4-fp8.text" = "-";
+
+/* Class = "UILabel"; text = "TOKT"; ObjectID = "REf-NM-nVk"; */
+"REf-NM-nVk.text" = "TOKT";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Rhf-lF-k9m"; */
+"Rhf-lF-k9m.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Only a handful of validators will process this Tx"; ObjectID = "riU-g3-Hyc"; */
+"riU-g3-Hyc.text" = "Only a handful of validators will process this Tx";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "rKd-ef-O7r"; */
 "rKd-ef-O7r.text" = "-";
@@ -1718,26 +1447,53 @@
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "rNd-cR-mJG"; */
 "rNd-cR-mJG.normalTitle" = "Back";
 
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rsr-yz-kCt"; */
+"rsr-yz-kCt.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Rth-j2-3vL"; */
+"Rth-j2-3vL.normalTitle" = "Next";
+
 /* Class = "UILabel"; text = "Risk Score"; ObjectID = "rU0-vd-Da8"; */
 "rU0-vd-Da8.text" = "Risk Score";
 
 /* Class = "UILabel"; text = "Cosmos"; ObjectID = "rU0-wg-GiW"; */
 "rU0-wg-GiW.text" = "Cosmos";
 
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Rwn-Lb-6S4"; */
+"Rwn-Lb-6S4.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "RY6-ia-yM6"; */
+"RY6-ia-yM6.normalTitle" = "+ 0.1";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "rZC-rv-ZDv"; */
 "rZC-rv-ZDv.text" = "-";
-
-/* Class = "UILabel"; text = "Only a handful of validators will process this Tx"; ObjectID = "riU-g3-Hyc"; */
-"riU-g3-Hyc.text" = "Only a handful of validators will process this Tx";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "rsr-yz-kCt"; */
-"rsr-yz-kCt.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "Average"; ObjectID = "s3N-8g-Lyh"; */
 "s3N-8g-Lyh.text" = "Average";
 
 /* Class = "UILabel"; text = "Fee"; ObjectID = "s5N-bq-oVX"; */
 "s5N-bq-oVX.text" = "Fee";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "S58-9N-XQB"; */
+"S58-9N-XQB.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Sam-Qu-o4h"; */
+"Sam-Qu-o4h.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Sec-jB-Uax"; */
+"Sec-jB-Uax.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Abstain"; ObjectID = "SeN-WW-MwQ"; */
+"SeN-WW-MwQ.normalTitle" = "Abstain";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "SfU-7g-bfC"; */
+"SfU-7g-bfC.normalTitle" = "Next";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Sgn-c8-z4q"; */
+"Sgn-c8-z4q.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "SgR-E3-eSb"; */
+"SgR-E3-eSb.text" = "-";
 
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "sIW-ZR-5bT"; */
 "sIW-ZR-5bT.text" = "KAVA";
@@ -1748,11 +1504,23 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "sMG-8g-Pdn"; */
 "sMG-8g-Pdn.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "SN0-bA-wOw"; */
+"SN0-bA-wOw.text" = "-";
+
 /* Class = "UILabel"; text = "Risk Score"; ObjectID = "sN2-sN-PQZ"; */
 "sN2-sN-PQZ.text" = "Risk Score";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "sNc-sK-vcI"; */
 "sNc-sK-vcI.text" = "-";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "SND-Hn-2SF"; */
+"SND-Hn-2SF.text" = "ATOM";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "SnL-Y2-x2q"; */
+"SnL-Y2-x2q.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Risk Score"; ObjectID = "SnQ-jo-7b6"; */
+"SnQ-jo-7b6.text" = "Risk Score";
 
 /* Class = "UILabel"; text = "81.23"; ObjectID = "sOu-RP-S6Z"; */
 "sOu-RP-S6Z.text" = "81.23";
@@ -1760,26 +1528,56 @@
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "sTD-yx-C1a"; */
 "sTD-yx-C1a.normalTitle" = "Confirm";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "STU-of-NQd"; */
+"STU-of-NQd.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "sUw-6k-w89"; */
 "sUw-6k-w89.normalTitle" = "+ 100";
 
 /* Class = "UILabel"; text = "Max Available : "; ObjectID = "syg-Aq-Gbd"; */
 "syg-Aq-Gbd.text" = "Max Available : ";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "SYl-ef-M6e"; */
+"SYl-ef-M6e.text" = "-";
+
+/* Class = "UILabel"; text = "Recipient Address"; ObjectID = "T7x-0J-45S"; */
+"T7x-0J-45S.text" = "Recipient Address";
+
+/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "T91-bW-XMa"; */
+"T91-bW-XMa.normalTitle" = "+ 0.1";
+
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "tCV-bA-Hz1"; */
 "tCV-bA-Hz1.text" = "ATOM";
+
+/* Class = "UILabel"; text = "11.11"; ObjectID = "Te6-1r-r1J"; */
+"Te6-1r-r1J.text" = "11.11";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "tFc-rs-Vhb"; */
 "tFc-rs-Vhb.text" = "-";
 
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "TFG-Ky-2gc"; */
+"TFG-Ky-2gc.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "TiE-x9-l6W"; */
+"TiE-x9-l6W.text" = "Title";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "tjA-fe-Yfb"; */
+"tjA-fe-Yfb.text" = "-";
+
+/* Class = "UILabel"; text = "Memo"; ObjectID = "TJD-bQ-zRv"; */
+"TJD-bQ-zRv.text" = "Memo";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "tKu-Qj-T4F"; */
 "tKu-Qj-T4F.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Tmr-hH-xoh"; */
+"Tmr-hH-xoh.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "tN4-Ux-Xau"; */
 "tN4-Ux-Xau.text" = "KAVA";
 
-/* Class = "UILabel"; text = "-"; ObjectID = "tjA-fe-Yfb"; */
-"tjA-fe-Yfb.text" = "-";
+/* Class = "UILabel"; text = "STABLE"; ObjectID = "TNP-Jo-gEg"; */
+"TNP-Jo-gEg.text" = "STABLE";
 
 /* Class = "UIButton"; normalTitle = "Min"; ObjectID = "tp0-DC-9EG"; */
 "tp0-DC-9EG.normalTitle" = "Min";
@@ -1790,14 +1588,23 @@
 /* Class = "UIButton"; normalTitle = "Min"; ObjectID = "tqE-Ka-Kz3"; */
 "tqE-Ka-Kz3.normalTitle" = "Min";
 
+/* Class = "UIButton"; normalTitle = "+ 0.1"; ObjectID = "TuW-Kk-4Oj"; */
+"TuW-Kk-4Oj.normalTitle" = "+ 0.1";
+
 /* Class = "UILabel"; text = "Low"; ObjectID = "tuz-hV-mkt"; */
 "tuz-hV-mkt.text" = "Low";
+
+/* Class = "UILabel"; text = "HARD"; ObjectID = "TVb-5K-rqU"; */
+"TVb-5K-rqU.text" = "HARD";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "tw4-lB-KLm"; */
 "tw4-lB-KLm.text" = "-";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "twL-1u-ab5"; */
 "twL-1u-ab5.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "TZa-Y3-lIX"; */
+"TZa-Y3-lIX.normalTitle" = "Confirm";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "u0j-lg-8TA"; */
 "u0j-lg-8TA.text" = "-";
@@ -1808,11 +1615,8 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "u4H-Vv-TRn"; */
 "u4H-Vv-TRn.text" = "-";
 
-/* Class = "UILabel"; text = "Reward Amount"; ObjectID = "uNb-ul-DhB"; */
-"uNb-ul-DhB.text" = "Reward Amount";
-
-/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "uOb-5m-dF2"; */
-"uOb-5m-dF2.normalTitle" = "Cancel";
+/* Class = "UILabel"; text = "Refund Amount"; ObjectID = "UdH-uA-bxP"; */
+"UdH-uA-bxP.text" = "Refund Amount";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "uet-so-g6V"; */
 "uet-so-g6V.text" = "-";
@@ -1820,11 +1624,32 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "ufC-VN-wuz"; */
 "ufC-VN-wuz.text" = "-";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "UfZ-dh-qrz"; */
+"UfZ-dh-qrz.text" = "ATOM";
+
+/* Class = "UILabel"; text = "11.22"; ObjectID = "UHF-K5-g4u"; */
+"UHF-K5-g4u.text" = "11.22";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "uiG-LZ-0Pg"; */
 "uiG-LZ-0Pg.normalTitle" = "Back";
 
+/* Class = "UILabel"; text = "Claim Tx Fee"; ObjectID = "UKl-8F-pXZ"; */
+"UKl-8F-pXZ.text" = "Claim Tx Fee";
+
+/* Class = "UILabel"; text = "Reward Amount"; ObjectID = "uNb-ul-DhB"; */
+"uNb-ul-DhB.text" = "Reward Amount";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "uOb-5m-dF2"; */
+"uOb-5m-dF2.normalTitle" = "Cancel";
+
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "Utt-cY-Ygj"; */
+"Utt-cY-Ygj.normalTitle" = "Confirm";
+
 /* Class = "UIButton"; normalTitle = "Max"; ObjectID = "uuD-HO-iFW"; */
 "uuD-HO-iFW.normalTitle" = "Max";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "UvO-pz-ZIz"; */
+"UvO-pz-ZIz.text" = "COIN";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "uvU-bw-ou6"; */
 "uvU-bw-ou6.text" = "-";
@@ -1832,32 +1657,26 @@
 /* Class = "UILabel"; text = "COIN"; ObjectID = "v1S-tE-bzk"; */
 "v1S-tE-bzk.text" = "COIN";
 
+/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "V5d-5b-I1c"; */
+"V5d-5b-I1c.normalTitle" = "+ 10";
+
 /* Class = "UILabel"; text = "UnClaimed Incentive"; ObjectID = "v8n-J3-ZRP"; */
 "v8n-J3-ZRP.text" = "UnClaimed Incentive";
 
-/* Class = "UILabel"; text = "11.11"; ObjectID = "vFS-89-uNU"; */
-"vFS-89-uNU.text" = "11.11";
-
-/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "vIT-Ta-27z"; */
-"vIT-Ta-27z.normalTitle" = "+ 10";
-
-/* Class = "UILabel"; text = "Refund To"; ObjectID = "vKv-ll-0Xq"; */
-"vKv-ll-0Xq.text" = "Refund To";
-
-/* Class = "UILabel"; text = "Fee"; ObjectID = "vPl-eJ-3ca"; */
-"vPl-eJ-3ca.text" = "Fee";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "vSa-eY-lP6"; */
-"vSa-eY-lP6.text" = "-";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "vWJ-RQ-3f7"; */
-"vWJ-RQ-3f7.normalTitle" = "Next";
-
-/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "vZf-sd-tql"; */
-"vZf-sd-tql.normalTitle" = "Next";
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "V77-qx-hi9"; */
+"V77-qx-hi9.text" = "ATOM";
 
 /* Class = "UILabel"; text = "Fee"; ObjectID = "vbd-lU-52x"; */
 "vbd-lU-52x.text" = "Fee";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "VD2-pw-peD"; */
+"VD2-pw-peD.text" = "ATOM";
+
+/* Class = "UIButton"; normalTitle = "Type3"; ObjectID = "VDh-Fh-Nna"; */
+"VDh-Fh-Nna.normalTitle" = "Type3";
+
+/* Class = "UILabel"; text = "11.11"; ObjectID = "vFS-89-uNU"; */
+"vFS-89-uNU.text" = "11.11";
 
 /* Class = "UILabel"; text = "COIN"; ObjectID = "vhz-1g-QCj"; */
 "vhz-1g-QCj.text" = "COIN";
@@ -1865,8 +1684,38 @@
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "viJ-IV-R9r"; */
 "viJ-IV-R9r.normalTitle" = "Cancel";
 
+/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "vIT-Ta-27z"; */
+"vIT-Ta-27z.normalTitle" = "+ 10";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "VJ3-Z8-2Kv"; */
+"VJ3-Z8-2Kv.text" = "-";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "Vkf-Tr-7mE"; */
+"Vkf-Tr-7mE.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Refund To"; ObjectID = "vKv-ll-0Xq"; */
+"vKv-ll-0Xq.text" = "Refund To";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Vor-H1-fwv"; */
+"Vor-H1-fwv.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "VOy-PY-fZz"; */
+"VOy-PY-fZz.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "vPl-eJ-3ca"; */
+"vPl-eJ-3ca.text" = "Fee";
+
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "vpY-XX-SZo"; */
 "vpY-XX-SZo.text" = "ATOM";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "vSa-eY-lP6"; */
+"vSa-eY-lP6.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "Vvk-Sp-fKU"; */
+"Vvk-Sp-fKU.normalTitle" = "+ 100";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "vWJ-RQ-3f7"; */
+"vWJ-RQ-3f7.normalTitle" = "Next";
 
 /* Class = "UILabel"; text = "81.23"; ObjectID = "vxc-RK-Ibk"; */
 "vxc-RK-Ibk.text" = "81.23";
@@ -1874,11 +1723,38 @@
 /* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "vy0-yN-T9J"; */
 "vy0-yN-T9J.normalTitle" = "Confirm";
 
+/* Class = "UIButton"; normalTitle = "Confirm"; ObjectID = "Vz3-2l-3xc"; */
+"Vz3-2l-3xc.normalTitle" = "Confirm";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "vZf-sd-tql"; */
+"vZf-sd-tql.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Expected Delivery"; ObjectID = "VZj-O2-IEF"; */
+"VZj-O2-IEF.text" = "Expected Delivery";
+
+/* Class = "UILabel"; text = "COIN"; ObjectID = "W4f-FB-RuP"; */
+"W4f-FB-RuP.text" = "COIN";
+
+/* Class = "UIButton"; normalTitle = "+ 1"; ObjectID = "W4Y-Vs-Jkd"; */
+"W4Y-Vs-Jkd.normalTitle" = "+ 1";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "W6K-ly-5DQ"; */
+"W6K-ly-5DQ.text" = "ATOM";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "w8U-fr-piW"; */
 "w8U-fr-piW.normalTitle" = "Back";
 
+/* Class = "UILabel"; text = "21312"; ObjectID = "WAC-zm-EDp"; */
+"WAC-zm-EDp.text" = "21312";
+
 /* Class = "UIButton"; normalTitle = " Recent"; ObjectID = "wCC-Cm-jBy"; */
 "wCC-Cm-jBy.normalTitle" = " Recent";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "WCe-JE-8f3"; */
+"WCe-JE-8f3.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Memo"; ObjectID = "wdS-35-Z75"; */
+"wdS-35-Z75.text" = "Memo";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "wGh-fn-1xE"; */
 "wGh-fn-1xE.text" = "-";
@@ -1886,20 +1762,47 @@
 /* Class = "UILabel"; text = "Receivable"; ObjectID = "wKJ-AF-gad"; */
 "wKJ-AF-gad.text" = "Receivable";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "WlX-RV-1Xe"; */
+"WlX-RV-1Xe.text" = "-";
+
+/* Class = "UILabel"; text = "Repayment Amount"; ObjectID = "WMw-tG-gxL"; */
+"WMw-tG-gxL.text" = "Repayment Amount";
+
+/* Class = "UIButton"; normalTitle = "+ 10"; ObjectID = "WnD-h9-7eW"; */
+"WnD-h9-7eW.normalTitle" = "+ 10";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "WqF-2V-7jY"; */
+"WqF-2V-7jY.text" = "ATOM";
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Wrm-Ux-zPh"; */
+"Wrm-Ux-zPh.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Proposer"; ObjectID = "Ws7-bT-FXg"; */
+"Ws7-bT-FXg.text" = "Proposer";
+
+/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "WSK-Eh-S5c"; */
+"WSK-Eh-S5c.normalTitle" = "+ 100";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "wWM-pk-ofU"; */
 "wWM-pk-ofU.text" = "-";
 
 /* Class = "UILabel"; text = "Fee"; ObjectID = "wXd-Xn-Bvo"; */
 "wXd-Xn-Bvo.text" = "Fee";
 
-/* Class = "UILabel"; text = "Memo"; ObjectID = "wdS-35-Z75"; */
-"wdS-35-Z75.text" = "Memo";
+/* Class = "UILabel"; text = "Remaining Available"; ObjectID = "WxI-rb-Fvi"; */
+"WxI-rb-Fvi.text" = "Remaining Available";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "WYk-ag-3LV"; */
+"WYk-ag-3LV.text" = "ATOM";
 
 /* Class = "UILabel"; text = "Deposit Amount"; ObjectID = "wzm-ln-RpC"; */
 "wzm-ln-RpC.text" = "Deposit Amount";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "x1P-p1-UjW"; */
 "x1P-p1-UjW.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "X2Q-Nk-MT6"; */
+"X2Q-Nk-MT6.normalTitle" = "Next";
 
 /* Class = "UIButton"; normalTitle = "Half"; ObjectID = "x7I-nS-13z"; */
 "x7I-nS-13z.normalTitle" = "Half";
@@ -1910,11 +1813,20 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "x8e-7Q-qfv"; */
 "x8e-7Q-qfv.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "XcY-eI-FSs"; */
+"XcY-eI-FSs.text" = "-";
+
 /* Class = "UILabel"; text = "0.000500"; ObjectID = "xE1-cJ-uvV"; */
 "xE1-cJ-uvV.text" = "0.000500";
 
-/* Class = "UILabel"; text = "*starname service supported."; ObjectID = "xQD-Jk-TJF"; */
-"xQD-Jk-TJF.text" = "*starname service supported.";
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "Xgv-fi-3Gz"; */
+"Xgv-fi-3Gz.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "Xjw-ph-Lfs"; */
+"Xjw-ph-Lfs.text" = "ATOM";
+
+/* Class = "UILabel"; text = "Deposit Type"; ObjectID = "Xkd-TK-q9m"; */
+"Xkd-TK-q9m.text" = "Deposit Type";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "xkz-U9-W7I"; */
 "xkz-U9-W7I.normalTitle" = "Back";
@@ -1922,17 +1834,62 @@
 /* Class = "UILabel"; text = "-"; ObjectID = "xmz-Yi-G6S"; */
 "xmz-Yi-G6S.text" = "-";
 
+/* Class = "UILabel"; text = "~"; ObjectID = "Xnk-DQ-e4v"; */
+"Xnk-DQ-e4v.text" = "~";
+
+/* Class = "UILabel"; text = "gas amount"; ObjectID = "Xnk-sp-TBa"; */
+"Xnk-sp-TBa.text" = "gas amount";
+
 /* Class = "UILabel"; text = "Risk Score"; ObjectID = "xqd-FR-8DD"; */
 "xqd-FR-8DD.text" = "Risk Score";
+
+/* Class = "UILabel"; text = "*starname service supported."; ObjectID = "xQD-Jk-TJF"; */
+"xQD-Jk-TJF.text" = "*starname service supported.";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "xsr-MQ-4LC"; */
 "xsr-MQ-4LC.text" = "-";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "XWq-F1-hmd"; */
+"XWq-F1-hmd.text" = "-";
+
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "y5z-cB-2Ka"; */
 "y5z-cB-2Ka.normalTitle" = "Back";
 
+/* Class = "UIButton"; normalTitle = "Half"; ObjectID = "YaR-G1-hyE"; */
+"YaR-G1-hyE.normalTitle" = "Half";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "yDe-IV-YhU"; */
 "yDe-IV-YhU.text" = "-";
+
+/* Class = "UILabel"; text = "Delegate To"; ObjectID = "Yf6-To-DVw"; */
+"Yf6-To-DVw.text" = "Delegate To";
+
+/* Class = "UILabel"; text = "Expected Delegation"; ObjectID = "Yfe-CU-rml"; */
+"Yfe-CU-rml.text" = "Expected Delegation";
+
+/* Class = "UILabel"; text = "KAVA"; ObjectID = "Yfi-Xi-oSj"; */
+"Yfi-Xi-oSj.text" = "KAVA";
+
+/* Class = "UILabel"; text = "TOKT"; ObjectID = "YIo-wA-VEf"; */
+"YIo-wA-VEf.text" = "TOKT";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "YKs-xm-lkw"; */
+"YKs-xm-lkw.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "YES"; ObjectID = "YLr-M9-bAS"; */
+"YLr-M9-bAS.normalTitle" = "YES";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Ym4-5H-0AT"; */
+"Ym4-5H-0AT.text" = "-";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "YMP-FT-0Lb"; */
+"YMP-FT-0Lb.text" = "Fee";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "YNl-O4-6v7"; */
+"YNl-O4-6v7.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Yp7-cs-WTt"; */
+"Yp7-cs-WTt.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "NO"; ObjectID = "yPX-29-so4"; */
 "yPX-29-so4.normalTitle" = "NO";
@@ -1946,41 +1903,32 @@
 /* Class = "UILabel"; text = "Memo"; ObjectID = "z1d-UW-vZ1"; */
 "z1d-UW-vZ1.text" = "Memo";
 
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "Z4j-xq-UUN"; */
+"Z4j-xq-UUN.text" = "ATOM";
+
 /* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "z9l-cV-uUK"; */
 "z9l-cV-uUK.normalTitle" = " QR Scan";
 
 /* Class = "UILabel"; text = "Validators"; ObjectID = "zBI-bD-V2Z"; */
 "zBI-bD-V2Z.text" = "Validators";
 
+/* Class = "UILabel"; text = "-"; ObjectID = "zcu-OB-o6V"; */
+"zcu-OB-o6V.text" = "-";
+
+/* Class = "UIButton"; normalTitle = " Paste"; ObjectID = "Zdf-Zt-L83"; */
+"Zdf-Zt-L83.normalTitle" = " Paste";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Zfi-Lp-ccV"; */
+"Zfi-Lp-ccV.normalTitle" = "Back";
+
 /* Class = "UILabel"; text = "-"; ObjectID = "zFS-bl-Ntw"; */
 "zFS-bl-Ntw.text" = "-";
 
-/* Class = "UILabel"; text = "Refund Amount"; ObjectID = "zKd-oe-C5E"; */
-"zKd-oe-C5E.text" = "Refund Amount";
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "Zfw-20-wS9"; */
+"Zfw-20-wS9.normalTitle" = "Next";
 
-/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "zLR-h7-KgV"; */
-"zLR-h7-KgV.normalTitle" = "Back";
-
-/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "zPJ-bi-gWY"; */
-"zPJ-bi-gWY.normalTitle" = "3/4";
-
-/* Class = "UILabel"; text = "ATOM"; ObjectID = "zPc-4q-u1r"; */
-"zPc-4q-u1r.text" = "ATOM";
-
-/* Class = "UILabel"; text = "~"; ObjectID = "zTh-JH-8fO"; */
-"zTh-JH-8fO.text" = "~";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "zVF-zE-oiR"; */
-"zVF-zE-oiR.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "zVi-Do-p21"; */
-"zVi-Do-p21.text" = "-";
-
-/* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "zYs-yc-sJp"; */
-"zYs-yc-sJp.normalTitle" = " QR Scan";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "zcu-OB-o6V"; */
-"zcu-OB-o6V.text" = "-";
+/* Class = "UIButton"; normalTitle = "+ 100"; ObjectID = "Zh4-bO-xzi"; */
+"Zh4-bO-xzi.normalTitle" = "+ 100";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "zhE-jR-OAb"; */
 "zhE-jR-OAb.normalTitle" = "Next";
@@ -1991,8 +1939,60 @@
 /* Class = "UILabel"; text = "Cannot repay partially"; ObjectID = "zjX-Gd-ZVS"; */
 "zjX-Gd-ZVS.text" = "Cannot repay partially";
 
+/* Class = "UILabel"; text = "Refund Amount"; ObjectID = "zKd-oe-C5E"; */
+"zKd-oe-C5E.text" = "Refund Amount";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ZkI-F7-XrA"; */
+"ZkI-F7-XrA.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "zLR-h7-KgV"; */
+"zLR-h7-KgV.normalTitle" = "Back";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "zPc-4q-u1r"; */
+"zPc-4q-u1r.text" = "ATOM";
+
+/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "zPJ-bi-gWY"; */
+"zPJ-bi-gWY.normalTitle" = "3/4";
+
+/* Class = "UILabel"; text = "Adjusted Total Collateral"; ObjectID = "Zqq-uh-MZj"; */
+"Zqq-uh-MZj.text" = "Adjusted Total Collateral";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ZrS-kX-RJ2"; */
+"ZrS-kX-RJ2.text" = "-";
+
+/* Class = "UIButton"; normalTitle = "Max"; ObjectID = "Zsu-xk-uwx"; */
+"Zsu-xk-uwx.normalTitle" = "Max";
+
+/* Class = "UIButton"; normalTitle = "3/4"; ObjectID = "ZTC-aa-UPD"; */
+"ZTC-aa-UPD.normalTitle" = "3/4";
+
+/* Class = "UILabel"; text = "~"; ObjectID = "zTh-JH-8fO"; */
+"zTh-JH-8fO.text" = "~";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "zVF-zE-oiR"; */
+"zVF-zE-oiR.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "zVi-Do-p21"; */
+"zVi-Do-p21.text" = "-";
+
+/* Class = "UILabel"; text = "Redelegate To"; ObjectID = "ZVV-Zg-gzq"; */
+"ZVV-Zg-gzq.text" = "Redelegate To";
+
 /* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "zxj-8a-Kpr"; */
 "zxj-8a-Kpr.normalTitle" = "Cancel";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "zyf-5F-SXB"; */
 "zyf-5F-SXB.text" = "-";
+
+/* Class = "UIButton"; normalTitle = " QR Scan"; ObjectID = "zYs-yc-sJp"; */
+"zYs-yc-sJp.normalTitle" = " QR Scan";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ZZ6-T3-5ld"; */
+"ZZ6-T3-5ld.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ZZc-Yf-zfG"; */
+"ZZc-Yf-zfG.text" = "-";
+
+/* Class = "UILabel"; text = "TOKT"; ObjectID = "ZzN-8Q-MA8"; */
+"ZzN-8Q-MA8.text" = "TOKT";
+

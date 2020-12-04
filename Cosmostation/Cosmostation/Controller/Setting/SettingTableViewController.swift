@@ -87,14 +87,18 @@ class SettingTableViewController: UITableViewController, PasswordViewDelegate {
             
         } else if (indexPath.section == 2) {
             if(indexPath.row == 0) {
-                if(Locale.current.languageCode == "ko") {
-                    guard let url = URL(string: "https://guide.cosmostation.io/app_wallet_ko.html") else { return }
+//                if(Locale.current.languageCode == "ko") {
+//                    guard let url = URL(string: "https://dippernetwork.com") else { return }
+//                    self.onShowSafariWeb(url)
+                    
+//                } else if(Locale.current.languageCode == "zh") {
+                    guard let url = URL(string: "https://dippernetwork.com") else { return }
                     self.onShowSafariWeb(url)
                     
-                } else {
-                    guard let url = URL(string: "https://guide.cosmostation.io/app_wallet_en.html") else { return }
-                    self.onShowSafariWeb(url)
-                }
+//                } else {
+//                    guard let url = URL(string: "https://guide.cosmostation.io/app_wallet_en.html") else { return }
+//                    self.onShowSafariWeb(url)
+//                }
                 
             } else if(indexPath.row == 1) {
                 let url = URL(string: "tg://resolve?domain=DipperNetworkOfficial")
@@ -194,10 +198,10 @@ class SettingTableViewController: UITableViewController, PasswordViewDelegate {
             } else if(indexPath.row == 2) {
                 //TODO by captain
 //                let urlAppStore = URL(string: "itms-apps://itunes.apple.com/app/id1459830339")
-                let urlAppStore = URL(string: "")
-                if(UIApplication.shared.canOpenURL(urlAppStore!)) {
-                    UIApplication.shared.open(urlAppStore!, options: [:], completionHandler: nil)
-                }
+//                let urlAppStore = URL(string: "")
+//                if(UIApplication.shared.canOpenURL(urlAppStore!)) {
+//                    UIApplication.shared.open(urlAppStore!, options: [:], completionHandler: nil)
+//                }
             }
         }
     }

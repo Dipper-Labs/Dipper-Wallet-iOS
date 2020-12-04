@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "--"; ObjectID = "0Qm-3W-aRx"; */
 "0Qm-3W-aRx.text" = "--";
 
@@ -17,20 +16,11 @@
 /* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "AC0-bI-9KO"; */
 "AC0-bI-9KO.text" = "Harvest Deposited";
 
-/* Class = "UILabel"; text = "--"; ObjectID = "Asa-LF-gCH"; */
-"Asa-LF-gCH.text" = "--";
-
-/* Class = "UILabel"; text = "Unbonding"; ObjectID = "LUH-bd-Cqb"; */
-"LUH-bd-Cqb.text" = "Unbonding";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "N0e-zp-yR4"; */
-"N0e-zp-yR4.text" = "--";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "Nvy-HQ-oFM"; */
-"Nvy-HQ-oFM.text" = "--";
-
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "aKW-Uu-NnW"; */
 "aKW-Uu-NnW.normalTitle" = "  Send";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Asa-LF-gCH"; */
+"Asa-LF-gCH.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "bWg-Sg-Eir"; */
 "bWg-Sg-Eir.normalTitle" = "  Receive";
@@ -41,8 +31,17 @@
 /* Class = "UILabel"; text = "--"; ObjectID = "hn2-dI-ttp"; */
 "hn2-dI-ttp.text" = "--";
 
+/* Class = "UILabel"; text = "Unbonding"; ObjectID = "LUH-bd-Cqb"; */
+"LUH-bd-Cqb.text" = "Unbonding";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "N0e-zp-yR4"; */
+"N0e-zp-yR4.text" = "--";
+
 /* Class = "UILabel"; text = "--"; ObjectID = "nNa-gR-dJt"; */
 "nNa-gR-dJt.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "Nvy-HQ-oFM"; */
+"Nvy-HQ-oFM.text" = "--";
 
 /* Class = "UILabel"; text = "KAVA"; ObjectID = "rg7-wY-dId"; */
 "rg7-wY-dId.text" = "KAVA";
@@ -55,3 +54,4 @@
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "v85-zF-AJg"; */
 "v85-zF-AJg.text" = "Available";
+

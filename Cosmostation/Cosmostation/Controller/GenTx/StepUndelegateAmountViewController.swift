@@ -72,18 +72,6 @@ class StepUndelegateAmountViewController: BaseViewController, UITextFieldDelegat
                     }
                 }
                 
-            } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
-                if let index = text.range(of: ".")?.upperBound {
-                    if(text.substring(from: index).count > 17 && range.length == 0) {
-                        return false
-                    }
-                }
-                
-                if let index = text.range(of: ",")?.upperBound {
-                    if(text.substring(from: index).count > 17 && range.length == 0) {
-                        return false
-                    }
-                }
             } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
                 if let index = text.range(of: ".")?.upperBound {
                     if(text.substring(from: index).count > 11 && range.length == 0) {
@@ -93,6 +81,18 @@ class StepUndelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 
                 if let index = text.range(of: ",")?.upperBound {
                     if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
+            } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
+                if let index = text.range(of: ".")?.upperBound {
+                    if(text.substring(from: index).count > 17 && range.length == 0) {
+                        return false
+                    }
+                }
+                
+                if let index = text.range(of: ",")?.upperBound {
+                    if(text.substring(from: index).count > 17 && range.length == 0) {
                         return false
                     }
                 }

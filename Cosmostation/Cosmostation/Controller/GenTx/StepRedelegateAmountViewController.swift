@@ -32,6 +32,9 @@ class StepRedelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             mDpDecimal = 6
             availableAmountLabel.attributedText = WUtils.displayAmount2(userDelegated.stringValue, availableAmountLabel.font, 6, mDpDecimal)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            mDpDecimal = 12
+            availableAmountLabel.attributedText = WUtils.displayAmount2(userDelegated.stringValue, availableAmountLabel.font, 12, mDpDecimal)
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mDpDecimal = 18
             availableAmountLabel.attributedText = WUtils.displayAmount2(userDelegated.stringValue, availableAmountLabel.font, 18, mDpDecimal)
@@ -70,6 +73,18 @@ class StepRedelegateAmountViewController: BaseViewController, UITextFieldDelegat
                     }
                 }
                 
+            } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+                if let index = text.range(of: ".")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
+                
+                if let index = text.range(of: ",")?.upperBound {
+                    if(text.substring(from: index).count > 11 && range.length == 0) {
+                        return false
+                    }
+                }
             } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
                 if let index = text.range(of: ".")?.upperBound {
                     if(text.substring(from: index).count > 17 && range.length == 0) {
@@ -126,6 +141,10 @@ class StepRedelegateAmountViewController: BaseViewController, UITextFieldDelegat
                 pageHolderVC.chainType! == ChainType.BAND_MAIN || pageHolderVC.chainType! == ChainType.SECRET_MAIN || pageHolderVC.chainType! == ChainType.IOV_MAIN ||
                 pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             if (userInput.multiplying(by: 1000000).compare(userDelegated).rawValue > 0) {
+                return false
+            }
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            if (userInput.multiplying(by: 1000000000000).compare(userDelegated).rawValue > 0) {
                 return false
             }
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {

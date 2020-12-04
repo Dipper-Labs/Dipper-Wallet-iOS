@@ -112,8 +112,11 @@ class WKey {
     static func getHDKeyDpAddressWithPath(_ masterKey:HDPrivateKey, path:Int, chain:ChainType, _ newbip:Bool) -> String {
         do {
             var childKey:HDPrivateKey?
-            if (chain == ChainType.COSMOS_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST  || chain == ChainType.IRIS_MAIN || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
+            if (chain == ChainType.COSMOS_MAIN || chain == ChainType.IRIS_MAIN || chain == ChainType.CERTIK_MAIN || chain == ChainType.CERTIK_TEST) {
                 childKey = try masterKey.derived(at: 44, hardened: true).derived(at: 118, hardened: true).derived(at: 0, hardened: true).derived(at: 0).derived(at: UInt32(path))
+                
+            } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
+                childKey = try masterKey.derived(at: 44, hardened: true).derived(at: 925, hardened: true).derived(at: 0, hardened: true).derived(at: 0).derived(at: UInt32(path))
                 
             } else if (chain == ChainType.BINANCE_MAIN || chain == ChainType.BINANCE_TEST) {
                 childKey = try masterKey.derived(at: 44, hardened: true).derived(at: 714, hardened: true).derived(at: 0, hardened: true).derived(at: 0).derived(at: UInt32(path))

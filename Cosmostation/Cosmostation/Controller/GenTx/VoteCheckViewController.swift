@@ -68,6 +68,10 @@ class VoteCheckViewController: BaseViewController, PasswordViewDelegate {
             mOpinion.text = pageHolderVC.mVoteOpinion
             mFeeAmount.attributedText = WUtils.displayAmount2(feeAmount.stringValue, mFeeAmount.font, 6, 6)
             
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN) {
+            mOpinion.text = pageHolderVC.mVoteOpinion
+            mFeeAmount.attributedText = WUtils.displayAmount2(feeAmount.stringValue, mFeeAmount.font, 12, 12)
+            
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             mOpinion.text = pageHolderVC.mVoteOpinion
             mFeeAmount.attributedText = WUtils.displayAmount2(feeAmount.stringValue, mFeeAmount.font, 18, 18)

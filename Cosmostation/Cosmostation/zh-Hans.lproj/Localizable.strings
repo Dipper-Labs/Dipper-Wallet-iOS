@@ -1,609 +1,1723 @@
-/* 
-  Localizable.strings
+/* (No Comment) */
+"add_address_hint" = "输入地址.";
+
+/* (No Comment) */
+"add_address_msg" = "在监视模式下，您可以检查账户状态。\n要进行交易，可以在以后添加私人信息.";
+
+/* (No Comment) */
+"add_mnemonic" = "添加助记词";
+
+/* (No Comment) */
+"address_copied" = "地址已复制";
+
+/* (No Comment) */
+"after_liquidation_price_format" = "预期清算%@价格";
+
+/* (No Comment) */
+"alert_msg_no_private_key" = "该账户只有使用监视模式的地址。\n您需要添加助记词以生成交易";
+
+/* (No Comment) */
+"alert_title_no_private_key" = "没有私钥";
+
+/* (No Comment) */
+"amount" = "账户";
+
+/* (No Comment) */
+"app_locked" = "应用已锁定";
+
+/* (No Comment) */
+"before_liquidation_price_format" = "初始清算%@价格";
+
+/* (No Comment) */
+"bep3_status_completed" = "接收完成（要求）";
+
+/* (No Comment) */
+"bep3_status_expired" = "可退换";
+
+/* (No Comment) */
+"bep3_status_null" = "未知";
+
+/* (No Comment) */
+"bep3_status_open" = "等待索偿";
+
+/* (No Comment) */
+"bep3_status_refunded" = "已退款";
+
+/* (No Comment) */
+"binanace_explorer" = "币安搜索";
+
+/* (No Comment) */
+"buy_atom" = "  购买ATOM";
+
+/* (No Comment) */
+"buy_band" = "  购买BAND";
+
+/* (No Comment) */
+"buy_bnb" = "  购买BNB";
+
+/* (No Comment) */
+"buy_kava" = "  购买KAVA";
+
+/* (No Comment) */
+"buy_select_fiat_msg" = "请选择一种货币进行购买.";
+
+/* (No Comment) */
+"buy_select_fiat_title" = "选择许可";
+
+/* (No Comment) */
+"buy_without_key_msg" = "购买后，您的token奖被发送到此钱包。您目前没有该钱包的授权，但是您想继续购买吗？";
+
+/* (No Comment) */
+"buy_without_key_title" = "没有私钥";
+
+/* (No Comment) */
+"cancel" = "取消";
+
+/* (No Comment) */
+"chain_title_band" = "Band 主网";
+
+/* (No Comment) */
+"chain_title_bnb" = "Binance 主网";
+
+/* (No Comment) */
+"chain_title_certik" = "Certik 主网";
+
+/* (No Comment) */
+"chain_title_certik_test" = "Certik 测试网";
+
+/* (No Comment) */
+"chain_title_cosmos" = "Cosmos 主网";
+
+/* (No Comment) */
+"chain_title_dipper" = "Dipper 主网";
+
+/* (No Comment) */
+"chain_title_iov" = "Starname 主网";
+
+/* (No Comment) */
+"chain_title_iov_test" = "Starname 测试网";
+
+/* (No Comment) */
+"chain_title_iris" = "Iris 主网";
+
+/* (No Comment) */
+"chain_title_kava" = "Kava 主网";
+
+/* (No Comment) */
+"chain_title_kava_test" = "Kava 测试网";
+
+/* (No Comment) */
+"chain_title_okex_test" = "Okex 测试网";
+
+/* (No Comment) */
+"chain_title_secret" = "Secret 主网";
+
+/* (No Comment) */
+"chain_title_test_bnb" = "Binance 测试网";
+
+/* (No Comment) */
+"chain_title_test_dipper" = "Dipper 测试网";
+
+/* (No Comment) */
+"change_wallet_name" = "改变钱包名称";
+
+/* (No Comment) */
+"check_mnemonic" = "检查助记词";
+
+/* (No Comment) */
+"clear_all" = "清除所有";
+
+/* (No Comment) */
+"close" = "关闭";
+
+/* (No Comment) */
+"coingecko" = "CoinGecko";
+
+/* (No Comment) */
+"coinmarketcap" = "CoinMarket Cap";
+
+/* (No Comment) */
+"collateral_value_format" = "我的%@抵押品价值";
+
+/* (No Comment) */
+"confirm" = "确认";
+
+/* (No Comment) */
+"continue" = "继续";
+
+/* (No Comment) */
+"copy" = "复制";
+
+/* (No Comment) */
+"creat_cdp_step_0" = "存入抵押品以借入USDX";
+
+/* (No Comment) */
+"creat_cdp_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"creat_cdp_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"creat_cdp_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"create_wallet" = "创建钱包";
+
+/* (No Comment) */
+"currency_btc" = "BTC";
+
+/* (No Comment) */
+"currency_btc_symbol" = "₿";
+
+/* (No Comment) */
+"currency_cny" = "CNY";
+
+/* (No Comment) */
+"currency_cny_symbol" = "¥";
+
+/* (No Comment) */
+"currency_eur" = "EUR";
+
+/* (No Comment) */
+"currency_eur_symbol" = "€";
+
+/* (No Comment) */
+"currency_fetch_failed" = "货币提取失败";
+
+/* (No Comment) */
+"currency_fetch_success" = "币种已经更新";
+
+/* (No Comment) */
+"currency_jpy" = "JPY";
+
+/* (No Comment) */
+"currency_jpy_symbol" = "¥";
+
+/* (No Comment) */
+"currency_krw" = "KRW";
+
+/* (No Comment) */
+"currency_krw_symbol" = "₩";
+
+/* (No Comment) */
+"currency_usd" = "USD";
+
+/* (No Comment) */
+"currency_usd_symbol" = "$";
+
+/* (No Comment) */
+"current_price_format" = "目前的%@价格";
+
+/* (No Comment) */
+"date_format" = "MMM d, yyyy HH:mm:ss";
+
+/* (No Comment) */
+"date_format2" = "MMM d, yyyy";
+
+/* (No Comment) */
+"debt_value_format" = "我的%@债务价值";
+
+/* (No Comment) */
+"delegate_step_1" = "输入授权金额";
+
+/* (No Comment) */
+"delegate_step_2" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"delegate_step_3" = "选择交易费";
+
+/* (No Comment) */
+"delegate_step_4" = "检查委托详情信息";
+
+/* (No Comment) */
+"delete" = "删除";
+
+/* (No Comment) */
+"delete_wallet" = "删除钱包";
+
+/* (No Comment) */
+"delete_wallet_msg" = "有关此钱包的所有信息将被删除\n如果您不备份助记词将无法再找到它";
+
+/* (No Comment) */
+"deposit_cdp_step_0" = "输入存款金额";
+
+/* (No Comment) */
+"deposit_cdp_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"deposit_cdp_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"deposit_cdp_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"deposit_harvest_step_0" = "输入收成保证金";
+
+/* (No Comment) */
+"deposit_harvest_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"deposit_harvest_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"deposit_harvest_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"disconnected" = "断线";
+
+/* (No Comment) */
+"drawdebt_cdp_step_0" = "输入贷款金额";
+
+/* (No Comment) */
+"drawdebt_cdp_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"drawdebt_cdp_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"drawdebt_cdp_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"error_access_camera_msg" = "请求相机访问扫描QR码，请通过设置提供摄像机的访问权限";
+
+/* (No Comment) */
+"error_access_camera_title" = "摄像头访问";
+
+/* (No Comment) */
+"error_already_address_added_chain" = "该链已列出名称服务";
+
+/* (No Comment) */
+"error_already_registered_account" = "此账户已经被注册，请为账户使用其他文字";
+
+/* (No Comment) */
+"error_already_registered_domain" = "该域名已经被注册，请为域使用其他文本";
+
+/* (No Comment) */
+"error_already_vote" = "已经投票";
+
+/* (No Comment) */
+"error_amount" = "请输入有效金额.";
+
+/* (No Comment) */
+"error_bep3_supply_full" = "交换已经达到其网络容量";
+
+/* (No Comment) */
+"error_bep3_swap_temporary_disable" = "Bep3 交换中继器被暂时禁用.";
+
+/* (No Comment) */
+"error_bep3_under_min_amount" = "链间发送需要超过 0.00001 的余额";
+
+/* (No Comment) */
+"error_bnb_mini_amount" = " BEP8交易所需的最低金额至少一个TOKEN如果您的余额少于1个TOKEN，则必须发送全部金额";
+
+/* (No Comment) */
+"error_can_not_bep3_account_msg" = "为了接收链间转移，您必须创建一个有效的（带有私钥）%@账户，并存入至少0.000375BNB作为索赔交易费";
+
+/* (No Comment) */
+"error_can_not_bep3_account_msg2" = "为了接收链间转移，您必须创建一个有效的（带有私钥）%@账户钱包.";
+
+/* (No Comment) */
+"error_can_not_draw_debt" = "现在不能再贷款.";
+
+/* (No Comment) */
+"error_can_not_extend_close_domain" = "关闭类型域不支持续订";
+
+/* (No Comment) */
+"error_can_not_repay" = "现在无法还款，您需要更多的USDX才能还款";
+
+/* (No Comment) */
+"error_cannot_delete_open_domain" = "无法删除开放域";
+
+/* (No Comment) */
+"error_circuit_breaker" = "现在断路";
+
+/* (No Comment) */
+"error_disable" = "正在维修";
+
+/* (No Comment) */
+"error_disable_msg" = "我们目前正在维护中，请查看我们的社区频道以获取更多信息";
+
+/* (No Comment) */
+"error_duple_address" = "此地址已导入.";
+
+/* (No Comment) */
+"error_invalid_account_format" = "无效的账户格式，请为账户插入其他文字";
+
+/* (No Comment) */
+"error_invalid_address" = "地址无效请再次检查";
+
+/* (No Comment) */
+"error_invalid_address_eth_target" = "无效的ETH地址.";
+
+/* (No Comment) */
+"error_invalid_address_or_pubkey" = "地址无效请再次检查.";
+
+/* (No Comment) */
+"error_invalid_domain_format" = "无效的域格式，请为域插入另外一个文本";
+
+/* (No Comment) */
+"error_invalid_password" = "无效的PIN码";
+
+/* (No Comment) */
+"error_invalide_starname" = "未注册star name.";
+
+/* (No Comment) */
+"error_iris_token_yet" = "Iris token发送将很快支持";
+
+/* (No Comment) */
+"error_jailded_delegate" = "不支持委派的验证器.";
+
+/* (No Comment) */
+"error_kava_vesting_account" = "归属账户。请使用客户端进行正确的发送.";
+
+/* (No Comment) */
+"error_less_than_min_deposit" = "少于最低存款额.";
+
+/* (No Comment) */
+"error_less_than_min_principal" = "少于最低贷款额";
+
+/* (No Comment) */
+"error_max_30_validator" = "您可以选择最多30个验证者";
+
+/* (No Comment) */
+"error_max_account_over" = "最多5个账户.";
+
+/* (No Comment) */
+"error_memo" = "请输入验证备忘录.";
+
+/* (No Comment) */
+"error_min_1_validator" = "请选择多个验证者.";
+
+/* (No Comment) */
+"error_network" = "网络错误";
+
+/* (No Comment) */
+"error_network_msg" = "无法连接到网络，请在几分钟后重试";
+
+/* (No Comment) */
+"error_no_address_added" = "请输入至少一个地址";
+
+/* (No Comment) */
+"error_no_available_to_deposit" = "没有资产可存放";
+
+/* (No Comment) */
+"error_no_bonding_no_vote" = "该提案只能对代表投票.";
+
+/* (No Comment) */
+"error_no_clipboard" = "剪切板无文字.";
+
+/* (No Comment) */
+"error_no_delegated_amount" = "无委托金额.";
+
+/* (No Comment) */
+"error_no_deposited_asset" = "无存放资产.";
+
+/* (No Comment) */
+"error_no_harvest_reward_to_claim" = "没有收获奖励要求";
+
+/* (No Comment) */
+"error_no_incentive_to_claim" = "无法要求索赔";
+
+/* (No Comment) */
+"error_no_mattched_starname" = "有效 starname, 但是此链没有匹配地址.";
+
+/* (No Comment) */
+"error_no_more_debt_kava" = "无法发行USDX，已经达到最大网络USDX容量.";
+
+/* (No Comment) */
+"error_no_more_faucet" = "已经有足够的测试coin.";
+
+/* (No Comment) */
+"error_no_more_today" = "今天没有了.";
+
+/* (No Comment) */
+"error_no_opinion" = "请选择您的建议.";
+
+/* (No Comment) */
+"error_no_recipient_account" = "请选择要接收的账户";
+
+/* (No Comment) */
+"error_no_telegram" = "未安装电报，请安装以继续下一步.";
+
+/* (No Comment) */
+"error_no_wallet_this_chain" = "不是这个链的钱包.";
+
+/* (No Comment) */
+"error_not_enough_available" = "可用金额不足.";
+
+/* (No Comment) */
+"error_not_enough_balance_to_send" = "余额不足，无法发送.";
+
+/* (No Comment) */
+"error_not_enough_delegable" = "余额不足以委托.";
+
+/* (No Comment) */
+"error_not_enough_fee" = "费用余额不足.";
+
+/* (No Comment) */
+"error_not_enough_starname_fee" = "没有足够的余额来支付starname费用.";
+
+/* (No Comment) */
+"error_not_enough_to_balance" = "余额不足.";
+
+/* (No Comment) */
+"error_not_enough_to_deposit" = "余额不足无法存入.";
+
+/* (No Comment) */
+"error_not_enough_to_withdraw" = "存款不出无法提取.";
+
+/* (No Comment) */
+"error_not_enought_deposit_asset" = "资金不足无法存入";
+
+/* (No Comment) */
+"error_not_enought_principal_asset" = "USDX不足以偿还.";
+
+/* (No Comment) */
+"error_not_enought_withdraw_asset" = "现在无法提取抵押品.";
+
+/* (No Comment) */
+"error_not_redelegate" = "没有可以重新委托的.";
+
+/* (No Comment) */
+"error_not_reward" = "没有足够的报酬要求.";
+
+/* (No Comment) */
+"error_not_support_cosmostation" = "不支持Cosmostaion钱包.";
+
+/* (No Comment) */
+"error_not_undelegate" = "没什么可以删除的.";
+
+/* (No Comment) */
+"error_not_voting_not" = "现在无法投票.";
+
+/* (No Comment) */
+"error_not_voting_period" = "非投票期间.";
+
+/* (No Comment) */
+"error_not_yet" = "快来了";
+
+/* (No Comment) */
+"error_only_deposit_can_vote" = "没有存款金额，先存款";
+
+/* (No Comment) */
+"error_only_fee_with_atom" = "现在仅支持收费的ATOM.";
+
+/* (No Comment) */
+"error_password_fail" = "PIN码不相同，请再次初始化PIN码";
+
+/* (No Comment) */
+"error_recover_mnemonic" = "请输入验证助记词.";
+
+/* (No Comment) */
+"error_redelegate_cnt_over" = "超过最大重新授权计数，选择另外一个验证器.";
+
+/* (No Comment) */
+"error_redelegate_no_to_address" = "请选择新的验证者以重新授权";
+
+/* (No Comment) */
+"error_redelegation_limitted" = "您已在系统设置的过去一定时期内重新授权给该验证器";
+
+/* (No Comment) */
+"error_reward_address_changed_msg" = "此账户已更改其奖励地址。\n奖励地址重置为自己后，您可以使用用户重新投资功能";
+
+/* (No Comment) */
+"error_reward_address_changed_title" = "奖励地址已更改";
+
+/* (No Comment) */
+"error_same_reward_address" = "此地址已被注册为您的索偿奖励地址.";
+
+/* (No Comment) */
+"error_self_send" = "不支持自发送.";
+
+/* (No Comment) */
+"error_send_disable" = "Token转移已锁定.";
+
+/* (No Comment) */
+"error_starname_self_send" = "验证 starname, 但不支持自动发送.";
+
+/* (No Comment) */
+"error_support_soon" = "尽快支持!";
+
+/* (No Comment) */
+"error_unbonding_count_over" = "超出最大未授权数量";
+
+/* (No Comment) */
+"error_wasting_fee" = "费用大于奖励，token将被浪费!";
+
+/* (No Comment) */
+"faceID" = "面部ID";
+
+/* (No Comment) */
+"fee_description_msg_0" = "只有少数验证器会处理此交易，最低交易费用设置为0.000001 ATOM或者以下的验证者必须提出一个阻止程序，以便将改交易包括在内。取决于您发送交易时哪个验证者提议该区块，将交易反映在区块链上可能会有延迟。最低交易费用是每个验证者设置的值。如果验证者的节点交易费用设置的较高，则意味着用户需要支付更高的交易费用，才能将交易包括在验证者提议的区块中。当前接受该交易费用的验证者：Polychain Labs, jackzampolin, Forbole, Cryptium Labs, BouBounNode";
+
+/* (No Comment) */
+"fee_description_msg_1" = "此Cosmostation和其他验证程序将以最低的交易费率设置小于或者等于0.0025的方式处理此交易。取决于您发送交易时，哪个验证者提议该区块，将交易反映在区块上可能会有所延迟。最低交易费用是每个验证者设置的值。如果验证者节点设置费用较高，则意味着用户需要更高的交易费用，才能将交易包括在验证者建议的区块中。当前接受此交易费用的验证者：Cosmostation,  Polychain Labs, jackzampolin, Forbole, Cryptium Labs, BouBounNode";
+
+/* (No Comment) */
+"fee_description_msg_2" = "大多数验证者的最低交易费率都高于或者等于0.025。大多数验证器将处理此交易。因此，当您使用0.025的交易费率时，您的交易在一个区块时间内（7秒）更有可能在区块链上反映出来。最低交易费是每个验证者设置的值。如果验证者节点交易费用设置的较高，则意味着用户需要支付更高的交易费用，才能将交易包含在验证者提议的区块链中。当前接受此交易费用的验证者：多数（约80%）的验证者";
+
+/* (No Comment) */
+"fee_description_title_0" = "交易费用0.000001 ATOM";
+
+/* (No Comment) */
+"fee_description_title_1" = "交易费率0.0025";
+
+/* (No Comment) */
+"fee_description_title_2" = "交易费率 0.025";
+
+/* (No Comment) */
+"fee_over_msg" = "交易费用高于您宣称的奖励。将您的费用设置为较低的金额，或者累计更多奖励时重试";
+
+/* (No Comment) */
+"fee_over_title" = "无法索取奖励";
+
+/* (No Comment) */
+"fee_speed_bnb_title" = "币安链支持固定费用";
+
+/* (No Comment) */
+"fee_speed_certik_title" = "支持Certik Chain的固定金额费用";
+
+/* (No Comment) */
+"fee_speed_dip_title" = "支持Dipper Network的固定金额费用.";
+
+/* (No Comment) */
+"fee_speed_iov_title" = "支持IOV的固定金额费用";
+
+/* (No Comment) */
+"fee_speed_iris_title" = "Iris支持固定费用，IrisHub在使用后将退还剩余的gas";
+
+/* (No Comment) */
+"fee_speed_kava_title" = "现在支持Kava的固定转账费用";
+
+/* (No Comment) */
+"fee_speed_ok_title" = "支持Okex Chain的固定金额费用";
+
+/* (No Comment) */
+"fee_speed_title_0" = "只有少数验证器会处理此交易";
+
+/* (No Comment) */
+"fee_speed_title_1" = "一些验证器包括【Nokodemion】将处理此交易";
+
+/* (No Comment) */
+"fee_speed_title_2" = "大多数验证器将处理此交易";
+
+/* (No Comment) */
+"from_all_my_val" = "来自我所有的验证者";
+
+/* (No Comment) */
+"go_appstore" = "前往Appstore";
+
+/* (No Comment) */
+"help_collateral_rate_msg" = "\n必须将抵押资产总美元价值的最低利率与从CDP借出的USDX总额中保持不变的最低利率。\n\n例如，如果最低抵押率为200%，这意味着为了从CDP借入100USDX，您必须存入至少200USD资产作为抵押。如果您的抵押资产总美元价值由于价格波动而低于200美元，您的头寸将被清算.";
+
+/* (No Comment) */
+"help_collateral_rate_title" = "最小抵押率";
+
+/* (No Comment) */
+"help_liquidation_penalty_msg" = "\n如果因为价格波动清算了抵押资产，则必须支付的罚款金额。如果抵押率低于最低抵押率，您的资产将被清算";
+
+/* (No Comment) */
+"help_liquidation_penalty_title" = "清算罚款";
+
+/* (No Comment) */
+"help_loaned_amount_msg" = "从CDP借出的USDX总额";
+
+/* (No Comment) */
+"help_loaned_amount_title" = "贷款本金";
+
+/* (No Comment) */
+"help_remaining_loan_msg" = "\n可以从CDP额外借出的USDX金额。该容量根据价格波动引起的抵押率变化而变化";
+
+/* (No Comment) */
+"help_remaining_loan_title" = "剩余贷款额";
+
+/* (No Comment) */
+"help_self_deposited_msg" = "\n从该钱包中作为%@抵押品存入CDP的金额";
+
+/* (No Comment) */
+"help_self_deposited_title" = "自存抵押品";
+
+/* (No Comment) */
+"help_stability_fee_msg" = "\n从CDP提取USDX贷款时必须支付的费用金额，以APR计算。\n\n当您偿还USDX债务时，还必须支付此稳定费用，以关闭您的抵押债务头寸。";
+
+/* (No Comment) */
+"help_stability_fee_title" = "稳定费 (APR)";
+
+/* (No Comment) */
+"help_total_deposited_msg" = "\n以%@的总金额作为抵押品存入CDP";
+
+/* (No Comment) */
+"help_total_deposited_title" = "存款抵押总额";
+
+/* (No Comment) */
+"help_total_fee_msg" = "已积累CDP稳定费。费用每秒增加";
+
+/* (No Comment) */
+"help_total_fee_title" = "贷款利息";
+
+/* (No Comment) */
+"help_withdrawable_msg" = "\n可以从CDP提取的最大抵押品数量而未达到100的风险分数。\n\n请注意，如果抵押品的提取量过去接近最大数量，可能会是CDP面临低于最低抵押品利率并被清算的风险";
+
+/* (No Comment) */
+"help_withdrawable_title" = "可提取";
+
+/* (No Comment) */
+"htlc_refund_step_0" = "退款已过期的跨链转移";
+
+/* (No Comment) */
+"htlc_refund_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"htlc_refund_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"htlc_refund_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"htlc_swap_progress_0" = "1/4 广播链之间从发送链发送交易.";
+
+/* (No Comment) */
+"htlc_swap_progress_1" = "2/4确认交换ID.";
+
+/* (No Comment) */
+"htlc_swap_progress_2" = "3/4 广播链间在接受链上声明交易.";
+
+/* (No Comment) */
+"htlc_swap_progress_3" = "4/4 确认每个链上的所有交易.";
+
+/* (No Comment) */
+"htlc_swap_step_0" = "选择目的地链";
+
+/* (No Comment) */
+"htlc_swap_step_1" = "选择收件人账户";
+
+/* (No Comment) */
+"htlc_swap_step_2" = "输入要发送的金额";
+
+/* (No Comment) */
+"htlc_swap_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"import_address" = "导入助记词";
+
+/* (No Comment) */
+"imported" = "导入";
+
+/* (No Comment) */
+"incentive_participate_step_0" = "选择奖励选项";
+
+/* (No Comment) */
+"incentive_participate_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"incentive_participate_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"incentive_participate_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"insert_password_app_lock" = "请输入您的PIN码进行解锁";
+
+/* (No Comment) */
+"kava_new_path" = "新路径 (44'/459'/0'/0)";
+
+/* (No Comment) */
+"kava_old_path" = "旧路径 (44'/118'/0'/0)";
+
+/* (No Comment) */
+"liquidation_price_format" = "清算%@价格";
+
+/* (No Comment) */
+"max_spend_msg" = "发送此笔款项后，您将没有可用的余额。此后，您将没有任何资产可用作gas来进行其他发送";
+
+/* (No Comment) */
+"max_spend_title" = "警告";
+
+/* "mintscan_explorer" = "Mintscan Explorer"; */
+"mintscan_explorer" = "搜索";
+
+/* (No Comment) */
+"mnemonic_copied" = "助记词已经复制\n建议粘贴后清除剪贴板";
+
+/* (No Comment) */
+"mnemonic_safe_copied" = "助记词安全复制";
+
+/* (No Comment) */
+"more_wait_msg" = "您请求的交易已成功广播到区块链。但是，显示结果存在延迟。请按下等待按钮等待，直到显示结果为止，或者按【close/关闭】返回您钱包信息中心，稍后再在历史记录选项中检查您的交易";
+
+/* (No Comment) */
+"more_wait_swap_msg" = "发送链成功地尝试交换，但尚未找到交换ID，按【wait/等待】按钮继续搜索交换ID以执行交换。如果按【close/关闭】按钮您的资金将一段时间后退还到您的原始钱包中";
+
+/* (No Comment) */
+"more_wait_swap_title" = "交换ID确认延迟";
+
+/* (No Comment) */
+"more_wait_title" = "结果显示延迟";
+
+/* (No Comment) */
+"name" = "名字";
+
+/* (No Comment) */
+"no_account" = "%@没有有效账户";
+
+/* (No Comment) */
+"ok" = "OK";
+
+/* (No Comment) */
+"only_address" = "唯一地址";
+
+/* (No Comment) */
+"only_cmc" = "现在仅支持CoinMarketCap";
+
+/* (No Comment) */
+"only_USD" = "现在仅支持USD";
+
+/* (No Comment) */
+"override" = "覆盖";
+
+/* (No Comment) */
+"password_app_lock" = "输入PIN数解锁";
+
+/* (No Comment) */
+"password_check" = "请输入您的PIN数";
+
+/* (No Comment) */
+"password_delete" = "输入要删除的PIN数";
+
+/* (No Comment) */
+"password_init_warnning" = "无法恢复.\n请记住!";
+
+/* Localizable.strings
   Cosmostation
 
   Created by yongjoo on 27/03/2019.
-  Copyright © 2019 wannabit. All rights reserved.
-*/
-"password_init1" = "Please insert your PIN number.";
-"password_init2" = "Please insert again for confirm.";
-"password_check" = "Please type your PIN number";
-"password_delete" = "Insert PIN number for delete";
-"password_tx" = "Insert PIN number for Transaction";
-"password_app_lock" = "Insert PIN number for UnLock";
-"password_init_warnning" = "No way to recover this.\nPlease remember!";
-"password_msg1" = "Losing your mnemonics could lead to loss of your asset.\nWe highly recommend keeping your mnemonics offline in a secure location, and never share your mnemonics with anyone else.";
-"password_msg2" = "Copy your mnemonics on a piece of paper and keep if in a secure location. You can recover your wallet using your mnemonics.";
-"add_address_msg" = "With watch mode, you can check the status of your account. \nTo make transaction can add private information with later.";
-"add_address_hint" = "Insert address.";
+  Copyright © 2019 wannabit. All rights reserved. */
+"password_init1" = "请输入您的PIN数";
 
-"create_wallet" = "Create Wallet";
-"show_mnemonics" = "Show Mnemonics";
-"prepare" = "Preparing...";
-"address_copied" = "Address copied";
-"mnemonic_copied" = "Mnemonic copied\nClear your clipboard after paste it!";
-"mnemonic_safe_copied" = "Mnemonic copied safely";
-"wallet_delete_complete" = "Delete Completed!";
-"delegate_step_1" = "Enter delegation amount";
-"delegate_step_2" = "Insert memo (optional)";
-"delegate_step_3" = "Select transaction fee";
-"delegate_step_4" = "Check delegation detail";
-"undelegate_step_1" = "Enter undelegation amount";
-"undelegate_step_4" = "Check undelegation detail";
-"withdraw_single_step_1" = "Check your rewards detail";
-"withdraw_single_step_4" = "Check your information to claim rewards.";
-"send_step_1" = "Enter recipient address";
-"send_step_2" = "Enter to send amount";
-"send_step_3" = "Insert memo (optional)";
-"send_step_4" = "Select transaction fee";
-"send_step_5" = "Check transfer detail";
-"redelegate_step_1" = "Enter redelegation amount";
-"redelegate_step_2" = "Select validator redelegate";
-"redelegate_step_3" = "Insert memo (optional)";
-"redelegate_step_4" = "Select transaction fee";
-"redelegate_step_5" = "Check transaction detail";
-"reward_address_step_1" = "Insert address to receive reward";
-"reward_address_step_4" = "Check transaction detail";
-"reinvest_step_1" = "Check reward for re-invest";
-"reinvest_step_4" = "Check transaction detail";
-"vote_step_1" = "Select your Opinion";
-"vote_step_4" = "Check transaction detail";
-"recipient_address" = "Recipient Address";
-"reward_claim_top_16" = "We claim rewards from up to max 16 validators in order of reward amount.";
-"add_mnemonic" = "Add Mnemonic";
-"sort_by_name" = "By Name";
-"sort_by_my_delegate" = "By My Delegated Amount";
-"sort_by_reward" = "By Reward Amount";
-"sort_by_power" = "By Voting Power";
-"sort_by_commission" = "By Commission";
-"sort_by_yield" = "By APR";
-"sort_by_amount" = "By Amount";
-"sort_by_value" = "By Value";
-"with_mnemonics" = "With Mnemonics";
-"only_address" = "Only Address";
-"wallet_dash" = "Wallet ";
-"with_mnemonic" = "With Mnemonics ";
-"only_address" = "Only Address";
-"check_mnemonic" = "Check Mnemonic";
-"import_address" = "Import Mnemonic";
-"change_wallet_name" = "Change Wallet Name";
-"wallet_name" = "wallet name";
-"share_text" = "Share Text Address";
-"share_qr" = "Share QrCode Image";
-"delete_wallet" = "Delete Wallet";
-"delete_wallet_msg" = "All information about this wallet will delete. \nIf you do not backup your mnemonics, you can not find it again!";
-"ready" = "Ready";
-"imported" = "Imported";
-"override" = "Override";
-"validator_address" = "Validator address";
-"reward_address_notice_title" = "Reward Address Change";
-"reward_address_notice_msg" = "\nYou can change reward recipient address.\nAfter change this, every claimed rewards are going to changed address. Please confirm you have full authority with to change address.\n\n";
-"reward_address_notice_msg2" = "Do not set as exchange address.\n";
+/* (No Comment) */
+"password_init2" = "请再一次输入PIN数";
 
-"reward_address_warnning_title" = "Double Check!";
-"more_wait_title" = "Result Display Delayed";
-"more_wait_msg" = "The transaction you requested has been successfully broadcasted to the blockchain. However, there is a delay in displaying the result. Please press the \"wait\" button below to wait until the result is displayed, or press \"close\" to return to your wallet dashboard and check your TX in the history tab later.";
-"more_wait_swap_title" = "Swap ID Confirmation Delayed";
-"more_wait_swap_msg" = "The sending chain successfully attempted a swap, but the swap ID has not been found yet.\n\nPress the \"Wait\" button to continue searching for the swap ID to perform the swap.\nIf you press the \"Close\" button, your funds will be refunded to your original wallet after a certain period of time.";
-"fee_speed_title_0" = "Only a handful of validators will process this Tx.";
-"fee_speed_title_1" = "A few validators include \"Cosmostation\" will process this Tx.";
-"fee_speed_title_2" = "Most validators will process this Tx.";
-"fee_speed_dip_title" = "Support fixed amount fee for Dipper Network.";
-"fee_speed_iris_title" = "Support fixed amount fee for Iris.\nIris Hub will refund the remaining gas fee after use.";
-"fee_speed_bnb_title" = "Support fixed fee for Binance Chain";
-"fee_speed_kava_title" = "Support fixed transfer fee for KAVA now";
-"fee_speed_iov_title" = "Support fixed amount fee for IOV.";
-"fee_speed_ok_title" = "Support fixed amount fee for Okex Chain.";
-"fee_speed_certik_title" = "Support fixed amount fee for Certik Chain.";
-"fee_description_title_0" = "Tx fee 0.000001 ATOM";
-"fee_description_title_1" = "Tx fee rate 0.0025";
-"fee_description_title_2" = "Tx fee rate 0.025";
-"fee_description_msg_0" = "\nOnly a handful of validators will process this Tx. Validators with a minimum Tx fee setting of 0.000001 ATOM or less must propose a block in order for this Tx to be included. Depending on which validator is proposing the block at the time of your Tx, there may be a delay in having your Tx reflected on the blockchain.\n\nMinimum Tx fee is a value set by each validator. If a validator has a higher node Tx fee setting, it means that a higher Tx fee is required from the user in order to include the Tx in the block proposed by the validator.\n\nValidators that currently accept this Tx fee: Polychain Labs, jackzampolin, Forbole, Cryptium Labs, BouBounNode";
-"fee_description_msg_1" = "\nThis Tx will be processed by Cosmostation and other validators with a minimum Tx fee rate setting lower than or equal to 0.0025. Depending on which validator is proposing the block at the time of your Tx, there may be a delay in having your Tx reflected on the blockchain.\n\nMinimum Tx fee is a value set by each validator. If a validator has a higher node Tx fee setting, it means that a higher Tx fee is required from the user in order to include the Tx in the block proposed by the validator.\n\nValidators that currently accept this Tx fee: Cosmostation, Polychain Labs, jackzampolin, Forbole, Cryptium Labs, BouBounNode";
-"fee_description_msg_2" = "\nThe majority of validators have a minimum Tx fee rate higher than or equal to 0.025. Most validators will process this Tx. Therefore, there is a higher probability of your Tx being reflected on the blockchain within one block time(~7 seconds) when you use a Tx fee rate of 0.025.\n\nMinimum Tx fee is a value set by each validator. If a validator has a higher node Tx fee setting, it means that a higher Tx fee is required from the user in order to include the Tx in the block proposed by the validator.\n\nValidators that currently accept this Tx fee: Majority(~80%) of validators.";
-"max_spend_title" = "Warning";
-"max_spend_msg" = "You will be left with no available balance after this Tx. You will not have any Asset to be used as gas to make another Tx after this.";
-"fee_over_title" = "Unable to claim rewards";
-"fee_over_msg" = "Tx fee is higher than your unclaimed rewards. Set your fee to a lower amount or try again when you have more rewards accumulated.";
-"insert_password_app_lock" = "Please type your PIN number for unlock";
-"app_locked" = "App Locked";
-"coingecko" = "CoinGecko";
-"coinmarketcap" = "CoinMarket Cap";
-"from_all_my_val" = "From all my validators";
-"send_guide_title_cosmos" = "COSMOS HUB";
-"send_guide_msg_cosmos" = "Decentralized network of blockchains \npowered by Tendermint BFT and ABCI";
-"send_guide_title_dip" = "Dipper Network";
-"send_guide_msg_dip" = "Decentralized network of blockchains \npowered by Cross chain and DeFi";
-"send_guide_title_iris" = "IRIS HUB";
-"send_guide_msg_iris" = "Interchain service infrastructure \nfor a distributed business ecosystem";
-"send_guide_title_bnb" = "BINANCE CHAIN";
-"send_guide_msg_bnb" = "Decentralized network of blockchains\npowered by Tendermint BFT and ABCI.";
-"send_guide_title_kava" = "KAVA CHAIN";
-"send_guide_msg_kava" = "First cross-chain DeFi platform based on Tendermint engine. Kava allows users to leverage assets with its cross-chain CDP.";
-"send_guide_title_iov" = "Starname Service";
-"send_guide_msg_iov" = "Built on Tendermint, Starname builds a fast, secure and decentralized universal name service.";
-"send_guide_title_band" = "BAND PROTOCOL";
-"send_guide_msg_band" = "Cross-chain oracle platform based on Tendermint. Aggregates and connects real-world data and APIs to smart contracts.";
-"send_guide_title_ok" = "OKEX CHAIN";
-"send_guide_msg_ok" = "Okex Chain is a public decentralized exchange powered by Tendermint.";
-"send_guide_title_certik" = "CERTIK CHAIN";
-"send_guide_msg_certik" = "A public platform based on the Certik Foundation's unique Formal Verification security system.";
-"send_guide_title_secret" = "SECRET CHAIN";
-"send_guide_msg_secret" = "First Proof-of-Stake network to enable privacy-preserving smart contracts. Secret allows private, secure computation.";
-"send_guide_btn1_cosmos" = "Guide";
-"send_guide_btn1_dip" = "Home";
-"send_guide_btn1_iris" = "Home";
-"send_guide_btn1_bnb" = "Market";
-"send_guide_btn1_kava" = "About USDX";
-"send_guide_btn1_iov" = "Star Name";
+/* (No Comment) */
+"password_msg1" = "丢失助记词可能导致资产损失，我们强烈建议您将助记词离线保存在安全的位置，切勿与他人分享您的助记词";
+
+/* (No Comment) */
+"password_msg2" = "将助记词记在纸上，并放在安全的地方，您可以使用助记词恢复钱包";
+
+/* (No Comment) */
+"password_tx" = "请输入新的PIN数";
+
+/* (No Comment) */
+"permission_push_msg" = "请允许推送通知";
+
+/* (No Comment) */
+"permission_push_title" = "允许通知";
+
+/* (No Comment) */
+"prepare" = "准备中...";
+
+/* (No Comment) */
+"proposal_type_basic" = "基本";
+
+/* (No Comment) */
+"proposal_type_communitytaxusage" = "社区税收使用";
+
+/* (No Comment) */
+"proposal_type_parameter" = "参数";
+
+/* (No Comment) */
+"proposal_type_plaintext" = "纯文本";
+
+/* (No Comment) */
+"proposal_type_softwareupgrade" = "软件升级";
+
+/* (No Comment) */
+"proposal_type_systemhalt" = "系统停止";
+
+/* (No Comment) */
+"proposal_type_tokenaddition" = "Token加成";
+
+/* (No Comment) */
+"push_disabled_state_msg" = "禁用推送闹钟,可以打开";
+
+/* (No Comment) */
+"push_enabled_state_msg" = "使用此地址为每个发送和接收的发送启用推送警报";
+
+/* (No Comment) */
+"ready" = "准备";
+
+/* (No Comment) */
+"recipient_address" = "收件人地址";
+
+/* (No Comment) */
+"redelegate_step_1" = "输入重新代理金额";
+
+/* (No Comment) */
+"redelegate_step_2" = "选择验证者重新委托";
+
+/* (No Comment) */
+"redelegate_step_3" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"redelegate_step_4" = "选择交易费";
+
+/* (No Comment) */
+"redelegate_step_5" = "查看交易明细";
+
+/* (No Comment) */
+"reinvest_step_1" = "检查奖励以进行再投资";
+
+/* (No Comment) */
+"reinvest_step_4" = "查看交易明细";
+
+/* (No Comment) */
+"repay_cdp_step_0" = "输入还款额";
+
+/* (No Comment) */
+"repay_cdp_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"repay_cdp_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"repay_cdp_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"retry" = "重试 ";
+
+/* (No Comment) */
+"reward_address_notice_msg" = "\n您可以更改奖励收信人地址。\n更改地址后，所有领取的奖励都将到更改的地址。请确认您拥有更改地址的全部权限";
+
+/* (No Comment) */
+"reward_address_notice_msg2" = "请不要设置为交换地址";
+
+/* (No Comment) */
+"reward_address_notice_title" = "奖励地址变更";
+
+/* (No Comment) */
+"reward_address_step_1" = "输入地址以获得奖励";
+
+/* (No Comment) */
+"reward_address_step_4" = "查看交易明细";
+
+/* (No Comment) */
+"reward_address_warnning_title" = "再确认一次！";
+
+/* (No Comment) */
+"reward_claim_top_16" = "我们按照奖励金额的顺序要求最多16位验证者提供奖励";
+
+/* (No Comment) */
+"reward_harvest_step_0" = "选择收获奖励选项";
+
+/* (No Comment) */
+"reward_harvest_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"reward_harvest_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"reward_harvest_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"secret_new_path" = "新路径 (44'/529'/0'/0)";
+
+/* (No Comment) */
+"secret_old_path" = "旧路径(44'/118'/0'/0)";
+
+/* (No Comment) */
+"select_account" = "选择账户";
+
+/* (No Comment) */
+"select_destination_chain" = "选择目的地链";
+
+/* (No Comment) */
+"select_new_path_msg" = "用于KAVA密钥生成的BIP44将于2020年3月开始实施。\n\n如果您在2020年3月之前创建了地址，请选择（旧路径）。如果您是2020年3月之后创建的地址，请选择（新路径）。\n\n如果您错误的选择了错误的路径，则不会影响您的原始KAVA钱包。只需要按[导入助记词]重新选择您的路径.";
+
+/* (No Comment) */
+"select_new_path_msg_secret" = "将于2020年9月开始实施用于SECRET密钥生成BIP44，如果您在2020年9月之前创建了地址，请选择[旧路径]。\n\n如果您在2020年9月之后创建了地址，请选择[新路径]，如果您错误的选择了地址，则不会影响您原来的Secret钱包。\n\nn只需按[导入助记词]重新选择您的路径";
+
+/* (No Comment) */
+"select_new_path_title" = "选择钥匙路径";
+
+/* (No Comment) */
 "send_guide_btn1_band" = "Home";
+
+/* (No Comment) */
+"send_guide_btn1_bnb" = "市场";
+
+/* (No Comment) */
+"send_guide_btn1_certik" = "主页";
+
+/* (No Comment) */
+"send_guide_btn1_cosmos" = "指南";
+
+/* (No Comment) */
+"send_guide_btn1_dip" = "主页";
+
+/* (No Comment) */
+"send_guide_btn1_iov" = "Star Name";
+
+/* (No Comment) */
+"send_guide_btn1_iris" = "主页";
+
+/* (No Comment) */
+"send_guide_btn1_kava" = "关于 USDX";
+
+/* (No Comment) */
 "send_guide_btn1_ok" = "Market";
-"send_guide_btn1_certik" = "Home";
-"send_guide_btn1_secret" = "Home";
+
+/* (No Comment) */
+"send_guide_btn1_secret" = "主页";
+
+/* (No Comment) */
+"send_guide_btn2_band" = "博客";
+
+/* (No Comment) */
+"send_guide_btn2_bnb" = "博客";
+
+/* (No Comment) */
+"send_guide_btn2_certik" = "博客";
+
+/* (No Comment) */
 "send_guide_btn2_cosmos" = "FAQ";
+
+/* (No Comment) */
 "send_guide_btn2_dip" = "Medium";
+
+/* (No Comment) */
+"send_guide_btn2_iov" = "博客";
+
+/* (No Comment) */
 "send_guide_btn2_iris" = "Medium";
-"send_guide_btn2_bnb" = "Blog";
-"send_guide_btn2_kava" = "Blog";
-"send_guide_btn2_iov" = "Blog";
-"send_guide_btn2_band" = "Blog";
-"send_guide_btn2_ok" = "Communities";
-"send_guide_btn2_certik" = "Blog";
-"send_guide_btn2_secret" = "Blog";
-"name" = "Name";
-"amount" = "Amount";
-"value" = "Value";
-//"mintscan_explorer" = "Mintscan Explorer";
-"mintscan_explorer" = "Explorer";
-"binanace_explorer" = "Binance Explorer";
-"disconnected" = "Disconnected";
-"wc_alert_title" = "Wallet Connect";
-"wc_alert_msg" = "Would you like to link your wallet to Binance Dex Exchange?";
-"wc_request_sign_title" = "Request Transaction Sign";
-"wc_request_sign_msg" = "\nPlease check the contents and decide.\nIt affects your assets.";
-"wc_request_cancel_msg" = "\nPlease check the contents and decide.\n\nCancel Order.";
-"wc_request_success" = "Tx Success!";
-"wc_request_fail" = "Tx Fail";
 
-"wc_trade_title" = "Place Order Request";
-"wc_cancel_title" = "Cancel Order Request";
-"wc_trade_msg" = "Please check the contents and decide.\nIt affects your assets.";
-"wc_cancel_msg" = "Please check the contents and decide.\nYour order will cancel.";
+/* (No Comment) */
+"send_guide_btn2_kava" = "博客";
 
-"vesting_account" = "Vesting Account";
-"vesting_account_msg" = "Your account looks vesting account, We suggest using cli commnad delegate and undelegate tx for correct amount.";
-"waiting_deposit" = "Waiting Deposit";
-"push_enabled_state_msg" = "Enabled push alarm for each send & received tx with this address";
-"push_disabled_state_msg" = "Disabled push alaram, you can turn on";
-"permission_push_title" = "Allow Notification";
-"permission_push_msg" = "Please allow for push notification.";
-"retry" = "Retry";
-"update_title" = "Update";
-"update_msg" = "New version available. \nPlease update to the latest version from the AppStore.";
-"go_appstore" = "Go Appstore";
-"tx_success" = "Success";
-"tx_fail" = "Fail";
-"buy_atom" = "  Buy ATOM";
-"buy_bnb" = "  Buy BNB";
-"buy_kava" = "  Buy KAVA";
-"buy_band" = "  Buy BAND";
-"buy_without_key_title" = "No Private Key";
-"buy_without_key_msg" = "After purchase, your coins will be sent to this wallet. You do not currently have authority for the wallet, but would you like to continue purchasing?";
-"buy_select_fiat_title" = "Select Fiat";
-"buy_select_fiat_msg" = "Please select a currency to make a purchase.";
-"select_new_path_title" = "Select Key Path";
-"select_new_path_msg" = "BIP44 for KAVA key generation will be implemented starting March, 2020.\n\nIf you created an address before March, 2020, please select [Old Path]. If you created an address after March, 2020, please select [New Path].\n\nIf you mistakenly selected the wrong path, it will not affect your original KAVA wallet. Simply press [Import Mnemonics] to re-select your path.";
-"kava_old_path" = "OLD PATH (44'/118'/0'/0)";
-"kava_new_path" = "NEW PATH (44'/459'/0'/0)";
-"select_new_path_msg_secret" = "BIP44 for SECRET key generation will be implemented starting Sep, 2020.\n\nIf you created an address before Sep, 2020, please select [Old Path]. If you created an address after March, 2020, please select [New Path].\n\nIf you mistakenly selected the wrong path, it will not affect your original Secret wallet. Simply press [Import Mnemonics] to re-select your path.";
-"secret_old_path" = "OLD PATH (44'/118'/0'/0)";
-"secret_new_path" = "NEW PATH (44'/529'/0'/0)";
-"tx_next" = "Next";
-"str_deposit" = "  Deposit %@";
-"str_withdraw" = "  Withdraw %@";
-"str_cannot_repay_partially" = "Cannot repay partially";
-"str_cannot_repay_all" = "Insufficient %@ to repay all";
-"str_no_more_3day" = "Hide 3 days";
+/* (No Comment) */
+"send_guide_btn2_ok" = "社区";
 
-"current_price_format" = "Current %@ Price";
-"liquidation_price_format" = "Liquidation %@ Price";
-"debt_value_format" = "My %@ Debt Value";
-"collateral_value_format" = "My %@ Collateral Value";
-"withdrawable_format" = "Withdrawable %@";
-"before_liquidation_price_format" = "Initial Liquidation %@ Price";
-"after_liquidation_price_format" = "Expected Liquidation %@ Price";
-"select_destination_chain" = "Select Destination Chain";
-"select_account" = "Select Account";
-"no_account" = "No valid account at %@";
-"testnet_warn_title" = "Testnet Warning";
-"testnet_warn_msg" = "This wallet is for testnet\n(Tokens in this wallet have NO value).\n\nCosmostation supports this testnet to give users the opportunity to use new feature before being released on Mainnet. Please note that support for this testnet can be discontinued at any time.";
+/* (No Comment) */
+"send_guide_btn2_secret" = "博客";
 
-"help_collateral_rate_title" = "Min. Collateral Rate";
-"help_collateral_rate_msg" = "\nThe minimum rate at which the total USD value of the collateralized asset must be kept at against the total amount of USDX loaned from the CDP.\n\nFor example, if the minimum collateral rate is 200%, this means that in order to borrow 100 USDX from the CDP, you must deposit at least 200 USD worth of assets as collateral. If the total USD value of your collateralized asset falls below 200 USD due to price fluctuations, your position will be liquidated.";
-"help_stability_fee_title" = "Stability Fee (APR)";
-"help_stability_fee_msg" = "\nThe amount of fee you must pay for taking out USDX loans from the CDP, calculated as APR.\n\nWhen you repay your USDX debt, you must also pay this stability fee in order to close your collateralized debt position.";
-"help_liquidation_penalty_title" = "Liquidation Penalty";
-"help_liquidation_penalty_msg" = "\nThe amount of penalty you must pay in the event that your collateralized assets are liquidated due to price fluctuations.\n\nIf your collateral rate falls below minimum collateral rate, your assets will be liquidated.";
-"help_self_deposited_title" = "Self Deposited Collateral";
-"help_self_deposited_msg" = "\nThe amount of %@ deposited into the CDP as collateral from this wallet.";
-"help_total_deposited_title" = "Total Deposited Collateral";
-"help_total_deposited_msg" = "\nThe total amount of %@ deposited into the CDP as collateral.";
-"help_withdrawable_title" = "Withdrawable";
-"help_withdrawable_msg" = "\nThe amount of maximum collateral capable of being withdrawn from the CDP without reaching a risk score of 100.\n\nNote that withdrawing the collateral excessively close to the maximum amount can put the CDP into risk of going below the minimum collateral rate and being liquidated.";
-"help_loaned_amount_title" = "Loan Principal";
-"help_loaned_amount_msg" = "\nThe total amount of USDX loaned from the CDP.";
-"help_total_fee_title" = "Loan Interest";
-"help_total_fee_msg" = "\nAccrued CDP stability fee. The fee increases every second.";
-"help_remaining_loan_title" = "Remaining Loan Capacity";
-"help_remaining_loan_msg" = "\nThe amount of USDX that can be additionally loaned from the CDP. This capacity changes in accordance to changes in the collateral rate due to price fluctuations.";
-"bep3_status_open" = "Wait Claim";
-"bep3_status_completed" = "Receive Completed (Claimed)";
-"bep3_status_expired" = "Refundable";
-"bep3_status_refunded" = "Refunded";
-"bep3_status_null" = "UnKnown";
-"str_bep3_available_title" = "BNB-BEP3 swap available";
-"str_bep3_unavailable_title" = "BNB-BEP3 swap unavailable";
-"str_bep3_bnb_cap_over" = "The total amount of BNB available for swap has reached its network capacity.\n\nThe maximum swap capacity is determined through Kava policies & governance.\n\nFor inquiries regarding maximum swap capacity, please visit the official Kava community channel below.\n\n\nhttps://t.me/kavalabs";
-"str_bep3_bnb_cap" = "Current remaining swap capacity is  %@\n\nThe maximum swap capacity is determined through Kava policies & governance.\n\nFor inquiries regarding maximum swap capacity, please visit the official Kava community channel below.\n\nhttps://t.me/kavalabs";
-"str_starname_confirm_title" = "StarName Found";
-"str_starname_confirm_msg" = "A matched address was found. Would you like to send to this address? \n\n\n%@\n\n%@";
-"str_select_to_send_coin" = "Select To Send Coin Type";
-"str_event_confirm" = "Please confirm twice yourself ETH deposit address for XPRT distribution. \n(we don't support validate checksum) \n\n\n%@";
-"str_event_confirm_title" = "Once More Check";
-"str_apr_help_title" = "Delegation APR";
-"str_apr_help_msg" = "This figure is an estimated percentage calculated by taking into account the current average network block time.";
+/* (No Comment) */
+"send_guide_msg_band" = "基于Tendermint的跨链Oracel平台。聚合并将现实世界的数据和API连接到智能合约";
 
-"creat_cdp_step_0" = "Deposit collateral to borrow USDX";
-"creat_cdp_step_1" = "Insert memo (optional)";
-"creat_cdp_step_2" = "Select transaction fee";
-"creat_cdp_step_3" = "Check transaction detail";
-"deposit_cdp_step_0" = "Enter deposit amount";
-"deposit_cdp_step_1" = "Insert memo (optional)";
-"deposit_cdp_step_2" = "Select transaction fee";
-"deposit_cdp_step_3" = "Check transaction detail";
-"withdraw_cdp_step_0" = "Enter withdrawal amount";
-"withdraw_cdp_step_1" = "Insert memo (optional)";
-"withdraw_cdp_step_2" = "Select transaction fee";
-"withdraw_cdp_step_3" = "Check transaction detail";
-"drawdebt_cdp_step_0" = "Enter loan amount";
-"drawdebt_cdp_step_1" = "Insert memo (optional)";
-"drawdebt_cdp_step_2" = "Select transaction fee";
-"drawdebt_cdp_step_3" = "Check transaction detail";
-"repay_cdp_step_0" = "Enter repayment amount";
-"repay_cdp_step_1" = "Insert memo (optional)";
-"repay_cdp_step_2" = "Select transaction fee";
-"repay_cdp_step_3" = "Check transaction detail";
-"htlc_swap_step_0" = "Select Destination Chain";
-"htlc_swap_step_1" = "Select Recipient Account";
-"htlc_swap_step_2" = "Insert Amount to Send";
-"htlc_swap_step_3" = "Check Transactions Detail";
-"htlc_swap_progress_0" = "1/4 Broadcasting interchain send Tx from sending chain.";
-"htlc_swap_progress_1" = "2/4 Confirming swapid.";
-"htlc_swap_progress_2" = "3/4 Broadcasting interchain claim Tx on receiving chain.";
-"htlc_swap_progress_3" = "4/4 Confirming all Tx on each chain.";
-"htlc_refund_step_0" = "Refunding Expired Interchain Transfer";
-"htlc_refund_step_1" = "Insert memo (optional)";
-"htlc_refund_step_2" = "Select transaction fee";
-"htlc_refund_step_3" = "Check transaction detail";
-"incentive_participate_step_0" = "Select incentive reward option";
-"incentive_participate_step_1" = "Insert memo (optional)";
-"incentive_participate_step_2" = "Select transaction fee";
-"incentive_participate_step_3" = "Check transaction detail";
-"deposit_harvest_step_0" = "Enter harvest deposit amount";
-"deposit_harvest_step_1" = "Insert memo (optional)";
-"deposit_harvest_step_2" = "Select transaction fee";
-"deposit_harvest_step_3" = "Check transaction detail";
-"withdraw_harvest_step_0" = "Enter harvest withdrawal amount";
-"withdraw_harvest_step_1" = "Insert memo (optional)";
-"withdraw_harvest_step_2" = "Select transaction fee";
-"withdraw_harvest_step_3" = "Check transaction detail";
-"reward_harvest_step_0" = "Select harvest reward option";
-"reward_harvest_step_1" = "Insert memo (optional)";
-"reward_harvest_step_2" = "Select transaction fee";
-"reward_harvest_step_3" = "Check transaction detail";
+/* (No Comment) */
+"send_guide_msg_bnb" = "分布式区块链网络由Tendermint BFT和ABCI支持.";
 
-"str_ok_stake_deposit_step_0" = "Insert amount to deposit";
-"str_ok_stake_deposit_step_1" = "Insert memo (optional)";
-"str_ok_stake_deposit_step_2" = "Select transaction fee";
-"str_ok_stake_deposit_step_3" = "Check transaction detail";
-"str_ok_stake_withdraw_step_0" = "Insert amount to withdraw";
-"str_ok_stake_withdraw_step_1" = "Insert memo (optional)";
-"str_ok_stake_withdraw_step_2" = "Select transaction fee";
-"str_ok_stake_withdraw_step_3" = "Check transaction detail";
-"str_ok_direct_vote_0" = "Select validator to vote";
-"str_ok_direct_vote_1" = "Insert memo (optional)";
-"str_ok_direct_vote_2" = "Select transaction fee";
-"str_ok_direct_vote_3" = "Check transaction detail";
-"str_vote_direct" = "Direct vote to Validator";
-"str_vote_agent" = "Indirect vote with Agent";
-"str_starname_register_domain_step_0" = "Insert starname and type";
-"str_starname_register_domain_step_1" = "Insert memo (optional)";
-"str_starname_register_domain_step_2" = "Select transaction fee";
-"str_starname_register_domain_step_3" = "Check transaction detail";
-"str_starname_register_account_step_0" = "Insert starname you want";
-"str_starname_register_account_step_1" = "Insert your address to connect";
-"str_starname_register_account_step_2" = "Insert memo (optional)";
-"str_starname_register_account_step_3" = "Select transaction fee";
-"str_starname_register_account_step_4" = "Check transaction detail";
-"str_starname_delete_starname_step_0" = "Confirm your starname to delete";
-"str_starname_delete_starname_step_1" = "Insert memo (optional)";
-"str_starname_delete_starname_step_2" = "Select transaction fee";
-"str_starname_delete_starname_step_3" = "Check transaction detail";
-"str_starname_renew_starname_step_0" = "Confirm your starname to renew";
-"str_starname_renew_starname_step_1" = "Insert memo (optional)";
-"str_starname_renew_starname_step_2" = "Select transaction fee";
-"str_starname_renew_starname_step_3" = "Check transaction detail";
-"str_starname_replace_starname_step_0" = "Insert your address to connect";
-"str_starname_replace_starname_step_1" = "Insert memo (optional)";
-"str_starname_replace_starname_step_2" = "Select transaction fee";
-"str_starname_replace_starname_step_3" = "Check transaction detail";
+/* (No Comment) */
+"send_guide_msg_certik" = "基于 Certik Foundation独特的形式验证安全系统的公共平台";
 
-"str_description_open_domain" = "Open type in which an account owner is the only entity that can perform actions on the account.";
-"str_description_closed_domain" = "Closed type in which the domain owner has control over accounts too.";
-"str_safe_copy_title" = "Mnemonic Safe Copy";
-"str_safe_copy_msg" = "Recently there have been many instances of clipboard hijacking on various mobile applications. The mnemonic phrase temporarily saved in your clipboard when you copy and paste can be an easy target for hijacking.\n\nIf you wish to copy and paste your mnemonic phrase to create an additional wallet with the same phrase, please select \"Safe Copy\". This feature makes sure that copy and paste is authorized only within the Cosmostation Mobile Application.(Automatically delete when the app is closed)\n\nIf you wish to copy and paste your mneominc phrase outside of the application, please select \"Raw Copy\". When using the raw copy feature, please take caution  and responsibility for the security of your own assets.";
-"str_safe_copy" = "Safe Copy";
-"str_raw_copy" = "Raw Copy";
+/* (No Comment) */
+"send_guide_msg_cosmos" = "Tendermint BFT和ABCI支持的去中心化区块链网络";
 
-"clear_all" = "Clear All";
-"delete" = "Delete";
-"close" = "Close";
-"copy" = "Copy";
-"share" = "Share";
-"cancel" = "Cancel";
-"ok" = "OK";
-"confirm" = "Confirm";
-"settings" = "Settings";
-"warnning" = "Warnning";
-"continue" = "Continue";
-"wait" = "Wait";
-"sign" = "Sign";
-"touchID" = "Touch ID";
-"faceID" = "Face ID";
+/* (No Comment) */
+"send_guide_msg_dip" = "跨链和DeFi技术支持的去中心化区块链网络";
 
-"only_USD" = "now only support USD";
-"only_cmc" = "now only support CoinMarketCap";
+/* (No Comment) */
+"send_guide_msg_iov" = "Starname基于Tendermint构建，可构建快速，安全和分散的通用名称服务";
 
-"title_wallet_manage" = "Wallet Manage";
-"title_wallet_detail" = "Wallet Detail";
-"title_check_mnemonics" = "Check Mnemonics";
-"title_create" = "Create Wallet";
-"title_watch_wallet" = "Watch Wallet";
-"title_restore" = "Import";
-"title_path" = "Select Wallet";
-"title_delegate" = "Delegate To";
-"title_undelegate" = "Undelegate From";
-"title_reward" = "Claim Reward From";
-"title_send" = "Send";
-"title_redelegate" = "Redelegate";
-"title_validator_list" = "Validator List";
-"title_validator_detail" = "Validator Details";
-"title_vote_list" = "Proposal List";
-"title_vote_detail" = "Proposal Details";
-"title_wallet_connect" = "Wallet Connect";
-"title_token_detail" = "Token Details";
-"title_reword_address_change" = "Reward Address Change";
-"title_reinvest" = "Re-Invest";
-"title_guide" = "FAQ";
-"title_vote" = "Vote";
-"title_tx_detail" = "Transaction Detail";
+/* (No Comment) */
+"send_guide_msg_iris" = "链间服务基础架构，用于分布式业务生态系统";
+
+/* (No Comment) */
+"send_guide_msg_kava" = "第一个基于Tendermint引擎的跨链DeFi平台。Kava允许用户通过其跨链CDP利用资产。";
+
+/* (No Comment) */
+"send_guide_msg_ok" = "Okex Chain 是由Tendermint支持的公共去中心化交易所";
+
+/* (No Comment) */
+"send_guide_msg_secret" = "第一个权益证明网络，用于启用保护隐私的智能合约。秘密允许私有，安全的计算";
+
+/* (No Comment) */
+"send_guide_title_band" = "BAND PROTOCOL";
+
+/* (No Comment) */
+"send_guide_title_bnb" = "BINANCE CHAIN";
+
+/* (No Comment) */
+"send_guide_title_certik" = "CERTIK CHAIN";
+
+/* (No Comment) */
+"send_guide_title_cosmos" = "COSMOS HUB";
+
+/* (No Comment) */
+"send_guide_title_dip" = "Dipper Network";
+
+/* (No Comment) */
+"send_guide_title_iov" = "星名服务";
+
+/* (No Comment) */
+"send_guide_title_iris" = "IRIS HUB";
+
+/* (No Comment) */
+"send_guide_title_kava" = "KAVA CHAIN";
+
+/* (No Comment) */
+"send_guide_title_ok" = "OKEX CHAIN";
+
+/* (No Comment) */
+"send_guide_title_secret" = "SECRET CHAIN";
+
+/* (No Comment) */
+"send_step_1" = "输入收件人地址";
+
+/* (No Comment) */
+"send_step_2" = "输入发送金额";
+
+/* (No Comment) */
+"send_step_3" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"send_step_4" = "选择交易费";
+
+/* (No Comment) */
+"send_step_5" = "查看转账细节";
+
+/* (No Comment) */
+"settings" = "设置";
+
+/* (No Comment) */
+"share" = "分享";
+
+/* (No Comment) */
+"share_qr" = "分享二维码图片";
+
+/* (No Comment) */
+"share_text" = "分享文字地址";
+
+/* (No Comment) */
+"show_mnemonics" = "显示助记词";
+
+/* (No Comment) */
+"sign" = "登录";
+
+/* (No Comment) */
+"sort_by_amount" = "按金额";
+
+/* (No Comment) */
+"sort_by_commission" = "按委员会";
+
+/* (No Comment) */
+"sort_by_my_delegate" = "按照我的委托金额";
+
+/* (No Comment) */
+"sort_by_name" = "按名称";
+
+/* (No Comment) */
+"sort_by_power" = "投票权";
+
+/* (No Comment) */
+"sort_by_reward" = "按照奖励金额";
+
+/* (No Comment) */
+"sort_by_value" = "按价值";
+
+/* (No Comment) */
+"sort_by_yield" = "通过APR";
+
+/* (No Comment) */
+"str_apr_help_msg" = "该数字是通过考虑当前平均网络阻塞时间计算得出的估计百分比";
+
+/* (No Comment) */
+"str_apr_help_title" = "代表团APR";
+
+/* (No Comment) */
+"str_bep3_available_title" = "提供BNB-BEP3交换 ";
+
+/* (No Comment) */
+"str_bep3_bnb_cap" = "当前剩余交换容量为%@\n\n最大交换容量由Kava政策和治理确定.\n            \n有关最大容量交换的查询，请访问下面官方Kava社区频道";
+
+/* (No Comment) */
+"str_bep3_bnb_cap_over" = "可用于交换的BNB总数已达到其网络容量。最大交换容量由Kava    政策和治理确定。有关最大交换容量查询，请访问下面的官方Kava社群渠道。";
+
+/* (No Comment) */
+"str_bep3_unavailable_title" = "不提供BNB-BEP3交换 ";
+
+/* (No Comment) */
+"str_cannot_repay_all" = " %@不足以偿还全部";
+
+/* (No Comment) */
+"str_cannot_repay_partially" = "无法部分偿还";
+
+/* (No Comment) */
+"str_deposit" = "  存入%@";
+
+/* (No Comment) */
+"str_description_closed_domain" = "域所有者也可以控制账户的封闭类型.";
+
+/* (No Comment) */
+"str_description_open_domain" = "开放式，其中账户所有者是唯一可以对账户执行操作的实体";
+
+/* (No Comment) */
+"str_event_confirm" = "请确认您自己的ETH存款地址两次以进行XRPT分发.\n（我们不支持验证校验）\n\n\n%@";
+
+/* (No Comment) */
+"str_event_confirm_title" = "再检查一次";
+
+/* (No Comment) */
+"str_no_more_3day" = "隐藏3天";
+
+/* (No Comment) */
+"str_ok_direct_vote_0" = "选择验证人进行投票";
+
+/* (No Comment) */
+"str_ok_direct_vote_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_ok_direct_vote_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_ok_direct_vote_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_ok_stake_deposit_step_0" = "输入要存入的金额";
+
+/* (No Comment) */
+"str_ok_stake_deposit_step_1" = "shuru备忘录（可选)";
+
+/* (No Comment) */
+"str_ok_stake_deposit_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_ok_stake_deposit_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_ok_stake_withdraw_step_0" = "输入要提取的金额";
+
+/* (No Comment) */
+"str_ok_stake_withdraw_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_ok_stake_withdraw_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_ok_stake_withdraw_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_raw_copy" = "原始复制";
+
+/* (No Comment) */
+"str_safe_copy" = "安全复制";
+
+/* (No Comment) */
+"str_safe_copy_msg" = "最近，在各种移动应用程序上有许多剪切板窃取的实例。复制黏贴时临时保存在剪切板中的助记词很容易成为劫持的目标。\n\n如果您希望复制并粘贴助记词以创建具有相同短语的其他钱包，请选择“安全复制”。此功能可以确保仅在Dipper Wallet移动应用程序中进行复制和粘贴的授权（关闭应用程序后自动删除）。如果您希望将助记词短语复制并粘贴到应用程序之外，请选择“原始复制”。使用原始复制功能时，请谨慎行事并对自己资产的安全性负责。";
+
+/* (No Comment) */
+"str_safe_copy_title" = "助记词安全复制";
+
+/* (No Comment) */
+"str_select_to_send_coin" = "请选择发送token类型";
+
+/* (No Comment) */
+"str_starname_confirm_msg" = "找到匹配地址，您想寄到这个地址吗？\n        \n        \n%@\n\n%@";
+
+/* (No Comment) */
+"str_starname_confirm_title" = "发现星名";
+
+/* (No Comment) */
+"str_starname_delete_starname_step_0" = "确认您的starname删除";
+
+/* (No Comment) */
+"str_starname_delete_starname_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_starname_delete_starname_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_starname_delete_starname_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_starname_register_account_step_0" = "插入您想要的starname";
+
+/* (No Comment) */
+"str_starname_register_account_step_1" = "输入您的地址进行连接";
+
+/* (No Comment) */
+"str_starname_register_account_step_2" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_starname_register_account_step_3" = "选择交易费用";
+
+/* (No Comment) */
+"str_starname_register_account_step_4" = "查看交易明细";
+
+/* (No Comment) */
+"str_starname_register_domain_step_0" = "插入starname并输入";
+
+/* (No Comment) */
+"str_starname_register_domain_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_starname_register_domain_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_starname_register_domain_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_starname_renew_starname_step_0" = "确认您的starname续订";
+
+/* (No Comment) */
+"str_starname_renew_starname_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_starname_renew_starname_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_starname_renew_starname_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_starname_replace_starname_step_0" = "输入您的地址进行连接";
+
+/* (No Comment) */
+"str_starname_replace_starname_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"str_starname_replace_starname_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"str_starname_replace_starname_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"str_vote_agent" = "与代理商间接投票";
+
+/* (No Comment) */
+"str_vote_direct" = "直接投票给验证者";
+
+/* (No Comment) */
+"str_withdraw" = "  取出%@";
+
+/* (No Comment) */
+"testnet_warn_msg" = "该钱包用于测试网\n（该钱包中的token是没有价值的）。\n\nCosmostation支持该测试网，以便用户有机会在正式网发布之前使用新功能。请注意，可以随时停止对测试网的支持";
+
+/* (No Comment) */
+"testnet_warn_title" = "测试网警告";
+
+/* (No Comment) */
+"title_cdp_detail" = "CDP 状态";
+
+/* (No Comment) */
+"title_cdp_list" = "CDP 市场";
+
+/* (No Comment) */
+"title_check_mnemonics" = "检查助记词";
+
+/* (No Comment) */
+"title_create" = "创建钱包";
+
+/* (No Comment) */
+"title_create_cdp" = "打开CDP";
+
+/* (No Comment) */
 "title_dapp_market" = "CDP & Harvest";
-"title_cdp_list" = "CDP Market";
-"title_cdp_detail" = "CDP Status";
-"title_harvest_detail" = "Harvest Status";
-"title_create_cdp" = "Open CDP";
+
+/* (No Comment) */
+"title_delegate" = "委托给";
+
+/* (No Comment) */
 "title_deposit_cdp" = "DEPOSIT COLLATERAL";
-"title_withdraw_cdp" = "WITHDRAW COLLATERAL";
+
+/* (No Comment) */
+"title_deposit_harvest" = "存款收入";
+
+/* (No Comment) */
 "title_drawdebt_cdp" = "BORROW MORE USDX";
+
+/* (No Comment) */
+"title_guide" = "FAQ";
+
+/* (No Comment) */
+"title_harvest_detail" = "Harvest 状态";
+
+/* (No Comment) */
+"title_interchain_refund" = "跨链退款";
+
+/* (No Comment) */
+"title_interchain_swap" = "链间的发送和声明";
+
+/* (No Comment) */
+"title_ok_deposit" = "存款";
+
+/* (No Comment) */
+"title_ok_vote" = "验证人投票";
+
+/* (No Comment) */
+"title_ok_withdraw" = "收回";
+
+/* (No Comment) */
+"title_participate_incentive" = "加密日奖励";
+
+/* (No Comment) */
+"title_path" = "选择钱包";
+
+/* (No Comment) */
+"title_redelegate" = "重新委托";
+
+/* (No Comment) */
+"title_reinvest" = "重新投资";
+
+/* (No Comment) */
 "title_repay_cdp" = "REPAY USDX";
-"title_deposit_harvest" = "Deposit Harvest";
-"title_withdraw_harvest" = "Withdraw Harvest";
-"title_reward_harvest" = "Reward Harvest";
-"title_interchain_swap" = "Interchain Send & Claim";
-"title_interchain_refund" = "Interchain Refund";
-"title_participate_incentive" = "Crypto Payday Incentive";
-"title_ok_deposit" = "Deposit";
-"title_ok_withdraw" = "Withdraw";
-"title_ok_vote" = "Vote for Validator";
-"title_starname_list" = "Starname Service";
-"title_starname_registe_domain" = "Register Premium Starname";
-"title_starname_registe_account" = "Register Basic Starname";
-"title_starname_delete_domain" = "Delete Premium Starname";
-"title_starname_delete_account" = "Delete Account";
-"title_starname_renew_domain" = "Renew Premium Starname";
-"title_starname_renew_account" = "Renew Basic Starname";
-"title_starname_update_resource" = "Replace Address";
-"title_starname_domain_detail" = "Premium Starname Detail";
-"title_starname_account_detail" = "Basic Starname Detail";
 
+/* (No Comment) */
+"title_restore" = "导入";
 
-"proposal_type_basic" = "Basic";
-"proposal_type_parameter" = "Parameter";
-"proposal_type_plaintext" = "PlainText";
-"proposal_type_tokenaddition" = "Token Addition";
-"proposal_type_softwareupgrade" = "Software Upgrade";
-"proposal_type_systemhalt" = "System Halt";
-"proposal_type_communitytaxusage" = "Community Tax Usage";
+/* (No Comment) */
+"title_reward" = "领取奖励";
 
+/* (No Comment) */
+"title_reward_harvest" = "奖励收入";
 
+/* (No Comment) */
+"title_reword_address_change" = "奖励地址变更";
 
-"error_password_fail" = "PIN number is not same. Please init PIN number again!";
-"error_no_clipboard" = "No text from clipboard.";
-"error_invalid_address_or_pubkey" = "Invalid Address, please check again.";
-"error_recover_mnemonic" = "Please insert validate mnemonics.";
-"error_amount" = "Please enter valid amount.";
-"error_memo" = "Please enter valid memo.";
-"error_only_fee_with_atom" = "Now only support ATOM for fee.";
-"error_not_enough_available" = "No enough available amount.";
-"error_not_enough_delegable" = "No enough balance to Delegate.";
-"error_not_undelegate" = "Nothing to undelegate.";
-"error_not_redelegate" = "Nothing to redelegate.";
-"error_not_reward" = "No enough reward to Claim.";
-"error_memo" = "Please insert validate memo.";
-"error_invalid_address" = "Invalid Address, please check again.";
-"error_self_send" = "Self sending is not support.";
-"error_invalid_password" = "Invalid PIN number";
-"error_not_enough_fee" = "No enough balance for fee.";
-"error_not_enough_balance_to_send" = "No enough balance for send.";
-"error_wasting_fee" = "Fee is bigger than reward. \nCoin would be wasted!";
-"error_no_telegram" = "Telegram not installed\nPlease install to continue.";
-"error_access_camera_title" = "Camera Access";
-"error_access_camera_msg" = "Request camera access for scan QR-code. Please provide camera access from settings.";
-"error_unbonding_count_over" = "Exceeded maximum undelegation count";
-"error_jailded_delegate" = "Delegation to jailed validator is not supported.";
-"error_redelegate_cnt_over" = "Exceeded maximum redelegation count. Select another validator.";
-"error_network" = "Network Error.";
-"error_redelegate_no_to_address" = "Please select your new validator to redelegate.";
-"error_same_reward_address" = "This address is already registered as your claim reward address.";
-"error_redelegation_limitted" = "You have redelegated to this validator in the past certain period set by the system.";
-"error_max_account_over" = "Max account is 5.";
-"error_iris_token_yet" = "Iris token sending will support soon!";
-"error_support_soon" = "Support soon!";
-"error_kava_vesting_account" = "Vesting account. Please use cli for correct Tx.";
-"error_send_disable" = "Token transfer is locked.";
-"error_not_voting_not" = "Can not vote now.";
-"error_not_voting_period" = "Not voting period.";
-"error_no_bonding_no_vote" = "This proposal can only vote on delegators.";
-"error_already_vote" = "Already voted.";
-"error_no_opinion" = "Please select your opinion.";
-"error_not_yet" = "Coming soon!";
-"error_less_than_min_deposit" = "Less than the minimum deposit amount.";
-"error_less_than_min_principal" = "Less than the minimum loan amount.";
-"error_not_enought_deposit_asset" = "Not enought Asset to deposit.";
-"error_not_enought_withdraw_asset" = "Cannot withdraw collateral now.";
-"error_can_not_draw_debt" = "Cannot more loan now.";
-"error_no_more_faucet" = "Alreay have enought test coin.";
-"error_not_enough_to_deposit" = "Not enough balance to deposit.";
-"error_not_enough_to_withdraw" = "Not enough deposit to withdraw.";
-"error_only_deposit_can_vote" = "No deposit amount.\ndeposit first.";
-"error_min_1_validator" = "Please select more than 1 validator.";
-"error_max_30_validator" = "You can select Max 30 Validators.";
+/* (No Comment) */
+"title_send" = "发送";
 
-"alert_title_no_private_key" = "No Private Key";
-"alert_msg_no_private_key" = "This account has only address with watch mode.\nYou need add mnemonics for generate transaction.";
-"error_reward_address_changed_title" = "Reward Address Changed";
-"error_reward_address_changed_msg" = "This account has changed its reward address.\nYou can user re-invest feature after reset your reward address to self.";
-"error_duple_address" = "This address is already imported.";
-"error_network_msg" = "Can't connect to the network. \nPlease try again in a few minutes.";
-"error_disable" = "Under Maintenance";
-"error_disable_msg" = "We are currently under maintenance. \nPlease check our community channels for more information.";
-"error_not_enought_principal_asset" = "Not enough USDX to repay.";
-"error_can_not_repay" = "Cannot repay now. You need more USDX to Repay.";
-"error_circuit_breaker" = "Now circuit breake";
-"error_can_not_bep3_account_msg" = "In order to receive interchain transfer,\nyou must create a valid(with private key) %@ account and deposit at least 0.000375BNB for claim transaction fee.";
-"error_can_not_bep3_account_msg2" = "In order to receive interchain transfer,\nyou must create a valid(with private key) %@ account wallet.";
-"error_no_recipient_account" = "Please select account to receive";
-"error_no_more_debt_kava" = "Cannot issue USDX. Maximum network USDX capacity has been reached.";
-"error_bnb_mini_amount" = "Minimum amount required for BEP8 transactions is 1 token. If your balance is less than 1, you must send the entire amount.";
-"error_invalide_starname" = "Unregistered star name.";
-"error_no_mattched_starname" = "Valide starname, but there is no mattching address with this chain.";
-"error_starname_self_send" = "Valide starname, but self sending is not support.";
-"error_bep3_supply_full" = "The swap has reached its network capacity.";
-"error_bep3_under_min_amount" = "Need more than 0.00001 balance for Interchain send.";
-"error_no_deposited_asset" = "No deposited asset.";
-"error_no_available_to_deposit" = "No assets to deposit.";
-"error_no_incentive_to_claim" = "No incentive to claim.";
-"error_no_harvest_reward_to_claim" = "No harvest reward to claim.";
-"error_bep3_swap_temporary_disable" = "Bep3 swap relayer is temporary disabled.";
-"error_invalid_address_eth_target" = "Invalid ETH Address.";
-"error_no_delegated_amount" = "No Delegated Amount.";
-"error_no_more_today" = "No More Today.";
-"error_not_enough_to_balance" = "Not enough balance.";
-"error_already_address_added_chain" = "This chain already listed name service";
-"error_not_support_cosmostation" = "Not supported chain Cosmostaion wallet.";
-"error_no_wallet_this_chain" = "Not wallet for this chain.";
-"error_no_address_added" = "Please enter at least 1 address.";
-"error_invalid_domain_format" = "Invalid domain format, please insert another text for domain.";
-"error_invalid_account_format" = "Invalid account format, please insert another text for account.";
-"error_already_registered_domain" = "This domain already registered. please use another text for domain.";
-"error_already_registered_account" = "This account already registered. please use another text for account.";
-"error_not_enough_starname_fee" = "Not enough available balance for starname fee.";
-"error_can_not_extend_close_domain" = "Close type domain not support renew";
-"error_cannot_delete_open_domain" = "Can not delete open domain.";
+/* (No Comment) */
+"title_starname_account_detail" = "基础 Starname 详细信息";
 
+/* (No Comment) */
+"title_starname_delete_account" = "删除账户";
 
+/* (No Comment) */
+"title_starname_delete_domain" = "删除高级 Starname";
 
-"currency_usd" = "USD";
-"currency_eur" = "EUR";
-"currency_krw" = "KRW";
-"currency_jpy" = "JPY";
-"currency_cny" = "CNY";
-"currency_btc" = "BTC";
-"currency_usd_symbol" = "$";
-"currency_eur_symbol" = "€";
-"currency_krw_symbol" = "₩";
-"currency_jpy_symbol" = "¥";
-"currency_cny_symbol" = "¥";
-"currency_btc_symbol" = "₿";
+/* (No Comment) */
+"title_starname_domain_detail" = "高级Starname 详细信息";
 
-"currency_fetch_success" = "Currency updated";
-"currency_fetch_failed" = "Currency fetching failed";
+/* (No Comment) */
+"title_starname_list" = "Starname 服务";
 
+/* (No Comment) */
+"title_starname_registe_account" = "注册基本 Starname";
 
-"tx_send" = "Send";
-"tx_receive" = "Received";
-"tx_transfer" = "Transfer";
-"tx_delegate" = "Delegate";
-"tx_undelegate" = "Undelegate";
-"tx_redelegate" = "Redelegate";
-"tx_get_reward" = "Get Rewards";
-"tx_get_commission" = "Get Commission";
-"tx_change_reward_address" = "Edit Address";
-"tx_vote" = "Vote";
-"tx_submit_proposal" = "Proposal";
-"tx_deposit" = "Deposit";
-"tx_create_validator" = "Create Val";
-"tx_edit_validator" = "Edit Val";
-"tx_reinvest" = "Re-Invest";
-"tx_get_reward_all" = "Get All Rewards";
-"tx_new_order" = "New Order";
-"tx_cancel_order" = "Cancel Order";
-"tx_issue_token" = "Issue Token";
-"tx_kava_post_price" = "Post Price";
-"tx_kava_create_cdp" = "CDP\nOpen";
-"tx_kava_deposit_cdp" = "CDP\nDeposit";
-"tx_kava_withdraw_cdp" = "CDP\nWithdraw";
-"tx_kava_drawdebt_cdp" = "CDP\nDraw Debt";
-"tx_kava_repaydebt_cdp" = "CDP\nRepay";
-"tx_create_htlc" = "Interchain\nCreate";
-"tx_send_htlc" = "Interchain\nSend";
-"tx_receive_htlc" = "Interchain\nReceive";
-"tx_create_htlc2" = "Interchain Create";
-"tx_send_htlc2" = "Interchain Send";
-"tx_receive_htlc2" = "Interchain Receive";
+/* (No Comment) */
+"title_starname_registe_domain" = "注册高级 Starname";
+
+/* (No Comment) */
+"title_starname_renew_account" = "续订基本 Starname";
+
+/* (No Comment) */
+"title_starname_renew_domain" = "续费 Starname";
+
+/* (No Comment) */
+"title_starname_update_resource" = "替换地址";
+
+/* (No Comment) */
+"title_token_detail" = "Token细节";
+
+/* (No Comment) */
+"title_tx_detail" = "交易明细";
+
+/* (No Comment) */
+"title_undelegate" = "取消删除";
+
+/* (No Comment) */
+"title_validator_detail" = "验证者详细信息";
+
+/* (No Comment) */
+"title_validator_list" = "验证者列表";
+
+/* (No Comment) */
+"title_vote" = "投票";
+
+/* (No Comment) */
+"title_vote_detail" = "提案详细信息";
+
+/* (No Comment) */
+"title_vote_list" = "提案清单";
+
+/* (No Comment) */
+"title_wallet_connect" = "钱包链接";
+
+/* (No Comment) */
+"title_wallet_detail" = "钱包详细信息";
+
+/* (No Comment) */
+"title_wallet_manage" = "钱包管理";
+
+/* (No Comment) */
+"title_watch_wallet" = "Watch Wallet";
+
+/* (No Comment) */
+"title_withdraw_cdp" = "WITHDRAW COLLATERAL";
+
+/* (No Comment) */
+"title_withdraw_harvest" = "收回收获";
+
+/* (No Comment) */
+"touchID" = "指纹ID";
+
+/* (No Comment) */
+"tx_cancel_order" = "取消订单";
+
+/* (No Comment) */
+"tx_change_reward_address" = "编辑地址";
+
+/* (No Comment) */
 "tx_claim_htlc" = "Interchain\nClaim";
-"tx_refund_htlc" = "Interchain\nRefund";
-"tx_kava_bep3_create" = "Interchain\nSend";
+
+/* (No Comment) */
+"tx_create_htlc" = "Interchain\nCreate";
+
+/* (No Comment) */
+"tx_create_htlc2" = "Interchain Create";
+
+/* (No Comment) */
+"tx_create_validator" = "创建验证人";
+
+/* (No Comment) */
+"tx_delegate" = "代表";
+
+/* (No Comment) */
+"tx_deposit" = "存款";
+
+/* (No Comment) */
+"tx_edit_validator" = "编辑验证人";
+
+/* (No Comment) */
+"tx_fail" = "失败";
+
+/* (No Comment) */
+"tx_get_commission" = "获得佣金";
+
+/* (No Comment) */
+"tx_get_reward" = "获得奖励";
+
+/* (No Comment) */
+"tx_get_reward_all" = "获取所有奖励";
+
+/* (No Comment) */
+"tx_issue_token" = "发行Token";
+
+/* (No Comment) */
 "tx_kava_bep3_claim" = "Interchain\nClaim";
+
+/* (No Comment) */
+"tx_kava_bep3_create" = "Interchain\nSend";
+
+/* (No Comment) */
 "tx_kava_bep3_refund" = "Interchain\nRefund";
-"tx_kava_incentive_reward" = "Crypto Payday\nIncentive";
-"tx_kava_havest_deposit" = "Harvest\nDeposit";
-"tx_kava_havest_withdraw" = "Harvest\nWithdraw";
+
+/* (No Comment) */
+"tx_kava_create_cdp" = "CDP\nOpen";
+
+/* (No Comment) */
+"tx_kava_deposit_cdp" = "CDP\nDeposit";
+
+/* (No Comment) */
+"tx_kava_drawdebt_cdp" = "CDP\nDraw Debt";
+
+/* (No Comment) */
 "tx_kava_havest_claim" = "Harvest\nGet Rewards";
-"tx_starname_registe_domain" = "Register Domain";
-"tx_starname_registe_account" = "Register Account";
-"tx_starname_delete_domain" = "Delete Domain";
-"tx_starname_delete_account" = "Delete Account";
-"tx_starname_renew_domain" = "Renew Domain";
-"tx_starname_renew_account" = "Renew Account";
-"tx_starname_update_resource" = "Replace Address";
+
+/* (No Comment) */
+"tx_kava_havest_deposit" = "Harvest\nDeposit";
+
+/* (No Comment) */
+"tx_kava_havest_withdraw" = "Harvest\nWithdraw";
+
+/* (No Comment) */
+"tx_kava_incentive_reward" = "Crypto Payday\nIncentive";
+
+/* (No Comment) */
+"tx_kava_post_price" = "发布价格";
+
+/* (No Comment) */
+"tx_kava_repaydebt_cdp" = "CDP\nRepay";
+
+/* (No Comment) */
+"tx_kava_withdraw_cdp" = "CDP\nWithdraw";
+
+/* (No Comment) */
 "tx_known" = "Unknown";
 
-"chain_title_cosmos" = "Cosmos Mainnet";
-"chain_title_dipper" = "Dipper Hub";
-"chain_title_test_dipper" = "Dipper Testnet";
-"chain_title_iris" = "Iris Mainnet";
-"chain_title_bnb" = "Binance Mainnet";
-"chain_title_kava" = "Kava Mainnet";
-"chain_title_iov" = "Starname Mainnet";
-"chain_title_band" = "Band Mainnet";
-"chain_title_secret" = "Secret Mainnet";
-"chain_title_certik" = "Certik Mainnet";
-"chain_title_test_bnb" = "Binance Testnet";
-"chain_title_kava_test" = "Kava Testnet";
-"chain_title_iov_test" = "Starname Testnet";
-"chain_title_okex_test" = "Okex Testnet";
-"chain_title_certik_test" = "Certik Testnet";
+/* (No Comment) */
+"tx_new_order" = "新命令";
 
-"date_format" = "MMM d, yyyy HH:mm:ss";
-"date_format2" = "MMM d, yyyy";
+/* (No Comment) */
+"tx_next" = "下一步";
+
+/* (No Comment) */
+"tx_receive" = "接收";
+
+/* (No Comment) */
+"tx_receive_htlc" = "Interchain\nReceive";
+
+/* (No Comment) */
+"tx_receive_htlc2" = "Interchain Receive";
+
+/* (No Comment) */
+"tx_redelegate" = "重新委托";
+
+/* (No Comment) */
+"tx_refund_htlc" = "Interchain\nRefund";
+
+/* (No Comment) */
+"tx_reinvest" = "重新投资";
+
+/* (No Comment) */
+"tx_send" = "发送";
+
+/* (No Comment) */
+"tx_send_htlc" = "Interchain\nSend";
+
+/* (No Comment) */
+"tx_send_htlc2" = "Interchain Send";
+
+/* (No Comment) */
+"tx_starname_delete_account" = "Delete Account";
+
+/* (No Comment) */
+"tx_starname_delete_domain" = "Delete Domain";
+
+/* (No Comment) */
+"tx_starname_registe_account" = "Register Account";
+
+/* (No Comment) */
+"tx_starname_registe_domain" = "Register Domain";
+
+/* (No Comment) */
+"tx_starname_renew_account" = "Renew Account";
+
+/* (No Comment) */
+"tx_starname_renew_domain" = "Renew Domain";
+
+/* (No Comment) */
+"tx_starname_update_resource" = "Replace Address";
+
+/* (No Comment) */
+"tx_submit_proposal" = "提案";
+
+/* (No Comment) */
+"tx_success" = "成功";
+
+/* (No Comment) */
+"tx_transfer" = "转移";
+
+/* (No Comment) */
+"tx_undelegate" = "取消授权";
+
+/* (No Comment) */
+"tx_vote" = "投票";
+
+/* (No Comment) */
+"undelegate_step_1" = "输入取消代理金额";
+
+/* (No Comment) */
+"undelegate_step_4" = "检查取消代理详细信息";
+
+/* (No Comment) */
+"update_msg" = "新版本可用。\n请从Appstore更新到最新版本";
+
+/* (No Comment) */
+"update_title" = "更新";
+
+/* (No Comment) */
+"validator_address" = "验证人地址";
+
+/* (No Comment) */
+"value" = "密码";
+
+/* (No Comment) */
+"vesting_account" = "归属账户";
+
+/* (No Comment) */
+"vesting_account_msg" = "您的账户看起来是即有账户，建议您使用clicommnad委托并取消删除交易以获取正确的金额";
+
+/* (No Comment) */
+"vote_step_1" = "选择您的意见";
+
+/* (No Comment) */
+"vote_step_4" = "查看交易明细";
+
+/* (No Comment) */
+"wait" = "等待";
+
+/* (No Comment) */
+"waiting_deposit" = "等待存款";
+
+/* (No Comment) */
+"wallet_dash" = "钱包";
+
+/* (No Comment) */
+"wallet_delete_complete" = "删除完成";
+
+/* (No Comment) */
+"wallet_name" = "钱包名称";
+
+/* (No Comment) */
+"warnning" = "警告";
+
+/* (No Comment) */
+"wc_alert_msg" = "您想将钱包连接到Binance Dex Exchange吗?";
+
+/* (No Comment) */
+"wc_alert_title" = "钱包链接";
+
+/* (No Comment) */
+"wc_cancel_msg" = "请检查内容并决定。\n您的订单奖被取消";
+
+/* (No Comment) */
+"wc_cancel_title" = "取消订单请求";
+
+/* (No Comment) */
+"wc_request_cancel_msg" = "请检查内容并决定。\n\n取消订单";
+
+/* (No Comment) */
+"wc_request_fail" = "交易失败！";
+
+/* (No Comment) */
+"wc_request_sign_msg" = "请检查内容并决定。\n这会影响您的资产";
+
+/* (No Comment) */
+"wc_request_sign_title" = "请求交易签名";
+
+/* (No Comment) */
+"wc_request_success" = "交易成功！";
+
+/* (No Comment) */
+"wc_trade_msg" = "请检查内容并决定。\n它会影响您的资产";
+
+/* (No Comment) */
+"wc_trade_title" = "下订单请求";
+
+/* (No Comment) */
+"with_mnemonic" = "带助记词";
+
+/* (No Comment) */
+"with_mnemonics" = "带助记词";
+
+/* (No Comment) */
+"withdraw_cdp_step_0" = "输入提款金额";
+
+/* (No Comment) */
+"withdraw_cdp_step_1" = "输入备忘录（可选）";
+
+/* (No Comment) */
+"withdraw_cdp_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"withdraw_cdp_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"withdraw_harvest_step_0" = "输入收获取款量";
+
+/* (No Comment) */
+"withdraw_harvest_step_1" = "输入备忘录（可选)";
+
+/* (No Comment) */
+"withdraw_harvest_step_2" = "选择交易费用";
+
+/* (No Comment) */
+"withdraw_harvest_step_3" = "查看交易明细";
+
+/* (No Comment) */
+"withdraw_single_step_1" = "检查您的奖励细节";
+
+/* (No Comment) */
+"withdraw_single_step_4" = "检查您的信息以获得奖励";
+
+/* (No Comment) */
+"withdrawable_format" = "可提款%@";
+

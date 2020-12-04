@@ -30,10 +30,10 @@ class ManageChainCell: UITableViewCell {
             chainAll.textColor = UIColor.white
             chainImg.alpha = 1.0
         } else {
-            chainCard.borderColor = UIColor.init(hexString: "#9ca2ac", alpha: 0.0)
+            chainCard.borderColor = UIColor.init(hexString: "#9ca2ac", alpha: 0.3)
             chainName.textColor = UIColor.init(hexString: "#4b4f54")
             chainAll.textColor = UIColor.init(hexString: "#4b4f54")
-            chainImg.alpha = 0.1
+            chainImg.alpha = 0.3
         }
         
     }

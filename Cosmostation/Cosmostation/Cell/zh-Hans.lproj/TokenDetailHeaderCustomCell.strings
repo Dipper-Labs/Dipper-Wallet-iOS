@@ -1,4 +1,3 @@
-
 /* Class = "UILabel"; text = "SYMBOL"; ObjectID = "0ix-SS-Cfs"; */
 "0ix-SS-Cfs.text" = "SYMBOL";
 
@@ -20,8 +19,17 @@
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "Fj1-l0-i5s"; */
 "Fj1-l0-i5s.normalTitle" = "  Send";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "g8b-6P-TQl"; */
+"g8b-6P-TQl.text" = "--";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "gzS-C3-Sxs"; */
+"gzS-C3-Sxs.text" = "--";
+
 /* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "KSL-DQ-yGh"; */
 "KSL-DQ-yGh.text" = "Harvest Deposited";
+
+/* Class = "UILabel"; text = "Harvest Reward"; ObjectID = "lR4-DP-ghL"; */
+"lR4-DP-ghL.text" = "Harvest Reward";
 
 /* Class = "UIButton"; normalTitle = "  Interchain Transfer"; ObjectID = "PCe-5j-woO"; */
 "PCe-5j-woO.normalTitle" = "  Interchain Transfer";
@@ -38,17 +46,9 @@
 /* Class = "UILabel"; text = "--"; ObjectID = "V5i-pu-I61"; */
 "V5i-pu-I61.text" = "--";
 
+/* Class = "UILabel"; text = "Frozen"; ObjectID = "zBu-Zv-xk4"; */
+"zBu-Zv-xk4.text" = "Frozen";
+
 /* Class = "UILabel"; text = "--"; ObjectID = "ZtS-bm-FME"; */
 "ZtS-bm-FME.text" = "--";
 
-/* Class = "UILabel"; text = "--"; ObjectID = "g8b-6P-TQl"; */
-"g8b-6P-TQl.text" = "--";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "gzS-C3-Sxs"; */
-"gzS-C3-Sxs.text" = "--";
-
-/* Class = "UILabel"; text = "Harvest Reward"; ObjectID = "lR4-DP-ghL"; */
-"lR4-DP-ghL.text" = "Harvest Reward";
-
-/* Class = "UILabel"; text = "Frozen"; ObjectID = "zBu-Zv-xk4"; */
-"zBu-Zv-xk4.text" = "Frozen";

@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "dipperLogo.png",
+      "filename" : "150.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "dipperLogo@2x.png",
+      "filename" : "300.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "dipperlogo@3x.png",
+      "filename" : "WechatIMG3218 3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

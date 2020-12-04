@@ -70,6 +70,13 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
             chainImg.image = UIImage(named: "cosmosWhMain")
             keyPath.text = BASE_PATH.appending(account!.account_path)
             
+        } else if (chainType == ChainType.DIPPER_MAIN) {
+            chainImg.image = UIImage(named: "dipperWhImg")
+            keyPath.text = DIP_BASE_PATH.appending(account!.account_path)
+            cardPush.isHidden = true
+            constraint2.priority = .defaultHigh
+            constraint1.priority = .defaultLow
+            
         } else if (chainType == ChainType.IRIS_MAIN) {
             chainImg.image = UIImage(named: "irisWh")
             keyPath.text = BASE_PATH.appending(account!.account_path)
@@ -147,6 +154,14 @@ class WalletDetailViewController: BaseViewController, PasswordViewDelegate {
 
         }
         
+        else if (chainType == ChainType.DIPPER_TEST) {
+           chainImg.image = UIImage(named: "dipperTestWhImg")
+           keyPath.text = DIP_BASE_PATH.appending(account!.account_path)
+           cardPush.isHidden = true
+           constraint2.priority = .defaultHigh
+           constraint1.priority = .defaultLow
+           
+       }
         else if (chainType == ChainType.IOV_TEST) {
             chainImg.image = UIImage(named: "iovTestnetImg")
             keyPath.text = IOV_BASE_PATH.appending(account!.account_path)

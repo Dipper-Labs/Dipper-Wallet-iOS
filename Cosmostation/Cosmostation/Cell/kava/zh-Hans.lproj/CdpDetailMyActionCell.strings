@@ -1,15 +1,23 @@
-
-/* Class = "UILabel"; text = "Withdrawable BTC"; ObjectID = "599-6J-ZUx"; */
-"599-6J-ZUx.text" = "Withdrawable BTC";
-
 /* Class = "UILabel"; text = "PDenom"; ObjectID = "6LU-h5-mcZ"; */
 "6LU-h5-mcZ.text" = "PDenom";
+
+/* Class = "UILabel"; text = "Deposited Collateral (self)"; ObjectID = "8ZT-XM-dd1"; */
+"8ZT-XM-dd1.text" = "Deposited Collateral (self)";
 
 /* Class = "UILabel"; text = "000000"; ObjectID = "87c-X6-h1s"; */
 "87c-X6-h1s.text" = "000000";
 
-/* Class = "UILabel"; text = "Deposited Collateral (self)"; ObjectID = "8ZT-XM-dd1"; */
-"8ZT-XM-dd1.text" = "Deposited Collateral (self)";
+/* Class = "UILabel"; text = "Withdrawable BTC"; ObjectID = "599-6J-ZUx"; */
+"599-6J-ZUx.text" = "Withdrawable BTC";
+
+/* Class = "UILabel"; text = "000000"; ObjectID = "aCu-5p-CaG"; */
+"aCu-5p-CaG.text" = "000000";
+
+/* Class = "UIButton"; normalTitle = "  Deposit BTC"; ObjectID = "bb0-fi-kPx"; */
+"bb0-fi-kPx.normalTitle" = "  Deposit BTC";
+
+/* Class = "UILabel"; text = "000000"; ObjectID = "bLc-4x-Bd8"; */
+"bLc-4x-Bd8.text" = "000000";
 
 /* Class = "UILabel"; text = "$0.00"; ObjectID = "Dkl-d0-Wg8"; */
 "Dkl-d0-Wg8.text" = "$0.00";
@@ -23,6 +31,9 @@
 /* Class = "UILabel"; text = "000000"; ObjectID = "GmQ-sg-ec9"; */
 "GmQ-sg-ec9.text" = "000000";
 
+/* Class = "UILabel"; text = "CDenom"; ObjectID = "gSs-mj-aKR"; */
+"gSs-mj-aKR.text" = "CDenom";
+
 /* Class = "UILabel"; text = "$0.00"; ObjectID = "ICs-YC-309"; */
 "ICs-YC-309.text" = "$0.00";
 
@@ -32,38 +43,11 @@
 /* Class = "UILabel"; text = "Loan Principal"; ObjectID = "Klr-N3-CMY"; */
 "Klr-N3-CMY.text" = "Loan Principal";
 
-/* Class = "UIButton"; normalTitle = "  Repay USDX"; ObjectID = "OOj-JD-fLH"; */
-"OOj-JD-fLH.normalTitle" = "  Repay USDX";
-
-/* Class = "UILabel"; text = "000000"; ObjectID = "T3J-XU-RAp"; */
-"T3J-XU-RAp.text" = "000000";
-
-/* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "TIp-A6-gEe"; */
-"TIp-A6-gEe.text" = "Unclaimed Incentive";
-
-/* Class = "UILabel"; text = "$0.00"; ObjectID = "XCT-F9-xdx"; */
-"XCT-F9-xdx.text" = "$0.00";
-
-/* Class = "UILabel"; text = "000000"; ObjectID = "Y3q-Uk-gFk"; */
-"Y3q-Uk-gFk.text" = "000000";
-
-/* Class = "UILabel"; text = "$0.00"; ObjectID = "Y9U-yF-kML"; */
-"Y9U-yF-kML.text" = "$0.00";
-
-/* Class = "UILabel"; text = "000000"; ObjectID = "aCu-5p-CaG"; */
-"aCu-5p-CaG.text" = "000000";
-
-/* Class = "UILabel"; text = "000000"; ObjectID = "bLc-4x-Bd8"; */
-"bLc-4x-Bd8.text" = "000000";
-
-/* Class = "UIButton"; normalTitle = "  Deposit BTC"; ObjectID = "bb0-fi-kPx"; */
-"bb0-fi-kPx.normalTitle" = "  Deposit BTC";
-
-/* Class = "UILabel"; text = "CDenom"; ObjectID = "gSs-mj-aKR"; */
-"gSs-mj-aKR.text" = "CDenom";
-
 /* Class = "UILabel"; text = "$0.00"; ObjectID = "nNo-c0-x74"; */
 "nNo-c0-x74.text" = "$0.00";
+
+/* Class = "UIButton"; normalTitle = "  Repay USDX"; ObjectID = "OOj-JD-fLH"; */
+"OOj-JD-fLH.normalTitle" = "  Repay USDX";
 
 /* Class = "UILabel"; text = "000000"; ObjectID = "pxJ-QI-jex"; */
 "pxJ-QI-jex.text" = "000000";
@@ -74,6 +58,12 @@
 /* Class = "UILabel"; text = "Deposited Collateral (total)"; ObjectID = "rw1-u2-xMP"; */
 "rw1-u2-xMP.text" = "Deposited Collateral (total)";
 
+/* Class = "UILabel"; text = "000000"; ObjectID = "T3J-XU-RAp"; */
+"T3J-XU-RAp.text" = "000000";
+
+/* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "TIp-A6-gEe"; */
+"TIp-A6-gEe.text" = "Unclaimed Incentive";
+
 /* Class = "UILabel"; text = "My CDP Information"; ObjectID = "tpt-Dq-m35"; */
 "tpt-Dq-m35.text" = "My CDP Information";
 
@@ -83,8 +73,18 @@
 /* Class = "UIButton"; normalTitle = "  Claim Incentive"; ObjectID = "wIh-c9-MEM"; */
 "wIh-c9-MEM.normalTitle" = "  Claim Incentive";
 
+/* Class = "UILabel"; text = "$0.00"; ObjectID = "XCT-F9-xdx"; */
+"XCT-F9-xdx.text" = "$0.00";
+
 /* Class = "UIButton"; normalTitle = "  Withdraw  BTC"; ObjectID = "xrz-JZ-ryA"; */
 "xrz-JZ-ryA.normalTitle" = "  Withdraw  BTC";
 
+/* Class = "UILabel"; text = "000000"; ObjectID = "Y3q-Uk-gFk"; */
+"Y3q-Uk-gFk.text" = "000000";
+
+/* Class = "UILabel"; text = "$0.00"; ObjectID = "Y9U-yF-kML"; */
+"Y9U-yF-kML.text" = "$0.00";
+
 /* Class = "UIButton"; normalTitle = "  Borrow more USDX"; ObjectID = "za2-qF-pdH"; */
 "za2-qF-pdH.normalTitle" = "  Borrow more USDX";
+

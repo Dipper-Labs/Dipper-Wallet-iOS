@@ -1,12 +1,11 @@
-
 /* Class = "UILabel"; text = "Do NOT close!\nTransactions are being submitted to each chain in order.\nPlease note that it may take longer than regular transactions."; ObjectID = "Cdf-vK-UAB"; */
 "Cdf-vK-UAB.text" = "Do NOT close!\nTransactions are being submitted to each chain in order.\nPlease note that it may take longer than regular transactions.";
 
-/* Class = "UILabel"; text = "ERROR"; ObjectID = "eVj-Sm-dGi"; */
-"eVj-Sm-dGi.text" = "ERROR";
-
 /* Class = "UILabel"; text = "Transaction request failed. \nPlease check the error code and message."; ObjectID = "ek8-kv-u7T"; */
 "ek8-kv-u7T.text" = "Transaction request failed. \nPlease check the error code and message.";
+
+/* Class = "UILabel"; text = "ERROR"; ObjectID = "eVj-Sm-dGi"; */
+"eVj-Sm-dGi.text" = "ERROR";
 
 /* Class = "UIButton"; normalTitle = "Origin Wallet"; ObjectID = "hAT-Yb-Cka"; */
 "hAT-Yb-Cka.normalTitle" = "Origin Wallet";
@@ -19,3 +18,4 @@
 
 /* Class = "UILabel"; text = "Interchain Send & Claim"; ObjectID = "vdC-L4-aXV"; */
 "vdC-L4-aXV.text" = "Interchain Send & Claim";
+

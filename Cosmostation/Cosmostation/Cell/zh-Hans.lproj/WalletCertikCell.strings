@@ -1,9 +1,23 @@
+/* Class = "UILabel"; text = "CTK"; ObjectID = "ase-B6-EYW"; */
+"ase-B6-EYW.text" = "CTK";
+
+/* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "c1y-zG-GT6"; */
+"c1y-zG-GT6.normalTitle" = "  Vote";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "cJK-hS-jni"; */
+"cJK-hS-jni.text" = "--";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "COC-Lj-MyQ"; */
 "COC-Lj-MyQ.text" = "--";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "cXZ-Ez-NQS"; */
+"cXZ-Ez-NQS.text" = "--";
+
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "FWy-Y8-0AU"; */
 "FWy-Y8-0AU.text" = "Delegated";
+
+/* Class = "UILabel"; text = "Reward"; ObjectID = "hnk-1c-Pvr"; */
+"hnk-1c-Pvr.text" = "Reward";
 
 /* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "LWn-wK-LCc"; */
 "LWn-wK-LCc.normalTitle" = "  Delegate";
@@ -17,23 +31,9 @@
 /* Class = "UILabel"; text = "--"; ObjectID = "TVL-sI-7MU"; */
 "TVL-sI-7MU.text" = "--";
 
+/* Class = "UILabel"; text = "--"; ObjectID = "vMm-w2-AI4"; */
+"vMm-w2-AI4.text" = "--";
+
 /* Class = "UILabel"; text = "Available"; ObjectID = "YMC-ak-szT"; */
 "YMC-ak-szT.text" = "Available";
 
-/* Class = "UILabel"; text = "CTK"; ObjectID = "ase-B6-EYW"; */
-"ase-B6-EYW.text" = "CTK";
-
-/* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "c1y-zG-GT6"; */
-"c1y-zG-GT6.normalTitle" = "  Vote";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "cJK-hS-jni"; */
-"cJK-hS-jni.text" = "--";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "cXZ-Ez-NQS"; */
-"cXZ-Ez-NQS.text" = "--";
-
-/* Class = "UILabel"; text = "Reward"; ObjectID = "hnk-1c-Pvr"; */
-"hnk-1c-Pvr.text" = "Reward";
-
-/* Class = "UILabel"; text = "--"; ObjectID = "vMm-w2-AI4"; */
-"vMm-w2-AI4.text" = "--";

@@ -703,6 +703,7 @@ let PASSWORD_RESUKT_OK_FOR_DELETE           = 3
 
 
 let BASE_PATH                               = "m/44'/118'/0'/0/"
+let DIP_BASE_PATH                           = "m/44'/925'/0'/0/"
 let BNB_BASE_PATH                           = "m/44'/714'/0'/0/"
 let KAVA_BASE_PATH                          = "m/44'/459'/0'/0/"
 let IOV_BASE_PATH                           = "m/44'/234'/0'/0/"
@@ -768,7 +769,7 @@ let GAS_FEE_AMOUNT_IRIS_REWARD_BASE         = "10000"
 let GAS_FEE_AMOUNT_IRIS_REWARD_MUX          = "5000"
 
 
-let GAS_FEE_RATE_DIP_AVERAGE               = "0.000008"
+let GAS_FEE_RATE_DIP_AVERAGE               = "0.000006"
 
 let GAS_FEE_AMOUNT_DIP_LOW                 = "100000"
 let GAS_FEE_AMOUNT_DIP_SEND                = "400000"

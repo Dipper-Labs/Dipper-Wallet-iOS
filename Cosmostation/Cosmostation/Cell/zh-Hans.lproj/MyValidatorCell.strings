@@ -1,15 +1,5 @@
-
 /* Class = "UILabel"; text = "Moniker"; ObjectID = "5rW-3b-Lm5"; */
 "5rW-3b-Lm5.text" = "Moniker";
-
-/* Class = "UILabel"; text = "Delegated"; ObjectID = "Cdf-lL-EcX"; */
-"Cdf-lL-EcX.text" = "Delegated";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "Mma-bi-v2Y"; */
-"Mma-bi-v2Y.text" = "-";
-
-/* Class = "UILabel"; text = "-"; ObjectID = "ZI9-I9-znv"; */
-"ZI9-I9-znv.text" = "-";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "ago-pl-psR"; */
 "ago-pl-psR.text" = "-";
@@ -17,5 +7,15 @@
 /* Class = "UILabel"; text = "Reward"; ObjectID = "bwg-AL-vPt"; */
 "bwg-AL-vPt.text" = "Reward";
 
+/* Class = "UILabel"; text = "Delegated"; ObjectID = "Cdf-lL-EcX"; */
+"Cdf-lL-EcX.text" = "Delegated";
+
 /* Class = "UILabel"; text = "Undelegating"; ObjectID = "lCZ-OT-X4w"; */
 "lCZ-OT-X4w.text" = "Undelegating";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "Mma-bi-v2Y"; */
+"Mma-bi-v2Y.text" = "-";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "ZI9-I9-znv"; */
+"ZI9-I9-znv.text" = "-";
+

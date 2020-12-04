@@ -35,6 +35,8 @@ class StepChangeCheckViewController: BaseViewController, PasswordViewDelegate {
         if (pageHolderVC.chainType! == ChainType.COSMOS_MAIN || pageHolderVC.chainType! == ChainType.BAND_MAIN || pageHolderVC.chainType! == ChainType.SECRET_MAIN ||
                 pageHolderVC.chainType! == ChainType.IOV_MAIN || pageHolderVC.chainType! == ChainType.IOV_TEST || pageHolderVC.chainType! == ChainType.CERTIK_MAIN || pageHolderVC.chainType! == ChainType.CERTIK_TEST) {
             rewardAddressChangeFee.attributedText = WUtils.displayAmount(feeAmout.stringValue, rewardAddressChangeFee.font, 6, pageHolderVC.chainType!)
+        } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
+            rewardAddressChangeFee.attributedText = WUtils.displayAmount(feeAmout.stringValue, rewardAddressChangeFee.font, 12, pageHolderVC.chainType!)
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             rewardAddressChangeFee.attributedText = WUtils.displayAmount(feeAmout.stringValue, rewardAddressChangeFee.font, 18, pageHolderVC.chainType!)
         }
