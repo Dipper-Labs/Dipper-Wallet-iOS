@@ -1,17 +1,17 @@
 /* Class = "UILabel"; text = "Commission"; ObjectID = "7dw-Do-0Kx"; */
-"7dw-Do-0Kx.text" = "Commission";
+"7dw-Do-0Kx.text" = "佣金";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "9ll-al-VsK"; */
 "9ll-al-VsK.text" = "-";
 
 /* Class = "UILabel"; text = "Total Bonded"; ObjectID = "AVl-yd-FMi"; */
-"AVl-yd-FMi.text" = "Total Bonded";
+"AVl-yd-FMi.text" = "委托代币总量";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "GGs-21-mY1"; */
 "GGs-21-mY1.text" = "-";
 
 /* Class = "UILabel"; text = "Est. Apr"; ObjectID = "Gvi-TG-hcA"; */
-"Gvi-TG-hcA.text" = "Est. Apr";
+"Gvi-TG-hcA.text" = "预计年化收益";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "MLi-H4-EiM"; */
 "MLi-H4-EiM.text" = "0";
@@ -23,7 +23,7 @@
 "uzD-c2-knb.text" = "0";
 
 /* Class = "UILabel"; text = "Self Bonded Rate"; ObjectID = "VAm-mk-uUf"; */
-"VAm-mk-uUf.text" = "Self Bonded Rate";
+"VAm-mk-uUf.text" = "自我委托比例";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "wIc-1S-aDh"; */
 "wIc-1S-aDh.text" = "-";

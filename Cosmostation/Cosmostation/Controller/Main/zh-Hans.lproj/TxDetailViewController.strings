@@ -1,24 +1,24 @@
 /* Class = "UILabel"; text = "Transaction request failed. \nPlease check the error code and message."; ObjectID = "3VT-d5-KpZ"; */
-"3VT-d5-KpZ.text" = "Transaction request failed. \nPlease check the error code and message.";
+"3VT-d5-KpZ.text" = "交易请求失败。\n请检查错误代码和消息。";
 
 /* Class = "UIButton"; normalTitle = "Share"; ObjectID = "502-rv-iQc"; */
-"502-rv-iQc.normalTitle" = "Share";
+"502-rv-iQc.normalTitle" = "分享";
 
 /* Class = "UILabel"; text = "ERROR"; ObjectID = "Dbm-qv-Lyd"; */
-"Dbm-qv-Lyd.text" = "ERROR";
+"Dbm-qv-Lyd.text" = "错误";
 
 /* Class = "UILabel"; text = "error code : 3"; ObjectID = "G9v-QX-nXf"; */
-"G9v-QX-nXf.text" = "error code : 3";
+"G9v-QX-nXf.text" = "错误代码 : 3";
 
 /* Class = "UILabel"; text = "Transaction Details"; ObjectID = "H6Q-0Y-3AI"; */
-"H6Q-0Y-3AI.text" = "Transaction Details";
+"H6Q-0Y-3AI.text" = "交易明细";
 
 /* Class = "UIButton"; normalTitle = "Done"; ObjectID = "m4a-6Y-f1I"; */
-"m4a-6Y-f1I.normalTitle" = "Done";
+"m4a-6Y-f1I.normalTitle" = "完成";
 
 /* Class = "UIButton"; normalTitle = "   Interchain Refund"; ObjectID = "QFR-lD-uH1"; */
-"QFR-lD-uH1.normalTitle" = "   Interchain Refund";
+"QFR-lD-uH1.normalTitle" = "   跨链退款";
 
 /* Class = "UILabel"; text = "Transaction request submitted successfully. \nAfter a few moments, the full results will be displayed.\n(Pending times depends on Tx fee.)"; ObjectID = "Yke-lk-aaV"; */
-"Yke-lk-aaV.text" = "Transaction request submitted successfully. \nAfter a few moments, the full results will be displayed.\n(Pending times depends on Tx fee.)";
+"Yke-lk-aaV.text" = "交易请求已成功提交。\n片刻之后，将显示完整结果。\n（等待时间取决于交易费用。）";
 

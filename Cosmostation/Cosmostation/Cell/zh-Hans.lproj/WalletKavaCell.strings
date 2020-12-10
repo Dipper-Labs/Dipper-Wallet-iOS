@@ -2,7 +2,7 @@
 "5Ak-fk-XqG.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "C3t-mz-BvV"; */
-"C3t-mz-BvV.normalTitle" = "  Vote";
+"C3t-mz-BvV.normalTitle" = "  投票";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "COZ-7T-K9H"; */
 "COZ-7T-K9H.text" = "--";
@@ -17,13 +17,13 @@
 "hCI-8s-Z2b.text" = "--";
 
 /* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "Iol-ln-IqD"; */
-"Iol-ln-IqD.text" = "Unclaimed Incentive";
+"Iol-ln-IqD.text" = "无人认领的激励";
 
 /* Class = "UILabel"; text = "Vesting (Delegable)"; ObjectID = "JwO-XO-BlK"; */
-"JwO-XO-BlK.text" = "Vesting (Delegable)";
+"JwO-XO-BlK.text" = "归属 (可委托的)";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "KPK-HL-ANV"; */
-"KPK-HL-ANV.text" = "Available";
+"KPK-HL-ANV.text" = "可用";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "lgL-XM-pQj"; */
 "lgL-XM-pQj.text" = "--";
@@ -32,13 +32,13 @@
 "onj-Va-AtW.text" = "--";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "oXU-Nn-W6J"; */
-"oXU-Nn-W6J.text" = "Delegated";
+"oXU-Nn-W6J.text" = "委托";
 
 /* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "qDv-9B-JUU"; */
-"qDv-9B-JUU.normalTitle" = "  Delegate";
+"qDv-9B-JUU.normalTitle" = "  委托";
 
 /* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "Tjy-8z-4fF"; */
-"Tjy-8z-4fF.text" = "Harvest Deposited";
+"Tjy-8z-4fF.text" = "已收储";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "Tmz-HF-m7T"; */
 "Tmz-HF-m7T.text" = "--";
@@ -53,7 +53,7 @@
 "UL9-O3-AK5.text" = "--";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "WTa-WP-E2M"; */
-"WTa-WP-E2M.text" = "Unbonding";
+"WTa-WP-E2M.text" = "赎回中";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "ZkW-VM-BOj"; */
 "ZkW-VM-BOj.text" = "--";

@@ -2,7 +2,7 @@
 "add_address_hint" = "输入地址.";
 
 /* (No Comment) */
-"add_address_msg" = "在监视模式下，您可以检查账户状态。\n要进行交易，可以在以后添加私人信息.";
+"add_address_msg" = "在浏览模式下，您可以检查账户状态。\n要进行交易，可以在以后添加私人信息.";
 
 /* (No Comment) */
 "add_mnemonic" = "添加助记词";
@@ -14,7 +14,7 @@
 "after_liquidation_price_format" = "预期清算%@价格";
 
 /* (No Comment) */
-"alert_msg_no_private_key" = "该账户只有使用监视模式的地址。\n您需要添加助记词以生成交易";
+"alert_msg_no_private_key" = "该账户只有使用浏览模式的地址。\n您需要添加助记词以生成交易";
 
 /* (No Comment) */
 "alert_title_no_private_key" = "没有私钥";
@@ -143,7 +143,7 @@
 "confirm" = "确认";
 
 /* (No Comment) */
-"continue" = "继续";
+"continue" = "下一步";
 
 /* (No Comment) */
 "copy" = "复制";
@@ -413,7 +413,7 @@
 "error_no_deposited_asset" = "无存放资产.";
 
 /* (No Comment) */
-"error_no_harvest_reward_to_claim" = "没有收获奖励要求";
+"error_no_harvest_reward_to_claim" = "没有收获收益要求";
 
 /* (No Comment) */
 "error_no_incentive_to_claim" = "无法要求索赔";
@@ -518,13 +518,13 @@
 "error_redelegation_limitted" = "您已在系统设置的过去一定时期内重新授权给该验证器";
 
 /* (No Comment) */
-"error_reward_address_changed_msg" = "此账户已更改其奖励地址。\n奖励地址重置为自己后，您可以使用用户重新投资功能";
+"error_reward_address_changed_msg" = "此账户已更改其收益地址。\n收益地址重置为自己后，您可以使用用户复投收益功能";
 
 /* (No Comment) */
-"error_reward_address_changed_title" = "奖励地址已更改";
+"error_reward_address_changed_title" = "收益地址已更改";
 
 /* (No Comment) */
-"error_same_reward_address" = "此地址已被注册为您的索偿奖励地址.";
+"error_same_reward_address" = "此地址已被注册为您的索偿收益地址.";
 
 /* (No Comment) */
 "error_self_send" = "不支持自发送.";
@@ -542,7 +542,7 @@
 "error_unbonding_count_over" = "超出最大未授权数量";
 
 /* (No Comment) */
-"error_wasting_fee" = "费用大于奖励，token将被浪费!";
+"error_wasting_fee" = "费用大于收益，token将被浪费!";
 
 /* (No Comment) */
 "faceID" = "面部ID";
@@ -566,10 +566,10 @@
 "fee_description_title_2" = "交易费率 0.025";
 
 /* (No Comment) */
-"fee_over_msg" = "交易费用高于您宣称的奖励。将您的费用设置为较低的金额，或者累计更多奖励时重试";
+"fee_over_msg" = "交易费用高于您宣称的收益。将您的费用设置为较低的金额，或者累计更多收益时重试";
 
 /* (No Comment) */
-"fee_over_title" = "无法索取奖励";
+"fee_over_title" = "无法赎回收益";
 
 /* (No Comment) */
 "fee_speed_bnb_title" = "币安链支持固定费用";
@@ -704,7 +704,7 @@
 "imported" = "导入";
 
 /* (No Comment) */
-"incentive_participate_step_0" = "选择奖励选项";
+"incentive_participate_step_0" = "选择收益选项";
 
 /* (No Comment) */
 "incentive_participate_step_1" = "输入备忘录（可选)";
@@ -734,7 +734,7 @@
 "max_spend_title" = "警告";
 
 /* "mintscan_explorer" = "Mintscan Explorer"; */
-"mintscan_explorer" = "搜索";
+"mintscan_explorer" = "区块浏览器";
 
 /* (No Comment) */
 "mnemonic_copied" = "助记词已经复制\n建议粘贴后清除剪贴板";
@@ -864,7 +864,7 @@
 "redelegate_step_5" = "查看交易明细";
 
 /* (No Comment) */
-"reinvest_step_1" = "检查奖励以进行再投资";
+"reinvest_step_1" = "检查收益以进行再投资";
 
 /* (No Comment) */
 "reinvest_step_4" = "查看交易明细";
@@ -885,16 +885,16 @@
 "retry" = "重试 ";
 
 /* (No Comment) */
-"reward_address_notice_msg" = "\n您可以更改奖励收信人地址。\n更改地址后，所有领取的奖励都将到更改的地址。请确认您拥有更改地址的全部权限";
+"reward_address_notice_msg" = "\n您可以更改收益收信人地址。\n更改地址后，所有领取的收益都将到更改的地址。请确认您拥有更改地址的全部权限";
 
 /* (No Comment) */
 "reward_address_notice_msg2" = "请不要设置为交换地址";
 
 /* (No Comment) */
-"reward_address_notice_title" = "奖励地址变更";
+"reward_address_notice_title" = "收益地址变更";
 
 /* (No Comment) */
-"reward_address_step_1" = "输入地址以获得奖励";
+"reward_address_step_1" = "输入地址以获得收益";
 
 /* (No Comment) */
 "reward_address_step_4" = "查看交易明细";
@@ -903,10 +903,10 @@
 "reward_address_warnning_title" = "再确认一次！";
 
 /* (No Comment) */
-"reward_claim_top_16" = "我们按照奖励金额的顺序要求最多16位验证者提供奖励";
+"reward_claim_top_16" = "我们按照收益金额的顺序要求最多16位验证者提供收益";
 
 /* (No Comment) */
-"reward_harvest_step_0" = "选择收获奖励选项";
+"reward_harvest_step_0" = "选择收获收益选项";
 
 /* (No Comment) */
 "reward_harvest_step_1" = "输入备忘录（可选)";
@@ -939,7 +939,7 @@
 "select_new_path_title" = "选择钥匙路径";
 
 /* (No Comment) */
-"send_guide_btn1_band" = "Home";
+"send_guide_btn1_band" = "主页";
 
 /* (No Comment) */
 "send_guide_btn1_bnb" = "市场";
@@ -1095,7 +1095,7 @@
 "sort_by_amount" = "按金额";
 
 /* (No Comment) */
-"sort_by_commission" = "按委员会";
+"sort_by_commission" = "按佣金";
 
 /* (No Comment) */
 "sort_by_my_delegate" = "按照我的委托金额";
@@ -1104,22 +1104,22 @@
 "sort_by_name" = "按名称";
 
 /* (No Comment) */
-"sort_by_power" = "投票权";
+"sort_by_power" = "按投票权";
 
 /* (No Comment) */
-"sort_by_reward" = "按照奖励金额";
+"sort_by_reward" = "按照收益金额";
 
 /* (No Comment) */
 "sort_by_value" = "按价值";
 
 /* (No Comment) */
-"sort_by_yield" = "通过APR";
+"sort_by_yield" = "按年化收益";
 
 /* (No Comment) */
 "str_apr_help_msg" = "该数字是通过考虑当前平均网络阻塞时间计算得出的估计百分比";
 
 /* (No Comment) */
-"str_apr_help_title" = "代表团APR";
+"str_apr_help_title" = "委托APR";
 
 /* (No Comment) */
 "str_bep3_available_title" = "提供BNB-BEP3交换 ";
@@ -1278,13 +1278,13 @@
 "str_starname_replace_starname_step_3" = "查看交易明细";
 
 /* (No Comment) */
-"str_vote_agent" = "与代理商间接投票";
+"str_vote_agent" = "与代理间接投票";
 
 /* (No Comment) */
 "str_vote_direct" = "直接投票给验证者";
 
 /* (No Comment) */
-"str_withdraw" = "  取出%@";
+"str_withdraw" = "  取出 %@";
 
 /* (No Comment) */
 "testnet_warn_msg" = "该钱包用于测试网\n（该钱包中的token是没有价值的）。\n\nCosmostation支持该测试网，以便用户有机会在正式网发布之前使用新功能。请注意，可以随时停止对测试网的支持";
@@ -1344,7 +1344,7 @@
 "title_ok_withdraw" = "收回";
 
 /* (No Comment) */
-"title_participate_incentive" = "加密日奖励";
+"title_participate_incentive" = "加密日收益";
 
 /* (No Comment) */
 "title_path" = "选择钱包";
@@ -1353,7 +1353,7 @@
 "title_redelegate" = "重新委托";
 
 /* (No Comment) */
-"title_reinvest" = "重新投资";
+"title_reinvest" = "复投收益";
 
 /* (No Comment) */
 "title_repay_cdp" = "REPAY USDX";
@@ -1362,13 +1362,13 @@
 "title_restore" = "导入";
 
 /* (No Comment) */
-"title_reward" = "领取奖励";
+"title_reward" = "领取收益";
 
 /* (No Comment) */
-"title_reward_harvest" = "奖励收入";
+"title_reward_harvest" = "收益收入";
 
 /* (No Comment) */
-"title_reword_address_change" = "奖励地址变更";
+"title_reword_address_change" = "收益地址变更";
 
 /* (No Comment) */
 "title_send" = "发送";
@@ -1437,7 +1437,7 @@
 "title_wallet_manage" = "钱包管理";
 
 /* (No Comment) */
-"title_watch_wallet" = "Watch Wallet";
+"title_watch_wallet" = "浏览钱包";
 
 /* (No Comment) */
 "title_withdraw_cdp" = "WITHDRAW COLLATERAL";
@@ -1482,10 +1482,10 @@
 "tx_get_commission" = "获得佣金";
 
 /* (No Comment) */
-"tx_get_reward" = "获得奖励";
+"tx_get_reward" = "获得收益";
 
 /* (No Comment) */
-"tx_get_reward_all" = "获取所有奖励";
+"tx_get_reward_all" = "获取所有收益";
 
 /* (No Comment) */
 "tx_issue_token" = "发行Token";
@@ -1530,7 +1530,7 @@
 "tx_kava_withdraw_cdp" = "CDP\nWithdraw";
 
 /* (No Comment) */
-"tx_known" = "Unknown";
+"tx_known" = "未知";
 
 /* (No Comment) */
 "tx_new_order" = "新命令";
@@ -1554,7 +1554,7 @@
 "tx_refund_htlc" = "Interchain\nRefund";
 
 /* (No Comment) */
-"tx_reinvest" = "重新投资";
+"tx_reinvest" = "复投收益";
 
 /* (No Comment) */
 "tx_send" = "发送";
@@ -1713,10 +1713,10 @@
 "withdraw_harvest_step_3" = "查看交易明细";
 
 /* (No Comment) */
-"withdraw_single_step_1" = "检查您的奖励细节";
+"withdraw_single_step_1" = "检查您的收益细节";
 
 /* (No Comment) */
-"withdraw_single_step_4" = "检查您的信息以获得奖励";
+"withdraw_single_step_4" = "检查您的信息以获得收益";
 
 /* (No Comment) */
 "withdrawable_format" = "可提款%@";

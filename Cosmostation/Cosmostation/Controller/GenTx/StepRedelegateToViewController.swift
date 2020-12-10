@@ -58,7 +58,7 @@ class StepRedelegateToViewController: BaseViewController, UITableViewDelegate, U
                 cell!.valImg.af_setImage(withURL: URL(string: COSMOS_VAL_URL + validator.operator_address + ".png")!)
                 
             } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
-                cell?.valPowerLabel.attributedText  =  WUtils.displayAmount2(validator.tokens, cell!.valPowerLabel.font, 12, 12)
+                cell?.valPowerLabel.attributedText  =  WUtils.displayAmount2(validator.tokens, cell!.valPowerLabel.font, 12, 6)
                 cell?.valCommissionLabel.attributedText = WUtils.getDpEstAprCommission(cell!.valCommissionLabel.font, validator.getCommission(), pageHolderVC.chainType!)
                 cell!.valImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + validator.operator_address + ".png")!)
                 

@@ -45,8 +45,11 @@ class WKey {
         let masterKey = getMasterKeyFromWords(m)
         let chainType = WUtils.getChainType(account.account_base_chain)
         
-        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST  || chainType == ChainType.IRIS_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
+        if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.IRIS_MAIN || chainType == ChainType.CERTIK_MAIN || chainType == ChainType.CERTIK_TEST) {
             return try! masterKey.derived(at: 44, hardened: true).derived(at: 118, hardened: true).derived(at: 0, hardened: true).derived(at: 0).derived(at: UInt32(account.account_path)!)
+            
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
+            return try! masterKey.derived(at: 44, hardened: true).derived(at: 925, hardened: true).derived(at: 0, hardened: true).derived(at: 0).derived(at: UInt32(account.account_path)!)
             
         } else if (chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST) {
             if (account.account_new_bip44) {

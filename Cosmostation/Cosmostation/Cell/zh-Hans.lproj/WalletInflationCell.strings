@@ -5,8 +5,8 @@
 "3Ms-8F-3ex.text" = "-";
 
 /* Class = "UILabel"; text = "Est. Apr"; ObjectID = "3Tv-jQ-cnM"; */
-"3Tv-jQ-cnM.text" = "Est. Apr";
+"3Tv-jQ-cnM.text" = "预计年化收益";
 
 /* Class = "UILabel"; text = "Inflation"; ObjectID = "K94-1l-nX0"; */
-"K94-1l-nX0.text" = "Inflation";
+"K94-1l-nX0.text" = "通货膨胀";
 

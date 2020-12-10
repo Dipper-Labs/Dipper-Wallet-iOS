@@ -5,34 +5,34 @@
 "9e8-4h-du7.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Delegate"; ObjectID = "aDU-Gm-YI2"; */
-"aDU-Gm-YI2.normalTitle" = "  Delegate";
+"aDU-Gm-YI2.normalTitle" = "  委托";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "aLD-UG-K2e"; */
-"aLD-UG-K2e.text" = "Available";
+"aLD-UG-K2e.text" = "可用";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "cKq-N3-YYY"; */
 "cKq-N3-YYY.text" = "--";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "DjO-Uf-h80"; */
-"DjO-Uf-h80.text" = "Delegated";
+"DjO-Uf-h80.text" = "委托";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "g5v-Oq-pLN"; */
 "g5v-Oq-pLN.text" = "--";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "iFt-o6-mYa"; */
-"iFt-o6-mYa.text" = "Unbonding";
+"iFt-o6-mYa.text" = "赎回中";
 
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "MG4-Bu-b0E"; */
 "MG4-Bu-b0E.text" = "ATOM";
 
 /* Class = "UIButton"; normalTitle = "  Vote"; ObjectID = "tCY-6s-HEk"; */
-"tCY-6s-HEk.normalTitle" = "  Vote";
+"tCY-6s-HEk.normalTitle" = "  投票";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "TOL-hl-9Ov"; */
 "TOL-hl-9Ov.text" = "--";
 
 /* Class = "UILabel"; text = "Reward"; ObjectID = "UKB-eP-A9y"; */
-"UKB-eP-A9y.text" = "Reward";
+"UKB-eP-A9y.text" = "收益";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "uvE-lW-F2j"; */
 "uvE-lW-F2j.text" = "--";

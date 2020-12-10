@@ -5,7 +5,7 @@
 "1jZ-c5-vOt.text" = "--";
 
 /* Class = "UILabel"; text = "Reward"; ObjectID = "3AT-QE-NIZ"; */
-"3AT-QE-NIZ.text" = "Reward";
+"3AT-QE-NIZ.text" = "收益";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "5Qz-Ur-RgH"; */
 "5Qz-Ur-RgH.text" = "--";
@@ -14,25 +14,25 @@
 "9Vc-mI-FQ0.text" = "--";
 
 /* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "AC0-bI-9KO"; */
-"AC0-bI-9KO.text" = "Harvest Deposited";
+"AC0-bI-9KO.text" = "已收储";
 
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "aKW-Uu-NnW"; */
-"aKW-Uu-NnW.normalTitle" = "  Send";
+"aKW-Uu-NnW.normalTitle" = "  发送";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "Asa-LF-gCH"; */
 "Asa-LF-gCH.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "bWg-Sg-Eir"; */
-"bWg-Sg-Eir.normalTitle" = "  Receive";
+"bWg-Sg-Eir.normalTitle" = "  接收";
 
 /* Class = "UILabel"; text = "Vesting (Delegable)"; ObjectID = "gBR-Wg-Rf7"; */
-"gBR-Wg-Rf7.text" = "Vesting (Delegable)";
+"gBR-Wg-Rf7.text" = "归属 (可委托的)";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "hn2-dI-ttp"; */
 "hn2-dI-ttp.text" = "--";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "LUH-bd-Cqb"; */
-"LUH-bd-Cqb.text" = "Unbonding";
+"LUH-bd-Cqb.text" = "赎回中";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "N0e-zp-yR4"; */
 "N0e-zp-yR4.text" = "--";
@@ -47,11 +47,11 @@
 "rg7-wY-dId.text" = "KAVA";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "sZ4-4Z-cU8"; */
-"sZ4-4Z-cU8.text" = "Delegated";
+"sZ4-4Z-cU8.text" = "委托";
 
 /* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "utd-e8-ugh"; */
-"utd-e8-ugh.text" = "Unclaimed Incentive";
+"utd-e8-ugh.text" = "无人认领的激励";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "v85-zF-AJg"; */
-"v85-zF-AJg.text" = "Available";
+"v85-zF-AJg.text" = "可用";
 

@@ -110,7 +110,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                     }
                     
                 } else if (self.userChain == ChainType.DIPPER_MAIN) {
-                    cell?.denomAmount.attributedText = WUtils.displayAmount2(NSDecimalNumber.zero.stringValue, cell!.denomAmount.font!, 12, 12)
+                    cell?.denomAmount.attributedText = WUtils.displayAmount2(NSDecimalNumber.zero.stringValue, cell!.denomAmount.font!, 12, 6)
                     let request = Alamofire.request(DIPPER_URL_ACCOUNT_INFO + address, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
                     request.responseJSON { (response) in
                         switch response.result {
@@ -121,7 +121,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                             }
                             let accountInfo = AccountInfo.init(info)
                             if (accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
-                                cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 12)
+                                cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 6)
                             }
                         case .failure(let error):
                             if (SHOW_LOG) { print("onFetchAccountInfo ", error) }
@@ -129,7 +129,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                     }
                     
                 } else if (self.userChain == ChainType.DIPPER_TEST) {
-                    cell?.denomAmount.attributedText = WUtils.displayAmount2(NSDecimalNumber.zero.stringValue, cell!.denomAmount.font!, 12, 12)
+                    cell?.denomAmount.attributedText = WUtils.displayAmount2(NSDecimalNumber.zero.stringValue, cell!.denomAmount.font!, 12, 6)
                     let request = Alamofire.request(DIPPER_TEST_URL_ACCOUNT_INFO + address, method: .get, parameters: [:], encoding: URLEncoding.default, headers: [:])
                     request.responseJSON { (response) in
                         switch response.result {
@@ -140,7 +140,7 @@ class RestorePathViewController: BaseViewController, UITableViewDelegate, UITabl
                             }
                             let accountInfo = AccountInfo.init(info)
                             if (accountInfo.type == DIPPER_AUTH_TYPE_ACCOUNT && accountInfo.value.coins.count != 0) {
-                                cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 12)
+                                cell?.denomAmount.attributedText = WUtils.displayAmount2(accountInfo.value.coins[0].amount, cell!.denomAmount.font!, 12, 6)
                             }
                         case .failure(let error):
                             if (SHOW_LOG) { print("onFetchAccountInfo ", error) }

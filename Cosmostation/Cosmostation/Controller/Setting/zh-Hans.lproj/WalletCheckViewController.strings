@@ -59,7 +59,7 @@
 "TP6-vP-E9L.text" = "12 : ";
 
 /* Class = "UIButton"; normalTitle = "Copy to Clipboard"; ObjectID = "u3D-nF-ee2"; */
-"u3D-nF-ee2.normalTitle" = "Copy to Clipboard";
+"u3D-nF-ee2.normalTitle" = "复制到剪切板";
 
 /* Class = "UILabel"; text = "19 : "; ObjectID = "UB9-Na-guw"; */
 "UB9-Na-guw.text" = "19 : ";
@@ -77,5 +77,5 @@
 "XPd-z0-MHo.text" = "18 : ";
 
 /* Class = "UILabel"; text = "Copy your mnemonics on a piece of paper \nand keep if in a secure location. \nYou can recover your wallet using your mnemonics"; ObjectID = "ZEO-2O-Gad"; */
-"ZEO-2O-Gad.text" = "Copy your mnemonics on a piece of paper \nand keep if in a secure location. \nYou can recover your wallet using your mnemonics";
+"ZEO-2O-Gad.text" = "在纸上复制助记符\n并放在安全的地方。\n您可以使用助记符恢复钱包";
 

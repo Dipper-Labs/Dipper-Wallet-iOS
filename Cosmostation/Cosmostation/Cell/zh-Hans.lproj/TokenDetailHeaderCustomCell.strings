@@ -8,16 +8,16 @@
 "9nd-sQ-sZ2.text" = "--";
 
 /* Class = "UILabel"; text = "Locked"; ObjectID = "B1u-mx-LNb"; */
-"B1u-mx-LNb.text" = "Locked";
+"B1u-mx-LNb.text" = "已锁定";
 
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "ED2-mL-eZe"; */
-"ED2-mL-eZe.normalTitle" = "  Receive";
+"ED2-mL-eZe.normalTitle" = "  接收";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "Eya-vR-Jcr"; */
 "Eya-vR-Jcr.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "Fj1-l0-i5s"; */
-"Fj1-l0-i5s.normalTitle" = "  Send";
+"Fj1-l0-i5s.normalTitle" = "  发送";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "g8b-6P-TQl"; */
 "g8b-6P-TQl.text" = "--";
@@ -26,10 +26,10 @@
 "gzS-C3-Sxs.text" = "--";
 
 /* Class = "UILabel"; text = "Harvest Deposited"; ObjectID = "KSL-DQ-yGh"; */
-"KSL-DQ-yGh.text" = "Harvest Deposited";
+"KSL-DQ-yGh.text" = "已收储";
 
 /* Class = "UILabel"; text = "Harvest Reward"; ObjectID = "lR4-DP-ghL"; */
-"lR4-DP-ghL.text" = "Harvest Reward";
+"lR4-DP-ghL.text" = "收获收益";
 
 /* Class = "UIButton"; normalTitle = "  Interchain Transfer"; ObjectID = "PCe-5j-woO"; */
 "PCe-5j-woO.normalTitle" = "  Interchain Transfer";
@@ -38,7 +38,7 @@
 "QFK-EB-Ayy.text" = "Vesting";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "QNy-8A-Ifn"; */
-"QNy-8A-Ifn.text" = "Available";
+"QNy-8A-Ifn.text" = "可用";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "RCx-oC-5iq"; */
 "RCx-oC-5iq.text" = "--";
@@ -47,7 +47,7 @@
 "V5i-pu-I61.text" = "--";
 
 /* Class = "UILabel"; text = "Frozen"; ObjectID = "zBu-Zv-xk4"; */
-"zBu-Zv-xk4.text" = "Frozen";
+"zBu-Zv-xk4.text" = "冻结";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "ZtS-bm-FME"; */
 "ZtS-bm-FME.text" = "--";

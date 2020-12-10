@@ -50,12 +50,12 @@ class ReInvestCheckViewController: BaseViewController, PasswordViewDelegate {
             }
             
         } else if (pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) {
-            rewardLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardLabel.font, 12, 12)
-            feeLabel.attributedText = WUtils.displayAmount2((pageHolderVC.mFee?.amount[0].amount)!, feeLabel.font, 12, 12)
+            rewardLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardLabel.font, 12, 6)
+            feeLabel.attributedText = WUtils.displayAmount2((pageHolderVC.mFee?.amount[0].amount)!, feeLabel.font, 12, 6)
             if let bonding = BaseData.instance.selectBondingWithValAdd(pageHolderVC.mAccount!.account_id, pageHolderVC.mTargetValidator!.operator_address) {
-                currentDelegateAmount.attributedText = WUtils.displayAmount2(bonding.getBondingAmount(pageHolderVC.mTargetValidator!).stringValue, currentDelegateAmount.font, 12, 12)
+                currentDelegateAmount.attributedText = WUtils.displayAmount2(bonding.getBondingAmount(pageHolderVC.mTargetValidator!).stringValue, currentDelegateAmount.font, 12, 6)
                 let expected = (NSDecimalNumber.init(string: pageHolderVC.mReinvestReward!.amount)).adding(bonding.getBondingAmount(pageHolderVC.mTargetValidator!))
-                expectedDelegateAmount.attributedText = WUtils.displayAmount2(expected.stringValue, expectedDelegateAmount.font, 12, 12)
+                expectedDelegateAmount.attributedText = WUtils.displayAmount2(expected.stringValue, expectedDelegateAmount.font, 12, 6)
             }
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {

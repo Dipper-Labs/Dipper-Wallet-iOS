@@ -241,7 +241,7 @@ class WUtils {
     
     static func getUnbondingwithUnbondingInfo(_ account: Account, _ rawunbondinginfos: Array<NSDictionary>, _ chain:ChainType) -> Array<Unbonding> {
         var result = Array<Unbonding>()
-        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.KAVA_TEST ||
+        if (chain == ChainType.COSMOS_MAIN || chain == ChainType.KAVA_MAIN || chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST || chain == ChainType.KAVA_TEST ||
                 chain == ChainType.BAND_MAIN || chain == ChainType.SECRET_MAIN || chain == ChainType.CERTIK_MAIN ||
                 chain == ChainType.IOV_MAIN || chain == ChainType.IOV_TEST || chain == ChainType.CERTIK_TEST) {
             for raw in rawunbondinginfos {
@@ -249,13 +249,6 @@ class WUtils {
                 for entry in unbondinginfo.entries {
                     result.append(Unbonding(account.account_id, unbondinginfo.validator_address, entry.creation_height, nodeTimeToInt64(input: entry.completion_time).millisecondsSince1970, entry.initial_balance, entry.balance, Date().millisecondsSince1970))
                 }
-            }
-        } else if (chain == ChainType.DIPPER_MAIN || chain == ChainType.DIPPER_TEST) {
-            for raw in rawunbondinginfos {
-                let unbondinginfo = UnbondingInfo(raw as! [String : Any])
-                let unbondingBalance = plainStringToDecimal(unbondinginfo.balance.replacingOccurrences(of: "dip", with: "")).multiplying(byPowerOf10: 12, withBehavior: handler0)
-                let initialBalance = plainStringToDecimal(unbondinginfo.initial_balance.replacingOccurrences(of: "dip", with: "")).multiplying(byPowerOf10: 12, withBehavior: handler0)
-                result.append(Unbonding(account.account_id, unbondinginfo.validator_addr, unbondinginfo.creation_height, nodeTimeToInt64(input: unbondinginfo.min_time).millisecondsSince1970, initialBalance.stringValue, unbondingBalance.stringValue, Date().millisecondsSince1970))
             }
         } else if (chain == ChainType.IRIS_MAIN) {
             for raw in rawunbondinginfos {
@@ -1229,6 +1222,7 @@ class WUtils {
             dAmount = delegated!
         }
         let estDpr = DAY_SEC.multiplying(by: commissionCal).multiplying(by: rpr).multiplying(by: dAmount).dividing(by: getCBlockTime(chain), withBehavior: handler12Down)
+       
         return displayAmount2(estDpr.stringValue, font, 6, 12)
     }
     
@@ -1241,6 +1235,29 @@ class WUtils {
         }
         let estDpr = MONTH_SEC.multiplying(by: commissionCal).multiplying(by: rpr).multiplying(by: dAmount).dividing(by: getCBlockTime(chain), withBehavior: handler12Down)
         return displayAmount2(estDpr.stringValue, font, 6, 12)
+    }
+    
+    static func getDIPDailyReward(_ font: UIFont, _ commission: NSDecimalNumber, _ delegated: NSDecimalNumber?, _ chain: ChainType) -> NSMutableAttributedString {
+        let rpr = getYieldPerBlock()
+        let commissionCal = NSDecimalNumber.one.subtracting(commission)
+        var dAmount = NSDecimalNumber.zero
+        if (delegated != nil) {
+            dAmount = delegated!
+        }
+        let estDpr = DAY_SEC.multiplying(by: commissionCal).multiplying(by: rpr).multiplying(by: dAmount).dividing(by: getCBlockTime(chain), withBehavior: handler12Down)
+       
+        return displayAmount2(estDpr.stringValue, font, 12, 6)
+    }
+    
+    static func getDIPMonthlyReward(_ font: UIFont, _ commission: NSDecimalNumber, _ delegated: NSDecimalNumber?, _ chain: ChainType) -> NSMutableAttributedString {
+        let rpr = getYieldPerBlock()
+        let commissionCal = NSDecimalNumber.one.subtracting(commission)
+        var dAmount = NSDecimalNumber.zero
+        if (delegated != nil) {
+            dAmount = delegated!
+        }
+        let estDpr = MONTH_SEC.multiplying(by: commissionCal).multiplying(by: rpr).multiplying(by: dAmount).dividing(by: getCBlockTime(chain), withBehavior: handler12Down)
+        return displayAmount2(estDpr.stringValue, font, 12, 6)
     }
     
     static func displayYield(_ bonded:NSDecimalNumber, _ provision:NSDecimalNumber, _ commission:NSDecimalNumber, font:UIFont ) -> NSMutableAttributedString {
@@ -1835,7 +1852,7 @@ class WUtils {
                 denomLabel.textColor = .white
                 denomLabel.text = coin.denom.uppercased()
             }
-            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 12)
+            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 6)
             
         } else if (chainType == ChainType.DIPPER_TEST) {
             if (coin.denom == DIPPER_TEST_DENOM) {
@@ -1844,7 +1861,7 @@ class WUtils {
                 denomLabel.textColor = .white
                 denomLabel.text = coin.denom.uppercased()
             }
-            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 12)
+            amountLabel.attributedText = displayAmount2(coin.amount, amountLabel.font, 12, 6)
             
         }  else if (chainType == ChainType.IRIS_MAIN) {
             if (coin.denom == IRIS_MAIN_DENOM) {
@@ -1958,7 +1975,7 @@ class WUtils {
                 denomLabel.textColor = .white
                 denomLabel.text = denom.uppercased()
             }
-            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 12)
+            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 6)
             
         } else if (chainType == ChainType.DIPPER_TEST) {
             if (denom == DIPPER_TEST_DENOM) {
@@ -1967,7 +1984,7 @@ class WUtils {
                 denomLabel.textColor = .white
                 denomLabel.text = denom.uppercased()
             }
-            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 12)
+            amountLabel.attributedText = displayAmount2(amount, amountLabel.font, 12, 6)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
             if (denom == IRIS_MAIN_DENOM) {
@@ -2503,7 +2520,7 @@ class WUtils {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
             }
             
-        }else if (chain == ChainType.IRIS_MAIN) {
+        } else if (chain == ChainType.IRIS_MAIN) {
             result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_IRIS_MID))
             if (type == IRIS_MSG_TYPE_DELEGATE) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_IRIS_MID))
@@ -3076,6 +3093,9 @@ class WUtils {
             return BLOCK_TIME_COSMOS
             
         } else if (chain == ChainType.DIPPER_MAIN) {
+            return BLOCK_TIME_DIPPER
+            
+        } else if (chain == ChainType.DIPPER_TEST) {
             return BLOCK_TIME_DIPPER
             
         } else if (chain == ChainType.IRIS_MAIN) {

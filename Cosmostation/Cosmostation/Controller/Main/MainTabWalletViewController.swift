@@ -439,20 +439,20 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
             
         } else if (indexPath.row == 1) {
             let cell:WalletIrisCell? = tableView.dequeueReusableCell(withIdentifier:"WalletIrisCell") as? WalletIrisCell
-            let totalAtom = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
-            cell?.totalAmount.attributedText = WUtils.displayAmount2(totalAtom.stringValue, cell!.totalAmount.font!, 12, 6)
-            cell?.totalValue.attributedText = WUtils.dpTokenValue(totalAtom, BaseData.instance.getLastPrice(), 12, cell!.totalValue.font)
-            cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(mainTabVC.mBalances, cell!.availableAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
-            cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(mainTabVC.mBondingList, mainTabVC.mAllValidator, cell!.delegatedAmount.font, 12, chainType!)
-            cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(mainTabVC.mUnbondingList, cell!.unbondingAmount.font, 12, chainType!)
-            cell?.rewardAmount.attributedText = WUtils.dpRewards(mainTabVC.mRewardList, cell!.rewardAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
+            let totalDIP = WUtils.getAllDIP(mainTabVC.mBalances, mainTabVC.mBondingList, mainTabVC.mUnbondingList, mainTabVC.mRewardList, mainTabVC.mAllValidator)
+            cell?.totalAmount.attributedText = WUtils.displayAmount2(totalDIP.stringValue, cell!.totalAmount.font!, 12, 6)
+            cell?.totalValue.attributedText = WUtils.dpTokenValue(totalDIP, BaseData.instance.getLastPrice(), 12, cell!.totalValue.font)
+            cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(mainTabVC.mBalances, cell!.availableAmount.font, 6, DIPPER_MAIN_DENOM, chainType!)
+            cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(mainTabVC.mBondingList, mainTabVC.mAllValidator, cell!.delegatedAmount.font, 6, chainType!)
+            cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(mainTabVC.mUnbondingList, cell!.unbondingAmount.font, 6, chainType!)
+            cell?.rewardAmount.attributedText = WUtils.dpRewards(mainTabVC.mRewardList, cell!.rewardAmount.font, 6, DIPPER_MAIN_DENOM, chainType!)
             cell?.actionDelegate = {
                 self.onClickValidatorList()
             }
             cell?.actionVote = {
                 self.onClickVoteList()
             }
-            BaseData.instance.updateLastTotal(mainTabVC!.mAccount, totalAtom.multiplying(byPowerOf10: -12).stringValue)
+            BaseData.instance.updateLastTotal(mainTabVC!.mAccount, totalDIP.multiplying(byPowerOf10: -12).stringValue)
             return cell!
             
         } else if (indexPath.row == 2) {

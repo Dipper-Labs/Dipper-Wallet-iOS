@@ -2,13 +2,13 @@
 "45e-4K-iGK.text" = "-";
 
 /* Class = "UILabel"; text = "Est. Apr"; ObjectID = "k2C-4g-tjb"; */
-"k2C-4g-tjb.text" = "Est. Apr";
+"k2C-4g-tjb.text" = "预计年化收益";
 
 /* Class = "UILabel"; text = "Voting Power"; ObjectID = "ksq-zb-taK"; */
-"ksq-zb-taK.text" = "Voting Power";
+"ksq-zb-taK.text" = "投票权";
 
 /* Class = "UILabel"; text = "Moniker"; ObjectID = "raZ-Ow-t7L"; */
-"raZ-Ow-t7L.text" = "Moniker";
+"raZ-Ow-t7L.text" = "绰号";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "wbE-KP-yse"; */
 "wbE-KP-yse.text" = "-";

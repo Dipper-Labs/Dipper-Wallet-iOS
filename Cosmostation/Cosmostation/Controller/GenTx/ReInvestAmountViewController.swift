@@ -64,7 +64,7 @@ class ReInvestAmountViewController: BaseViewController {
             self.cardView.isHidden = false
             
         } else if ((pageHolderVC.chainType! == ChainType.DIPPER_MAIN || pageHolderVC.chainType! == ChainType.DIPPER_TEST) && self.pageHolderVC.mReinvestReward != nil) {
-                    rewardAmountLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardAmountLabel.font, 12, 12)
+                    rewardAmountLabel.attributedText = WUtils.displayAmount2(pageHolderVC.mReinvestReward!.amount, rewardAmountLabel.font, 12, 6)
                     validatorLabel.text = pageHolderVC.mTargetValidator?.description.moniker
                     self.loadingImg.isHidden = true
                     self.controlLayer.isHidden = false

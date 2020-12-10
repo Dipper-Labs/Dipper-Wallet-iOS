@@ -337,7 +337,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             cell?.timeGapLabel.text = WUtils.txTimeGap(input: mTxInfo!.timestamp!)
             cell?.hashLabel.text = mTxInfo!.txhash
             cell?.memoLabel.text = mTxInfo!.tx?.value.memo
-            cell?.feeAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleFee().stringValue, cell!.feeAmountLabel.font!, 12, 12)
+            cell?.feeAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleFee().stringValue, cell!.feeAmountLabel.font!, 12, 6)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell?.feeLayer.isHidden = true
@@ -448,8 +448,8 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                 cell?.delegatorLabel.text = msg?.value.delegator_address
                 cell?.validatorLabel.text = msg?.value.validator_address
                 cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
-                cell?.delegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.delegateAmountLabel.font!, 12, 12)
-                cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 12)
+                cell?.delegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.delegateAmountLabel.font!, 12, 6)
+                cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 6)
                 if (mTxInfo?.getMsgs().count == 1) {
                     cell?.autoRewardLayer.isHidden = false
                     cell?.autoRewardBottomConstraint.priority = .defaultHigh
@@ -501,8 +501,8 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             cell?.undelegatorLabel.text = msg?.value.delegator_address
             cell?.validatorLabel.text = msg?.value.validator_address
             cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
-            cell?.undelegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.undelegateAmountLabel.font!, 12, 12)
-            cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 12)
+            cell?.undelegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.undelegateAmountLabel.font!, 12, 6)
+            cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 6)
             if (mTxInfo?.getMsgs().count == 1) {
                 cell?.autoRewardLayer.isHidden = false
                 cell?.autoRewardBottomConstraint.priority = .defaultHigh
@@ -558,8 +558,8 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             cell?.fromMonikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_src_address!, true)
             cell?.toValidatorLabel.text = msg?.value.validator_dst_address
             cell?.toMonikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_dst_address!, true)
-            cell?.redelegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.redelegateAmountLabel.font!, 12, 12)
-            cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 12)
+            cell?.redelegateAmountLabel.attributedText = WUtils.displayAmount2(msg?.value.getAmount()?.amount, cell!.redelegateAmountLabel.font!, 12, 6)
+            cell?.autoRewardAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleAutoReward(self.account!.account_address, position - 1).stringValue, cell!.autoRewardAmountLabel.font!, 12, 6)
             if (mTxInfo?.getMsgs().count == 1) {
                 cell?.autoRewardLayer.isHidden = false
                 cell?.autoRewardBottomConstraint.priority = .defaultHigh
@@ -749,7 +749,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             cell?.delegatorLabel.text = msg?.value.delegator_address
             cell?.validatorLabel.text = msg?.value.validator_address
             cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
-            cell?.amountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleReward(msg!.value.validator_address!, position - 1).stringValue, cell!.amountLabel.font!, 12, 12)
+            cell?.amountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleReward(msg!.value.validator_address!, position - 1).stringValue, cell!.amountLabel.font!, 12, 6)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell?.delegatorLabel.text = msg?.value.delegator_addr
@@ -870,7 +870,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
         } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell?.validatorLabel.text = msg?.value.validator_address
             cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
-            cell?.commissionAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleCommission(position - 1).stringValue, cell!.commissionAmountLabel.font!, 12, 12)
+            cell?.commissionAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleCommission(position - 1).stringValue, cell!.commissionAmountLabel.font!, 12, 6)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
             cell?.validatorLabel.text = msg?.value.validator_addr

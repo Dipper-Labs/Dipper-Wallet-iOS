@@ -197,7 +197,7 @@ class MyValidatorViewController: BaseViewController, UITableViewDelegate, UITabl
             
         } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell.cardView.backgroundColor = TRANS_BG_COLOR_COSMOS
-            cell.rewardAmoutLabel.attributedText = WUtils.displayAmount(WUtils.getValidatorReward(mainTabVC.mRewardList, validator.operator_address).stringValue, cell.rewardAmoutLabel.font, 12, chainType!)
+            cell.rewardAmoutLabel.attributedText = WUtils.displayAmount(WUtils.getValidatorReward(mainTabVC.mRewardList, validator.operator_address).stringValue, cell.rewardAmoutLabel.font, 6, chainType!)
             let url = DIPPER_VAL_URL + validator.operator_address + ".png"
             cell.validatorImg.af_setImage(withURL: URL(string: url)!)
             

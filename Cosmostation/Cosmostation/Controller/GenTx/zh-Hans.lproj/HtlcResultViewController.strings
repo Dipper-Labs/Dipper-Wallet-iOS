@@ -2,10 +2,10 @@
 "Cdf-vK-UAB.text" = "Do NOT close!\nTransactions are being submitted to each chain in order.\nPlease note that it may take longer than regular transactions.";
 
 /* Class = "UILabel"; text = "Transaction request failed. \nPlease check the error code and message."; ObjectID = "ek8-kv-u7T"; */
-"ek8-kv-u7T.text" = "Transaction request failed. \nPlease check the error code and message.";
+"ek8-kv-u7T.text" = "交易请求失败。\n请检查错误代码和消息。";
 
 /* Class = "UILabel"; text = "ERROR"; ObjectID = "eVj-Sm-dGi"; */
-"eVj-Sm-dGi.text" = "ERROR";
+"eVj-Sm-dGi.text" = "错误";
 
 /* Class = "UIButton"; normalTitle = "Origin Wallet"; ObjectID = "hAT-Yb-Cka"; */
 "hAT-Yb-Cka.normalTitle" = "Origin Wallet";

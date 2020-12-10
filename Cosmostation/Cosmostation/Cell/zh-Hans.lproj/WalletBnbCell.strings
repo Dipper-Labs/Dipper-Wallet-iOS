@@ -1,5 +1,5 @@
 /* Class = "UILabel"; text = "Available"; ObjectID = "CoD-Q7-H9G"; */
-"CoD-Q7-H9G.text" = "Available";
+"CoD-Q7-H9G.text" = "可用";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "df1-c1-OCz"; */
 "df1-c1-OCz.text" = "--";
@@ -8,7 +8,7 @@
 "ejJ-K8-riI.text" = "--";
 
 /* Class = "UILabel"; text = "Locked"; ObjectID = "f13-iu-ZgX"; */
-"f13-iu-ZgX.text" = "Locked";
+"f13-iu-ZgX.text" = "已锁定";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "fRg-DA-VLt"; */
 "fRg-DA-VLt.text" = "--";

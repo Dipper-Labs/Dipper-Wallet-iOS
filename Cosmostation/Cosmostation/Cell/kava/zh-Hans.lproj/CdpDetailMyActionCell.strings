@@ -62,7 +62,7 @@
 "T3J-XU-RAp.text" = "000000";
 
 /* Class = "UILabel"; text = "Unclaimed Incentive"; ObjectID = "TIp-A6-gEe"; */
-"TIp-A6-gEe.text" = "Unclaimed Incentive";
+"TIp-A6-gEe.text" = "无人认领的激励";
 
 /* Class = "UILabel"; text = "My CDP Information"; ObjectID = "tpt-Dq-m35"; */
 "tpt-Dq-m35.text" = "My CDP Information";

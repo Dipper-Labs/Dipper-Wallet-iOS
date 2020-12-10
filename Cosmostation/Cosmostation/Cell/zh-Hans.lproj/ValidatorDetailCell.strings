@@ -5,7 +5,7 @@
 "aad-Rq-g3G.text" = "-";
 
 /* Class = "UILabel"; text = "Total Bonded"; ObjectID = "b1h-xY-buQ"; */
-"b1h-xY-buQ.text" = "Total Bonded";
+"b1h-xY-buQ.text" = "委托代币总量";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "bbk-Pf-ZOe"; */
 "bbk-Pf-ZOe.text" = "0";
@@ -14,13 +14,13 @@
 "BTd-zn-57S.text" = "0";
 
 /* Class = "UILabel"; text = "Est. Apr"; ObjectID = "eCp-SZ-dsD"; */
-"eCp-SZ-dsD.text" = "Est. Apr";
+"eCp-SZ-dsD.text" = "预计年化收益";
 
 /* Class = "UILabel"; text = "Commission"; ObjectID = "emk-Tb-qGI"; */
-"emk-Tb-qGI.text" = "Commission";
+"emk-Tb-qGI.text" = "佣金";
 
 /* Class = "UIButton"; normalTitle = "DELEGATE"; ObjectID = "W4b-Ph-MWH"; */
-"W4b-Ph-MWH.normalTitle" = "DELEGATE";
+"W4b-Ph-MWH.normalTitle" = "委托";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "WDc-ts-HFZ"; */
 "WDc-ts-HFZ.text" = "-";
@@ -29,7 +29,7 @@
 "xdp-y1-b9R.text" = "-";
 
 /* Class = "UILabel"; text = "Self Bonded Rate"; ObjectID = "xMh-mb-xP2"; */
-"xMh-mb-xP2.text" = "Self Bonded Rate";
+"xMh-mb-xP2.text" = "自我委托比例";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "Zs5-hY-ch8"; */
 "Zs5-hY-ch8.text" = "0";

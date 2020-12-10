@@ -279,7 +279,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             
         }   else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.commission_rates.rate, font: cell!.commissionRate.font)
-            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 12)
+            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 6)
             cell?.validatorImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + mValidator!.operator_address + ".png")!)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
@@ -329,6 +329,9 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         }
         
         if (mIsTop100 && chainType == ChainType.COSMOS_MAIN) {
+            cell!.avergaeYield.attributedText = WUtils.getDpEstAprCommission(cell!.avergaeYield.font, mValidator!.getCommission(), chainType!)
+            
+        } else if (mIsTop100 && (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST)) {
             cell!.avergaeYield.attributedText = WUtils.getDpEstAprCommission(cell!.avergaeYield.font, mValidator!.getCommission(), chainType!)
             
         } else if (mIsTop100 && chainType == ChainType.IRIS_MAIN) {
@@ -392,7 +395,7 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             
         } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell!.commissionRate.attributedText = WUtils.displayCommission(mValidator!.commission.commission_rates.rate, font: cell!.commissionRate.font)
-            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 12)
+            cell?.totalBondedAmount.attributedText =  WUtils.displayAmount2(mValidator!.tokens, cell!.totalBondedAmount.font!, 12, 6)
             cell?.validatorImg.af_setImage(withURL: URL(string: DIPPER_VAL_URL + mValidator!.operator_address + ".png")!)
             
         } else if (chainType == ChainType.IRIS_MAIN) {
@@ -516,24 +519,24 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             
         } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             if (mBonding != nil) {
-                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount((mBonding?.getBondingAmount(mValidator!).stringValue)!, cell!.myDelegateAmount.font, 12, chainType!)
+                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount((mBonding?.getBondingAmount(mValidator!).stringValue)!, cell!.myDelegateAmount.font, 6, chainType!)
             } else {
-                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myDelegateAmount.font, 12, chainType!)
+                cell!.myDelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myDelegateAmount.font, 6, chainType!)
             }
             if (mUnbondings.count > 0) {
                 var unbondSum = NSDecimalNumber.zero
                 for unbonding in mUnbondings {
                     unbondSum  = unbondSum.adding(WUtils.localeStringToDecimal(unbonding.unbonding_balance))
                 }
-                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(unbondSum.stringValue, cell!.myUndelegateAmount.font, 12, chainType!)
+                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(unbondSum.stringValue, cell!.myUndelegateAmount.font, 6, chainType!)
             } else {
-                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myUndelegateAmount.font, 12, chainType!)
+                cell!.myUndelegateAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myUndelegateAmount.font, 6, chainType!)
             }
             if (mRewards.count > 0) {
                 let rewardSum = WUtils.getAllRewardByDenom(mRewards, DIPPER_MAIN_DENOM)
-                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(rewardSum.stringValue, cell!.myRewardAmount.font, 12, chainType!)
+                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(rewardSum.stringValue, cell!.myRewardAmount.font, 6, chainType!)
             } else {
-                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myRewardAmount.font, 12, chainType!)
+                cell!.myRewardAmount.attributedText =  WUtils.displayAmount(NSDecimalNumber.zero.stringValue, cell!.myRewardAmount.font, 6, chainType!)
             }
             
         }  else if (chainType == ChainType.IRIS_MAIN) {
@@ -695,8 +698,8 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
             cell!.myMonthlyReturns.attributedText =  WUtils.getMonthlyReward(cell!.myMonthlyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
             
         } else  if (mIsTop100 && (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST)) {
-            cell!.myDailyReturns.attributedText =  WUtils.getDailyReward(cell!.myDailyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
-            cell!.myMonthlyReturns.attributedText =  WUtils.getMonthlyReward(cell!.myMonthlyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
+            cell!.myDailyReturns.attributedText =  WUtils.getDIPDailyReward(cell!.myDailyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
+            cell!.myMonthlyReturns.attributedText =  WUtils.getDIPMonthlyReward(cell!.myMonthlyReturns.font, mValidator!.getCommission(), mBonding?.getBondingAmount(mValidator!), chainType!)
             
         } else if (mIsTop100 && chainType == ChainType.IRIS_MAIN) {
             if (mIrisStakePool != nil && mBonding != nil) {

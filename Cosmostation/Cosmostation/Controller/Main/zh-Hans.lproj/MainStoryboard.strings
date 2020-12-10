@@ -8,7 +8,7 @@
 "5W3-Re-KAk.segmentTitles[0]" = "我的";
 
 /* Class = "UISegmentedControl"; 5W3-Re-KAk.segmentTitles[1] = "Top"; ObjectID = "5W3-Re-KAk"; */
-"5W3-Re-KAk.segmentTitles[1]" = "Top";
+"5W3-Re-KAk.segmentTitles[1]" = "顶部";
 
 /* Class = "UISegmentedControl"; 5W3-Re-KAk.segmentTitles[2] = "Other"; ObjectID = "5W3-Re-KAk"; */
 "5W3-Re-KAk.segmentTitles[2]" = "其他";
@@ -92,7 +92,7 @@
 "IT3-yR-uMd.normalTitle" = "投票";
 
 /* Class = "UILabel"; text = "Explorer Mintscan"; ObjectID = "j4V-kv-pau"; */
-"j4V-kv-pau.text" = "浏览器 Mintscan";
+"j4V-kv-pau.text" = "区块浏览器";
 
 /* Class = "UILabel"; text = "Telegram"; ObjectID = "KCh-Gs-kbA"; */
 "KCh-Gs-kbA.text" = "Telegram";
@@ -104,7 +104,7 @@
 "lAa-HU-H1G.segmentTitles[0]" = "我的";
 
 /* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[1] = "Top"; ObjectID = "lAa-HU-H1G"; */
-"lAa-HU-H1G.segmentTitles[1]" = "Top";
+"lAa-HU-H1G.segmentTitles[1]" = "顶部";
 
 /* Class = "UISegmentedControl"; lAa-HU-H1G.segmentTitles[2] = "Other"; ObjectID = "lAa-HU-H1G"; */
 "lAa-HU-H1G.segmentTitles[2]" = "其他";
@@ -146,7 +146,7 @@
 "ohf-ir-FDB.text" = "0";
 
 /* Class = "UITabBarItem"; title = "HISTORY"; ObjectID = "Pah-Ab-5sf"; */
-"Pah-Ab-5sf.title" = "历史";
+"Pah-Ab-5sf.title" = "历史记录";
 
 /* Class = "UIButton"; normalTitle = "Disconnect"; ObjectID = "pUY-pL-b4r"; */
 "pUY-pL-b4r.normalTitle" = "断开连接";
@@ -170,7 +170,7 @@
 "s1Y-7N-iWS.text" = "钱包管理";
 
 /* Class = "UILabel"; text = "Open source (Github)"; ObjectID = "Seb-qT-zPj"; */
-"Seb-qT-zPj.text" = "打开源头(Github)";
+"Seb-qT-zPj.text" = "源代码(Github)";
 
 /* Class = "UIButton"; normalTitle = "Vote"; ObjectID = "SuV-b3-34d"; */
 "SuV-b3-34d.normalTitle" = "投票";
@@ -185,7 +185,7 @@
 "TB1-BC-2Oc.text" = "(Cosmos Hub)";
 
 /* Class = "UILabel"; text = "No History"; ObjectID = "TLK-Ns-Awb"; */
-"TLK-Ns-Awb.text" = "没有历史";
+"TLK-Ns-Awb.text" = "历史记录功能即将来临";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "TtU-iN-vR0"; */
 "TtU-iN-vR0.text" = "0";

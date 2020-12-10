@@ -248,11 +248,11 @@ class AddAddressViewController: BaseViewController, QrScannerDelegate {
         let dipperAction = UIAlertAction(title: NSLocalizedString("chain_title_dipper", comment: ""), style: .default, handler: {_ in
             self.onGenWatchAccount(ChainType.DIPPER_MAIN, input)
         })
-        dipperAction.setValue(UIImage(named: "dipperTokenImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperAction.setValue(UIImage(named: "dipperWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         let dipperTestAction = UIAlertAction(title: NSLocalizedString("chain_title_test_dipper", comment: ""), style: .default, handler: {_ in
             self.onGenWatchAccount(ChainType.DIPPER_TEST, input)
         })
-        dipperTestAction.setValue(UIImage(named: "dipperTokenImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
+        dipperTestAction.setValue(UIImage(named: "dipperTestWhImg")?.withRenderingMode(.alwaysOriginal), forKey: "image")
         
         showAlert.addAction(dipperAction)
         showAlert.addAction(dipperTestAction)

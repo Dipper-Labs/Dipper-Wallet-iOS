@@ -1,17 +1,17 @@
 /* Class = "UILabel"; text = "Moniker"; ObjectID = "5rW-3b-Lm5"; */
-"5rW-3b-Lm5.text" = "Moniker";
+"5rW-3b-Lm5.text" = "绰号";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "ago-pl-psR"; */
 "ago-pl-psR.text" = "-";
 
 /* Class = "UILabel"; text = "Reward"; ObjectID = "bwg-AL-vPt"; */
-"bwg-AL-vPt.text" = "Reward";
+"bwg-AL-vPt.text" = "收益";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "Cdf-lL-EcX"; */
-"Cdf-lL-EcX.text" = "Delegated";
+"Cdf-lL-EcX.text" = "委托";
 
 /* Class = "UILabel"; text = "Undelegating"; ObjectID = "lCZ-OT-X4w"; */
-"lCZ-OT-X4w.text" = "Undelegating";
+"lCZ-OT-X4w.text" = "取消委托";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "Mma-bi-v2Y"; */
 "Mma-bi-v2Y.text" = "-";

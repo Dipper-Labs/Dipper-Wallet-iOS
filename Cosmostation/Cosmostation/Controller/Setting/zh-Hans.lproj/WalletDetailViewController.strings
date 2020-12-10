@@ -1,35 +1,35 @@
 /* Class = "UILabel"; text = "Imported Date"; ObjectID = "1FQ-6L-D0A"; */
-"1FQ-6L-D0A.text" = "Imported Date";
+"1FQ-6L-D0A.text" = "导入日期";
 
 /* Class = "UIButton"; normalTitle = "CEHCK MNEMONIC"; ObjectID = "7YT-6H-gLA"; */
-"7YT-6H-gLA.normalTitle" = "CEHCK MNEMONIC";
+"7YT-6H-gLA.normalTitle" = "检查助记词";
 
 /* Class = "UILabel"; text = "Key Path"; ObjectID = "87G-OB-BRl"; */
-"87G-OB-BRl.text" = "Key Path";
+"87G-OB-BRl.text" = "关键路径";
 
 /* Class = "UILabel"; text = "Wallet Address"; ObjectID = "aiF-4w-nQ8"; */
-"aiF-4w-nQ8.text" = "Wallet Address";
+"aiF-4w-nQ8.text" = "钱包地址";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "b9A-Sm-obj"; */
 "b9A-Sm-obj.text" = "-";
 
 /* Class = "UILabel"; text = "Imported State"; ObjectID = "bxH-Wt-SxB"; */
-"bxH-Wt-SxB.text" = "Imported State";
+"bxH-Wt-SxB.text" = "导入状态";
 
 /* Class = "UILabel"; text = "Chain Info"; ObjectID = "GFx-iE-W5a"; */
-"GFx-iE-W5a.text" = "Chain Info";
+"GFx-iE-W5a.text" = "链信息";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "gsg-Id-mWi"; */
 "gsg-Id-mWi.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "Delete Wallet"; ObjectID = "lkh-oe-cma"; */
-"lkh-oe-cma.normalTitle" = "Delete Wallet";
+"lkh-oe-cma.normalTitle" = "删除钱包";
 
 /* Class = "UILabel"; text = "Reward Recipient Address"; ObjectID = "LQ4-c4-4FH"; */
-"LQ4-c4-4FH.text" = "Reward Recipient Address";
+"LQ4-c4-4FH.text" = "收益接收人地址";
 
 /* Class = "UILabel"; text = "Wallet1"; ObjectID = "n5W-aU-crt"; */
-"n5W-aU-crt.text" = "Wallet1";
+"n5W-aU-crt.text" = "钱包1";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "Op6-9y-J50"; */
 "Op6-9y-J50.text" = "-";
@@ -38,13 +38,13 @@
 "RVk-TP-eew.text" = "-";
 
 /* Class = "UILabel"; text = "Enabled push alarm for each send & received tx with this address"; ObjectID = "xev-RX-uP3"; */
-"xev-RX-uP3.text" = "Enabled push alarm for each send & received tx with this address";
+"xev-RX-uP3.text" = "可为这个地址发送 &接收的交易推送警报";
 
 /* Class = "UILabel"; text = "Now only watch mode\nAll services are available after mnemonics integration"; ObjectID = "xGz-gq-KBU"; */
-"xGz-gq-KBU.text" = "Now only watch mode\nAll services are available after mnemonics integration";
+"xGz-gq-KBU.text" = "现在仅浏览模式\n助记符集成后，所有服务均可用";
 
 /* Class = "UILabel"; text = "Push Alarm"; ObjectID = "yFZ-jy-QHt"; */
-"yFZ-jy-QHt.text" = "Push Alarm";
+"yFZ-jy-QHt.text" = "推送警报";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "YwM-A2-KH6"; */
 "YwM-A2-KH6.text" = "-";

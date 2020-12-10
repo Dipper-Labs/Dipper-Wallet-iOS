@@ -2,43 +2,43 @@
 "4nk-dt-CiQ.text" = "-";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "Bs6-H3-HZs"; */
-"Bs6-H3-HZs.text" = "Delegated";
+"Bs6-H3-HZs.text" = "委托";
 
 /* Class = "UILabel"; text = "Est. Monthly Reward"; ObjectID = "C3b-SX-Z56"; */
-"C3b-SX-Z56.text" = "Est. Monthly Reward";
+"C3b-SX-Z56.text" = "预计每月收益";
 
 /* Class = "UIButton"; normalTitle = "RE-INVEST"; ObjectID = "Das-Dc-QgD"; */
-"Das-Dc-QgD.normalTitle" = "RE-INVEST";
+"Das-Dc-QgD.normalTitle" = "复投收益";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "FTh-Xd-UEg"; */
 "FTh-Xd-UEg.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "UNDELEGATE"; ObjectID = "Ghn-OR-Lj6"; */
-"Ghn-OR-Lj6.normalTitle" = "UNDELEGATE";
+"Ghn-OR-Lj6.normalTitle" = "取消委托";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "hib-JF-mPX"; */
 "hib-JF-mPX.text" = "-";
 
 /* Class = "UILabel"; text = "Est. Daily Reward"; ObjectID = "IeA-BC-eAP"; */
-"IeA-BC-eAP.text" = "Est. Daily Reward";
+"IeA-BC-eAP.text" = "预计每日收益";
 
 /* Class = "UIButton"; normalTitle = "DELEGATE"; ObjectID = "IWh-8K-Tdg"; */
-"IWh-8K-Tdg.normalTitle" = "DELEGATE";
+"IWh-8K-Tdg.normalTitle" = "委托";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "L8L-5t-Ob2"; */
-"L8L-5t-Ob2.text" = "Unbonding";
+"L8L-5t-Ob2.text" = "赎回中";
 
 /* Class = "UILabel"; text = "Reward"; ObjectID = "QOT-VC-ZBU"; */
-"QOT-VC-ZBU.text" = "Reward";
+"QOT-VC-ZBU.text" = "收益";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "sgs-C1-O6R"; */
 "sgs-C1-O6R.text" = "-";
 
 /* Class = "UIButton"; normalTitle = "CLAIM REWARD"; ObjectID = "Uax-LB-HdT"; */
-"Uax-LB-HdT.normalTitle" = "CLAIM REWARD";
+"Uax-LB-HdT.normalTitle" = "赎回收益";
 
 /* Class = "UIButton"; normalTitle = "REDELEGATE"; ObjectID = "vxf-ut-Qfe"; */
-"vxf-ut-Qfe.normalTitle" = "REDELEGATE";
+"vxf-ut-Qfe.normalTitle" = "重新委托";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "wPR-SC-6DM"; */
 "wPR-SC-6DM.text" = "-";

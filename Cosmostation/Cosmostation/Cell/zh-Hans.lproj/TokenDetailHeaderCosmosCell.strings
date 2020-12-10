@@ -2,10 +2,10 @@
 "0p4-hV-agv.text" = "--";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "5wk-sT-QxK"; */
-"5wk-sT-QxK.text" = "Available";
+"5wk-sT-QxK.text" = "可用";
 
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "7lU-sT-l7g"; */
-"7lU-sT-l7g.normalTitle" = "  Send";
+"7lU-sT-l7g.normalTitle" = "  发送";
 
 /* Class = "UIButton"; normalTitle = "  Buy ATOM"; ObjectID = "9QL-dO-TbC"; */
 "9QL-dO-TbC.normalTitle" = "  Buy ATOM";
@@ -20,22 +20,22 @@
 "Ge7-cf-S6K.text" = "--";
 
 /* Class = "UILabel"; text = "Unbonding"; ObjectID = "lLO-iH-Huh"; */
-"lLO-iH-Huh.text" = "Unbonding";
+"lLO-iH-Huh.text" = "赎回中";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "p2U-c0-fS5"; */
 "p2U-c0-fS5.text" = "--";
 
 /* Class = "UILabel"; text = "Reward"; ObjectID = "s4i-U5-jde"; */
-"s4i-U5-jde.text" = "Reward";
+"s4i-U5-jde.text" = "收益";
 
 /* Class = "UILabel"; text = "ATOM"; ObjectID = "SmM-Hv-erl"; */
 "SmM-Hv-erl.text" = "ATOM";
 
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "tGu-KQ-Dkz"; */
-"tGu-KQ-Dkz.normalTitle" = "  Receive";
+"tGu-KQ-Dkz.normalTitle" = "  接收";
 
 /* Class = "UILabel"; text = "Delegated"; ObjectID = "tiN-TZ-KLn"; */
-"tiN-TZ-KLn.text" = "Delegated";
+"tiN-TZ-KLn.text" = "委托";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "ucP-uf-KhC"; */
 "ucP-uf-KhC.text" = "--";

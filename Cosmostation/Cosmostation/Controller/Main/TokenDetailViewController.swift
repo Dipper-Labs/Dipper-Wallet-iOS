@@ -342,12 +342,12 @@ class TokenDetailViewController: BaseViewController, UITableViewDelegate, UITabl
         let bondingList = BaseData.instance.selectBondingById(accountId: account!.account_id)
         let unbondingList = BaseData.instance.selectUnbondingById(accountId: account!.account_id)
         
-        cell?.totalAmount.attributedText = WUtils.dpAllDIP(balances, bondingList, unbondingList, allRewards, allValidator, cell!.totalAmount.font, 12, chainType!)
+        cell?.totalAmount.attributedText = WUtils.dpAllDIP(balances, bondingList, unbondingList, allRewards, allValidator, cell!.totalAmount.font, 6, chainType!)
         cell?.totalValue.attributedText = WUtils.dpAllDIPValue(balances, bondingList, unbondingList, allRewards, allValidator, BaseData.instance.getLastPrice(), cell!.totalAmount.font)
-        cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(balances, cell!.availableAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
-        cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(bondingList, allValidator, cell!.delegatedAmount.font, 12, chainType!)
-        cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(unbondingList, cell!.unbondingAmount.font, 12, chainType!)
-        cell?.rewardAmount.attributedText = WUtils.dpRewards(allRewards, cell!.rewardAmount.font, 12, DIPPER_MAIN_DENOM, chainType!)
+        cell?.availableAmount.attributedText = WUtils.dpTokenAvailable(balances, cell!.availableAmount.font, 6, DIPPER_MAIN_DENOM, chainType!)
+        cell?.delegatedAmount.attributedText = WUtils.dpDeleagted(bondingList, allValidator, cell!.delegatedAmount.font, 6, chainType!)
+        cell?.unbondingAmount.attributedText = WUtils.dpUnbondings(unbondingList, cell!.unbondingAmount.font, 6, chainType!)
+        cell?.rewardAmount.attributedText = WUtils.dpRewards(allRewards, cell!.rewardAmount.font, 6, DIPPER_MAIN_DENOM, chainType!)
         cell?.actionSend  = {
             self.onSendToken()
         }

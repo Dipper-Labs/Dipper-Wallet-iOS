@@ -5,19 +5,19 @@
 "aUW-3y-Pva.text" = "--";
 
 /* Class = "UIButton"; normalTitle = "  Receive"; ObjectID = "brm-Jo-oLB"; */
-"brm-Jo-oLB.normalTitle" = "  Receive";
+"brm-Jo-oLB.normalTitle" = "  接收";
 
 /* Class = "UILabel"; text = "Locked"; ObjectID = "cgm-Kd-4NO"; */
-"cgm-Kd-4NO.text" = "Locked";
+"cgm-Kd-4NO.text" = "已锁定";
 
 /* Class = "UILabel"; text = "Available"; ObjectID = "h03-8X-IdP"; */
-"h03-8X-IdP.text" = "Available";
+"h03-8X-IdP.text" = "可用";
 
 /* Class = "UILabel"; text = "BNB"; ObjectID = "kKD-B5-mYP"; */
 "kKD-B5-mYP.text" = "BNB";
 
 /* Class = "UIButton"; normalTitle = "  Send"; ObjectID = "KtU-za-Hdi"; */
-"KtU-za-Hdi.normalTitle" = "  Send";
+"KtU-za-Hdi.normalTitle" = "  发送";
 
 /* Class = "UILabel"; text = "--"; ObjectID = "LND-GM-RMr"; */
 "LND-GM-RMr.text" = "--";
