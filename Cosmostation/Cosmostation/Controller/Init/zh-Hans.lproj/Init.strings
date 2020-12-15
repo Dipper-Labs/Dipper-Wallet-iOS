@@ -47,7 +47,7 @@
 "bIQ-75-n4q.text" = "05 : ";
 
 /* Class = "UILabel"; text = "Losing your mnemonics could lead to loss of your asset. We highly recommend keeping your mnemonics offline in a secure location, and never share your mnemonics with anyone else."; ObjectID = "cgM-k7-H5E"; */
-"cgM-k7-H5E.text" = "丢失助记符可能会导致资产损失。 我们强烈建议您将助记符离线保存在安全的位置，切勿与他人共享助记符。";
+"cgM-k7-H5E.text" = "丢失助记词可能会导致资产损失。 我们强烈建议您将助记词离线保存在安全的位置，切勿与他人共享助记词。";
 
 /* Class = "UILabel"; text = "06 : "; ObjectID = "cL9-OW-efi"; */
 "cL9-OW-efi.text" = "06 : ";

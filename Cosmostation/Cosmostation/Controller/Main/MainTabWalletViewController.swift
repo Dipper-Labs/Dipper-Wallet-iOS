@@ -178,7 +178,12 @@ class MainTabWalletViewController: BaseViewController, UITableViewDelegate, UITa
     
     func updateFloaty() {
         let floaty = Floaty()
-        floaty.buttonImage = UIImage.init(named: "sendImg")
+        if(Locale.current.languageCode == "zh") {
+            floaty.buttonImage = UIImage.init(named: "sendImgZH")
+        }else{
+            floaty.buttonImage = UIImage.init(named: "sendImg")
+        }
+        
         floaty.buttonColor =  WUtils.getChainColor(chainType)
         floaty.fabDelegate = self
         self.view.addSubview(floaty)

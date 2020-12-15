@@ -65,7 +65,7 @@ class StepFeeViewController: BaseViewController {
             self.rateFeeGasRateLabel.attributedText = WUtils.displayGasRate(gasRate, font: rateFeeGasRateLabel.font, 6)
             feeAmount = gasAmount.multiplying(byPowerOf10: 12).multiplying(by: gasRate, withBehavior: WUtils.handler0)
             self.rateFeeAmountLabel.attributedText = WUtils.displayAmount(feeAmount.stringValue, rateFeeAmountLabel.font, 3, pageHolderVC.chainType!)
-            self.rateFeePriceLabel.attributedText = WUtils.dpAtomValue(feeAmount, BaseData.instance.getLastPrice(), rateFeePriceLabel.font)
+            self.rateFeePriceLabel.attributedText = WUtils.dpDIPValue(feeAmount, BaseData.instance.getLastPrice(), rateFeePriceLabel.font)
             
         } else if (pageHolderVC.chainType! == ChainType.IRIS_MAIN) {
             self.minFeeCardView.isHidden = true

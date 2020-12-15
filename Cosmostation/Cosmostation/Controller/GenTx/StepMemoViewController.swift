@@ -35,9 +35,20 @@ class StepMemoViewController: BaseViewController, UITextViewDelegate, QrScannerD
         if (chainType == ChainType.COSMOS_MAIN || chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST || chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST ||
                 chainType == ChainType.IOV_MAIN || chainType == ChainType.BAND_MAIN || chainType == ChainType.CERTIK_MAIN ||
                 chainType == ChainType.IOV_TEST || chainType == ChainType.CERTIK_TEST) {
-            memoCntLabel.text = "0/255 byte"
+            if(Locale.current.languageCode == "zh") {
+                memoCntLabel.text = "0/255 字节"
+            }else{
+                memoCntLabel.text = "0/255 byte"
+            }
+            
         } else {
-            memoCntLabel.text = "0/100 byte"
+            if(Locale.current.languageCode == "zh") {
+                memoCntLabel.text = "0/100 字节"
+                
+            }else{
+                memoCntLabel.text = "0/100 byte"
+            }
+            
         }
         
         if (isTransfer()) {

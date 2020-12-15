@@ -41,7 +41,7 @@
 "xev-RX-uP3.text" = "可为这个地址发送 &接收的交易推送警报";
 
 /* Class = "UILabel"; text = "Now only watch mode\nAll services are available after mnemonics integration"; ObjectID = "xGz-gq-KBU"; */
-"xGz-gq-KBU.text" = "现在仅浏览模式\n助记符集成后，所有服务均可用";
+"xGz-gq-KBU.text" = "现在仅浏览模式\n助记词集成后，所有服务均可用";
 
 /* Class = "UILabel"; text = "Push Alarm"; ObjectID = "yFZ-jy-QHt"; */
 "yFZ-jy-QHt.text" = "推送警报";
