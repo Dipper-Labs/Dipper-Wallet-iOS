@@ -1,0 +1,75 @@
+
+/* Class = "UILabel"; text = "IRIS"; ObjectID = "09f-r9-Ipa"; */
+"09f-r9-Ipa.text" = "IRIS";
+
+/* Class = "UILabel"; text = "Fee"; ObjectID = "2cs-Rk-zrO"; */
+"2cs-Rk-zrO.text" = "Fee";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "8bG-jL-dbB"; */
+"8bG-jL-dbB.text" = "Time";
+
+/* Class = "UILabel"; text = "Transaction Hash"; ObjectID = "GNl-xb-HLN"; */
+"GNl-xb-HLN.text" = "Transaction Hash";
+
+/* Class = "UILabel"; text = "--"; ObjectID = "GOr-KA-OgB"; */
+"GOr-KA-OgB.text" = "--";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "HJW-X9-6fS"; */
+"HJW-X9-6fS.text" = "12345";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "HK3-48-Yxm"; */
+"HK3-48-Yxm.text" = "12345";
+
+/* Class = "UILabel"; text = "Fee Limit"; ObjectID = "HKo-31-iAw"; */
+"HKo-31-iAw.text" = "Fee Limit";
+
+/* Class = "UILabel"; text = "--\n--"; ObjectID = "JSL-Pj-5cX"; */
+"JSL-Pj-5cX.text" = "--\n--";
+
+/* Class = "UILabel"; text = "IRIS"; ObjectID = "Jgs-7a-AO2"; */
+"Jgs-7a-AO2.text" = "IRIS";
+
+/* Class = "UILabel"; text = "Message Size"; ObjectID = "K5m-bU-og5"; */
+"K5m-bU-og5.text" = "Message Size";
+
+/* Class = "UILabel"; text = "Result"; ObjectID = "M9u-q3-Ejf"; */
+"M9u-q3-Ejf.text" = "Result";
+
+/* Class = "UILabel"; text = "TimeGap"; ObjectID = "N5y-vF-wFW"; */
+"N5y-vF-wFW.text" = "TimeGap";
+
+/* Class = "UILabel"; text = "Fee Used"; ObjectID = "VbN-8D-6rM"; */
+"VbN-8D-6rM.text" = "Fee Used";
+
+/* Class = "UILabel"; text = "ATOM"; ObjectID = "alK-NO-QX4"; */
+"alK-NO-QX4.text" = "ATOM";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "av5-13-jva"; */
+"av5-13-jva.text" = "1";
+
+/* Class = "UILabel"; text = "Memo"; ObjectID = "cJz-Am-OWy"; */
+"cJz-Am-OWy.text" = "Memo";
+
+/* Class = "UILabel"; text = "12345"; ObjectID = "dXU-Uj-DVb"; */
+"dXU-Uj-DVb.text" = "12345";
+
+/* Class = "UILabel"; text = "1234 / 5678"; ObjectID = "flK-Y6-Cqs"; */
+"flK-Y6-Cqs.text" = "1234 / 5678";
+
+/* Class = "UILabel"; text = "Error Message"; ObjectID = "lLF-as-eG4"; */
+"lLF-as-eG4.text" = "Error Message";
+
+/* Class = "UILabel"; text = "1234"; ObjectID = "mph-oG-HyM"; */
+"mph-oG-HyM.text" = "1234";
+
+/* Class = "UILabel"; text = "day and time"; ObjectID = "mw9-2T-yzP"; */
+"mw9-2T-yzP.text" = "day and time";
+
+/* Class = "UILabel"; text = "Gas (used/wanted)"; ObjectID = "obt-nm-NRl"; */
+"obt-nm-NRl.text" = "Gas (used/wanted)";
+
+/* Class = "UILabel"; text = "Block Height"; ObjectID = "pvA-km-yH3"; */
+"pvA-km-yH3.text" = "Block Height";
+
+/* Class = "UILabel"; text = "Success"; ObjectID = "ul9-Qv-EO6"; */
+"ul9-Qv-EO6.text" = "Success";

@@ -60,7 +60,7 @@ let BAND_URL                            = "https://lcd-band.cosmostation.io/";
 let BAND_API                            = "https://api-band.cosmostation.io/";
 
 let DIPPER_URL = "https://rpc.dippernetwork.com/";
-let DIPPER_API = "";
+let DIPPER_API = "https://api.dippernetwork.com/";
 let DIPPER_TEST_URL = "https://rpc.testnet.dippernetwork.com/";
 let DIPPER_TEST_API = "";
 

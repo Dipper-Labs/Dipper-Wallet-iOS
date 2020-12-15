@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "gnZ-of-W7v"; */
+"gnZ-of-W7v.normalTitle" = "Cancel";
+
+/* Class = "UILabel"; text = "Please perform careful due diligence on validators before delegating.\n\nUsers can receive staking rewards for delegating to a validator to operate a node on their behalf. If a problem occurs with the selected validators node, you may also lose a portion of your delegated stake..\n\nWhen you undelegate, there will be an unbonding period specific to the network. For tokens in \"unbonding\" state, you will not be able to accumulate staking rewards or make transactions."; ObjectID = "nLD-UV-Do8"; */
+"nLD-UV-Do8.text" = "Please perform careful due diligence on validators before delegating.\n\nUsers can receive staking rewards for delegating to a validator to operate a node on their behalf. If a problem occurs with the selected validators node, you may also lose a portion of your delegated stake..\n\nWhen you undelegate, there will be an unbonding period specific to the network. For tokens in \"unbonding\" state, you will not be able to accumulate staking rewards or make transactions.";
+
+/* Class = "UILabel"; text = "Delegate Notice"; ObjectID = "u6t-iL-Fz4"; */
+"u6t-iL-Fz4.text" = "Delegate Notice";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "xDJ-FJ-BVy"; */
+"xDJ-FJ-BVy.normalTitle" = "Continue";

@@ -60,7 +60,6 @@
 		2815AA7624349DF2008B23AA /* StepRepayCdpCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2815AA7524349DF2008B23AA /* StepRepayCdpCheckViewController.swift */; };
 		2827E11123F3896C007CDB6E /* TxDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2827E10F23F3896C007CDB6E /* TxDetailViewController.swift */; };
 		2827E11523F3DC9B007CDB6E /* TxCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2827E11323F3DC9B007CDB6E /* TxCommonCell.swift */; };
-		2827E11623F3DC9B007CDB6E /* TxCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2827E11423F3DC9B007CDB6E /* TxCommonCell.xib */; };
 		282BDFE224A5992500D3A5D4 /* WcTradePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BDFE024A5992500D3A5D4 /* WcTradePopup.swift */; };
 		282BDFE324A5992600D3A5D4 /* WcTradePopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 282BDFE124A5992500D3A5D4 /* WcTradePopup.xib */; };
 		282BDFE624A5BCCB00D3A5D4 /* WcCancelPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282BDFE424A5BCCB00D3A5D4 /* WcCancelPopup.swift */; };
@@ -213,7 +212,6 @@
 		2868559724989AB80099D18F /* CdpWarnPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868559524989AB80099D18F /* CdpWarnPopup.swift */; };
 		2868559824989AB80099D18F /* CdpWarnPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2868559624989AB80099D18F /* CdpWarnPopup.xib */; };
 		2868559B24989ACD0099D18F /* DelegateWarnPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868559924989ACD0099D18F /* DelegateWarnPopup.swift */; };
-		2868559C24989ACD0099D18F /* DelegateWarnPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2868559A24989ACD0099D18F /* DelegateWarnPopup.xib */; };
 		286855A02498DBBF0099D18F /* KavaSupply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2868559F2498DBBF0099D18F /* KavaSupply.swift */; };
 		286A9915253ECA0600306417 /* BandOracleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286A9914253ECA0600306417 /* BandOracleStatus.swift */; };
 		2872B0F2252EF79900E8CACF /* WalletSecretCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2872B0F0252EF79900E8CACF /* WalletSecretCell.swift */; };
@@ -299,6 +297,8 @@
 		6358E2DE257901C700CE4A2A /* MyValidatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6358E2DA257901C700CE4A2A /* MyValidatorCell.xib */; };
 		6358E2DF257901C700CE4A2A /* AllValidatorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6358E2DC257901C700CE4A2A /* AllValidatorCell.xib */; };
 		637A4041256CFA8700BED886 /* WalletDIPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637A4040256CFA8700BED886 /* WalletDIPCell.swift */; };
+		63BF801A2582522400548221 /* DelegateWarnPopup.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BF801C2582522400548221 /* DelegateWarnPopup.xib */; };
+		63BF80252582538E00548221 /* TxCommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63BF80272582538E00548221 /* TxCommonCell.xib */; };
 		91F07C68255EF66E00099E12 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F07C67255EF66E00099E12 /* GoogleService-Info.plist */; };
 		E103DAA32281266D006C2146 /* ValidatorDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E103DAA52281266D006C2146 /* ValidatorDetailCell.xib */; };
 		E103DAAA2281274A006C2146 /* ValidatorDetailHistoryHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E103DAAC2281274A006C2146 /* ValidatorDetailHistoryHeader.xib */; };
@@ -553,7 +553,6 @@
 		2815AA7524349DF2008B23AA /* StepRepayCdpCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepRepayCdpCheckViewController.swift; sourceTree = "<group>"; };
 		2827E10F23F3896C007CDB6E /* TxDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxDetailViewController.swift; sourceTree = "<group>"; };
 		2827E11323F3DC9B007CDB6E /* TxCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TxCommonCell.swift; sourceTree = "<group>"; };
-		2827E11423F3DC9B007CDB6E /* TxCommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TxCommonCell.xib; sourceTree = "<group>"; };
 		282BDFE024A5992500D3A5D4 /* WcTradePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WcTradePopup.swift; sourceTree = "<group>"; };
 		282BDFE124A5992500D3A5D4 /* WcTradePopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WcTradePopup.xib; sourceTree = "<group>"; };
 		282BDFE424A5BCCB00D3A5D4 /* WcCancelPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WcCancelPopup.swift; sourceTree = "<group>"; };
@@ -715,7 +714,6 @@
 		2868559524989AB80099D18F /* CdpWarnPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CdpWarnPopup.swift; sourceTree = "<group>"; };
 		2868559624989AB80099D18F /* CdpWarnPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CdpWarnPopup.xib; sourceTree = "<group>"; };
 		2868559924989ACD0099D18F /* DelegateWarnPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateWarnPopup.swift; sourceTree = "<group>"; };
-		2868559A24989ACD0099D18F /* DelegateWarnPopup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DelegateWarnPopup.xib; sourceTree = "<group>"; };
 		2868559F2498DBBF0099D18F /* KavaSupply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavaSupply.swift; sourceTree = "<group>"; };
 		286A9914253ECA0600306417 /* BandOracleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandOracleStatus.swift; sourceTree = "<group>"; };
 		2872B0F0252EF79900E8CACF /* WalletSecretCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSecretCell.swift; sourceTree = "<group>"; };
@@ -854,6 +852,12 @@
 		6358E2EA2579029D00CE4A2A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/AllValidatorCell.strings"; sourceTree = "<group>"; };
 		6358E2EC257902A000CE4A2A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/AllValidatorCell.strings; sourceTree = "<group>"; };
 		637A4040256CFA8700BED886 /* WalletDIPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletDIPCell.swift; sourceTree = "<group>"; };
+		63BF801B2582522400548221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DelegateWarnPopup.xib; sourceTree = "<group>"; };
+		63BF80212582527200548221 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DelegateWarnPopup.strings; sourceTree = "<group>"; };
+		63BF80232582527300548221 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/DelegateWarnPopup.strings"; sourceTree = "<group>"; };
+		63BF80262582538E00548221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TxCommonCell.xib; sourceTree = "<group>"; };
+		63BF802A2582539B00548221 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/TxCommonCell.strings"; sourceTree = "<group>"; };
+		63BF802C2582539C00548221 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/TxCommonCell.strings; sourceTree = "<group>"; };
 		7153E3FFEB0749B07CCB1E0C /* Pods-Cosmostation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cosmostation.release.xcconfig"; path = "Target Support Files/Pods-Cosmostation/Pods-Cosmostation.release.xcconfig"; sourceTree = "<group>"; };
 		91F07C67255EF66E00099E12 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3E6894128E5729CD3DC4FEA /* Pods_Cosmostation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cosmostation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1212,7 +1216,7 @@
 			isa = PBXGroup;
 			children = (
 				2827E11323F3DC9B007CDB6E /* TxCommonCell.swift */,
-				2827E11423F3DC9B007CDB6E /* TxCommonCell.xib */,
+				63BF80272582538E00548221 /* TxCommonCell.xib */,
 				282FF33F23F4FFD20028CC66 /* TxCommissionCell.swift */,
 				282FF34023F4FFD20028CC66 /* TxCommissionCell.xib */,
 				282FF34323F5062A0028CC66 /* TxDelegateCell.swift */,
@@ -1287,7 +1291,7 @@
 				2868559524989AB80099D18F /* CdpWarnPopup.swift */,
 				2868559624989AB80099D18F /* CdpWarnPopup.xib */,
 				2868559924989ACD0099D18F /* DelegateWarnPopup.swift */,
-				2868559A24989ACD0099D18F /* DelegateWarnPopup.xib */,
+				63BF801C2582522400548221 /* DelegateWarnPopup.xib */,
 				282BDFE024A5992500D3A5D4 /* WcTradePopup.swift */,
 				282BDFE124A5992500D3A5D4 /* WcTradePopup.xib */,
 				282BDFE424A5BCCB00D3A5D4 /* WcCancelPopup.swift */,
@@ -1895,7 +1899,7 @@
 				E126CF9B2387A60D002A546F /* WalletPriceCell.xib in Resources */,
 				E1945E32222E7C0800A1436F /* LaunchScreen.storyboard in Resources */,
 				E103DAA32281266D006C2146 /* ValidatorDetailCell.xib in Resources */,
-				2868559C24989ACD0099D18F /* DelegateWarnPopup.xib in Resources */,
+				63BF801A2582522400548221 /* DelegateWarnPopup.xib in Resources */,
 				283E9464254902BA007A9291 /* TxRegisterDomainCell.xib in Resources */,
 				283A80C824513FF7008FF813 /* CdpDetailTopCell.xib in Resources */,
 				282FF36623F533AF0028CC66 /* TxUnknownCell.xib in Resources */,
@@ -1936,7 +1940,7 @@
 				E16D9B192248C4880019B7BB /* Assets.xcassets in Resources */,
 				283850252448A6C600E5DEF2 /* TxHtlcRefundCell.xib in Resources */,
 				28156E8025360B70006FF06C /* HarvestListAllCell.xib in Resources */,
-				2827E11623F3DC9B007CDB6E /* TxCommonCell.xib in Resources */,
+				63BF80252582538E00548221 /* TxCommonCell.xib in Resources */,
 				28D372A1254BFCCA0071B136 /* RegisterAccount0ViewController.xib in Resources */,
 				28BB2A822533D9FB00CFF097 /* DomainPromotionCell.xib in Resources */,
 				280E1EFE254A7AD60007BA7D /* DeleteStarname3ViewController.xib in Resources */,
@@ -2585,6 +2589,26 @@
 			name = AllValidatorCell.xib;
 			sourceTree = "<group>";
 		};
+		63BF801C2582522400548221 /* DelegateWarnPopup.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63BF801B2582522400548221 /* Base */,
+				63BF80212582527200548221 /* en */,
+				63BF80232582527300548221 /* zh-Hans */,
+			);
+			name = DelegateWarnPopup.xib;
+			sourceTree = "<group>";
+		};
+		63BF80272582538E00548221 /* TxCommonCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63BF80262582538E00548221 /* Base */,
+				63BF802A2582539B00548221 /* zh-Hans */,
+				63BF802C2582539C00548221 /* en */,
+			);
+			name = TxCommonCell.xib;
+			sourceTree = "<group>";
+		};
 		E103DAA52281266D006C2146 /* ValidatorDetailCell.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -3049,7 +3073,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cosmostation/Cosmostation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K67XS9C622;
 				INFOPLIST_FILE = Cosmostation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -3057,7 +3081,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HighStreet.dippernetworkwallet;
 				PRODUCT_NAME = DipperWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3080,7 +3104,7 @@
 				CODE_SIGN_ENTITLEMENTS = Cosmostation/Cosmostation.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K67XS9C622;
 				INFOPLIST_FILE = Cosmostation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -3088,7 +3112,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HighStreet.dippernetworkwallet;
 				PRODUCT_NAME = DipperWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";

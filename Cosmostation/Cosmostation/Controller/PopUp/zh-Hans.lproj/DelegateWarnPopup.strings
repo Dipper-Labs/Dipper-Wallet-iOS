@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Cancel"; ObjectID = "gnZ-of-W7v"; */
+"gnZ-of-W7v.normalTitle" = "取消";
+
+/* Class = "UILabel"; text = "Please perform careful due diligence on validators before delegating.\n\nUsers can receive staking rewards for delegating to a validator to operate a node on their behalf. If a problem occurs with the selected validators node, you may also lose a portion of your delegated stake..\n\nWhen you undelegate, there will be an unbonding period specific to the network. For tokens in \"unbonding\" state, you will not be able to accumulate staking rewards or make transactions."; ObjectID = "nLD-UV-Do8"; */
+"nLD-UV-Do8.text" = "委托前，请对验证者进行仔细的尽职调查。\n\n用户可以委派验证者代表他们操作节点，从而获得丰厚的奖励。 如果所选的验证程序节点发生问题，您也可能会丢失一部分委托股份。\n\n取消授权时，将有一个特定于网络的解除绑定期。 对于处于“未绑定”状态的代币，您将无法累积赌注奖励或进行交易。";
+
+/* Class = "UILabel"; text = "Delegate Notice"; ObjectID = "u6t-iL-Fz4"; */
+"u6t-iL-Fz4.text" = "委托提示";
+
+/* Class = "UIButton"; normalTitle = "Continue"; ObjectID = "xDJ-FJ-BVy"; */
+"xDJ-FJ-BVy.normalTitle" = "继续";

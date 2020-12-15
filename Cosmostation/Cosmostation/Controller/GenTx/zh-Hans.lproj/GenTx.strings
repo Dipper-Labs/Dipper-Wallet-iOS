@@ -428,7 +428,7 @@
 "bU8-ZO-2md.normalTitle" = "后退";
 
 /* Class = "UILabel"; text = "Description for Transaction"; ObjectID = "bUG-5q-kHF"; */
-"bUG-5q-kHF.text" = "交易说明n";
+"bUG-5q-kHF.text" = "交易说明";
 
 /* Class = "UIButton"; normalTitle = "Next"; ObjectID = "bUi-Fg-ynx"; */
 "bUi-Fg-ynx.normalTitle" = "下一步";

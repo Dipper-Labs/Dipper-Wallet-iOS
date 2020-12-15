@@ -308,7 +308,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             cell?.memoLabel.text = mTxInfo!.tx?.value.memo
             cell?.feeAmountLabel.attributedText = WUtils.displayAmount2(mTxInfo?.simpleFee().stringValue, cell!.feeAmountLabel.font!, 6, 6)
             
-        } else if (chainType == ChainType.DIPPER_TEST || chainType == ChainType.DIPPER_TEST) {
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell?.feeLayer.isHidden = false
             cell?.usedFeeLayer.isHidden = true
             cell?.limitFeeLayer.isHidden = true
@@ -444,7 +444,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                 cell?.feeBottomConstraint.priority = .defaultHigh
             }
             
-        } else if (chainType == ChainType.DIPPER_TEST || chainType == ChainType.DIPPER_TEST) {
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
                 cell?.delegatorLabel.text = msg?.value.delegator_address
                 cell?.validatorLabel.text = msg?.value.validator_address
                 cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
@@ -497,7 +497,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                 cell?.feeBottomConstraint.priority = .defaultHigh
             }
             
-        } else if (chainType == ChainType.DIPPER_TEST || chainType == ChainType.DIPPER_TEST) {
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell?.undelegatorLabel.text = msg?.value.delegator_address
             cell?.validatorLabel.text = msg?.value.validator_address
             cell?.monikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_address!, true)
@@ -552,7 +552,7 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
                 cell?.feeBottomConstraint.priority = .defaultHigh
             }
             
-        } else if (chainType == ChainType.DIPPER_TEST || chainType == ChainType.DIPPER_TEST) {
+        } else if (chainType == ChainType.DIPPER_MAIN || chainType == ChainType.DIPPER_TEST) {
             cell?.redelegatorLabel.text = msg?.value.delegator_address
             cell?.fromValidatorLabel.text = msg?.value.validator_src_address
             cell?.fromMonikerLabel.text = WUtils.getMonikerName(mAllValidator, msg!.value.validator_src_address!, true)
