@@ -185,7 +185,7 @@
 "TB1-BC-2Oc.text" = "(Cosmos Hub)";
 
 /* Class = "UILabel"; text = "No History"; ObjectID = "TLK-Ns-Awb"; */
-"TLK-Ns-Awb.text" = "历史记录功能即将来临";
+"TLK-Ns-Awb.text" = "没有历史记录";
 
 /* Class = "UILabel"; text = "0"; ObjectID = "TtU-iN-vR0"; */
 "TtU-iN-vR0.text" = "0";

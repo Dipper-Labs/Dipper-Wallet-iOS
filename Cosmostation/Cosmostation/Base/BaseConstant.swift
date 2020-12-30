@@ -62,7 +62,7 @@ let BAND_API                            = "https://api-band.cosmostation.io/";
 let DIPPER_URL = "https://rpc.dippernetwork.com/";
 let DIPPER_API = "https://api.dippernetwork.com/";
 let DIPPER_TEST_URL = "https://rpc.testnet.dippernetwork.com/";
-let DIPPER_TEST_API = "";
+let DIPPER_TEST_API = "https://api.testnet.dippernetwork.com/";
 
 
 let OKEX_TEST_URL                       = "https://lcd-office.cosmostation.io/okexchain-testnet1/";
@@ -144,6 +144,7 @@ let DIPPER_URL_BORAD_TX                 = DIPPER_URL + "txs";
 
 let DIPPER_API_HISTORY                  = DIPPER_API + "v1/account/txs/";
 let DIPPER_API_TRANS_HISTORY            = DIPPER_API + "v1/account/transfer_txs/";
+let DIPPER_API_STAKING_HISTORY = DIPPER_API + "v1/account/staking_txs/";
 
 //DIPPER_TEST_URL
 let DIPPER_TEST_URL_BLOCK                    = DIPPER_TEST_URL + "blocks/";
@@ -172,6 +173,7 @@ let DIPPER_TEST_URL_BORAD_TX                 = DIPPER_TEST_URL + "txs";
 
 let DIPPER_TEST_API_HISTORY                  = DIPPER_TEST_API + "v1/account/txs/";
 let DIPPER_TEST_API_TRANS_HISTORY            = DIPPER_TEST_API + "v1/account/transfer_txs/";
+let DIPPER_TEST_API_STAKING_HISTORY            = DIPPER_TEST_API + "v1/account/staking_txs/";
 
 
 //IRIS_URL
@@ -769,7 +771,7 @@ let GAS_FEE_AMOUNT_IRIS_REWARD_BASE         = "10000"
 let GAS_FEE_AMOUNT_IRIS_REWARD_MUX          = "5000"
 
 
-let GAS_FEE_RATE_DIP_AVERAGE               = "0.000006"
+let GAS_FEE_RATE_DIP_AVERAGE               = "0.0000006"
 
 let GAS_FEE_AMOUNT_DIP_LOW                 = "100000"
 let GAS_FEE_AMOUNT_DIP_SEND                = "400000"

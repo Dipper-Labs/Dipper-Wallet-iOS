@@ -438,13 +438,17 @@ class WUtils {
                 resultMsg = NSLocalizedString("tx_reinvest", comment: "")
                 return resultMsg
             }
+            if (msgs[0].type == DIPPER_MSG_TYPE_WITHDRAW_DEL && msgs[1].type == DIPPER_MSG_TYPE_DELEGATE) {
+                resultMsg = NSLocalizedString("tx_reinvest", comment: "")
+                return resultMsg
+            }
             if (msgs[0].type == IRIS_MSG_TYPE_WITHDRAW && msgs[1].type == IRIS_MSG_TYPE_DELEGATE) {
                 resultMsg = NSLocalizedString("tx_reinvest", comment: "")
                 return resultMsg
             }
         }
         
-        if (msgs[0].type == COSMOS_MSG_TYPE_TRANSFER || msgs[0].type == COSMOS_MSG_TYPE_TRANSFER2 || msgs[0].type == IRIS_MSG_TYPE_TRANSFER || msgs[0].type == CERTIK_MSG_TYPE_TRANSFER) {
+        if (msgs[0].type == COSMOS_MSG_TYPE_TRANSFER || msgs[0].type == COSMOS_MSG_TYPE_TRANSFER2 || msgs[0].type == DIPPER_MSG_TYPE_TRANSFER || msgs[0].type == DIPPER_MSG_TYPE_TRANSFER2 || msgs[0].type == IRIS_MSG_TYPE_TRANSFER || msgs[0].type == CERTIK_MSG_TYPE_TRANSFER) {
             if (msgs[0].value.from_address != nil && msgs[0].value.from_address == myaddress) {
                 resultMsg = NSLocalizedString("tx_send", comment: "")
             } else if (msgs[0].value.to_address != nil && msgs[0].value.to_address == myaddress) {
@@ -469,37 +473,37 @@ class WUtils {
                 resultMsg = NSLocalizedString("tx_transfer", comment: "")
             }
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_DELEGATE || msgs[0].type == IRIS_MSG_TYPE_DELEGATE ) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_DELEGATE || msgs[0].type == DIPPER_MSG_TYPE_DELEGATE || msgs[0].type == IRIS_MSG_TYPE_DELEGATE ) {
             resultMsg = NSLocalizedString("tx_delegate", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_UNDELEGATE || msgs[0].type == COSMOS_MSG_TYPE_UNDELEGATE2 || msgs[0].type == IRIS_MSG_TYPE_UNDELEGATE) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_UNDELEGATE || msgs[0].type == COSMOS_MSG_TYPE_UNDELEGATE2 || msgs[0].type == DIPPER_MSG_TYPE_UNDELEGATE || msgs[0].type == DIPPER_MSG_TYPE_UNDELEGATE2 || msgs[0].type == IRIS_MSG_TYPE_UNDELEGATE) {
             resultMsg = NSLocalizedString("tx_undelegate", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_REDELEGATE || msgs[0].type == COSMOS_MSG_TYPE_REDELEGATE2 || msgs[0].type == IRIS_MSG_TYPE_REDELEGATE) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_REDELEGATE || msgs[0].type == COSMOS_MSG_TYPE_REDELEGATE2 || msgs[0].type == DIPPER_MSG_TYPE_REDELEGATE || msgs[0].type == DIPPER_MSG_TYPE_REDELEGATE2 || msgs[0].type == IRIS_MSG_TYPE_REDELEGATE) {
             resultMsg = NSLocalizedString("tx_redelegate", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_DEL || msgs[0].type == IRIS_MSG_TYPE_WITHDRAW) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_DEL || msgs[0].type == DIPPER_MSG_TYPE_WITHDRAW_DEL || msgs[0].type == IRIS_MSG_TYPE_WITHDRAW) {
             resultMsg = NSLocalizedString("tx_get_reward", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_VAL) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_VAL || msgs[0].type == DIPPER_MSG_TYPE_WITHDRAW_VAL) {
             resultMsg = NSLocalizedString("tx_get_commission", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY || msgs[0].type == IRIS_MSG_TYPE_WITHDRAW_MIDIFY) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_WITHDRAW_MIDIFY || msgs[0].type == DIPPER_MSG_TYPE_WITHDRAW_MIDIFY || msgs[0].type == IRIS_MSG_TYPE_WITHDRAW_MIDIFY) {
             resultMsg = NSLocalizedString("tx_change_reward_address", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_VOTE || msgs[0].type == IRIS_MSG_TYPE_VOTE) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_VOTE || msgs[0].type == DIPPER_MSG_TYPE_VOTE || msgs[0].type == IRIS_MSG_TYPE_VOTE) {
             resultMsg = NSLocalizedString("tx_vote", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_SUBMIT_PROPOSAL || msgs[0].type == IRIS_MSG_TYPE_SUBMIT_PROPOSAL) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_SUBMIT_PROPOSAL || msgs[0].type == DIPPER_MSG_TYPE_SUBMIT_PROPOSAL || msgs[0].type == IRIS_MSG_TYPE_SUBMIT_PROPOSAL) {
             resultMsg = NSLocalizedString("tx_submit_proposal", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_DEPOSIT || msgs[0].type == IRIS_MSG_TYPE_DEPOSIT) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_DEPOSIT || msgs[0].type == DIPPER_MSG_TYPE_DEPOSIT || msgs[0].type == IRIS_MSG_TYPE_DEPOSIT) {
             resultMsg = NSLocalizedString("tx_deposit", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_CREATE_VALIDATOR || msgs[0].type == IRIS_MSG_TYPE_CREATE_VALIDATOR) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_CREATE_VALIDATOR || msgs[0].type == DIPPER_MSG_TYPE_CREATE_VALIDATOR || msgs[0].type == IRIS_MSG_TYPE_CREATE_VALIDATOR) {
             resultMsg = NSLocalizedString("tx_create_validator", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_EDIT_VALIDATOR) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_EDIT_VALIDATOR || msgs[0].type == DIPPER_MSG_TYPE_EDIT_VALIDATOR) {
             resultMsg = NSLocalizedString("tx_edit_validator", comment: "")
             
         } else if (msgs[0].type == IRIS_MSG_TYPE_WITHDRAW_ALL) {
@@ -508,7 +512,7 @@ class WUtils {
         } else if (msgs[0].type == IRIS_MSG_TYPE_ISSUE_TOKEN) {
             resultMsg = NSLocalizedString("tx_issue_token", comment: "")
             
-        } else if (msgs[0].type == COSMOS_MSG_TYPE_TRANSFER3) {
+        } else if (msgs[0].type == COSMOS_MSG_TYPE_TRANSFER3 || msgs[0].type == DIPPER_MSG_TYPE_TRANSFER3) {
             resultMsg = NSLocalizedString("tx_transfer", comment: "")
             
         } else if (msgs[0].type == KAVA_MSG_TYPE_POST_PRICE) {

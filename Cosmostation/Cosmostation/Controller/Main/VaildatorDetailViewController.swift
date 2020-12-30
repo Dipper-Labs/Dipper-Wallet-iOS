@@ -1079,9 +1079,9 @@ class VaildatorDetailViewController: BaseViewController, UITableViewDelegate, UI
         if (chainType == ChainType.COSMOS_MAIN) {
             url = COSMOS_API_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.DIPPER_MAIN) {
-            url = DIPPER_API_HISTORY + account.account_address + "/" + validator.operator_address
+            url = DIPPER_API_STAKING_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.DIPPER_TEST) {
-            url = DIPPER_TEST_API_HISTORY + account.account_address + "/" + validator.operator_address
+            url = DIPPER_TEST_API_STAKING_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.IRIS_MAIN) {
             url = IRIS_API_HISTORY + account.account_address + "/" + validator.operator_address
         } else if (chainType == ChainType.KAVA_MAIN) {

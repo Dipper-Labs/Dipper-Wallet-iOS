@@ -1387,11 +1387,11 @@ class TxDetailViewController: BaseViewController, UITableViewDelegate, UITableVi
             self.onShowSafariWeb(url)
             
         } else if (self.chainType! == ChainType.DIPPER_MAIN) {
-            guard let url = URL(string: EXPLORER_DIPPER_MAIN + "txs/" + mTxInfo!.txhash!) else { return }
+            guard let url = URL(string: EXPLORER_DIPPER_MAIN + "transactions/" + mTxInfo!.txhash!) else { return }
             self.onShowSafariWeb(url)
             
         } else if (self.chainType! == ChainType.DIPPER_MAIN) {
-            guard let url = URL(string: EXPLORER_DIPPER_TEST + "txs/" + mTxInfo!.txhash!) else { return }
+            guard let url = URL(string: EXPLORER_DIPPER_TEST + "transactions/" + mTxInfo!.txhash!) else { return }
             self.onShowSafariWeb(url)
             
         } else if (self.chainType! == ChainType.IRIS_MAIN) {

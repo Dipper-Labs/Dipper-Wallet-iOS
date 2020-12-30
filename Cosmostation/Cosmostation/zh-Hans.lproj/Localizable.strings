@@ -1,8 +1,8 @@
 /* (No Comment) */
-"add_address_hint" = "输入地址.";
+"add_address_hint" = "输入地址。";
 
 /* (No Comment) */
-"add_address_msg" = "在浏览模式下，您可以检查账户状态。\n要进行交易，可以在以后添加私人信息.";
+"add_address_msg" = "在浏览模式下，您可以检查账户状态。\n要进行交易，可以在以后添加私人信息。";
 
 /* (No Comment) */
 "add_mnemonic" = "添加助记词";
@@ -59,7 +59,7 @@
 "buy_kava" = "  购买KAVA";
 
 /* (No Comment) */
-"buy_select_fiat_msg" = "请选择一种货币进行购买.";
+"buy_select_fiat_msg" = "请选择一种货币进行购买。";
 
 /* (No Comment) */
 "buy_select_fiat_title" = "选择许可";
@@ -296,13 +296,13 @@
 "error_already_vote" = "已经投票";
 
 /* (No Comment) */
-"error_amount" = "请输入有效金额.";
+"error_amount" = "请输入有效金额。";
 
 /* (No Comment) */
 "error_bep3_supply_full" = "交换已经达到其网络容量";
 
 /* (No Comment) */
-"error_bep3_swap_temporary_disable" = "Bep3 交换中继器被暂时禁用.";
+"error_bep3_swap_temporary_disable" = "Bep3 交换中继器被暂时禁用。";
 
 /* (No Comment) */
 "error_bep3_under_min_amount" = "链间发送需要超过 0.00001 的余额";
@@ -314,10 +314,10 @@
 "error_can_not_bep3_account_msg" = "为了接收链间转移，您必须创建一个有效的（带有私钥）%@账户，并存入至少0.000375BNB作为索赔交易费";
 
 /* (No Comment) */
-"error_can_not_bep3_account_msg2" = "为了接收链间转移，您必须创建一个有效的（带有私钥）%@账户钱包.";
+"error_can_not_bep3_account_msg2" = "为了接收链间转移，您必须创建一个有效的（带有私钥）%@账户钱包。";
 
 /* (No Comment) */
-"error_can_not_draw_debt" = "现在不能再贷款.";
+"error_can_not_draw_debt" = "现在不能再贷款。";
 
 /* (No Comment) */
 "error_can_not_extend_close_domain" = "关闭类型域不支持续订";
@@ -338,7 +338,7 @@
 "error_disable_msg" = "我们目前正在维护中，请查看我们的社区频道以获取更多信息";
 
 /* (No Comment) */
-"error_duple_address" = "此地址已导入.";
+"error_duple_address" = "此地址已导入。";
 
 /* (No Comment) */
 "error_invalid_account_format" = "无效的账户格式，请为账户插入其他文字";
@@ -347,10 +347,10 @@
 "error_invalid_address" = "地址无效请再次检查";
 
 /* (No Comment) */
-"error_invalid_address_eth_target" = "无效的ETH地址.";
+"error_invalid_address_eth_target" = "无效的ETH地址。";
 
 /* (No Comment) */
-"error_invalid_address_or_pubkey" = "地址无效请再次检查.";
+"error_invalid_address_or_pubkey" = "地址无效请再次检查。";
 
 /* (No Comment) */
 "error_invalid_domain_format" = "无效的域格式，请为域插入另外一个文本";
@@ -359,19 +359,19 @@
 "error_invalid_password" = "无效的PIN码";
 
 /* (No Comment) */
-"error_invalide_starname" = "未注册star name.";
+"error_invalide_starname" = "未注册star name。";
 
 /* (No Comment) */
 "error_iris_token_yet" = "Iris token发送将很快支持";
 
 /* (No Comment) */
-"error_jailded_delegate" = "不支持委派的验证器.";
+"error_jailded_delegate" = "不支持委派的验证器。";
 
 /* (No Comment) */
-"error_kava_vesting_account" = "归属账户。请使用客户端进行正确的发送.";
+"error_kava_vesting_account" = "归属账户。请使用客户端进行正确的发送。";
 
 /* (No Comment) */
-"error_less_than_min_deposit" = "少于最低存款额.";
+"error_less_than_min_deposit" = "少于最低存款额。";
 
 /* (No Comment) */
 "error_less_than_min_principal" = "少于最低贷款额";
@@ -380,13 +380,13 @@
 "error_max_30_validator" = "您可以选择最多30个验证者";
 
 /* (No Comment) */
-"error_max_account_over" = "最多5个账户.";
+"error_max_account_over" = "最多5个账户。";
 
 /* (No Comment) */
-"error_memo" = "请输入验证备忘录.";
+"error_memo" = "请输入验证备忘录。";
 
 /* (No Comment) */
-"error_min_1_validator" = "请选择多个验证者.";
+"error_min_1_validator" = "请选择多个验证者。";
 
 /* (No Comment) */
 "error_network" = "网络错误";
@@ -401,16 +401,16 @@
 "error_no_available_to_deposit" = "没有资产可存放";
 
 /* (No Comment) */
-"error_no_bonding_no_vote" = "该提案只能对代表投票.";
+"error_no_bonding_no_vote" = "该提案只能由委托用户投票。";
 
 /* (No Comment) */
-"error_no_clipboard" = "剪切板无文字.";
+"error_no_clipboard" = "剪切板无文字。";
 
 /* (No Comment) */
-"error_no_delegated_amount" = "无委托金额.";
+"error_no_delegated_amount" = "无委托金额。";
 
 /* (No Comment) */
-"error_no_deposited_asset" = "无存放资产.";
+"error_no_deposited_asset" = "无存放资产。";
 
 /* (No Comment) */
 "error_no_harvest_reward_to_claim" = "没有收获收益要求";
@@ -419,79 +419,79 @@
 "error_no_incentive_to_claim" = "无法要求索赔";
 
 /* (No Comment) */
-"error_no_mattched_starname" = "有效 starname, 但是此链没有匹配地址.";
+"error_no_mattched_starname" = "有效 starname, 但是此链没有匹配地址。";
 
 /* (No Comment) */
-"error_no_more_debt_kava" = "无法发行USDX，已经达到最大网络USDX容量.";
+"error_no_more_debt_kava" = "无法发行USDX，已经达到最大网络USDX容量。";
 
 /* (No Comment) */
-"error_no_more_faucet" = "已经有足够的测试coin.";
+"error_no_more_faucet" = "已经有足够的测试coin。";
 
 /* (No Comment) */
-"error_no_more_today" = "今天没有了.";
+"error_no_more_today" = "今天没有了。";
 
 /* (No Comment) */
-"error_no_opinion" = "请选择您的建议.";
+"error_no_opinion" = "请选择您的建议。";
 
 /* (No Comment) */
 "error_no_recipient_account" = "请选择要接收的账户";
 
 /* (No Comment) */
-"error_no_telegram" = "未安装电报，请安装以继续下一步.";
+"error_no_telegram" = "未安装电报，请安装以继续下一步。";
 
 /* (No Comment) */
-"error_no_wallet_this_chain" = "不是这个链的钱包.";
+"error_no_wallet_this_chain" = "不是这个链的钱包。";
 
 /* (No Comment) */
-"error_not_enough_available" = "可用金额不足.";
+"error_not_enough_available" = "可用金额不足。";
 
 /* (No Comment) */
-"error_not_enough_balance_to_send" = "余额不足，无法发送.";
+"error_not_enough_balance_to_send" = "余额不足，无法发送。";
 
 /* (No Comment) */
-"error_not_enough_delegable" = "余额不足以委托.";
+"error_not_enough_delegable" = "余额不足以委托。";
 
 /* (No Comment) */
-"error_not_enough_fee" = "费用余额不足.";
+"error_not_enough_fee" = "费用余额不足。";
 
 /* (No Comment) */
-"error_not_enough_starname_fee" = "没有足够的余额来支付starname费用.";
+"error_not_enough_starname_fee" = "没有足够的余额来支付starname费用。";
 
 /* (No Comment) */
-"error_not_enough_to_balance" = "余额不足.";
+"error_not_enough_to_balance" = "余额不足。";
 
 /* (No Comment) */
-"error_not_enough_to_deposit" = "余额不足无法存入.";
+"error_not_enough_to_deposit" = "余额不足无法存入。";
 
 /* (No Comment) */
-"error_not_enough_to_withdraw" = "存款不出无法提取.";
+"error_not_enough_to_withdraw" = "存款不出无法提取。";
 
 /* (No Comment) */
 "error_not_enought_deposit_asset" = "资金不足无法存入";
 
 /* (No Comment) */
-"error_not_enought_principal_asset" = "USDX不足以偿还.";
+"error_not_enought_principal_asset" = "USDX不足以偿还。";
 
 /* (No Comment) */
-"error_not_enought_withdraw_asset" = "现在无法提取抵押品.";
+"error_not_enought_withdraw_asset" = "现在无法提取抵押品。";
 
 /* (No Comment) */
-"error_not_redelegate" = "没有可以重新委托的.";
+"error_not_redelegate" = "没有可以重新委托的。";
 
 /* (No Comment) */
-"error_not_reward" = "没有足够的报酬要求.";
+"error_not_reward" = "没有足够的报酬要求。";
 
 /* (No Comment) */
-"error_not_support_cosmostation" = "不支持Cosmostaion钱包.";
+"error_not_support_cosmostation" = "不支持Cosmostaion钱包。";
 
 /* (No Comment) */
-"error_not_undelegate" = "没什么可以删除的.";
+"error_not_undelegate" = "没什么可以删除的。";
 
 /* (No Comment) */
-"error_not_voting_not" = "现在无法投票.";
+"error_not_voting_not" = "现在无法投票。";
 
 /* (No Comment) */
-"error_not_voting_period" = "非投票期间.";
+"error_not_voting_period" = "非投票期间。";
 
 /* (No Comment) */
 "error_not_yet" = "快来了";
@@ -500,16 +500,16 @@
 "error_only_deposit_can_vote" = "没有存款金额，先存款";
 
 /* (No Comment) */
-"error_only_fee_with_atom" = "现在仅支持收费的ATOM.";
+"error_only_fee_with_atom" = "现在仅支持收费的ATOM。";
 
 /* (No Comment) */
 "error_password_fail" = "PIN码不相同，请再次初始化PIN码";
 
 /* (No Comment) */
-"error_recover_mnemonic" = "请输入验证助记词.";
+"error_recover_mnemonic" = "请输入验证助记词。";
 
 /* (No Comment) */
-"error_redelegate_cnt_over" = "超过最大重新授权计数，选择另外一个验证器.";
+"error_redelegate_cnt_over" = "超过最大重新授权计数，选择另外一个验证器。";
 
 /* (No Comment) */
 "error_redelegate_no_to_address" = "请选择新的验证者以重新授权";
@@ -524,16 +524,16 @@
 "error_reward_address_changed_title" = "收益地址已更改";
 
 /* (No Comment) */
-"error_same_reward_address" = "此地址已被注册为您的索偿收益地址.";
+"error_same_reward_address" = "此地址已被注册为您的索偿收益地址。";
 
 /* (No Comment) */
-"error_self_send" = "不支持自发送.";
+"error_self_send" = "不支持自发送。";
 
 /* (No Comment) */
-"error_send_disable" = "Token转移已锁定.";
+"error_send_disable" = "Token转移已锁定。";
 
 /* (No Comment) */
-"error_starname_self_send" = "验证 starname, 但不支持自动发送.";
+"error_starname_self_send" = "验证 starname, 但不支持自动发送。";
 
 /* (No Comment) */
 "error_support_soon" = "尽快支持!";
@@ -578,7 +578,7 @@
 "fee_speed_certik_title" = "支持Certik Chain的固定金额费用";
 
 /* (No Comment) */
-"fee_speed_dip_title" = "支持Dipper Network的固定金额费用.";
+"fee_speed_dip_title" = "支持Dipper Network的固定金额费用。";
 
 /* (No Comment) */
 "fee_speed_iov_title" = "支持IOV的固定金额费用";
@@ -608,7 +608,7 @@
 "go_appstore" = "前往Appstore";
 
 /* (No Comment) */
-"help_collateral_rate_msg" = "\n必须将抵押资产总美元价值的最低利率与从CDP借出的USDX总额中保持不变的最低利率。\n\n例如，如果最低抵押率为200%，这意味着为了从CDP借入100USDX，您必须存入至少200USD资产作为抵押。如果您的抵押资产总美元价值由于价格波动而低于200美元，您的头寸将被清算.";
+"help_collateral_rate_msg" = "\n必须将抵押资产总美元价值的最低利率与从CDP借出的USDX总额中保持不变的最低利率。\n\n例如，如果最低抵押率为200%，这意味着为了从CDP借入100USDX，您必须存入至少200USD资产作为抵押。如果您的抵押资产总美元价值由于价格波动而低于200美元，您的头寸将被清算。";
 
 /* (No Comment) */
 "help_collateral_rate_title" = "最小抵押率";
@@ -674,16 +674,16 @@
 "htlc_refund_step_3" = "查看交易明细";
 
 /* (No Comment) */
-"htlc_swap_progress_0" = "1/4 广播链之间从发送链发送交易.";
+"htlc_swap_progress_0" = "1/4 广播链之间从发送链发送交易。";
 
 /* (No Comment) */
-"htlc_swap_progress_1" = "2/4确认交换ID.";
+"htlc_swap_progress_1" = "2/4确认交换ID。";
 
 /* (No Comment) */
-"htlc_swap_progress_2" = "3/4 广播链间在接受链上声明交易.";
+"htlc_swap_progress_2" = "3/4 广播链间在接受链上声明交易。";
 
 /* (No Comment) */
-"htlc_swap_progress_3" = "4/4 确认每个链上的所有交易.";
+"htlc_swap_progress_3" = "4/4 确认每个链上的所有交易。";
 
 /* (No Comment) */
 "htlc_swap_step_0" = "选择目的地链";
@@ -785,7 +785,7 @@
 "password_delete" = "输入要删除的PIN数";
 
 /* (No Comment) */
-"password_init_warnning" = "无法恢复.\n请记住!";
+"password_init_warnning" = "无法恢复。\n请记住!";
 
 /* Localizable.strings
   Cosmostation
@@ -930,7 +930,7 @@
 "select_destination_chain" = "选择目的地链";
 
 /* (No Comment) */
-"select_new_path_msg" = "用于KAVA密钥生成的BIP44将于2020年3月开始实施。\n\n如果您在2020年3月之前创建了地址，请选择（旧路径）。如果您是2020年3月之后创建的地址，请选择（新路径）。\n\n如果您错误的选择了错误的路径，则不会影响您的原始KAVA钱包。只需要按[导入助记词]重新选择您的路径.";
+"select_new_path_msg" = "用于KAVA密钥生成的BIP44将于2020年3月开始实施。\n\n如果您在2020年3月之前创建了地址，请选择（旧路径）。如果您是2020年3月之后创建的地址，请选择（新路径）。\n\n如果您错误的选择了错误的路径，则不会影响您的原始KAVA钱包。只需要按[导入助记词]重新选择您的路径。";
 
 /* (No Comment) */
 "select_new_path_msg_secret" = "将于2020年9月开始实施用于SECRET密钥生成BIP44，如果您在2020年9月之前创建了地址，请选择[旧路径]。\n\n如果您在2020年9月之后创建了地址，请选择[新路径]，如果您错误的选择了地址，则不会影响您原来的Secret钱包。\n\nn只需按[导入助记词]重新选择您的路径";
@@ -1002,7 +1002,7 @@
 "send_guide_msg_band" = "基于Tendermint的跨链Oracel平台。聚合并将现实世界的数据和API连接到智能合约";
 
 /* (No Comment) */
-"send_guide_msg_bnb" = "分布式区块链网络由Tendermint BFT和ABCI支持.";
+"send_guide_msg_bnb" = "分布式区块链网络由Tendermint BFT和ABCI支持。";
 
 /* (No Comment) */
 "send_guide_msg_certik" = "基于 Certik Foundation独特的形式验证安全系统的公共平台";
@@ -1125,7 +1125,7 @@
 "str_bep3_available_title" = "提供BNB-BEP3交换 ";
 
 /* (No Comment) */
-"str_bep3_bnb_cap" = "当前剩余交换容量为%@\n\n最大交换容量由Kava政策和治理确定.\n            \n有关最大容量交换的查询，请访问下面官方Kava社区频道";
+"str_bep3_bnb_cap" = "当前剩余交换容量为%@\n\n最大交换容量由Kava政策和治理确定。\n            \n有关最大容量交换的查询，请访问下面官方Kava社区频道";
 
 /* (No Comment) */
 "str_bep3_bnb_cap_over" = "可用于交换的BNB总数已达到其网络容量。最大交换容量由Kava    政策和治理确定。有关最大交换容量查询，请访问下面的官方Kava社群渠道。";
@@ -1143,13 +1143,13 @@
 "str_deposit" = "  存入%@";
 
 /* (No Comment) */
-"str_description_closed_domain" = "域所有者也可以控制账户的封闭类型.";
+"str_description_closed_domain" = "域所有者也可以控制账户的封闭类型。";
 
 /* (No Comment) */
 "str_description_open_domain" = "开放式，其中账户所有者是唯一可以对账户执行操作的实体";
 
 /* (No Comment) */
-"str_event_confirm" = "请确认您自己的ETH存款地址两次以进行XRPT分发.\n（我们不支持验证校验）\n\n\n%@";
+"str_event_confirm" = "请确认您自己的ETH存款地址两次以进行XRPT分发。\n（我们不支持验证校验）\n\n\n%@";
 
 /* (No Comment) */
 "str_event_confirm_title" = "再检查一次";
@@ -1467,7 +1467,7 @@
 "tx_create_validator" = "创建验证人";
 
 /* (No Comment) */
-"tx_delegate" = "代表";
+"tx_delegate" = "委托";
 
 /* (No Comment) */
 "tx_deposit" = "存款";
