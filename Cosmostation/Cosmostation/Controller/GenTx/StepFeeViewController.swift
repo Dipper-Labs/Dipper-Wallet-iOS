@@ -62,7 +62,7 @@ class StepFeeViewController: BaseViewController {
             let gasAmount = WUtils.getEstimateGasAmount(pageHolderVC.chainType!, pageHolderVC.mType!, pageHolderVC.mRewardTargetValidators.count)
             let gasRate = NSDecimalNumber.init(string: GAS_FEE_RATE_DIP_AVERAGE)
             self.rateFeeGasAmountLabel.text = gasAmount.stringValue
-            self.rateFeeGasRateLabel.attributedText = WUtils.displayGasRate(gasRate, font: rateFeeGasRateLabel.font, 6)
+            self.rateFeeGasRateLabel.attributedText = WUtils.displayGasRate(gasRate, font: rateFeeGasRateLabel.font, 7)
             feeAmount = gasAmount.multiplying(byPowerOf10: 12).multiplying(by: gasRate, withBehavior: WUtils.handler0)
             self.rateFeeAmountLabel.attributedText = WUtils.displayAmount(feeAmount.stringValue, rateFeeAmountLabel.font, 3, pageHolderVC.chainType!)
             self.rateFeePriceLabel.attributedText = WUtils.dpDIPValue(feeAmount, BaseData.instance.getLastPrice(), rateFeePriceLabel.font)

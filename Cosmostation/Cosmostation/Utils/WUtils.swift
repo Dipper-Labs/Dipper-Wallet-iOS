@@ -1025,18 +1025,19 @@ class WUtils {
         
         var formatted = ""
         var endIndex:String.Index?
-        if (BaseData.instance.getCurrency() == 5) {
+        //TODO by captain
+//        if (BaseData.instance.getCurrency() == 5) {
             nf.minimumFractionDigits = 8
             nf.maximumFractionDigits = 8
             formatted = BaseData.instance.getCurrencySymbol() + " " + nf.string(from: amount)!
             endIndex    = formatted.index(formatted.endIndex, offsetBy: -8)
             
-        } else {
-            nf.minimumFractionDigits = 2
-            nf.maximumFractionDigits = 2
-            formatted = BaseData.instance.getCurrencySymbol() + " " + nf.string(from: amount)!
-            endIndex    = formatted.index(formatted.endIndex, offsetBy: -2)
-        }
+//        } else {
+//            nf.minimumFractionDigits = 2
+//            nf.maximumFractionDigits = 2
+//            formatted = BaseData.instance.getCurrencySymbol() + " " + nf.string(from: amount)!
+//            endIndex    = formatted.index(formatted.endIndex, offsetBy: -2)
+//        }
         
         let preString   = formatted[..<endIndex!]
         let postString  = formatted[endIndex!...]
@@ -2517,7 +2518,7 @@ class WUtils {
             } else if (type == DIPPER_MSG_TYPE_WITHDRAW_MIDIFY) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_LOW))
             } else if (type == DIPPER_MSG_TYPE_WITHDRAW_DEL) {
-                result = WUtils.getGasAmountForKavaRewards()[valCnt - 1]
+                result = WUtils.getGasAmountForRewards()[valCnt - 1]
             } else if (type == DIPPER_MULTI_MSG_TYPE_REINVEST) {
                 result = NSDecimalNumber.init(string: String(GAS_FEE_AMOUNT_DIP_REINVEST))
             } else if (type == TASK_TYPE_VOTE) {

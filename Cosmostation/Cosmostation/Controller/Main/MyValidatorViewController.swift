@@ -392,6 +392,15 @@ class MyValidatorViewController: BaseViewController, UITableViewDelegate, UITabl
                 toClaimValidator = myBondedValidator
             }
             
+            
+            let txVC = UIStoryboard(name: "GenTx", bundle: nil).instantiateViewController(withIdentifier: "TransactionViewController") as! TransactionViewController
+            txVC.mRewardTargetValidators = toClaimValidator
+            txVC.mType = DIPPER_MSG_TYPE_WITHDRAW_DEL
+            txVC.hidesBottomBarWhenPushed = true
+            self.navigationItem.title = ""
+            self.navigationController?.pushViewController(txVC, animated: true)
+            return
+            
         } else if (chainType == ChainType.KAVA_MAIN || chainType == ChainType.KAVA_TEST) {
             if (WUtils.getAllRewardByDenom(mainTabVC.mRewardList, KAVA_MAIN_DENOM).compare(NSDecimalNumber.zero).rawValue <= 0 ){
                 self.onShowToast(NSLocalizedString("error_not_reward", comment: ""))
